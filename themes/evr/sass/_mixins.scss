@@ -10,3 +10,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin footer-text {
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 300;
+	line-height: .3rem;
+}
