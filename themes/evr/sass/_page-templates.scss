@@ -3,3 +3,60 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.home {
+    .main-hero {
+        height: 250px;
+        background: url('../../assets/images/home-page.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .content-one, .content-two {
+        height: 116px;
+        border: 1px solid #000000;
+        background-color: #000000;
+        p {
+
+        }
+    }
+    .store-hero {
+        height: 337px;
+        background: url('../../assets/images/home-page-2.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .content-two {
+        height: 161px;
+    }
+    .menu-hero {
+        height: 338px;
+        background: url('../../assets/images/home-page-3.png');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        .front-page-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .subscribe {
+        background-color: #fff;
+        text-align: center;
+        height: 202px;
+        .email {
+            width: 296px;
+            background-color: rgba(155,155,155,0.4);
+            position: relative;
+            
+        }
+        .sign-up {
+            position: absolute;
+            left: 219px;
+            width: 77px;
+            background-color: #E13404;
+            box-shadow: none;
+        }
+    }
+}
