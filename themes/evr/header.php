@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package RED_Starter_Theme
+ * @package EVR_Theme
  */
 
 ?><!DOCTYPE html>

@@ -2,7 +2,7 @@
 /**
  * Template Name: Menu
  *
- * @package RED_Starter_Theme
+ * @package EVR_Theme
  */
 
 get_header(); ?>
