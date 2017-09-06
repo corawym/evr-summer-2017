@@ -1,9 +1,9 @@
 /*!
 Theme Name: EVR Theme
-Theme URI: https://github.com/redacademy/evr-summer-2017
+Theme URI: http://underscores.me/
 Author: RED Academy
-Author URI: https://github.com/redacademy/evr-summer-2017
-Description: A WordPress theme for East Van Roasters.
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-EVR Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -230,8 +230,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #4a4a4a;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -412,7 +412,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #e13404; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -705,7 +705,6 @@ object {
       margin-left: 8%; }
       .footer-site-info .location-info .address,
       .footer-site-info .location-info .biz-hours {
-        height: 3%;
         width: 27%; }
         .footer-site-info .location-info .address p,
         .footer-site-info .location-info .biz-hours p {
