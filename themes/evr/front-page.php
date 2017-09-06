@@ -41,14 +41,15 @@ get_header(); ?>
         </section>
 
         <section class="menu-hero">
+            <button class="front-page-btn">Menu</button>
         </section>
 
         <section class="subscribe">
         <h1>Subscribe</h1>
         <p>Sign up with your email address for exclusive events and products!</p>
         <form action="subscribe">
-            <input type="email" name="usremail" placeholder="Enter Email">
-            <button type="submit">Sign Up</button>
+            <input class="email" type="email" name="usremail" placeholder="Enter Email">
+            <button class="sign-up" type="submit">Sign Up</button>
         </form>
         </section>
 
