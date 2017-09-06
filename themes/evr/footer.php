@@ -24,7 +24,7 @@
 							<p class="info">(604) 629 7562</p>
 						</div>
 						<div class="biz-hours">
-							<p class="info">Hours | TUE - FRI</p>
+							<p class="info">Hours | <span class="days-of-week">tue - fri</span></p>
 							<p class="info">9am - 5pm</p>
 						</div>
 					</div>
