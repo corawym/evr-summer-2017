@@ -1,9 +1,9 @@
 /*!
-Theme Name: EVR Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Cora, Jeff, Shaahid
-Author URI: http://evr.cp.academy.red
-Description: Custom theme for East Van Roasters
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -656,3 +656,55 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+@media only screen and (max-width: 600px) {
+  .footer-site-info {
+    opacity: 0.7;
+    background-color: #000000;
+    height: 13.2%;
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column; }
+    .footer-site-info .social-icons {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+      height: 1.27%;
+      margin-top: 2.18%;
+      margin-bottom: 2.13%; }
+      .footer-site-info .social-icons a {
+        cursor: pointer;
+        color: #fff;
+        margin: 1rem; }
+    .footer-site-info .location-info {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      margin-left: 8%; }
+      .footer-site-info .location-info .address,
+      .footer-site-info .location-info .biz-hours {
+        height: 3%;
+        width: 27%; }
+        .footer-site-info .location-info .address p,
+        .footer-site-info .location-info .biz-hours p {
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 300;
+          line-height: .3rem; }
+    .footer-site-info .copyright {
+      margin-bottom: 2%;
+      margin-top: 2.5%; }
+      .footer-site-info .copyright p {
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: .3rem;
+        font-size: 15px; } }
