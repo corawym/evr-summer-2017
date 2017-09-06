@@ -1,6 +1,6 @@
-# RED Starter
+# EVR
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A WordPress starter theme for East Van Roasters.
 
 ## Installation
 
