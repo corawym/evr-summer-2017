@@ -1,10 +1,35 @@
-.location-hero{
-  background: url("../../assets/images/locations.png") no-repeat;
+.container-full{
   width: 100%;
-  height: 400px;
 }
-.site-main{
- padding-left: 2rem;
- padding-right: 2rem;
- text-align: center;
+.container-padding{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.location-hero{
+  background: url("../../assets/images/locations.png") no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  @include mobile{
+    position: relative;
+
+  }
+  .location-hero-content{
+    display: none;
+    // position: absolute;
+    // bottom: 2rem;
+  }
+}
+
+
+.location-evr-partners{
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  // .location-evr-partners-content{
+  //   margin-top: 2rem;
+  //   margin-bottom: 2rem;
+  // }
 }

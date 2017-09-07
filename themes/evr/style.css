@@ -911,12 +911,26 @@ object {
   height: 150px;
   width: 100%; }
 
-.location-hero {
-  background: url("../../assets/images/locations.png") no-repeat;
-  width: 100%;
-  height: 400px; }
+.container-full {
+  width: 100%; }
 
-.site-main {
+.container-padding {
   padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center; }
+  padding-right: 2rem; }
+
+.location-hero {
+  background: url("../../assets/images/locations.png") no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 500px; }
+  @media (min-width: 600px) {
+    .location-hero {
+      position: relative; } }
+  .location-hero .location-hero-content {
+    display: none; }
+
+.location-evr-partners {
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
