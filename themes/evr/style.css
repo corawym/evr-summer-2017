@@ -761,10 +761,28 @@ object {
   background-position: center;
   background-size: cover; }
 
-.home .content-one, .home .content-two {
+.home .content-two {
   height: 116px;
   border: 1px solid #000000;
   background-color: #000000; }
+
+.home .content-one {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  height: 100px;
+  background-color: #000000;
+  overflow: hidden; }
+  .home .content-one .content-one-div {
+    height: 45px;
+    width: 325px;
+    color: #FFFFFF;
+    font-size: 16.5px;
+    line-height: 23px;
+    text-align: center; }
 
 .home .store-hero {
   height: 337px;
