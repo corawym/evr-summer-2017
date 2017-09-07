@@ -8,6 +8,7 @@
  */
 
 if ( ! function_exists( 'evr_setup' ) ) :
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */

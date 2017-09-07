@@ -1,5 +1,9 @@
 /*!
+<<<<<<< HEAD
 Theme Name: RED Starter Theme
+=======
+Theme Name: EVR Theme
+>>>>>>> 3c2761052e218df09ae79a160da081abe2801192
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -224,11 +228,48 @@ th {
 --------------------------------------------------------------*/
 html {
   font-family: "Lato", sans-serif;
+<<<<<<< HEAD
   font-size: 16px; }
+=======
+  font-size: 16.5px; }
+>>>>>>> 3c2761052e218df09ae79a160da081abe2801192
 
 i {
   font-style: italic; }
 
+<<<<<<< HEAD
+=======
+h1 {
+  font-size: 2rem;
+  font-weight: 700; }
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 3rem; } }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700; }
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 2.4rem; } }
+
+h3 {
+  font-size: 1.2rem; }
+  @media (min-width: 600px) {
+    h3 {
+      font-size: 1.7rem; } }
+
+p {
+  font-weight: 400; }
+
+ul {
+  padding-left: 0;
+  margin-left: 0; }
+
+li {
+  list-style: none; }
+
+>>>>>>> 3c2761052e218df09ae79a160da081abe2801192
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -237,7 +278,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #4a4a4a;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -315,9 +356,6 @@ hr {
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
-
-ul, ol {
-  margin: 0 0 1.5rem 3rem; }
 
 ul {
   list-style: disc; }
@@ -419,7 +457,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #e13404; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -792,6 +830,7 @@ object {
       line-height: .3rem;
       font-size: 12px; }
 
+<<<<<<< HEAD
 .not-found {
   background: url("../../assets/images/404-hero.jpg");
   background-position: center;
@@ -803,3 +842,10 @@ object {
   text-align: center; }
   .not-found p {
     font-size: 20px; }
+=======
+.process-hero {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden; }
+>>>>>>> 3c2761052e218df09ae79a160da081abe2801192

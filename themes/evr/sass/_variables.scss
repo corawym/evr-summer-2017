@@ -1,12 +1,12 @@
 // Structure
 
 $base__space-unit: 1.5rem;
-$base__font-size: 16px;
+$base__font-size: 16.5px;
 
 // Colors
 
 $color__background-body: #fff;
-$color__text-main: #404040;
+$color__text-main: rgba(74,74,74,1);
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
@@ -18,7 +18,14 @@ $color__border-abbr: #666;
 
 $color__link: royalblue;
 $color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link-hover: rgba(225,52,4,1);
+
+$color_primary_orange: rgba(225,52,4,1);
+$color_background_darkgray: rgba(0,0,0,1);
+$color_secondary_brownyellow: rgba(201,164,97,1);
+$color_secondary_lightbrown: rgba(189,163,138,1);
+$color_secondary_brown: rgba(86,48,23,1);
+
 
 // Typography
 
@@ -29,5 +36,7 @@ $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
 // Screen sizes
-$tablet-width: 600px;
-$desktop-width: 1000px;
+$mobile-width: 600px;
+$desktop-width: 1080px;
+
+
