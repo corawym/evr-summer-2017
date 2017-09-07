@@ -14,6 +14,19 @@ body{
   margin-top: 0;
 }
 
+// Globals - structure
+.container-full{
+  width: 100%;
+}
+.container-padding{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.container-max1080{
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 // Globals - font style
 // mobile - header, page title on header
