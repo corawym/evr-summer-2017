@@ -658,7 +658,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5rem; }
+  margin: 0; }
 
 .updated:not(.published) {
   display: none; }
@@ -670,11 +670,11 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5rem 0 0; }
+  margin: 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5rem; }
+  margin: 0; }
 
 /* Asides */
 .blog .format-aside .entry-title,
