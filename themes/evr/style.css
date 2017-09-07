@@ -225,6 +225,11 @@ th {
 html {
   font-family: "Lato", sans-serif;
   font-size: 16.5px;
+<<<<<<< HEAD
+=======
+  letter-spacing: 0.1rem;
+  overflow-x: hidden;
+>>>>>>> fe06945e162b60cd20e61b7014f7d92d19a4da88
   width: 100%; }
 
 * {
@@ -972,12 +977,43 @@ object {
   height: 150px;
   width: 100%; }
 
-.location-hero {
-  background: url("../../assets/images/locations.png") no-repeat;
-  width: 100%;
-  height: 400px; }
+.container-full {
+  width: 100%; }
 
-.site-main {
+.container-padding {
   padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center; }
+  padding-right: 2rem; }
+
+.page-id-23 .location-hero-container {
+  background: url("../../assets/images/locations.png") no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 500px; }
+  @media (min-width: 600px) {
+    .page-id-23 .location-hero-container {
+      position: relative;
+      height: 100vh; } }
+  .page-id-23 .location-hero-container .location-hero-content {
+    display: none; }
+    @media (min-width: 600px) {
+      .page-id-23 .location-hero-container .location-hero-content {
+        color: white;
+        display: block;
+        position: absolute;
+        top: 40%;
+        max-width: 800px; } }
+    .page-id-23 .location-hero-container .location-hero-content .hero-content-title {
+      font-size: 5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    .page-id-23 .location-hero-container .location-hero-content .hero-content-description, .page-id-23 .location-hero-container .location-hero-content .hero-button {
+      font-size: 1.5rem; }
+    .page-id-23 .location-hero-container .location-hero-content .hero-button {
+      color: white; }
+
+.page-id-23 .location-evr-partners {
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }

@@ -1,10 +1,58 @@
-.location-hero{
-  background: url("../../assets/images/locations.png") no-repeat;
+.container-full{
   width: 100%;
-  height: 400px;
 }
-.site-main{
- padding-left: 2rem;
- padding-right: 2rem;
- text-align: center;
+.container-padding{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
+
+.page-id-23{
+  .location-hero-container{
+    background: url("../../assets/images/locations.png") no-repeat bottom;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    @include desktop{
+      position: relative;
+      height: 100vh;
+
+    }
+    .location-hero-content{
+      display: none;
+      @include desktop{
+        color: white;
+        display: block;
+        position: absolute;
+        top: 40%;
+        max-width:800px;
+      }
+      .hero-content-title{
+        font-size: 5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+      .hero-content-description, .hero-button{
+        font-size: 1.5rem;
+      }
+      .hero-button{
+        color: white;
+        
+      }
+    }
+  }
+
+
+  .location-evr-partners{
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    // .location-evr-partners-content{
+    //   margin-top: 2rem;
+    //   margin-bottom: 2rem;
+    // }
+  }
+
+}
+
