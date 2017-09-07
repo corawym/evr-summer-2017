@@ -1,47 +1,11 @@
 // location page style
 .page-id-23{
+  // hero banner
   .hero-banner{
     background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/locations.png") center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-    @include desktop{
-      position: relative;
-      height: 100vh;
-    }
-    .hero-content-container{
-      display: none;
-      @include desktop{
-        color: white;
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 5rem;
-        width: 100%;
-      }
-      .hero-content-title{
-        font-size: 4rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-bottom: 0;
-      }
-      .hero-content-description, .hero-button{
-        font-size: 1.4rem;
-      }
-      .hero-content-description{
-        max-width: 800px;
-      }
-      .hero-button{
-        color: white;
-        &:hover{
-          color: $color_primary_orange;
-        }
-      }
-    }
   }
 
-
+  // location content style
   .location-evr-partners{
     background-color: black;
     color: white;
@@ -53,5 +17,5 @@
     // }
   }
 
-}
+} // end of .page-id-23
 

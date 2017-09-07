@@ -225,11 +225,8 @@ th {
 html {
   font-family: "Lato", sans-serif;
   font-size: 16.5px;
-<<<<<<< HEAD
-=======
   letter-spacing: 0.1rem;
   overflow-x: hidden;
->>>>>>> fe06945e162b60cd20e61b7014f7d92d19a4da88
   width: 100%; }
 
 * {
@@ -285,6 +282,39 @@ li {
 
 a {
   font-weight: 300; }
+
+.hero-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px; }
+  @media (min-width: 800px) {
+    .hero-banner {
+      position: relative;
+      height: 100vh; } }
+  .hero-banner .hero-content-container {
+    display: none; }
+    @media (min-width: 800px) {
+      .hero-banner .hero-content-container {
+        color: white;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 5rem;
+        width: 100%; } }
+    .hero-banner .hero-content-container .hero-content-title {
+      font-size: 4rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    .hero-banner .hero-content-container .hero-content-description, .hero-banner .hero-content-container .hero-button {
+      font-size: 1.4rem; }
+    .hero-banner .hero-content-container .hero-content-description {
+      max-width: 800px; }
+    .hero-banner .hero-content-container .hero-button {
+      color: white; }
+      .hero-banner .hero-content-container .hero-button:hover {
+        color: #e13404; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -993,38 +1023,7 @@ object {
   width: 100%; }
 
 .page-id-23 .hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations.png") center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 500px; }
-  @media (min-width: 600px) {
-    .page-id-23 .hero-banner {
-      position: relative;
-      height: 100vh; } }
-  .page-id-23 .hero-banner .hero-content-container {
-    display: none; }
-    @media (min-width: 600px) {
-      .page-id-23 .hero-banner .hero-content-container {
-        color: white;
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 5rem;
-        width: 100%; } }
-    .page-id-23 .hero-banner .hero-content-container .hero-content-title {
-      font-size: 4rem;
-      font-weight: 300;
-      text-transform: uppercase;
-      margin-bottom: 0; }
-    .page-id-23 .hero-banner .hero-content-container .hero-content-description, .page-id-23 .hero-banner .hero-content-container .hero-button {
-      font-size: 1.4rem; }
-    .page-id-23 .hero-banner .hero-content-container .hero-content-description {
-      max-width: 800px; }
-    .page-id-23 .hero-banner .hero-content-container .hero-button {
-      color: white; }
-      .page-id-23 .hero-banner .hero-content-container .hero-button:hover {
-        color: #e13404; }
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations.png") center; }
 
 .page-id-23 .location-evr-partners {
   background-color: black;

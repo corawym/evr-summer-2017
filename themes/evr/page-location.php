@@ -15,12 +15,12 @@ get_header(); ?>
             <h1 class="hero-content-title">location</h1>
             <p class="hero-content-description">East Van Roasters (319 Carrall Street in the Rainier Hotel) is 
               a 16-seat specialty cafe and social enterprise of the PHS Community Services Society.</p> 
-            <a class="hero-button" href="#">Learn More <i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></a>
+            <a class="hero-button" href="#location-content">Learn More <i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></a>
           </div>
         </div>
       </section>
 
-      <section class="location-evr-info container-padding">
+      <section class="location-evr-info container-padding" id="location-content">
         <h2>Location</h2>
         <div class="evr-info-wrapper">
           <p>319 Caraall Street, Vancouver, BC V6B 2J4</p>
