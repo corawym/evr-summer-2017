@@ -815,7 +815,7 @@ object {
 .footer-site-info {
   opacity: 0.7;
   background-color: #000000;
-  height: 15%;
+  height: 250px;
   width: 100%;
   color: #fff;
   margin: 0 auto;
@@ -852,7 +852,7 @@ object {
         font-size: 14px;
         font-style: italic;
         font-weight: 300;
-        line-height: .3rem; }
+        line-height: 0; }
     .footer-site-info .location-info .days-of-week {
       text-transform: uppercase; }
   .footer-site-info .copyright {
@@ -863,20 +863,22 @@ object {
       font-size: 14px;
       font-style: italic;
       font-weight: 300;
-      line-height: .3rem;
+      line-height: 0;
       font-size: 12px; }
 
-.not-found {
-  background: url("../../assets/images/404-hero.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 350px;
-  color: #FFFFFF;
-  font-size: 28px;
-  line-height: 44px;
-  text-align: center; }
-  .not-found p {
-    font-size: 20px; }
+.error-flex {
+  display: -ms-flexbox;
+  display: flex; }
+  .error-flex .error-content {
+    background: url("../../assets/images/404-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    color: #FFFFFF;
+    font-size: 28px;
+    text-align: center; }
+    .error-flex .error-content p {
+      font-size: 20px; }
 
 .process-hero {
   height: 400px;
