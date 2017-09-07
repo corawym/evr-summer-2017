@@ -224,7 +224,7 @@ th {
 --------------------------------------------------------------*/
 html {
   font-family: "Lato", sans-serif;
-  font-size: 16px; }
+  font-size: 16.5px; }
 
 i {
   font-style: italic; }
@@ -251,6 +251,13 @@ h3 {
 
 p {
   font-weight: 400; }
+
+ul {
+  padding-left: 0;
+  margin-left: 0; }
+
+li {
+  list-style: none; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -338,9 +345,6 @@ hr {
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
-
-ul, ol {
-  margin: 0 0 1.5rem 3rem; }
 
 ul {
   list-style: disc; }
@@ -799,3 +803,9 @@ object {
       font-weight: 300;
       line-height: .3rem;
       font-size: 12px; }
+
+.process-hero {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden; }
