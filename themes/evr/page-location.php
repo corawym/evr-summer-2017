@@ -13,8 +13,6 @@ get_header(); ?>
       </section>
 		<main id="main" class="site-main" role="main">
 
-			
-
       <section class="location-evr-info">
         <h2>Location</h2>
         <div class="evr-info-wrapper">

@@ -163,6 +163,7 @@ a {
 	height: 85px;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	
 	@include mobile{
     background-color: rgba(0, 0, 0, 0.6);
 		position: fixed;
