@@ -1,9 +1,5 @@
 /*!
-<<<<<<< HEAD
-Theme Name: RED Starter Theme
-=======
 Theme Name: EVR Theme
->>>>>>> 3c2761052e218df09ae79a160da081abe2801192
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -228,17 +224,11 @@ th {
 --------------------------------------------------------------*/
 html {
   font-family: "Lato", sans-serif;
-<<<<<<< HEAD
-  font-size: 16px; }
-=======
   font-size: 16.5px; }
->>>>>>> 3c2761052e218df09ae79a160da081abe2801192
 
 i {
   font-style: italic; }
 
-<<<<<<< HEAD
-=======
 h1 {
   font-size: 2rem;
   font-weight: 700; }
@@ -269,7 +259,6 @@ ul {
 li {
   list-style: none; }
 
->>>>>>> 3c2761052e218df09ae79a160da081abe2801192
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -530,17 +519,30 @@ a {
   width: 50%; }
 
 /* evr Main Menu */
+.page-id-21 .main-nav-bg-color {
+  background-color: #e13404; }
+
+.page-id-23 .main-nav-bg-color {
+  background-color: #bda38a; }
+
+.page-id-38 .main-nav-bg-color, .page-id-40 .main-nav-bg-color, .page-id-42 .main-nav-bg-color {
+  background-color: #563017; }
+
 .main-navigation {
-  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+  background-color: #4a4a4a;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 80px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  .main-navigation .header-logo-image {
+    width: 70px; }
   .main-navigation .menu li {
     margin: 2rem 0 2rem 3rem; }
 
@@ -830,7 +832,6 @@ object {
       line-height: .3rem;
       font-size: 12px; }
 
-<<<<<<< HEAD
 .not-found {
   background: url("../../assets/images/404-hero.jpg");
   background-position: center;
@@ -842,15 +843,12 @@ object {
   text-align: center; }
   .not-found p {
     font-size: 20px; }
-=======
+
 .process-hero {
   height: 400px;
   width: 100%;
   object-fit: cover;
   overflow: hidden; }
-<<<<<<< HEAD
->>>>>>> 3c2761052e218df09ae79a160da081abe2801192
-=======
 
 .page-process {
   background: #333;
@@ -877,4 +875,3 @@ object {
   height: 150px;
   object-fit: cover;
   width: 100%; }
->>>>>>> 5310159f8b82f16b38f118bc748ec0e4f6c90369

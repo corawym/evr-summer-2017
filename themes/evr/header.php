@@ -26,10 +26,10 @@
 					<p class="site-description screen-reader-text"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-nav-bg-color main-navigation" role="navigation">
 					<div>
 						<a href="#">
-							<img src="" alt="East Van Roasters's logo">
+							<img class="header-logo-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/round-logo.png" alt="East Van Roasters's round logo">
 						</a>
 					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>

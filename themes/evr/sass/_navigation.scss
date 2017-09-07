@@ -132,18 +132,56 @@ a {
 }
 
 /* evr Main Menu */
+// mobile header - different page different backgound color 
+// process page
+.page-id-21{
+	.main-nav-bg-color{
+		background-color: $color_primary_orange;
+	}
+}
+// workshop page
+
+
+// location page
+.page-id-23{
+	.main-nav-bg-color{
+		background-color: $color_secondary_lightbrown;
+	}
+}
+// pep page, donate page, volunteer page
+.page-id-38, .page-id-40, .page-id-42{
+	.main-nav-bg-color{
+		background-color: $color_secondary_darkbrown;
+	}
+}
+
+
 .main-navigation{
-	background-color: rgba(0, 0, 0, 0.2);
+	margin-top: 0;
+	background-color: $color_secondary_darkgray;
 	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
+	height: 80px;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
+	// @include mobile{
+  //   background-color: rgba(0, 0, 0, 0.6);
+	// 	position: fixed;
+	// 	z-index: 100;
+  // }
+
+	.header-logo-image{
+		width: 70px;
+	}
 
 	.menu{
 		li{
 			margin: 2rem 0 2rem 3rem;
 		}
 	}
+	 
 }
+
