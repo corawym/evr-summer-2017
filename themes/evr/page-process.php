@@ -8,9 +8,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area page-process">
-		<main id="main" class="site-main main-process" role="main">
+		<main id="main" class="main-process" role="main">
 
-			<img class="process-hero" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/progress-1.png" alt="Roasting Coffee">
+			<div class="process-hero-banner"></div>
 			
 			<div class="process-text">
 				<h2>We are a bean to bar chocolate maker</h2>
@@ -27,11 +27,9 @@ get_header(); ?>
 					(refine) small batches of chocolate which we temper and make into chocolate 
 					bars or confections.
 				</p>
-			</div>
 
-			<img class="process-chocolate" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gray-icon.png" alt="Chocolate process graphic">
+				<img class="process-chocolate" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gray-icon.png" alt="Chocolate process graphic">
 
-			<div class="process-text">
 				<h2>We use organic fair-trade beans</h2>
 				<p>
 					Working with philanthropic suppliers is very important to us. 
@@ -46,8 +44,8 @@ get_header(); ?>
 				</p>
 			</div>
 
-			<img class="process-cacao" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/progress-2.jpeg" alt="Picture of cacao pods">
-			
+			<div class="cacao-pods-image"></div>
+
 			<div class="process-text">
 				<h2>Our Beans</h2>
 				<ul>

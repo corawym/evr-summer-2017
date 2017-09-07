@@ -542,7 +542,8 @@ a {
     .main-navigation {
       background-color: rgba(0, 0, 0, 0.6);
       position: fixed;
-      z-index: 100; } }
+      z-index: 100;
+      top: 0; } }
   .main-navigation .main-nav-container {
     max-width: 1080px;
     margin: 10px auto;
@@ -658,7 +659,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5rem; }
+  margin: 0; }
 
 .updated:not(.published) {
   display: none; }
@@ -670,11 +671,11 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5rem 0 0; }
+  margin: 0; }
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5rem; }
+  margin: 0; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -880,11 +881,12 @@ object {
     .error-flex .error-content p {
       font-size: 20px; }
 
-.process-hero {
+.process-hero-banner {
   height: 400px;
   width: 100%;
-  object-fit: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  background: url("../../assets/images/progress-1.png");
+  background-size: cover; }
 
 .page-process {
   background: #333;
@@ -892,8 +894,7 @@ object {
   width: 100%; }
 
 .process-text {
-  width: 80%;
-  margin: 0 auto;
+  padding: 0 2rem;
   text-align: center; }
   .process-text h2 {
     padding-bottom: 1rem; }
@@ -904,12 +905,10 @@ object {
 .process-chocolate {
   width: 100%;
   height: 132px;
-  object-fit: contain;
   padding: 1rem 0; }
 
 .process-cacao {
   height: 150px;
-  object-fit: cover;
   width: 100%; }
 
 .location-hero {
