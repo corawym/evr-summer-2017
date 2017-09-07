@@ -27,13 +27,15 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-nav-bg-color main-navigation" role="navigation">
-					<div class="header-logo">
-						<a href="<?php echo home_url() ?>">
-							<img class="header-logo-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/round-logo.png" alt="East Van Roasters's round logo">
-						</a>
+					<div class="main-nav-container">
+						<div class="header-logo">
+							<a href="<?php echo home_url() ?>">
+								<img class="header-logo-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/round-logo.png" alt="East Van Roasters's round logo">
+							</a>
+						</div>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div>
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
