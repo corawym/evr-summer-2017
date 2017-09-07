@@ -27,8 +27,8 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-nav-bg-color main-navigation" role="navigation">
-					<div>
-						<a href="#">
+					<div class="header-logo">
+						<a href="<?php echo home_url() ?>">
 							<img class="header-logo-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/round-logo.png" alt="East Van Roasters's round logo">
 						</a>
 					</div>
