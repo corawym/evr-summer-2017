@@ -9,9 +9,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-      <section class="location-hero container-full">
+      <section class="location-hero-container container-full">
         <div class="location-hero-content container-padding">
-          <h1>location</h1>
+          <h1 class="hero-content-title">location</h1>
+          <p class="hero-content-description">East Van Roasters (319 Carrall Street in the Rainier Hotel) is 
+            a 16-seat specialty cafe and social enterprise of the PHS Community Services Society.</p> 
+          <a class="hero-button" href="#">Learn More <i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></a>
         </div>
       </section>
 
