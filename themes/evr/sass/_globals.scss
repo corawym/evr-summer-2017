@@ -1,8 +1,12 @@
 html {
   font-family: $font__main;
   font-size: $base__font-size;
-  overflow-x: hidden; 
+  // overflow-x: hidden; 
   width: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 i {
