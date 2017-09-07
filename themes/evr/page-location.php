@@ -8,11 +8,12 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<section class="location-hero">
+    <section class="location-hero">
         <h1></h1>
       </section>
+		<main id="main" class="site-main" role="main">
+
+			
 
       <section class="location-evr-info">
         <h2>Location</h2>
