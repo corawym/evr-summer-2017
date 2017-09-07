@@ -8,7 +8,7 @@
 get_header(); ?>
 
     <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
+        <main id="main" class="front-page-main" role="main">
 
         <?php if (have_posts()) : ?>
 
@@ -49,7 +49,9 @@ get_header(); ?>
         </section>
 
         <section class="content-one">
-            <p>Non-profit initiative benefitting the women residents of Rainier Hotel</p>
+            <div class="content-one-div">
+                <p>Non-profit initiative benefitting the women residents of Rainier Hotel</p>
+            </div>
         </section>
 
         <section class="store-hero">
@@ -57,7 +59,7 @@ get_header(); ?>
 
         <section class="content-two">
             <p>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.</p>
-            <p>John Crawford, Eat Magazine</p>
+            <p>John Crawford, <span class="eat">Eat Magazine</span></p>
         </section>
 
         <section class="menu-hero">
