@@ -3,7 +3,10 @@
   // hero banner
   .hero-banner{
     background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/locations.png") center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
 
   // location content style
   .location-evr-partners{
@@ -11,10 +14,7 @@
     color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    // .location-evr-partners-content{
-    //   margin-top: 2rem;
-    //   margin-bottom: 2rem;
-    // }
+    
   }
 
 } // end of .page-id-23
