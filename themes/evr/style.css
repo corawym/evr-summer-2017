@@ -1,9 +1,9 @@
 /*!
-Theme Name: EVR Theme
-Theme URI: https://github.com/redacademy/evr-summer-2017
+Theme Name: RED Starter Theme
+Theme URI: http://underscores.me/
 Author: RED Academy
-Author URI: https://github.com/redacademy/evr-summer-2017
-Description: A WordPress theme for East Van Roasters.
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-EVR Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -222,6 +222,13 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px; }
+
+i {
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -707,16 +714,29 @@ object {
   background-color: #fff;
   text-align: center;
   height: 202px; }
-  .home .subscribe .email {
-    width: 296px;
-    background-color: rgba(155, 155, 155, 0.4);
-    position: relative; }
-  .home .subscribe .sign-up {
-    position: absolute;
-    left: 219px;
-    width: 77px;
-    background-color: #E13404;
-    box-shadow: none; }
+  .home .subscribe .subscribe-form {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto; }
+    .home .subscribe .subscribe-form .email {
+      width: 296px;
+      background-color: rgba(155, 155, 155, 0.4);
+      -ms-flex: 1 1 75%;
+          flex: 1 1 75%;
+      border: none;
+      border-radius: 0; }
+    .home .subscribe .subscribe-form .sign-up {
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+      height: 32px;
+      width: 77px;
+      background-color: #E13404;
+      box-shadow: none;
+      color: #fff;
+      font-weight: 300;
+      border: none;
+      border-radius: 0; }
 
 .footer-site-info {
   opacity: 0.7;
@@ -742,10 +762,11 @@ object {
       cursor: pointer;
       color: #fff;
       margin: 1rem; }
+  .footer-site-info .contact-desktop-only {
+    display: none; }
   .footer-site-info .location-info {
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
     -ms-flex-pack: center;
         justify-content: center;
     margin-left: 8%; }
@@ -755,45 +776,6 @@ object {
       .footer-site-info .location-info .address p,
       .footer-site-info .location-info .biz-hours p {
         font-size: 14px;
-=======
-    -ms-flex-flow: column;
-        flex-flow: column; }
-    .footer-site-info .social-icons {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-      height: 1.27%;
-      margin-top: 2.18%;
-      margin-bottom: 2.13%; }
-      .footer-site-info .social-icons a {
-        cursor: pointer;
-        color: #fff;
-        margin: 1rem; }
-    .footer-site-info .location-info {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      margin-left: 8%; }
-      .footer-site-info .location-info .address,
-      .footer-site-info .location-info .biz-hours {
-        width: 27%; }
-        .footer-site-info .location-info .address p,
-        .footer-site-info .location-info .biz-hours p {
-          font-size: 16px;
-          font-style: italic;
-          font-weight: 300;
-          line-height: .3rem; }
-    .footer-site-info .copyright {
-      margin-bottom: 2%;
-      margin-top: 2.5%; }
-      .footer-site-info .copyright p {
-        text-align: center;
-        font-size: 16px;
->>>>>>> 21e865311ff3840f4d53c2451783415dc695b586
         font-style: italic;
         font-weight: 300;
         line-height: .3rem; }
@@ -809,3 +791,15 @@ object {
       font-weight: 300;
       line-height: .3rem;
       font-size: 12px; }
+
+.not-found {
+  background: url("../../assets/images/404-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 44px;
+  text-align: center; }
+  .not-found p {
+    font-size: 20px; }

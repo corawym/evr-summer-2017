@@ -45,18 +45,28 @@
         background-color: #fff;
         text-align: center;
         height: 202px;
-        .email {
-            width: 296px;
-            background-color: rgba(155,155,155,0.4);
-            position: relative;
-            
-        }
-        .sign-up {
-            position: absolute;
-            left: 219px;
-            width: 77px;
-            background-color: #E13404;
-            box-shadow: none;
+        .subscribe-form {
+            display: flex;
+            max-width: 300px;
+            margin: 0 auto;
+            .email {
+                width: 296px;
+                background-color: rgba(155,155,155,0.4);
+                flex: 1 1 75%;
+                border: none;
+                border-radius: 0;
+            }
+            .sign-up {
+                flex: 1 1 25%;
+                height: 32px;
+                width: 77px;
+                background-color: #E13404;
+                box-shadow: none;
+                color: #fff;
+                font-weight: 300;
+                border: none;
+                border-radius: 0;
+            }
         }
     }
 }

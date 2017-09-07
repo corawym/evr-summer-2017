@@ -22,7 +22,27 @@ get_header(); ?>
             <?php while (have_posts()) :
                 the_post(); ?>
 
-                <?php get_template_part( 'template-parts/content' ); ?>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <header class="entry-header">
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <?php the_post_thumbnail( 'large' ); ?>
+                        <?php endif; ?>
+
+                        <?php 
+                        // the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); 
+                        ?>
+
+                        <?php if ( 'post' === get_post_type() ) : ?>
+                        <div class="entry-meta">
+                            <?php evr_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php evr_posted_by(); ?>
+                        </div><!-- .entry-meta -->
+                        <?php endif; ?>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <?php the_excerpt(); ?>
+                    </div><!-- .entry-content -->
+                </article><!-- #post-## -->
 
                 <section class="main-hero">
                     <h1>East Van Logo</h1>
@@ -45,9 +65,9 @@ get_header(); ?>
         </section>
 
         <section class="subscribe">
-        <h1>Subscribe</h1>
+        <h2>Subscribe</h2>
         <p>Sign up with your email address for exclusive events and products!</p>
-        <form action="subscribe">
+        <form class="subscribe-form" action="subscribe">
             <input class="email" type="email" name="usremail" placeholder="Enter Email">
             <button class="sign-up" type="submit">Sign Up</button>
         </form>

@@ -17,6 +17,10 @@
 							<a><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
 							<a><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
 					</div>
+					<div class="contact-desktop-only">
+						<p><a href="#">Contact Us</a></p>
+						<p><a href="#">Feedback</a></p>
+					</div>
 					<div class="location-info">
 						<div class="address">
 							<p class="info">319 Carrall Street</p>
