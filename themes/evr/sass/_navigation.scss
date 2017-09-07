@@ -164,11 +164,10 @@ a {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	
-	@include mobile{
+	@include desktop{
     background-color: rgba(0, 0, 0, 0.6);
 		position: fixed;
 		z-index: 100;
-		top: 0;
   }
 	.main-nav-container{
 		max-width: 1080px;
@@ -188,7 +187,8 @@ a {
 	
 	.menu-main-menu-container{
 		flex-basis: 85%;
-		display: inline-block;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.menu{

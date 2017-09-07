@@ -11,10 +11,26 @@
         background-position: center;
         background-size: cover;
     }
-    .content-one, .content-two {
+    .content-two {
         height: 116px;
         border: 1px solid #000000;
         background-color: #000000;
+    }
+    .content-one {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100px;
+        background-color: #000000;
+        overflow: hidden;
+        .content-one-div {
+            height: 45px;
+            width: 325px;
+            color: #FFFFFF;
+            font-size: 16.5px;	
+            line-height: 23px;
+            text-align: center;
+        }
     }
     .store-hero {
         height: 337px;
