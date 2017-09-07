@@ -58,8 +58,10 @@ get_header(); ?>
         </section>
 
         <section class="content-two">
-            <p>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.</p>
-            <p>John Crawford, <span class="eat">Eat Magazine</span></p>
+            <div class="content-two-div">
+                <span class="quote1"></span><p>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.</p><span class="quote2"></span>
+                <p>John Crawford,<span class="eat"> Eat Magazine</span></p>
+            </div>
         </section>
 
         <section class="menu-hero">
