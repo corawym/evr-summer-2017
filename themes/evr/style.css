@@ -224,7 +224,9 @@ th {
 --------------------------------------------------------------*/
 html {
   font-family: "Lato", sans-serif;
-  font-size: 16.5px; }
+  font-size: 16.5px;
+  overflow-x: hidden;
+  width: 100%; }
 
 i {
   font-style: italic; }
@@ -659,7 +661,7 @@ a {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5rem; }
+  margin: 0; }
 
 .updated:not(.published) {
   display: none; }
@@ -675,7 +677,7 @@ a {
 
 .page-links {
   clear: both;
-  margin: 0 0 1.5rem; }
+  margin: 0; }
 
 /* Asides */
 .blog .format-aside .entry-title,
