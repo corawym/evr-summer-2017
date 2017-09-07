@@ -256,7 +256,7 @@ h3 {
       font-size: 1.7rem; } }
 
 p {
-  font-weight: 400; }
+  font-weight: 300; }
 
 ul {
   padding-left: 0;
@@ -264,6 +264,9 @@ ul {
 
 li {
   list-style: none; }
+
+a {
+  font-weight: 300; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -941,33 +944,44 @@ object {
   padding-left: 2rem;
   padding-right: 2rem; }
 
-.page-id-23 .location-hero-container {
-  background: url("../../assets/images/locations.png") no-repeat bottom;
+.container-max1080 {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.page-id-23 .hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations.png") center;
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 500px; }
   @media (min-width: 600px) {
-    .page-id-23 .location-hero-container {
+    .page-id-23 .hero-banner {
       position: relative;
       height: 100vh; } }
-  .page-id-23 .location-hero-container .location-hero-content {
+  .page-id-23 .hero-banner .hero-content-container {
     display: none; }
     @media (min-width: 600px) {
-      .page-id-23 .location-hero-container .location-hero-content {
+      .page-id-23 .hero-banner .hero-content-container {
         color: white;
-        display: block;
+        display: inline-block;
         position: absolute;
-        top: 40%;
-        max-width: 800px; } }
-    .page-id-23 .location-hero-container .location-hero-content .hero-content-title {
-      font-size: 5rem;
-      font-weight: 400;
+        bottom: 0;
+        margin-bottom: 5rem;
+        width: 100%; } }
+    .page-id-23 .hero-banner .hero-content-container .hero-content-title {
+      font-size: 4rem;
+      font-weight: 300;
       text-transform: uppercase;
       margin-bottom: 0; }
-    .page-id-23 .location-hero-container .location-hero-content .hero-content-description, .page-id-23 .location-hero-container .location-hero-content .hero-button {
-      font-size: 1.5rem; }
-    .page-id-23 .location-hero-container .location-hero-content .hero-button {
+    .page-id-23 .hero-banner .hero-content-container .hero-content-description, .page-id-23 .hero-banner .hero-content-container .hero-button {
+      font-size: 1.4rem; }
+    .page-id-23 .hero-banner .hero-content-container .hero-content-description {
+      max-width: 800px; }
+    .page-id-23 .hero-banner .hero-content-container .hero-button {
       color: white; }
+      .page-id-23 .hero-banner .hero-content-container .hero-button:hover {
+        color: #e13404; }
 
 .page-id-23 .location-evr-partners {
   background-color: black;
