@@ -544,8 +544,7 @@ a {
     .main-navigation {
       background-color: rgba(0, 0, 0, 0.6);
       position: fixed;
-      z-index: 100;
-      top: 0; } }
+      z-index: 100; } }
   .main-navigation .main-nav-container {
     max-width: 1080px;
     margin: 10px auto;
@@ -565,7 +564,10 @@ a {
   .main-navigation .menu-main-menu-container {
     -ms-flex-preferred-size: 85%;
         flex-basis: 85%;
-    display: inline-block; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
   .main-navigation .menu {
     display: -ms-flexbox;
     display: flex;

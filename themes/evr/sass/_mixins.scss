@@ -18,15 +18,9 @@
 	line-height: 0;
 }
 
-// tablet view
-@mixin mobile {
-  @media (min-width: $mobile-width) {
-    @content;
-  }
-}
 // desktop view
 @mixin desktop {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $mobile-width) {
     @content;
   }
 }
