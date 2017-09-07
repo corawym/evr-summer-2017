@@ -17,3 +17,16 @@
 	font-weight: 300;
 	line-height: .3rem;
 }
+
+// tablet view
+@mixin mobile {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+}
+// desktop view
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
