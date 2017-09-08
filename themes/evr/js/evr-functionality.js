@@ -5,7 +5,9 @@
     windowWidth = $(window).width();
     if (windowWidth < 785) {
       $('#primary-menu').addClass('hide-menu');
+      if ( !$('body').hasClass('home') ) {
       $('#mobile-header').removeClass('mobile-header-title-hidden');
+      }
     } else {
       $('#primary-menu').removeClass('hide-menu');
       $('#mobile-header').addClass('mobile-header-title-hidden');
@@ -16,7 +18,9 @@
   if (windowWidth < 785) {
     $('#primary-menu').addClass('hide-menu');
     $('#menu-item-37 > .sub-menu').addClass('hide-sub-menu');
-    $('#mobile-header').removeClass('mobile-header-title-hidden');
+    if ( !$('body').hasClass('home') ) {
+      $('#mobile-header').removeClass('mobile-header-title-hidden');
+    }
 
     $('#menu-item-37').click(function() {
       var subMenu = $(this).children('.sub-menu');
