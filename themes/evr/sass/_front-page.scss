@@ -2,8 +2,8 @@
 .home {
     .main-hero {
         height: 250px;
-        background: url('../../assets/images/home-page.jpg');
-        background-position: center;
+        background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page.jpg') center;
+        background-repeat: no-repeat;
         background-size: cover;
     }
     .content-one {
@@ -24,8 +24,8 @@
     }
     .store-hero {
         height: 337px;
-        background: url('../../assets/images/home-page-2.jpg');
-        background-position: center;
+        background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-2.jpg') center;
+        background-repeat: no-repeat;
         background-size: cover;
     }
     .content-two {
@@ -52,8 +52,8 @@
     }
     .menu-hero {
         height: 338px;
-        background: url('../../assets/images/home-page-3.png');
-        background-position: center;
+        background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-3.png') center;
+        background-repeat: no-repeat;
         background-size: cover;
         position: relative;
         .front-page-btn {
