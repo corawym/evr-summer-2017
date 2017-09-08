@@ -1023,8 +1023,7 @@ object {
   .error404 .not-found {
     background: url("../../assets/images/404-hero.jpg");
     background-position: center;
-    background-size: cover;
-    margin-top: 1rem; }
+    background-size: cover; }
     .error404 .not-found .error-flex .error-content {
       padding: 2rem;
       height: 450px;
