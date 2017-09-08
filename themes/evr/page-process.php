@@ -37,7 +37,7 @@ get_header(); ?>
 						bars or confections.
 					</p>
 
-					<img class="process-chocolate" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/gray-icon.png" alt="Chocolate process graphic">
+					<img class="process-chocolate" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/gray-icon.svg" alt="Chocolate process graphic">
 
 					<h2>We use organic fair-trade beans</h2>
 					<p>
@@ -59,7 +59,7 @@ get_header(); ?>
 					<h2>Our Beans</h2>
 					<ul>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bean-peru.png" alt="Cacao pod with Peruvian flag">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-dr.svg" alt="Cacao pod with Peruvian flag">
 							<div class="bean-info">
 								<h3>Dominican Republic OKO Caribe</h3>
 								<p>Tasting notes: leathery winey with a bit of nuttiness</p>
@@ -75,7 +75,7 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bean-peru.png" alt="Cacao pod with Peruvian flag">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-guat.svg" alt="Cacao pod with Peruvian flag">
 							<div class="bean-info">
 								<h3>Lachua, Guatemala</h3>
 								<p>Tasting Notes: bright fruit flavour with light acidity and a brown fruit finish</p>
@@ -92,7 +92,7 @@ get_header(); ?>
 						</li>
 						<li>
 							<div class="bean-info">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bean-peru.png" alt="Cacao pod with Peruvian flag">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-mad.svg" alt="Cacao pod with Peruvian flag">
 								<h3>Madagascar</h3>
 								<p>Tasting notes: red berries, lemon and nuts with a bright acidity</p>
 								<span>> More details</span>
@@ -108,7 +108,7 @@ get_header(); ?>
 						</li>
 						<li>
 							<div class="bean-info">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bean-peru.png" alt="Cacao pod with Peruvian flag">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-peru.svg" alt="Cacao pod with Peruvian flag">
 								<h3>Peru</h3>
 								<p>Tasting notes: delicate aroma of banana, black olives, red wine and aged balsamic</p>
 								<span>> More details</span>

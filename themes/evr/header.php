@@ -30,7 +30,7 @@
 					<div class="main-nav-container">
 						<div class="header-logo">
 							<a href="<?php echo home_url() ?>">
-								<img class="header-logo-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/round-logo.png" alt="East Van Roasters's round logo">
+								<img class="header-logo-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-round-logo.svg" alt="East Van Roasters's round logo">
 							</a>
 						</div>
 						<button id="hamburger" class="menu-toggle hamburger" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
