@@ -1,30 +1,22 @@
 (function($) {
   var windowWidth = $(window).width();
 
-  $(window).resize(function() {
+  window.addEventListener( 'resize' ,function() {
     windowWidth = $(window).width();
-    if (windowWidth < 800) {
+    if (windowWidth < 785) {
       $('#primary-menu').addClass('hide-menu');
+      $('#mobile-header').removeClass('mobile-header-title-hidden');
     } else {
       $('#primary-menu').removeClass('hide-menu');
+      $('#mobile-header').addClass('mobile-header-title-hidden');
     }
   });
 
-  if (windowWidth < 800) {
+  // if set to 800 it doesn't work between 800-815. not sure why this is.
+  if (windowWidth < 785) {
     $('#primary-menu').addClass('hide-menu');
     $('#menu-item-37 > .sub-menu').addClass('hide-sub-menu');
-    
-    $('#menu-item-37').hover(function() {
-      event.preventDefault();
-    })
-
-    $('#hamburger').click(function() {
-      if ( $('#primary-menu').hasClass('hide-menu') ) {
-        $('#primary-menu').removeClass('hide-menu');
-      } else {
-        $('#primary-menu').addClass('hide-menu');
-      }
-    })
+    $('#mobile-header').removeClass('mobile-header-title-hidden');
 
     $('#menu-item-37').click(function() {
       var subMenu = $(this).children('.sub-menu');
@@ -37,4 +29,12 @@
   } else {
     $('#primary-menu').removeClass('hide-menu');
   }
+
+  $('#hamburger').click(function() {
+    if ( $('#primary-menu').hasClass('hide-menu') ) {
+      $('#primary-menu').removeClass('hide-menu');
+    } else {
+      $('#primary-menu').addClass('hide-menu');
+    }
+  })
 })(jQuery);
