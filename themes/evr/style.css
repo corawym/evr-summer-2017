@@ -258,7 +258,7 @@ h3 {
       font-size: 1.7rem; } }
 
 p {
-  font-weight: 400; }
+  font-weight: 300; }
 
 ul {
   padding-left: 0;
@@ -266,6 +266,57 @@ ul {
 
 li {
   list-style: none; }
+
+a {
+  font-weight: 300; }
+
+.container-full {
+  width: 100%; }
+
+.container-padding {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.container-max1080 {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container-max8080 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.hero-banner {
+  width: 100%;
+  height: 500px; }
+  @media (min-width: 800px) {
+    .hero-banner {
+      position: relative;
+      height: 100vh; } }
+  .hero-banner .hero-content-container {
+    display: none; }
+    @media (min-width: 800px) {
+      .hero-banner .hero-content-container {
+        color: white;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 5rem;
+        width: 100%; } }
+    .hero-banner .hero-content-container .hero-content-title {
+      font-size: 4rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    .hero-banner .hero-content-container .hero-content-description, .hero-banner .hero-content-container .hero-button {
+      font-size: 1.4rem; }
+    .hero-banner .hero-content-container .hero-content-description {
+      max-width: 800px; }
+    .hero-banner .hero-content-container .hero-button {
+      color: white; }
+      .hero-banner .hero-content-container .hero-button:hover {
+        color: #e13404; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -955,10 +1006,8 @@ object {
       font-size: 20px; }
 
 .process-hero-banner {
-  height: 400px;
-  width: 100%;
-  overflow: hidden;
-  background: url("../../assets/images/progress-1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/progress-1.png") center;
+  background-repeat: no-repeat;
   background-size: cover; }
 
 .page-process {
@@ -984,43 +1033,18 @@ object {
   height: 150px;
   width: 100%; }
 
-.container-full {
-  width: 100%; }
-
-.container-padding {
-  padding-left: 2rem;
-  padding-right: 2rem; }
-
-.page-id-23 .location-hero-container {
-  background: url("../../assets/images/locations.png") no-repeat bottom;
-  background-size: cover;
-  width: 100%;
-  height: 500px; }
-  @media (min-width: 800px) {
-    .page-id-23 .location-hero-container {
-      position: relative;
-      height: 100vh; } }
-  .page-id-23 .location-hero-container .location-hero-content {
-    display: none; }
-    @media (min-width: 800px) {
-      .page-id-23 .location-hero-container .location-hero-content {
-        color: white;
-        display: block;
-        position: absolute;
-        top: 40%;
-        max-width: 800px; } }
-    .page-id-23 .location-hero-container .location-hero-content .hero-content-title {
-      font-size: 5rem;
-      font-weight: 400;
-      text-transform: uppercase;
-      margin-bottom: 0; }
-    .page-id-23 .location-hero-container .location-hero-content .hero-content-description, .page-id-23 .location-hero-container .location-hero-content .hero-button {
-      font-size: 1.5rem; }
-    .page-id-23 .location-hero-container .location-hero-content .hero-button {
-      color: white; }
+.page-id-23 .location-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations.png") center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .page-id-23 .location-evr-partners {
   background-color: black;
   color: white;
   padding-top: 2rem;
   padding-bottom: 2rem; }
+
+.page-template-menu .menu-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover; }
