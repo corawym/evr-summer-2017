@@ -59,12 +59,12 @@ get_header(); ?>
 								$chocolate_items = get_posts( $args ); // returns an array of posts
 							?>
 
-							<?php foreach ( $chocolate_items as $chocolate ) : setup_postdata( $chocolate ); ?>
+							<?php foreach ( $chocolate_items as $post ) : setup_postdata( $post ); ?>
 								
 								<article class="chocolate-items-wrapper">
+									<img src="<?php echo CFS()->get( 'chocolate_image' ); ?>" alt="The picture of<?php echo CFS()->get('chocolate_name'); ?>">
 									<p><?php echo CFS()->get('chocolate_name'); ?></p>
-	                <p><?php echo CFS()->get('chocolate_price'); ?></p> 
-									
+	                <p><?php echo CFS()->get('chocolate_price'); ?></p> 		
 								</article>
 
 							<?php endforeach; wp_reset_postdata(); ?>
