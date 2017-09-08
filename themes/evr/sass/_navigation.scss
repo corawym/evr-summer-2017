@@ -173,6 +173,7 @@ a {
 		margin: 10px auto;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		flex-wrap: wrap;	
 	}
 	.header-logo{
@@ -183,6 +184,20 @@ a {
 			width: 60px;
 			height: 60px;
 		}
+	}
+
+	.hamburger {
+		height: 30px;
+		background: url(../../assets/images/hamburger.svg) no-repeat;
+		background-size: contain;
+		outline: none;
+		border: none;
+		box-shadow: none;
+		padding-right: 2rem;
+	}
+
+	.hide-menu {
+		visibility: hidden;
 	}
 
 	

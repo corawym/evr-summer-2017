@@ -605,6 +605,8 @@ a {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .main-navigation .header-logo {
@@ -615,6 +617,16 @@ a {
     .main-navigation .header-logo .header-logo-image {
       width: 60px;
       height: 60px; }
+  .main-navigation .hamburger {
+    height: 30px;
+    background: url(../../assets/images/hamburger.svg) no-repeat;
+    background-size: contain;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding-right: 2rem; }
+  .main-navigation .hide-menu {
+    visibility: hidden; }
   .main-navigation .menu-main-menu-container {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
