@@ -22,25 +22,33 @@ get_header(); ?>
 			<section class="menu-content-container container-full" id="menu-content">
 				<div class="menu-content container-max1080">
 
-					<section class="menu-content-coffee-container">
-						<div class="menu-content-coffee-intro">
+					<section class="menu-coffee-container container-full">
+						<div class="menu-coffee-content">
 							<h2>From the Coffee Bar</h2>
+							<div class="menu-line"></div>
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Coffer Bar icon">
 							<p>Our single-origin drinking chocolates and espresso drinks are made in house with our freshly roasted beans. All espresso bar drinks are made with organic dairy, almond or soy milk.</p>
+							
+							<!-- Below is coffee bar menu -->
+							<div class="menu-evr-menu-container">
+								<h3 class="menu-section-title"><?php echo CFS()->get('chocolate'); ?></h2>
+							</div>
+
 						</div>
-						<div class="menu-menu-container">
-						</div>
-						<!-- Below is coffee bar menu -->
+						
+						
 					</section>
 
-					<section class="menu-content-chocolate-container">
-						<div class="menu-content-chocolate-intro">
-							<h2>From the Chocolate Lab</h2>
+					<section class="menu-chocolate-container">
+						<div class="menu-chocolate-content">
+							<h2>From the Chocolate Lab</h2><div class="menu-line"></div>
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Chocolate Bar icon">
 							<p>We source and use organic fair-trade and direct-trade cacao beans , processing and handcrafting them in-house to produce finished bars that boast regional flavours from the Dominican Republic, Madagascar and Peru. 
 								Learn more about our bean to bar chocolate making process.</p>
 						</div>
 
 						<!-- Below is the chocolate lab menu -->
-
+						
 
 						
 					</section>

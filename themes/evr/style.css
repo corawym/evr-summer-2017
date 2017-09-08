@@ -1128,3 +1128,22 @@ object {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu/menu.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.page-template-menu .menu-coffee-container, .page-template-menu .menu-chocolate-container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+
+.page-template-menu .menu-coffee-content, .page-template-menu .menu-chocolate-content {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto; }
+
+.page-template-menu .menu-line {
+  border-bottom: 1px solid;
+  margin-bottom: 2rem; }
+
+.menu-coffee-container {
+  background-color: #4a4a4a;
+  color: white; }
+  .menu-coffee-container .menu-line {
+    border-color: white; }
