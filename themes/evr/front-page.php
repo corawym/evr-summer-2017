@@ -46,7 +46,7 @@ get_header(); ?>
 
                 <section class="main-hero">
                     <h1>East Van Logo</h1>
-        </section>
+                </section>
 
         <section class="content-one">
             <div class="content-one-div">
@@ -60,7 +60,7 @@ get_header(); ?>
         <section class="content-two">
             <div class="content-two-div">
                 <span class="quote1"></span><p>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.</p><span class="quote2"></span>
-                <p>John Crawford,<span class="eat"> Eat Magazine</span></p>
+                <p class="author">John Crawford,<span class="eat"> Eat Magazine</span></p>
             </div>
         </section>
 
@@ -69,8 +69,10 @@ get_header(); ?>
         </section>
 
         <section class="subscribe">
-        <h2>Subscribe</h2>
-        <p>Sign up with your email address for exclusive events and products!</p>
+            <div class="subscribe-content">
+                <h2>Subscribe</h2>
+                <p>Sign up with your email address for exclusive events and products!</p>
+            </div>
         <form class="subscribe-form" action="subscribe">
             <input class="email" type="email" name="usremail" placeholder="Enter Email">
             <button class="sign-up" type="submit">Sign Up</button>

@@ -753,10 +753,6 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
 .home .main-hero {
   height: 250px;
   background: url("../../assets/images/home-page.jpg");
@@ -806,6 +802,8 @@ object {
     margin-top: 0; }
     .home .content-two .content-two-div .eat {
       color: red; }
+    .home .content-two .content-two-div .author {
+      margin-top: 0; }
 
 .home .menu-hero {
   height: 338px;
@@ -821,8 +819,10 @@ object {
 
 .home .subscribe {
   background-color: #fff;
-  text-align: center;
-  height: 202px; }
+  height: 202px;
+  margin: 0 5%; }
+  .home .subscribe .subscribe-content {
+    text-align: center; }
   .home .subscribe .subscribe-form {
     display: -ms-flexbox;
     display: flex;
@@ -901,19 +901,21 @@ object {
       line-height: 0;
       font-size: 12px; }
 
-.error-flex {
-  display: -ms-flexbox;
-  display: flex; }
-  .error-flex .error-content {
+.error404 {
+  height: 100vh; }
+  .error404 .not-found {
     background: url("../../assets/images/404-hero.jpg");
     background-position: center;
     background-size: cover;
-    height: 350px;
-    color: #FFFFFF;
-    font-size: 28px;
-    text-align: center; }
-    .error-flex .error-content p {
-      font-size: 20px; }
+    margin-top: 1rem; }
+    .error404 .not-found .error-flex .error-content {
+      padding: 2rem;
+      height: 450px;
+      color: #FFFFFF;
+      font-size: 28px;
+      text-align: center; }
+      .error404 .not-found .error-flex .error-content p {
+        font-size: 20px; }
 
 .process-hero-banner {
   height: 400px;

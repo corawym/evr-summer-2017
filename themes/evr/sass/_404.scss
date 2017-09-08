@@ -1,17 +1,21 @@
-// .not-found {
-    .error-flex {
-        display: flex;
-        .error-content {
-            background: url('../../assets/images/404-hero.jpg');
-            background-position: center;
-            background-size: cover;
-            height: 350px;
-            color: #FFFFFF;
-            font-size: 28px;
-            text-align: center;
-            p {
-                font-size: 20px;
+.error404 {
+    height: 100vh;
+    .not-found {
+        background: url('../../assets/images/404-hero.jpg');
+        background-position: center;
+        background-size: cover;
+        margin-top: 1rem; 
+        .error-flex {
+            .error-content {
+                padding: 2rem;
+                height: 450px;
+                color: #FFFFFF;
+                font-size: 28px;
+                text-align: center;
+                p {
+                    font-size: 20px;
+                }
             }
         }
     }
-
+}
