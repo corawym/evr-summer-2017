@@ -35,6 +35,10 @@
         height: 161px;
         background-color: #000000;
         .content-two-div {
+            .open-quote {
+                background: url('../../assets/images/front-page/open-quote.svg') center;
+                background-size: 50px 25px; 
+            }
             height: 92px;
             width: 325px;
             color: #FFFFFF;	

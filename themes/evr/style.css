@@ -917,6 +917,9 @@ object {
     line-height: 23px;
     text-align: center;
     margin-top: 0; }
+    .home .content-two .content-two-div .open-quote {
+      background: url("../../assets/images/front-page/open-quote.svg") center;
+      background-size: 50px 25px; }
     .home .content-two .content-two-div .eat {
       color: red; }
     .home .content-two .content-two-div .author {
