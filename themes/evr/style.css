@@ -872,8 +872,8 @@ object {
 
 .home .main-hero {
   height: 250px;
-  background: url("../../assets/images/home-page.jpg");
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/front-page/home-page.jpg") center;
+  background-repeat: no-repeat;
   background-size: cover; }
 
 .home .content-one {
@@ -896,8 +896,8 @@ object {
 
 .home .store-hero {
   height: 337px;
-  background: url("../../assets/images/home-page-2.jpg");
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/front-page/home-page-2.jpg") center;
+  background-repeat: no-repeat;
   background-size: cover; }
 
 .home .content-two {
@@ -924,8 +924,8 @@ object {
 
 .home .menu-hero {
   height: 338px;
-  background: url("../../assets/images/home-page-3.png");
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/front-page/home-page-3.png") center;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
   .home .menu-hero .front-page-btn {
@@ -1035,7 +1035,7 @@ object {
         font-size: 20px; }
 
 .process-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/progress-1.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/process/progress-1.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1063,7 +1063,7 @@ object {
   width: 100%; }
 
 .page-id-23 .location-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations/locations.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1074,16 +1074,16 @@ object {
   padding-bottom: 2rem; }
 
 .page-id-38 .pep-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/peer-employment-1.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-1.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .page-id-40 .donate-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate-1.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-1.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .page-template-menu .menu-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu/menu.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
