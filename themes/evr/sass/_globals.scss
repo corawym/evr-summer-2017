@@ -18,20 +18,6 @@ body{
   margin-top: 0;
 }
 
-// Globals - page structure
-.container-full{
-  width: 100%;
-}
-.container-padding{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.container-max1080{
-  max-width: $desktop-width;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 // Globals - font style
 // mobile - header, page title on header
 h1{
@@ -73,6 +59,25 @@ li {
 
 a{
   font-weight: 300;
+}
+
+// Globals - page structure
+.container-full{
+  width: 100%;
+}
+.container-padding{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.container-max1080{
+  max-width: $desktop-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-max8080{
+  max-width: $mobile-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

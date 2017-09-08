@@ -238,18 +238,6 @@ i {
 body {
   margin-top: 0; }
 
-.container-full {
-  width: 100%; }
-
-.container-padding {
-  padding-left: 2rem;
-  padding-right: 2rem; }
-
-.container-max1080 {
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto; }
-
 h1 {
   font-size: 2rem;
   font-weight: 700; }
@@ -282,6 +270,23 @@ li {
 
 a {
   font-weight: 300; }
+
+.container-full {
+  width: 100%; }
+
+.container-padding {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.container-max1080 {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container-max8080 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .hero-banner {
   width: 100%;
