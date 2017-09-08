@@ -996,10 +996,8 @@ object {
       font-size: 20px; }
 
 .process-hero-banner {
-  height: 400px;
-  width: 100%;
-  overflow: hidden;
-  background: url("../../assets/images/progress-1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/progress-1.png") center;
+  background-repeat: no-repeat;
   background-size: cover; }
 
 .page-process {
