@@ -213,7 +213,7 @@ a {
 				background: $color_background_gray;
 			}
 			.menu-item-26 a {
-				background: $color_primary_orange;
+				background: #E75D37;
 			}
 			.menu-item-57 a {
 				background: $color_secondary_brownyellow;
@@ -245,6 +245,13 @@ a {
 			}
 			li:last-child a {
 				border-top: 1px solid $color_secondary_lightbrown;
+			}
+		}
+		.hide-sub-menu {
+			visibility: hidden;
+			li, li a {
+				height: 0;
+				transition: height 0.3s ease-in-out;
 			}
 		}
 	}
