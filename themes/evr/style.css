@@ -225,8 +225,11 @@ th {
 html {
   font-family: "Lato", sans-serif;
   font-size: 16.5px;
-  overflow-x: hidden;
+  letter-spacing: 0.1rem;
   width: 100%; }
+
+* {
+  box-sizing: border-box; }
 
 i {
   font-style: italic; }
@@ -237,25 +240,25 @@ body {
 h1 {
   font-size: 2rem;
   font-weight: 700; }
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     h1 {
       font-size: 3rem; } }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 700; }
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     h2 {
       font-size: 2.4rem; } }
 
 h3 {
   font-size: 1.2rem; }
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     h3 {
       font-size: 1.7rem; } }
 
 p {
-  font-weight: 400; }
+  font-weight: 300; }
 
 ul {
   padding-left: 0;
@@ -263,6 +266,57 @@ ul {
 
 li {
   list-style: none; }
+
+a {
+  font-weight: 300; }
+
+.container-full {
+  width: 100%; }
+
+.container-padding {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.container-max1080 {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container-max8080 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.hero-banner {
+  width: 100%;
+  height: 500px; }
+  @media (min-width: 800px) {
+    .hero-banner {
+      position: relative;
+      height: 100vh; } }
+  .hero-banner .hero-content-container {
+    display: none; }
+    @media (min-width: 800px) {
+      .hero-banner .hero-content-container {
+        color: white;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 5rem;
+        width: 100%; } }
+    .hero-banner .hero-content-container .hero-content-title {
+      font-size: 4rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    .hero-banner .hero-content-container .hero-content-description, .hero-banner .hero-content-container .hero-button {
+      font-size: 1.4rem; }
+    .hero-banner .hero-content-container .hero-content-description {
+      max-width: 800px; }
+    .hero-banner .hero-content-container .hero-button {
+      color: white; }
+      .hero-banner .hero-content-container .hero-button:hover {
+        color: #e13404; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -472,7 +526,7 @@ a {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5rem;
+      top: 3.5rem;
       left: -999rem;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -496,9 +550,10 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
+  display: block;
+  margin-right: 2rem; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -537,10 +592,8 @@ a {
   margin-top: 0;
   background-color: #4a4a4a;
   width: 100%;
-  height: 85px;
-  padding-left: 2rem;
-  padding-right: 2rem; }
-  @media (min-width: 600px) {
+  height: 85px; }
+  @media (min-width: 800px) {
     .main-navigation {
       background-color: rgba(0, 0, 0, 0.6);
       position: fixed;
@@ -552,22 +605,86 @@ a {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .main-navigation .header-logo {
+    padding-left: 2rem;
     height: 60px;
     -ms-flex-preferred-size: 15%;
         flex-basis: 15%; }
     .main-navigation .header-logo .header-logo-image {
       width: 60px;
       height: 60px; }
+  .main-navigation .hamburger {
+    height: 30px;
+    background: url(../../assets/images/hamburger.svg) no-repeat;
+    background-size: contain;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding-right: 2rem; }
+  .main-navigation .hide-menu {
+    visibility: hidden; }
   .main-navigation .menu-main-menu-container {
-    -ms-flex-preferred-size: 85%;
-        flex-basis: 85%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 0.9rem; }
+    @media (min-width: 800px) {
+      .main-navigation .menu-main-menu-container {
+        -ms-flex-preferred-size: 85%;
+            flex-basis: 85%; } }
+    .main-navigation .menu-main-menu-container ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      width: 100%;
+      margin: 0; }
+      @media (min-width: 800px) {
+        .main-navigation .menu-main-menu-container ul {
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+      .main-navigation .menu-main-menu-container ul li {
+        width: 100%;
+        margin: 0; }
+      .main-navigation .menu-main-menu-container ul li a {
+        padding: 1.5rem;
+        text-align: center; }
+      .main-navigation .menu-main-menu-container ul .menu-item-19 a {
+        background: #333; }
+      .main-navigation .menu-main-menu-container ul .menu-item-26 a {
+        background: #E75D37; }
+      .main-navigation .menu-main-menu-container ul .menu-item-57 a {
+        background: #c9a461; }
+      .main-navigation .menu-main-menu-container ul .menu-item-25 a {
+        background: #bda38a; }
+      .main-navigation .menu-main-menu-container ul .menu-item-37 a {
+        background: #563017; }
+    .main-navigation .menu-main-menu-container .sub-menu {
+      background: #917968;
+      width: 100%;
+      margin-top: 1rem; }
+      .main-navigation .menu-main-menu-container .sub-menu li {
+        list-style: none; }
+        .main-navigation .menu-main-menu-container .sub-menu li a {
+          margin: 0 auto;
+          padding: 0.75rem;
+          text-align: center;
+          width: 90%;
+          background: #917968; }
+      .main-navigation .menu-main-menu-container .sub-menu li:first-child a {
+        border-bottom: 1px solid #bda38a; }
+      .main-navigation .menu-main-menu-container .sub-menu li:last-child a {
+        border-top: 1px solid #bda38a; }
+    .main-navigation .menu-main-menu-container .hide-sub-menu {
+      visibility: hidden; }
+      .main-navigation .menu-main-menu-container .hide-sub-menu li, .main-navigation .menu-main-menu-container .hide-sub-menu li a {
+        height: 0;
+        transition: height 0.3s ease-in-out; }
   .main-navigation .menu {
     display: -ms-flexbox;
     display: flex;
@@ -580,10 +697,12 @@ a {
     .main-navigation .menu a {
       color: white;
       font-weight: 400;
-      text-transform: uppercase;
       letter-spacing: 0.08rem; }
       .main-navigation .menu a:hover {
         color: #e13404; }
+      @media (min-width: 800px) {
+        .main-navigation .menu a {
+          text-transform: uppercase; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -918,10 +1037,8 @@ object {
         font-size: 20px; }
 
 .process-hero-banner {
-  height: 400px;
-  width: 100%;
-  overflow: hidden;
-  background: url("../../assets/images/progress-1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/progress-1.png") center;
+  background-repeat: no-repeat;
   background-size: cover; }
 
 .page-process {
@@ -947,12 +1064,28 @@ object {
   height: 150px;
   width: 100%; }
 
-.location-hero {
-  background: url("../../assets/images/locations.png") no-repeat;
-  width: 100%;
-  height: 400px; }
+.page-id-23 .location-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations.png") center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.site-main {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center; }
+.page-id-23 .location-evr-partners {
+  background-color: black;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.page-id-38 .pep-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/peer-employment-1.png") center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.page-id-40 .donate-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate-1.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.page-template-menu .menu-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover; }

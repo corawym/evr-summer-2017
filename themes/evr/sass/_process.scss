@@ -1,10 +1,20 @@
-.process-hero-banner {
-  height: 400px;
-  width: 100%;
-  overflow: hidden;
-  background: url('../../assets/images/progress-1.png');
+
+// Process page style
+
+// hero banner
+.process-hero-banner{
+  background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/progress-1.png") center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
+
+// .process-hero-banner {
+//   height: 400px;
+//   width: 100%;
+//   overflow: hidden;
+//   background: url('../../assets/images/progress-1.png');
+//   background-size: cover;
+// }
 
 .page-process {
   background: $color_background_gray;
