@@ -700,28 +700,29 @@ a {
       @media (min-width: 800px) {
         .main-navigation .menu-main-menu-container ul.menu .menu-item-37 a {
           background-color: transparent; } }
-    .main-navigation .menu-main-menu-container .sub-menu {
+    .main-navigation .menu-main-menu-container ul.menu .sub-menu {
       background: #917968;
       width: 100%;
       margin-top: 1rem; }
       @media (min-width: 800px) {
-        .main-navigation .menu-main-menu-container .sub-menu {
+        .main-navigation .menu-main-menu-container ul.menu .sub-menu {
           margin-top: 0.6rem; } }
-      .main-navigation .menu-main-menu-container .sub-menu li {
-        list-style: none; }
-        .main-navigation .menu-main-menu-container .sub-menu li a {
+      .main-navigation .menu-main-menu-container ul.menu .sub-menu li {
+        list-style: none;
+        background: #917968; }
+        .main-navigation .menu-main-menu-container ul.menu .sub-menu li a {
           margin: 0 auto;
           padding: 0.75rem;
           text-align: center;
           width: 90%;
           background: #917968; }
-      .main-navigation .menu-main-menu-container .sub-menu li:first-child a {
+      .main-navigation .menu-main-menu-container ul.menu .sub-menu li:first-child a {
         border-bottom: 1px solid #bda38a; }
-      .main-navigation .menu-main-menu-container .sub-menu li:last-child a {
+      .main-navigation .menu-main-menu-container ul.menu .sub-menu li:last-child a {
         border-top: 1px solid #bda38a; }
-    .main-navigation .menu-main-menu-container .hide-sub-menu {
+    .main-navigation .menu-main-menu-container ul.menu .hide-sub-menu {
       visibility: hidden; }
-      .main-navigation .menu-main-menu-container .hide-sub-menu li, .main-navigation .menu-main-menu-container .hide-sub-menu li a {
+      .main-navigation .menu-main-menu-container ul.menu .hide-sub-menu li, .main-navigation .menu-main-menu-container ul.menu .hide-sub-menu li a {
         height: 0;
         transition: height 0.3s ease-in-out; }
   .main-navigation .menu {

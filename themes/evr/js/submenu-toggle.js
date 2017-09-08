@@ -1,5 +1,16 @@
 (function($) {
-  if ($(window).width() < 800) {
+  var windowWidth = $(window).width();
+
+  $(window).resize(function() {
+    windowWidth = $(window).width();
+    if (windowWidth < 800) {
+      $('#primary-menu').addClass('hide-menu');
+    } else {
+      $('#primary-menu').removeClass('hide-menu');
+    }
+  });
+
+  if (windowWidth < 800) {
     $('#primary-menu').addClass('hide-menu');
     $('#menu-item-37 > .sub-menu').addClass('hide-sub-menu');
     
@@ -23,5 +34,7 @@
         $(subMenu).addClass('hide-sub-menu');
       }
     });
+  } else {
+    $('#primary-menu').removeClass('hide-menu');
   }
 })(jQuery);
