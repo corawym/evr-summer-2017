@@ -281,7 +281,7 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
-.container-max8080 {
+.container-max800 {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
@@ -316,6 +316,27 @@ a {
       color: white; }
       .hero-banner .hero-content-container .hero-button:hover {
         color: #e13404; }
+
+.button-border {
+  margin: 2.5rem; }
+  .button-border .border1, .button-border .border2 {
+    display: inline-block;
+    width: 170px;
+    height: 55px;
+    border: 2px solid white; }
+    .button-border .border1:hover, .button-border .border2:hover {
+      border-color: #e13404; }
+  .button-border .border1 {
+    position: relative; }
+  .button-border .border2 {
+    position: absolute;
+    top: 5px;
+    left: 5px; }
+  .button-border a {
+    line-height: 45px;
+    color: white; }
+    .button-border a:hover {
+      color: #e13404; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -1119,6 +1140,20 @@ object {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.page-section-padding-top-bottom {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
+
+.page-id-42 .volunteer-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/volunteer/volunteer.png") center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.page-id-42 .volunteer-container {
+  background-color: #4a4a4a;
+  color: white;
+  text-align: center; }
+
 .page-id-40 .donate-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-1.jpg") center;
   background-repeat: no-repeat;
@@ -1134,9 +1169,11 @@ object {
   padding-bottom: 2.5rem; }
 
 .page-template-menu .menu-coffee-content, .page-template-menu .menu-chocolate-content, .page-template-menu .menu-location {
-  max-width: 400px;
+  max-width: 800px;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 5rem;
+  padding-right: 5rem; }
 
 .page-template-menu .menu-line {
   border-bottom: 1px solid;

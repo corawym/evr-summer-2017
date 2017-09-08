@@ -72,7 +72,7 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
-.container-max8080{
+.container-max800{
   max-width: $mobile-width;
   margin-left: auto;
   margin-right: auto;
@@ -81,7 +81,6 @@ a{
 
 // Top hero banner style 
 .hero-banner{
-  
   width: 100%;
   height: 500px;
   @include desktop{
@@ -119,4 +118,31 @@ a{
   }
 } // end of .hero-banner
 
-
+// Button border - white
+.button-border{
+  margin: 2.5rem;
+  .border1, .border2{
+    display: inline-block;
+    width: 170px;
+    height: 55px;
+    border: 2px solid white;
+    &:hover{
+      border-color: $color_primary_orange;
+    }
+  }
+  .border1{
+    position: relative;
+  }
+  .border2{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  a{
+    line-height: 45px;
+    color: white;
+    &:hover{
+      color: $color_primary_orange;
+    }
+  }
+}
