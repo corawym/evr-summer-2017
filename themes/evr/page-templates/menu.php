@@ -22,17 +22,27 @@ get_header(); ?>
 			<section class="menu-content-container container-full" id="menu-content">
 				<div class="menu-content container-max1080">
 
-					<section class="menu-content-coffee">
-						<h2>From the Coffee Bar</h2>
-						<p>Our single-origin drinking chocolates and espresso drinks are made in house with our freshly roasted beans. All espresso bar drinks are made with organic dairy, almond or soy milk.</p>
+					<section class="menu-content-coffee-container">
+						<div class="menu-content-coffee-intro">
+							<h2>From the Coffee Bar</h2>
+							<p>Our single-origin drinking chocolates and espresso drinks are made in house with our freshly roasted beans. All espresso bar drinks are made with organic dairy, almond or soy milk.</p>
+						</div>
+						<div class="menu-menu-container">
+						</div>
 						<!-- Below is coffee bar menu -->
 					</section>
 
-					<section class="menu-content-chocolate">
-						<h2>From the Chocolate Lab</h2>
-						<p>We source and use organic fair-trade and direct-trade cacao beans , processing and handcrafting them in-house to produce finished bars that boast regional flavours from the Dominican Republic, Madagascar and Peru. 
-							Learn more about our bean to bar chocolate making process.</p>
+					<section class="menu-content-chocolate-container">
+						<div class="menu-content-chocolate-intro">
+							<h2>From the Chocolate Lab</h2>
+							<p>We source and use organic fair-trade and direct-trade cacao beans , processing and handcrafting them in-house to produce finished bars that boast regional flavours from the Dominican Republic, Madagascar and Peru. 
+								Learn more about our bean to bar chocolate making process.</p>
+						</div>
+
 						<!-- Below is the chocolate lab menu -->
+
+
+						
 					</section>
 				</div>
 			</section><!-- end of .menu-content-container-->
