@@ -37,23 +37,47 @@ get_header(); ?>
 						</div>
 						
 						
-					</section>
+					</section><!-- end of .menu-coffee-container -->
 
 					<section class="menu-chocolate-container">
 						<div class="menu-chocolate-content">
 							<h2>From the Chocolate Lab</h2><div class="menu-line"></div>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Chocolate Bar icon">
 							<p>We source and use organic fair-trade and direct-trade cacao beans , processing and handcrafting them in-house to produce finished bars that boast regional flavours from the Dominican Republic, Madagascar and Peru. 
-								Learn more about our bean to bar chocolate making process.</p>
+								Learn more about our bean to <span><a href="#">bar chocolate making process.</a></span></p>
 						</div>
 
-						<!-- Below is the chocolate lab menu -->
-						
+						<!-- Below is the chocolate lab items -->
+						<div class="menu-chocolate-grid">
+							<?php
+								$args = array( 
+									'post_type' => 'chocolate', 
+									'posts_per_page' => 4, 
+									'orderby' => 'date',
+									'order' => 'ASC'
+									);
+								$chocolate_items = get_posts( $args ); // returns an array of posts
+							?>
 
-						
-					</section>
+							<?php foreach ( $chocolate_items as $post ) : setup_postdata( $post ); ?>
+								
+								<article class="chocolate-items-wrapper">
+									<img src="<?php echo CFS()->get( 'chocolate_image' ); ?>" alt="The picture of<?php echo CFS()->get('chocolate_name'); ?>">
+									<p><?php echo CFS()->get('chocolate_name'); ?></p>
+	                <p><?php echo CFS()->get('chocolate_price'); ?></p> 		
+								</article>
+
+							<?php endforeach; wp_reset_postdata(); ?>
+
+						</div>
+					</section><!-- end of .menu-chocolate-container -->
+
 				</div>
-			</section><!-- end of .menu-content-container-->
+			</section><!-- end of .menu-content-container -->
+
+			<section class="menu-location">
+				<p>Our chocolate and coffee beans can also be found at a select few <span><a href="#">locations</a></span> in Vancouver.</p>
+			</section>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->

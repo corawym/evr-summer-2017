@@ -1158,7 +1158,7 @@ object {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
 
-.page-template-menu .menu-coffee-content, .page-template-menu .menu-chocolate-content {
+.page-template-menu .menu-coffee-content, .page-template-menu .menu-chocolate-content, .page-template-menu .menu-location {
   max-width: 400px;
   text-align: center;
   margin: 0 auto; }
@@ -1172,3 +1172,13 @@ object {
   color: white; }
   .menu-coffee-container .menu-line {
     border-color: white; }
+
+.menu-chocolate-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  .menu-chocolate-grid .chocolate-items-wrapper {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 1rem; }

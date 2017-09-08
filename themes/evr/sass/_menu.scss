@@ -11,7 +11,7 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
-  .menu-coffee-content, .menu-chocolate-content{
+  .menu-coffee-content, .menu-chocolate-content, .menu-location{
     max-width: 400px;
     text-align: center; 
     margin: 0 auto;
@@ -33,3 +33,11 @@
 }
 
 // Chocolate Lab style
+.menu-chocolate-grid{
+  display: flex;
+  flex-wrap: nowrap;
+  .chocolate-items-wrapper{
+    flex-basis: 50%;
+    padding: 1rem;
+  }
+}
