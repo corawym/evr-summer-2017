@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<div class="error-flex">
-					<div class="error-content11">
+					<div class="error-content">
 						<h1>404</h1>
 						<p>Oops.</p>
 						<p>We can't seem to find the page you're looking for.</p>

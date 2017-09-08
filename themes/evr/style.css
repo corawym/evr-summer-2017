@@ -870,20 +870,11 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
 .home .main-hero {
   height: 250px;
   background: url("../../assets/images/home-page.jpg");
   background-position: center;
   background-size: cover; }
-
-.home .content-two {
-  height: 116px;
-  border: 1px solid #000000;
-  background-color: #000000; }
 
 .home .content-one {
   display: -ms-flexbox;
@@ -892,16 +883,16 @@ object {
       justify-content: center;
   -ms-flex-align: start;
       align-items: flex-start;
-  height: 100px;
-  background-color: #000000;
-  overflow: hidden; }
+  height: 116px;
+  background-color: #000000; }
   .home .content-one .content-one-div {
     height: 45px;
     width: 325px;
     color: #FFFFFF;
     font-size: 16.5px;
     line-height: 23px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0; }
 
 .home .store-hero {
   height: 337px;
@@ -910,7 +901,26 @@ object {
   background-size: cover; }
 
 .home .content-two {
-  height: 161px; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  height: 161px;
+  background-color: #000000; }
+  .home .content-two .content-two-div {
+    height: 92px;
+    width: 325px;
+    color: #FFFFFF;
+    font-size: 16.5px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 0; }
+    .home .content-two .content-two-div .eat {
+      color: red; }
+    .home .content-two .content-two-div .author {
+      margin-top: 0; }
 
 .home .menu-hero {
   height: 338px;
@@ -926,8 +936,10 @@ object {
 
 .home .subscribe {
   background-color: #fff;
-  text-align: center;
-  height: 202px; }
+  height: 202px;
+  margin: 0 5%; }
+  .home .subscribe .subscribe-content {
+    text-align: center; }
   .home .subscribe .subscribe-form {
     display: -ms-flexbox;
     display: flex;
@@ -1006,19 +1018,21 @@ object {
       line-height: 0;
       font-size: 12px; }
 
-.error-flex {
-  display: -ms-flexbox;
-  display: flex; }
-  .error-flex .error-content {
+.error404 {
+  height: 100vh; }
+  .error404 .not-found {
     background: url("../../assets/images/404-hero.jpg");
     background-position: center;
     background-size: cover;
-    height: 350px;
-    color: #FFFFFF;
-    font-size: 28px;
-    text-align: center; }
-    .error-flex .error-content p {
-      font-size: 20px; }
+    margin-top: 1rem; }
+    .error404 .not-found .error-flex .error-content {
+      padding: 2rem;
+      height: 450px;
+      color: #FFFFFF;
+      font-size: 28px;
+      text-align: center; }
+      .error404 .not-found .error-flex .error-content p {
+        font-size: 20px; }
 
 .process-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/progress-1.png") center;
