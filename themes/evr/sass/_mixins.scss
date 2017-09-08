@@ -24,3 +24,15 @@
     @content;
   }
 }
+
+@mixin desktop-dark-transparent {
+	@media (min-width: $mobile-width) {
+		background-color: rgba(0,0,0,.6);
+  }
+}
+
+@mixin desktop-transparent {
+	@media (min-width: $mobile-width) {
+		background-color: transparent;
+  }
+}

@@ -138,6 +138,7 @@ a {
 .page-id-21{
 	.main-nav-bg-color{
 		background-color: $color_primary_orange;
+		@include desktop-dark-transparent;
 	}
 }
 // workshop page
@@ -147,12 +148,14 @@ a {
 .page-id-23{
 	.main-nav-bg-color{
 		background-color: $color_secondary_lightbrown;
+		@include desktop-dark-transparent;
 	}
 }
 // pep page, donate page, volunteer page
 .page-id-38, .page-id-40, .page-id-42{
 	.main-nav-bg-color{
 		background-color: $color_secondary_darkbrown;
+		@include desktop-dark-transparent;
 	}
 }
 
@@ -162,11 +165,11 @@ a {
 	background-color: $color_secondary_darkgray;
 	width: 100%;
 	height: 85px;
-	
 	@include desktop{
     background-color: rgba(0, 0, 0, 0.6);
 		position: fixed;
 		z-index: 100;
+		height: 100px;
   }
 	.main-nav-container{
 		max-width: 1080px;
@@ -175,6 +178,10 @@ a {
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;	
+		@include desktop {
+			height: 100%;
+			margin: 0 auto;
+		}
 	}
 	.header-logo{
 		padding-left: 2rem;
@@ -206,6 +213,7 @@ a {
 		margin-top: 0.9rem;
 		@include desktop {
 			flex-basis: 85%;
+			margin-top: 0;
 		}
 		ul {
 			display: flex;
@@ -213,55 +221,74 @@ a {
 			justify-content: center;
 			width: 100%;
 			margin: 0;
-			@include desktop {
-				flex-direction: row;
-			}
-			li {
-				width: 100%;
-				margin: 0;
-			}
-			li a {
-				padding: 1.5rem;
-				text-align: center;
-			}
-			.menu-item-19 a {
-				background: $color_background_gray;
-			}
-			.menu-item-26 a {
-				background: #E75D37;
-			}
-			.menu-item-57 a {
-				background: $color_secondary_brownyellow;
-			}
-			.menu-item-25 a {
-				background: $color_secondary_lightbrown;
-			}
-			.menu-item-37 a {
-				background: $color_secondary_darkbrown;
-			}
 		}
-		.sub-menu {
-			background: #917968;
+		ul.menu {
+		@include desktop {
+			flex-direction: row;
+			justify-content: space-between;
+			padding-left: 3rem;
+		}
+		li {
 			width: 100%;
-			margin-top: 1rem;
-			
-			li {
-				list-style: none;
-				a {
-					margin: 0 auto;
-					padding: 0.75rem;
-					text-align: center;
-					width: 90%;
-					background: #917968;
-				}
-			}
-			li:first-child a {
-				border-bottom: 1px solid $color_secondary_lightbrown;
-			}
-			li:last-child a {
-				border-top: 1px solid $color_secondary_lightbrown;
+			margin: 0;
+			@include desktop {
+				width: auto;
 			}
 		}
+		li a {
+			padding: 1.5rem;
+			text-align: center;
+			@include desktop {
+				padding: 0.2rem;
+			}
+		}
+		.menu-item-19 a {
+			background: $color_background_gray;
+			@include desktop-transparent;
+		}
+		.menu-item-26 a {
+			background: #E75D37;
+			@include desktop-transparent;
+		}
+		.menu-item-57 a {
+			background: $color_secondary_brownyellow;
+			@include desktop-transparent;
+		}
+		.menu-item-25 a {
+			background: $color_secondary_lightbrown;
+			@include desktop-transparent;
+		}
+		.menu-item-37 a {
+			background: $color_secondary_darkbrown;
+			@include desktop-transparent;
+		}
+
+	}
+	.sub-menu {
+		background: #917968;
+		width: 100%;
+		margin-top: 1rem;
+		@include desktop {
+			margin-top: 0.6rem;
+		}
+		
+		li {
+			list-style: none;
+			a {
+				margin: 0 auto;
+				padding: 0.75rem;
+				text-align: center;
+				width: 90%;
+				background: #917968;
+			}
+		}
+		li:first-child a {
+			border-bottom: 1px solid $color_secondary_lightbrown;
+		}
+		li:last-child a {
+			border-top: 1px solid $color_secondary_lightbrown;
+		}
+	}
 		.hide-sub-menu {
 			visibility: hidden;
 			li, li a {

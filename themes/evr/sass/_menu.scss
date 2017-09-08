@@ -6,7 +6,30 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-
-  // location content style
-
+  // location content style - globals
+  .menu-coffee-container, .menu-chocolate-container{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .menu-coffee-content, .menu-chocolate-content{
+    max-width: 400px;
+    text-align: center; 
+    margin: 0 auto;
+  }
+  .menu-line{
+    border-bottom: 1px solid;
+    margin-bottom: 2rem;
+  }
 } // end of .page-template-menu
+
+// Coffee Bar style
+.menu-coffee-container{
+  background-color: $color_secondary_darkgray;
+  color: white;
+  
+  .menu-line{
+    border-color: white;
+  }
+}
+
+// Chocolate Lab style
