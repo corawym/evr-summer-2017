@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="hero-banner container-full">
+			<section class="hero-banner menu-hero-banner container-full">
         <div class="hero-content-container container-padding">
           <div class="hero-content container-max1080">
             <h1 class="hero-content-title">menu</h1>

@@ -1025,7 +1025,7 @@ object {
   height: 150px;
   width: 100%; }
 
-.page-id-23 .hero-banner {
+.page-id-23 .location-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -1035,3 +1035,8 @@ object {
   color: white;
   padding-top: 2rem;
   padding-bottom: 2rem; }
+
+.page-template-menu .menu-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover; }
