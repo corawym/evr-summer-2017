@@ -164,7 +164,7 @@ a {
 	margin-top: 0;
 	background-color: $color_secondary_darkgray;
 	width: 100%;
-	height: 85px;
+	height: 76px;
 	@include desktop{
     background-color: rgba(0, 0, 0, 0.6);
 		position: fixed;
@@ -186,10 +186,17 @@ a {
 	.header-logo{
 		padding-left: 2rem;
 		height: 60px;
+		width: 60px;
 		flex-basis: 15%;
 		.header-logo-image{
-			width: 60px;
-			height: 60px;
+			width: 50px;
+			height: 50px;
+			margin-top: .2rem;
+			@include desktop {
+				margin-top: 0;
+				width: 60px;
+				height: 60px;
+			}
 		}
 	}
 
@@ -201,6 +208,7 @@ a {
 		border: none;
 		box-shadow: none;
 		padding-right: 2rem;
+		margin-bottom: 0.2rem;
 	}
 
 	.mobile-header-title {
@@ -220,7 +228,7 @@ a {
 	
 	.menu-main-menu-container{
 		flex-basis: 100%;
-		margin-top: 0.9rem;
+		margin-top: 0.4rem;
 		@include desktop {
 			flex-basis: 85%;
 			margin-top: 0;
@@ -355,5 +363,11 @@ a {
 		}
 	}
 	 
+}
+
+.page-id-38 .main-navigation {
+	.mobile-header-title {
+		font-size: .9rem;
+	}
 }
 
