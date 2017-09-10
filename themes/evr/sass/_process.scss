@@ -25,12 +25,22 @@
 .process-text {
   padding: 0 2rem;
   text-align: center;
+  
   h2 {
     padding-bottom: 1rem;
+    padding-top: 3rem;
   }
   ul {
-    padding-bottom: 2rem;
     margin-bottom: 0;
+    padding-bottom: 3rem;
+    li {
+      h4 {
+        margin-bottom: 0;
+      }
+      p {
+        margin-top: 0;
+      }
+    }
   }
 }
 
@@ -53,7 +63,6 @@
   background: url(../../assets/images/process/progress-2.jpeg);
   background-size: cover;
   height: 300px;
-  padding-top: 2rem;
 }
 
 .hidden-bean-info {
@@ -76,5 +85,52 @@
   }
   &:visited {
     color: white;
+  }
+}
+
+@include desktop {
+  .process-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .process-text ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    li {
+      border: 0.5px solid white;
+      border-radius: 5px;
+      width: 45%;
+      padding: 2rem;
+      height: auto;
+      h3 {
+        text-align: center;
+        font-size: 1.3rem;
+      }
+      .hidden-bean-info {
+        visibility: visible;
+        max-height: none;
+      }
+      .more-details {
+        display: none;
+      }
+    }
+    li:first-child {
+      margin-right: 5%;
+      margin-bottom: 5%;
+    }
+    li:nth-child(2) {
+      margin-left: 5%;
+      margin-bottom: 5%;
+    }
+    li:nth-child(3) {
+      margin-right: 5%;
+      margin-top: 5%;
+    }
+    li:nth-child(4) {
+      margin-left: 5%;
+      margin-top: 5%;
+    }
   }
 }

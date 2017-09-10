@@ -1143,10 +1143,15 @@ object {
   padding: 0 2rem;
   text-align: center; }
   .process-text h2 {
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    padding-top: 3rem; }
   .process-text ul {
-    padding-bottom: 2rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-bottom: 3rem; }
+    .process-text ul li h4 {
+      margin-bottom: 0; }
+    .process-text ul li p {
+      margin-top: 0; }
 
 .bean-info {
   text-align: left; }
@@ -1163,8 +1168,7 @@ object {
 .cacao-pods-image {
   background: url(../../assets/images/process/progress-2.jpeg);
   background-size: cover;
-  height: 300px;
-  padding-top: 2rem; }
+  height: 300px; }
 
 .hidden-bean-info {
   visibility: hidden;
@@ -1183,6 +1187,44 @@ object {
     content: "> "; }
   .more-details:visited {
     color: white; }
+
+@media (min-width: 800px) {
+  .process-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0; }
+  .process-text ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto; }
+    .process-text ul li {
+      border: 0.5px solid white;
+      border-radius: 5px;
+      width: 45%;
+      padding: 2rem;
+      height: auto; }
+      .process-text ul li h3 {
+        text-align: center;
+        font-size: 1.3rem; }
+      .process-text ul li .hidden-bean-info {
+        visibility: visible;
+        max-height: none; }
+      .process-text ul li .more-details {
+        display: none; }
+    .process-text ul li:first-child {
+      margin-right: 5%;
+      margin-bottom: 5%; }
+    .process-text ul li:nth-child(2) {
+      margin-left: 5%;
+      margin-bottom: 5%; }
+    .process-text ul li:nth-child(3) {
+      margin-right: 5%;
+      margin-top: 5%; }
+    .process-text ul li:nth-child(4) {
+      margin-left: 5%;
+      margin-top: 5%; } }
 
 .page-id-23 .location-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations/locations.png") center;
