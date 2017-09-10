@@ -20,7 +20,7 @@ get_header(); ?>
       </section>
 
 			<section class="menu-content-container container-full" id="menu-content">
-				<div class="menu-content container-max1080">
+				<div class="menu-content container-full">
 
 					<section class="menu-coffee-container container-full">
 						<div class="menu-coffee-content">
@@ -60,13 +60,11 @@ get_header(); ?>
 							?>
 
 							<?php foreach ( $chocolate_items as $post ) : setup_postdata( $post ); ?>
-								
-								<article class="chocolate-items-wrapper">
-									<img src="<?php echo CFS()->get( 'chocolate_image' ); ?>" alt="The picture of<?php echo CFS()->get('chocolate_name'); ?>">
-									<p><?php echo CFS()->get('chocolate_name'); ?></p>
-	                <p><?php echo CFS()->get('chocolate_price'); ?></p> 		
+							<article class="chocolate-items-wrapper">
+								<img class="chocolate-items-image" src="<?php echo CFS()->get( 'chocolate_image' ); ?>">
+								<p class="chocolate-name"><?php echo CFS()->get('chocolate_name'); ?></p>
+								<p class="chocolate-price"><?php echo CFS()->get('chocolate_price'); ?></p>
 								</article>
-
 							<?php endforeach; wp_reset_postdata(); ?>
 
 						</div>
