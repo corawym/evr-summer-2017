@@ -20,7 +20,7 @@ get_header(); ?>
         </div>
       </section>
 			
-			<section id="process-content">
+			<section id="process-content scroll-to">
 				<div class="process-text">
 					<h2>We are a bean to bar chocolate maker</h2>
 					<p>

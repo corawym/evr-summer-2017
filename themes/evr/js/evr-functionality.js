@@ -73,4 +73,19 @@
       $('#hidden-bean-info-4').addClass('show-bean-info');
     }
   })
+
+  $('.hero-banner a.hero-button').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top-160
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+
 })(jQuery);
