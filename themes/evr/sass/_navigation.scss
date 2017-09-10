@@ -282,11 +282,18 @@ a {
 		}
 
 		@include desktop {
+			//transition stuff. keep playing.
+			// .sub-menu {
+			// 	max-height: 100px;
+			// 	transition: max-height 0.2s ease-in-out;
+			// 	transition-delay: 0.1s;
+			// }
 			.menu-item-37:hover {
 				.sub-menu {
 					position: absolute;
 					top: 0.1rem;
 					left: -2rem;
+					// max-height: 200px;
 				}
 			}
 		}
@@ -333,10 +340,6 @@ a {
 	}
 		.hide-sub-menu {
 			visibility: hidden;
-			li, li a {
-				height: 0;
-				transition: height 0.3s ease-in-out;
-			}
 		}
 	}
 	}

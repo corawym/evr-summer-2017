@@ -776,9 +776,6 @@ a {
             border-top: 1px solid #979797; } }
     .main-navigation .menu-main-menu-container ul.menu .hide-sub-menu {
       visibility: hidden; }
-      .main-navigation .menu-main-menu-container ul.menu .hide-sub-menu li, .main-navigation .menu-main-menu-container ul.menu .hide-sub-menu li a {
-        height: 0;
-        transition: height 0.3s ease-in-out; }
   .main-navigation .menu {
     display: -ms-flexbox;
     display: flex;
@@ -1147,6 +1144,9 @@ object {
   text-align: center; }
   .process-text h2 {
     padding-bottom: 1rem; }
+  .process-text ul {
+    padding-bottom: 2rem;
+    margin-bottom: 0; }
 
 .bean-info {
   text-align: left; }
@@ -1159,6 +1159,30 @@ object {
 .process-cacao {
   height: 150px;
   width: 100%; }
+
+.cacao-pods-image {
+  background: url(../../assets/images/process/progress-2.jpeg);
+  background-size: cover;
+  height: 300px;
+  padding-top: 2rem; }
+
+.hidden-bean-info {
+  visibility: hidden;
+  max-height: 0px;
+  transition: max-height 0.3s ease-in-out; }
+
+.show-bean-info {
+  max-height: 200px;
+  visibility: visible; }
+
+.more-details {
+  color: white;
+  text-decoration: none;
+  cursor: pointer; }
+  .more-details:before {
+    content: "> "; }
+  .more-details:visited {
+    color: white; }
 
 .page-id-23 .location-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations/locations.png") center;

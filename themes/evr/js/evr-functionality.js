@@ -41,4 +41,36 @@
       $('#primary-menu').addClass('hide-menu');
     }
   })
+
+  $('#more-details-1').click(function() {
+    if ( $('#hidden-bean-info-1').hasClass('show-bean-info') ) {
+      $('#hidden-bean-info-1').removeClass('show-bean-info');
+    } else {
+      $('#hidden-bean-info-1').addClass('show-bean-info');
+    }
+  })
+
+  $('#more-details-2').click(function() {
+    if ( $('#hidden-bean-info-2').hasClass('show-bean-info') ) {
+      $('#hidden-bean-info-2').removeClass('show-bean-info');
+    } else {
+      $('#hidden-bean-info-2').addClass('show-bean-info');
+    }
+  })
+
+  $('#more-details-3').click(function() {
+    if ( $('#hidden-bean-info-3').hasClass('show-bean-info') ) {
+      $('#hidden-bean-info-3').removeClass('show-bean-info');
+    } else {
+      $('#hidden-bean-info-3').addClass('show-bean-info');
+    }
+  })
+
+  $('#more-details-4').click(function() {
+    if ( $('#hidden-bean-info-4').hasClass('show-bean-info') ) {
+      $('#hidden-bean-info-4').removeClass('show-bean-info');
+    } else {
+      $('#hidden-bean-info-4').addClass('show-bean-info');
+    }
+  })
 })(jQuery);

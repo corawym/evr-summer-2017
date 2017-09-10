@@ -63,8 +63,8 @@ get_header(); ?>
 							<div class="bean-info">
 								<h3>Dominican Republic OKO Caribe</h3>
 								<p>Tasting notes: leathery winey with a bit of nuttiness</p>
-								<span>> More details</span>
-								<div id="hidden-bean-info-dr">
+								<a id="more-details-1" class="more-details">More details</a>
+								<div id="hidden-bean-info-1" class="hidden-bean-info">
 									<p>Region: Ambanja, Diana Region</p>
 									<p>Climate: hot and dry</p>
 									<p>
@@ -79,8 +79,8 @@ get_header(); ?>
 							<div class="bean-info">
 								<h3>Lachua, Guatemala</h3>
 								<p>Tasting Notes: bright fruit flavour with light acidity and a brown fruit finish</p>
-								<span>> More details</span>
-								<div id="hidden-bean-info-guat">
+								<a id="more-details-2" class="more-details">More details</a>
+								<div id="hidden-bean-info-2" class="hidden-bean-info">
 									<p>Region: Ambanja, Diana Region</p>
 									<p>Climate: hot and dry</p>
 									<p>
@@ -91,12 +91,12 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-mad.svg" alt="Cacao pod with Peruvian flag">
 							<div class="bean-info">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-mad.svg" alt="Cacao pod with Peruvian flag">
 								<h3>Madagascar</h3>
 								<p>Tasting notes: red berries, lemon and nuts with a bright acidity</p>
-								<span>> More details</span>
-								<div id="hidden-bean-info-mad">
+								<a id="more-details-3" class="more-details">More details</a>
+								<div id="hidden-bean-info-3" class="hidden-bean-info">
 									<p>Region: Ambanja, Diana Region</p>
 									<p>Climate: hot and dry</p>
 									<p>
@@ -107,12 +107,12 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-peru.svg" alt="Cacao pod with Peruvian flag">
 							<div class="bean-info">
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-peru.svg" alt="Cacao pod with Peruvian flag">
 								<h3>Peru</h3>
 								<p>Tasting notes: delicate aroma of banana, black olives, red wine and aged balsamic</p>
-								<span>> More details</span>
-								<div id="hidden-bean-info-peru">
+								<a id="more-details-4" class="more-details">More details</a>
+								<div id="hidden-bean-info-4" class="hidden-bean-info">
 									<p>Region: Ambanja, Diana Region</p>
 									<p>Climate: hot and dry</p>
 									<p>

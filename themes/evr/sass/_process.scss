@@ -28,6 +28,10 @@
   h2 {
     padding-bottom: 1rem;
   }
+  ul {
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+  }
 }
 
 .bean-info {
@@ -43,4 +47,34 @@
 .process-cacao {
   height: 150px;
   width: 100%;
+}
+
+.cacao-pods-image {
+  background: url(../../assets/images/process/progress-2.jpeg);
+  background-size: cover;
+  height: 300px;
+  padding-top: 2rem;
+}
+
+.hidden-bean-info {
+  visibility: hidden;
+  max-height: 0px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.show-bean-info {
+  max-height: 200px;
+  visibility: visible;
+}
+
+.more-details {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  &:before {
+    content: "> ";
+  }
+  &:visited {
+    color: white;
+  }
 }
