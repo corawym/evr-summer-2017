@@ -1213,17 +1213,33 @@ object {
 .error404 {
   height: 100vh; }
   .error404 .not-found {
-    background: url("../../assets/images/404-hero.jpg");
+    background: url("../../assets/images/404/404-hero.jpg");
     background-position: center;
     background-size: cover; }
+    @media (min-width: 800px) {
+      .error404 .not-found .error-flex {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center; } }
     .error404 .not-found .error-flex .error-content {
       padding: 2rem;
       height: 450px;
       color: #FFFFFF;
       font-size: 28px;
       text-align: center; }
+      @media (min-width: 800px) {
+        .error404 .not-found .error-flex .error-content {
+          height: 960px; }
+          .error404 .not-found .error-flex .error-content h1 {
+            font-size: 144px; } }
       .error404 .not-found .error-flex .error-content p {
         font-size: 20px; }
+        @media (min-width: 800px) {
+          .error404 .not-found .error-flex .error-content p {
+            font-size: 48px; } }
 
 .process-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/process/progress-1.png") center;
