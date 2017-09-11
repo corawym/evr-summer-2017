@@ -1246,7 +1246,7 @@ object {
             font-size: 48px; } }
 
 .process-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/process/progress-1.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/process/progress-hero.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1347,7 +1347,7 @@ object {
       margin-top: 5%; } }
 
 .page-id-23 .location-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations/locations.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/location-hero.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1358,7 +1358,7 @@ object {
   padding-bottom: 2rem; }
 
 .page-id-38 .pep-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-1.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1367,7 +1367,7 @@ object {
   padding-bottom: 2.5rem; }
 
 .page-id-42 .volunteer-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/volunteer/volunteer.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/volunteer/volunteer-hero.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1377,12 +1377,12 @@ object {
   text-align: center; }
 
 .page-id-40 .donate-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-1.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-hero.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .page-template-menu .menu-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu/menu.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu/menu-hero.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1427,7 +1427,7 @@ object {
     margin-bottom: 1rem; }
 
 .post-type-archive-workshop .workshops-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops1.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops-hero.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
