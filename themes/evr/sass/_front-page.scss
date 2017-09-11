@@ -13,8 +13,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             @include desktop {
-                height: auto;
-                width: auto;
+                height: 260px;
+                width: 450px;
             }
         }
         @include desktop {

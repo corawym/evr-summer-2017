@@ -999,8 +999,8 @@ object {
     transform: translate(-50%, -50%); }
     @media (min-width: 800px) {
       .home .main-hero .evr-logo {
-        height: auto;
-        width: auto; } }
+        height: 260px;
+        width: 450px; } }
   @media (min-width: 800px) {
     .home .main-hero {
       height: 1076px; } }
