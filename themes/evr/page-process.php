@@ -11,8 +11,8 @@ get_header(); ?>
 		<main id="main" class="main-process" role="main">
 
 			<section class="hero-banner process-hero-banner container-full">
-        <div class="hero-content-container container-padding">
-          <div class="hero-content container-max800">
+        <div class="hero-content-container ">
+          <div class="hero-content container-max1080 container-padding">
             <h1 class="hero-content-title">process</h1>
             <p class="hero-content-description">Do you want to know what product we made so far? go find out our deceliouse chocolate and coffee products.</p> 
             <a class="hero-button" href="#process-content">Learn More <i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></a>

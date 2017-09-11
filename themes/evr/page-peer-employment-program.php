@@ -11,8 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
       <section class="hero-banner pep-hero-banner container-full">
-        <div class="hero-content-container container-padding">
-          <div class="hero-content container-max800">
+        <div class="hero-content-container">
+          <div class="hero-content container-max1080 container-padding">
             <h1 class="hero-content-title">peer employment</h1>
             <p class="hero-content-description">East Van Roasters is a 16-seat specialty cafe and social enterprise of the PHS Community Services Society.  Designed to provide pre-employment training and work opportunity for the women residents of the Rainier Hotel.</p> 
             <a class="hero-button" href="#pep-content">Learn More <i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></a>

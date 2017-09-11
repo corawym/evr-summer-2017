@@ -11,8 +11,8 @@ get_header('archive'); ?>
 		<main id="main" class="site-main workshops-main" role="main">
 
 		<section class="hero-banner workshops-hero-banner container-full">
-			<div class="hero-content-container container-padding">
-				<div class="hero-content container-max800">
+			<div class="hero-content-container ">
+				<div class="hero-content container-max1080 container-padding">
 					<h1 class="hero-content-title">Workshops</h1>
 					<a class="hero-button" href="#workshops-content">Learn More <i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></a>
 				</div>
