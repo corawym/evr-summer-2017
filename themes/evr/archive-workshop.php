@@ -8,7 +8,7 @@
 get_header('archive'); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main workshops-main" role="main">
 
 		<section class="hero-banner workshops-hero-banner container-full">
 			<div class="hero-content-container container-padding">
@@ -41,7 +41,7 @@ get_header('archive'); ?>
 					<a href="<?php esc_url(  the_permalink() )?>">
 						<div class="workshop-container">
 							<div class="workshop-image-wrapper">
-								<img class="workshop-image" src="<?php echo CFS()->get( 'workshop_image' ) ?>">
+								<img class="workshop-image content-image" src="<?php echo CFS()->get( 'workshop_image' ) ?>">
 							</div>
 							<h3 class="workshop-title"><?php esc_html( the_title() ) ?></h3>
 							<p class="workshop-date"><?php echo CFS()->get( esc_html('workshop_date') ) ?></p>

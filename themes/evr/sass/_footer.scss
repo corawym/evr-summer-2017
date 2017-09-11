@@ -19,7 +19,7 @@
             margin: 1rem;
         }
         @include desktop {
-            .fa-twitter{
+            .fa-twitter {
                 &:hover {
                     color: #c0deed;
                 }
@@ -29,12 +29,12 @@
                     color: #fb3958;
                 }
             }
-            .fa-facebook-official{
+            .fa-facebook-official {
                 &:hover {
                     color: #8b9dc3;
                 }
             }
-            .fa-pinterest-p{
+            .fa-pinterest-p {
                 &:hover {
                     color: #C92228;
                 }
@@ -43,18 +43,16 @@
     }
     .footer-info {
         display: flex;
-        
         .contact-desktop-only {
             flex: 0 1 49%;
             display: none;
             @include desktop {
-                display: block; 
+                display: block;
                 a {
                     @include footer-text;
                     color: #fff;
                     text-decoration: none;
                 }
-                
             }
         }
         .location-info {
@@ -63,10 +61,10 @@
             justify-content: center;
             .address,
             .biz-hours {
-                
-                
+                width: 35%;
                 p {
                     @include footer-text;
+                    margin-left: 10%;
                 }
             }
             .days-of-week {

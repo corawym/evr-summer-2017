@@ -4,6 +4,19 @@
         background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page.jpg') center;
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
+        .evr-logo {
+            height: 80px;
+            width: 138px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include desktop {
+                height: auto;
+                width: auto;
+            }
+        }
         @include desktop {
             height: 1076px;
         }
@@ -64,23 +77,21 @@
             p:not(.author) {
                 margin: 0;
                 position: relative;
-                &::before {
-                    content: '';
-                    height: 15px;
-                    width: 15px;
+                .open-quote {
+                    display: inline-block;
+                    margin-right: 8px;
+                    margin-bottom: 10px;
+                    height: 10px;
+                    width: 10px;
                     background: url('../../assets/images/front-page/open-quote.svg') no-repeat;
-                    position: absolute;
-                    left: -15px;
-                    top: 3%;
                 }
-                &::after {
-                    content: '';
+                .close-quote {
+                    display: inline-block;
+                    margin-left: 8px;
+                    margin-bottom: 10px;
                     height: 15px;
                     width: 15px;
                     background: url('../../assets/images/front-page/close-quote.svg') no-repeat;
-                    position: absolute;
-                    left: 70vw;
-                    top: 88%;
                 }
             }
             .author {
@@ -117,9 +128,10 @@
         }
         .front-page-btn {
             position: absolute;
-            top: 47%;
-            left: 47%;
-            transform: translate(-47%, -47%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
         }
     }
     .subscribe {
