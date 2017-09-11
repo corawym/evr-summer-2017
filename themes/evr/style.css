@@ -1235,10 +1235,10 @@ object {
           height: 960px; }
           .error404 .not-found .error-flex .error-content h1 {
             font-size: 144px; } }
-      .error404 .not-found .error-flex .error-content p {
+      .error404 .not-found .error-flex .error-content p:not(.home-btn) {
         font-size: 20px; }
         @media (min-width: 800px) {
-          .error404 .not-found .error-flex .error-content p {
+          .error404 .not-found .error-flex .error-content p:not(.home-btn) {
             font-size: 48px; } }
 
 .process-hero-banner {
@@ -1264,6 +1264,10 @@ object {
       margin-bottom: 0; }
     .process-text ul li p {
       margin-top: 0; }
+
+.bean-img {
+  width: 68px;
+  height: 62px; }
 
 .bean-info {
   text-align: left; }
