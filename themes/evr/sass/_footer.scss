@@ -43,29 +43,32 @@
     }
     .footer-info {
         display: flex;
-        .contact-desktop-only {
-            flex: 0 1 49%;
-            display: none;
-            @include desktop {
-                display: block;
-                a {
-                    @include footer-text;
-                    color: #fff;
-                    text-decoration: none;
-                }
-            }
-        }
         .location-info {
-            flex: 0 1 100%;
+            flex: 1 1 100%;
             display: flex;
             justify-content: center;
+            .contact-desktop-only {
+                display: none;
+                @include desktop {
+                    display: block;
+                    a {
+                        @include footer-text;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
             .address,
-            .biz-hours {
-                width: 35%;
+            .biz-hours,
+            .contact-desktop-only {
+                width: 120px;
                 p {
                     @include footer-text;
-                    margin-left: 10%;
+                    font-size: 16px;
                 }
+            }
+            .address {
+                margin-right: 55px;
             }
             .days-of-week {
                 text-transform: uppercase;
