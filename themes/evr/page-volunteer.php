@@ -19,20 +19,21 @@ get_header(); ?>
         </div>
       </section>
 
-      <section id="volunteer-content" class="volunteer-container container-full page-section-padding-top-bottom">
+      <section id="volunteer-content" class="volunteer-container container-full container-separator-top-bottom">
         <div class="volunteer-content container-max800">
           <div>
-            <h2>How to be a volunteer?</h2>
+            <h3 class="text-center">How to be a volunteer?</h3>
             <p>We will be looking for volunteers to help us prepare for the holiday season.</p>
             <p>Hear about upcoming volunteer opportunities by signing up for our newsletter.</p>
           </div>
 
           <div>
             <!--sign up email-->
+            
           </div>
 
           <div>
-            <h2>any questions?</h2>
+            <h3>any questions?</h3>
 
             <!--button orange border-->
             <div class="button-border">

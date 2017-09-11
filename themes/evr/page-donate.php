@@ -24,6 +24,7 @@ get_header(); ?>
         <div class="container-white-bg-content container-separator-top-bottom">
           <h3>East Van Roasters is a non-profit initiative benefiting the women residents of the Rainier Hotel.</h3>
           <p>We are a fully registered charity and would love to have your support!</p>
+          
           <div class="container-separator-top-bottom">
             <h3 class="text-center">You can choose the proceeds to go to:</h3>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/donate/donation-icon-1.svg" alt="A icon of donation box">
@@ -31,6 +32,7 @@ get_header(); ?>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/donate/donation-icon-2.svg" alt="A icon of cooking tools">
             <p class="text-center">Help us raise funds to hire more staff and purchase equiments needed to increase our production capacity.</p>
           </div>
+
           <div>
             <h3 class="text-center">Three ways you can support:</h3>
             <ol>
@@ -40,11 +42,10 @@ get_header(); ?>
               <li>Stop by the shop and donate by cash, debit or credit card.</li>
               <li>Purchase our products.</li>
             </ol>
-
           </div>
+
         </div>
       </section>
-
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
