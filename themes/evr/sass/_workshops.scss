@@ -1,3 +1,5 @@
+// workshop archive -------------------------------==================-------------------------
+
 .post-type-archive-workshop {
   .workshops-hero-banner{
     background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops-hero.jpg") center;
@@ -37,7 +39,7 @@
   flex-wrap: wrap;
 }
 
-.single-workshop {
+.single-workshop-on-page {
   width: 40%;
   margin: 5%;
   a {
@@ -59,5 +61,40 @@
   text-align: center;
   p {
     font-size: 1.2rem;
+  }
+}
+
+// workshop single --------------------============================-------------------------
+
+.single-workshop-header {
+  .single-workshop-hero-banner {
+    height: 424px;
+    overflow-y: hidden;
+    width: 100%;
+    @include desktop {
+      height: 100vh;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  h1 {
+    margin: 0;
+  }
+}
+
+.single-workshop-content {
+  text-align: center;
+  padding: 2rem;
+  .workshop-details {
+    padding: 0 10%;
+    text-align: left;
+    * {
+    font-weight: normal;
+    }
+    span {
+      display: inline;
+      padding-left: 1rem;
+    }
   }
 }

@@ -37,7 +37,7 @@ get_header('archive'); ?>
 			<ul class="workshop-list">
 				<?php if ( $workshops->have_posts() ) : ?>
 				<?php while ( $workshops->have_posts() ) : $workshops->the_post(); ?>
-				<li class="single-workshop">
+				<li class="single-workshop-on-page">
 					<a href="<?php esc_url(  the_permalink() )?>">
 						<div class="workshop-container">
 							<div class="workshop-image-wrapper">
