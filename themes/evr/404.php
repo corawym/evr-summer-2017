@@ -18,7 +18,13 @@ get_header(); ?>
 						<h1>404</h1>
 						<p>Oops.</p>
 						<p>We can't seem to find the page you're looking for.</p>
-						<button class="home-btn">Home</button>
+						<div class="home-btn button-border">
+                			<a href="#">
+                    			<div class="border1">
+                        			<div class="border2">Home</div>
+                    			</div>
+                			</a>   
+            			</div>
 					</div>
 				</div>
 			</section><!-- .error-404 -->

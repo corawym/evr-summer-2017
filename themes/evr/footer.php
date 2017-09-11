@@ -17,24 +17,26 @@
 							<a><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
 							<a><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
 					</div>
-					<div class="contact-desktop-only">
-						<p><a href="#">Contact Us</a></p>
-						<p><a href="#">Feedback</a></p>
-					</div>
-					<div class="location-info">
-						<div class="address">
-							<p class="info">319 Carrall Street</p>
-							<p class="info">Vancouver, BC</p>
-							<p class="info">(604) 629 7562</p>
-						</div>
-						<div class="biz-hours">
-							<p class="info">Hours | <span class="days-of-week">tue - fri</span></p>
-							<p class="info">9am - 5pm</p>
+					<div class="footer-info">
+						<div class="location-info">
+							<div class="contact-desktop-only">
+								<p><a href="#">Contact Us</a></p>
+								<p><a href="#">Feedback</a></p>
+							</div>
+							<div class="address">
+								<p class="info">319 Carrall Street</p>
+								<p class="info">Vancouver, BC</p>
+								<p class="info">(604) 629 7562</p>
+							</div>
+							<div class="biz-hours">
+								<p class="info">Hours | <span class="days-of-week">tue - fri</span></p>
+								<p class="info">9am - 5pm</p>
+							</div>
 						</div>
 					</div>
 					<div class="copyright">
-						<p>copyright &copy; 2017 East Van Roasters all rights reserved</p>
-					</div>
+							<p>copyright &copy; 2017 East Van Roasters all rights reserved</p>
+						</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

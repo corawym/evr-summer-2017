@@ -59,13 +59,22 @@ get_header(); ?>
 
         <section class="content-two">
             <div class="content-two-div">
-                <span class="quote1"></span><p>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.</p><span class="quote2"></span>
+                <div class="open-quote"></div>
+                <p>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.</p>
                 <p class="author">John Crawford,<span class="eat"> Eat Magazine</span></p>
+                <div class="close-quote"></div>
             </div>
         </section>
 
         <section class="menu-hero">
-            <button class="front-page-btn">Menu</button>
+            <div class="front-page-btn button-border">
+                <a href="#">
+                    <div class="border1">
+                        <div class="border2">Menu</div>
+                    </div>
+                </a>   
+            </div>
+            <!-- <a class="front-page-btn button-border">Menu</a> -->
         </section>
 
         <section class="subscribe">

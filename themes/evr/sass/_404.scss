@@ -1,18 +1,33 @@
 .error404 {
     height: 100vh;
     .not-found {
-        background: url('../../assets/images/404-hero.jpg');
+        background: url('../../assets/images/404/404-hero.jpg');
         background-position: center;
         background-size: cover;
         .error-flex {
+            @include desktop {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
             .error-content {
                 padding: 2rem;
                 height: 450px;
                 color: #FFFFFF;
                 font-size: 28px;
                 text-align: center;
-                p {
+                @include desktop {
+                    height: 960px;
+                    h1 {
+                        font-size: 144px;
+                    }
+                    
+                }
+                p:not(.home-btn) {
                     font-size: 20px;
+                    @include desktop {
+                        font-size: 48px;
+                    }
                 }
             }
         }
