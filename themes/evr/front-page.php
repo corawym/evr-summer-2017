@@ -45,7 +45,7 @@ get_header(); ?>
                 </article><!-- #post-## -->
 
                 <section class="main-hero">
-                <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/EVR_logo.svg" alt="East Van Roasters Logo">
+                <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roasters Logo">
                 </section>
 
         <section class="content-one">

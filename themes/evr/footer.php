@@ -12,10 +12,10 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer-site-info">
 					<div class="social-icons">
-							<a><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-							<a><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-							<a><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-							<a><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+							<a href="https://twitter.com/Eastvanroasters" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+							<a href="https://www.instagram.com/eastvanroasters/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+							<a href="https://www.facebook.com/EastVanRoasters/" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+							<a href="https://www.pinterest.com/pin/544935623632016457/" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
 					</div>
 					<div class="footer-info">
 						<div class="location-info">
