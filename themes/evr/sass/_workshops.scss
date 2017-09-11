@@ -1,0 +1,23 @@
+.post-type-archive-workshop {
+  .workshops-hero-banner{
+    background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops1.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.workshops-content {
+  background-color: $color_secondary_darkgray;
+  color: white;
+  max-width: 100%;
+  padding: 2rem;
+  img {
+    width: 100%;
+  }
+  a {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  }
+}

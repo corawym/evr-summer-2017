@@ -11,10 +11,12 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
-  .menu-coffee-content, .menu-chocolate-content{
-    max-width: 400px;
+  .menu-coffee-content, .menu-chocolate-container, .menu-location{
+    max-width: 800px;
     text-align: center; 
     margin: 0 auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .menu-line{
     border-bottom: 1px solid;
@@ -33,3 +35,23 @@
 }
 
 // Chocolate Lab style
+.menu-chocolate-grid{
+  display: flex;
+  flex-wrap: wrap;
+  .chocolate-items-wrapper{
+    flex-basis: 50%;
+    padding: 1rem;
+  }
+  .chocolate-items-image{
+    border: 1px solid $color_secondary_darkgray;
+    width: 100%;
+    height: 250px;
+  }
+  .chocolate-price{
+    font-weight: 700;
+    margin-top: 0;
+  }
+  .chocolate-name{
+    margin-bottom: 1rem;
+  }
+}
