@@ -8,29 +8,38 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+	<header class="single-workshop-header">
+		<div class="single-workshop-hero-banner">
+			<img class="workshop-image content-image" src="<?php echo CFS()->get( 'workshop_image' ) ?>">
+		</div>
 
+		
+	</header><!-- .entry-header -->
+	
+	<section class="single-workshop-content">
+		
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php evr_posted_on(); ?> / <?php evr_comment_count(); ?> / <?php evr_posted_by(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+		<p class="workshop-description"><?php echo CFS()->get( esc_html('workshop_description') ) ?></p>
+		
+		<div class="workshop-details">
+			<p class="workshop-price">$<?php echo CFS()->get( esc_html('workshop_price') ) ?></p>
+			<p class="workshop-date"><?php echo CFS()->get( esc_html('workshop_date') ) ?>
+				<span class="workshop-time"><?php echo CFS()->get( esc_html('workshop_time') ) ?></span>
+			</p>
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+			<p class="workshop-instructor">Instructor: <?php echo CFS()->get( esc_html('instructor_name') ) ?></p>
+		</div>
 
-	<footer class="entry-footer">
-		<?php evr_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		<div class="button-border-orange">
+			<a href="#">
+				<div class="border1">
+					<div class="border2">Register</div>
+				</div>
+			</a>   
+		</div>
+
+		
+	</section>
+
 </article><!-- #post-## -->

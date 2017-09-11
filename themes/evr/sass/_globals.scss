@@ -167,3 +167,35 @@ a{
     }
   }
 }
+
+// Button border - Orange
+.button-border-orange{
+  margin: 2.5rem;
+  .border1, .border2{
+    display: inline-block;
+    width: 170px;
+    height: 55px;
+    border: 1px solid $color_primary_orange;
+    color: $color_primary_orange;
+    &:hover{
+      border-color: black;
+      color: black;
+    }
+  }
+  .border1{
+    position: relative;
+  }
+  .border2{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  a{
+    font-weight: normal;
+    line-height: 45px;
+    color: $color_primary_orange;
+    &:hover{
+      color: black;
+    }
+  }
+}
