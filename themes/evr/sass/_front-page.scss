@@ -4,14 +4,12 @@
         background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page.jpg') center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .evr-logo {
             height: 80px;
             width: 138px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             @include desktop {
                 height: 260px;
                 width: 450px;

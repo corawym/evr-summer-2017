@@ -1,20 +1,47 @@
 // location page style
-.page-id-23{
+.page-id-23 {
   // hero banner
-  .location-hero-banner{
-    background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/location/location-hero.png") center;
+  .location-hero-banner {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/location-hero.png") center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
-
-  // location content style
-  .location-evr-partners{
+  .location-evr-info {
+    h3 {
+      margin-bottom: .2rem;
+    }
+    .locations-header {
+      display: flex;
+      justify-content: center;
+      h2 {
+        text-align: center;
+        border-bottom: 2px solid black;
+        width: 60%;
+      }
+    }
+    .evr-info-wrapper {
+      p {
+        margin: 0;
+      }
+      .location-date-hrs {
+        display: flex;
+        justify-content: space-between;
+        .location-hours {
+          max-width: 200px;
+          margin-right: 20%;
+        }
+      }
+      .evr-info-wrapper {
+        p {
+          padding-bottom: 3rem;
+        }
+      }
+    }
+  } // location content style
+  .location-evr-partners {
     background-color: black;
     color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    
   }
-
 } // end of .page-id-23
-

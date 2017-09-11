@@ -989,14 +989,15 @@ object {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/front-page/home-page.jpg") center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   .home .main-hero .evr-logo {
     height: 80px;
-    width: 138px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    width: 138px; }
     @media (min-width: 800px) {
       .home .main-hero .evr-logo {
         height: 260px;
@@ -1380,7 +1381,35 @@ object {
 .page-id-23 .location-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/location-hero.png") center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
+
+.page-id-23 .location-evr-info h3 {
+  margin-bottom: .2rem; }
+
+.page-id-23 .location-evr-info .locations-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .page-id-23 .location-evr-info .locations-header h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 60%; }
+
+.page-id-23 .location-evr-info .evr-info-wrapper p {
+  margin: 0; }
+
+.page-id-23 .location-evr-info .evr-info-wrapper .location-date-hrs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .page-id-23 .location-evr-info .evr-info-wrapper .location-date-hrs .location-hours {
+    max-width: 200px;
+    margin-right: 20%; }
+
+.page-id-23 .location-evr-info .evr-info-wrapper .evr-info-wrapper p {
+  padding-bottom: 3rem; }
 
 .page-id-23 .location-evr-partners {
   background-color: black;

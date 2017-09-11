@@ -22,7 +22,9 @@ get_header(); ?>
       </section>
 
       <section class="location-evr-info container-padding" id="location-content">
-        <h2>Location</h2>
+        <div class="locations-header">
+          <h2>Location</h2>
+        </div>
         <div class="evr-info-wrapper">
           <p>319 Caraall Street, Vancouver, BC V6B 2J4</p>
         </div>
@@ -32,23 +34,25 @@ get_header(); ?>
         </div>
         <div class="evr-info-wrapper">
           <h3>Hours</h3>
-          <div class="location-date">
-            <p>Tuesday</p>             
-            <p>Wednesday</p>        
-            <p>Thursday</p>            
-            <p>Friday</p>                 
-            <p>Saturday</p>         
-            <p>Sunday</p>               
-            <p>Monday</p>    
-          </div>
-          <div class="location-hours">
-            <p>9 AM - 5 PM</p> 
-            <p>9 AM - 5 PM</p>
-            <p>9 AM - 5 PM</p>
-            <p>9 AM - 5 PM</p>
-            <p>10 AM - 5 PM</p>
-            <p>Closed</p>
-            <p>Closed</p>
+          <div class="location-date-hrs">
+            <div class="location-date">
+              <p>Tuesday</p>             
+              <p>Wednesday</p>        
+              <p>Thursday</p>            
+              <p>Friday</p>                 
+              <p>Saturday</p>         
+              <p>Sunday</p>               
+              <p>Monday</p>    
+            </div>
+            <div class="location-hours">
+              <p>9 AM - 5 PM</p> 
+              <p>9 AM - 5 PM</p>
+              <p>9 AM - 5 PM</p>
+              <p>9 AM - 5 PM</p>
+              <p>10 AM - 5 PM</p>
+              <p>Closed</p>
+              <p>Closed</p>
+            </div>
           </div>
         </div>
         <div class="evr-info-wrapper">
