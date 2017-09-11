@@ -61,6 +61,10 @@ a{
   font-weight: 300;
 }
 
+.text-center{
+  text-align: center; 
+}
+
 // Globals - page structure
 .container-full{
   width: 100%;
@@ -78,6 +82,19 @@ a{
   max-width: $mobile-width;
   margin-left: auto;
   margin-right: auto;
+}
+
+// pep page, 
+.container-white-bg-content{
+  width: 85%;
+  margin: 0 auto;
+  @include desktop{
+    max-width: 800px;
+  }
+}
+.container-separator-top-bottom{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 

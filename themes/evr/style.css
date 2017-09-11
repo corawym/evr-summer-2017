@@ -271,6 +271,9 @@ li {
 a {
   font-weight: 300; }
 
+.text-center {
+  text-align: center; }
+
 .container-full {
   width: 100%; }
 
@@ -287,6 +290,17 @@ a {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
+
+.container-white-bg-content {
+  width: 85%;
+  margin: 0 auto; }
+  @media (min-width: 800px) {
+    .container-white-bg-content {
+      max-width: 800px; } }
+
+.container-separator-top-bottom {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
 
 .hero-banner {
   width: 100%;
