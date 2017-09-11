@@ -1305,3 +1305,20 @@ object {
     margin-top: 0; }
   .menu-chocolate-grid .chocolate-name {
     margin-bottom: 1rem; }
+
+.post-type-archive-workshop .workshops-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops1.jpg") center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.workshops-content {
+  background-color: #4a4a4a;
+  color: white;
+  max-width: 100%;
+  padding: 2rem; }
+  .workshops-content img {
+    width: 100%; }
+  .workshops-content a {
+    color: white; }
+  .workshops-content a:visited {
+    color: white; }
