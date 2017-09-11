@@ -7,7 +7,7 @@
 }
 
 .workshops-content {
-  background-color: $color_secondary_darkgray;
+  background-color: $color_background_gray;
   color: white;
   max-width: 100%;
   padding: 2rem;
@@ -19,5 +19,48 @@
   }
   a:visited {
     color: white;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .h2-line {
+    width: 90%;
+    border-bottom: 1px solid white;
+    margin: 0 auto;
+  }
+}
+
+.workshop-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-workshop {
+  width: 40%;
+  margin: 5%;
+  a {
+    text-decoration: none;
+  }
+  .workshop-image-wrapper {
+    max-height: 280px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  img {
+    height: 100%;
+  }
+  img:before {
+    padding-bottom: 100%;
+  }
+  h3, p {
+    margin: 0.1rem;
+  }
+}
+
+.interested {
+  text-align: center;
+  p {
+    font-size: 1.2rem;
   }
 }
