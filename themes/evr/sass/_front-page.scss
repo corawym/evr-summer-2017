@@ -105,14 +105,21 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        text-align: center;
+        a {
+            color: #fff;
+            &:hover {
+                color: $color_primary_orange;
+            }
+        }
         @include desktop {
             height: 902px;
         }
         .front-page-btn {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 47%;
+            left: 47%;
+            transform: translate(-47%, -47%);
         }
     }
     .subscribe {

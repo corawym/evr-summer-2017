@@ -67,7 +67,14 @@ get_header(); ?>
         </section>
 
         <section class="menu-hero">
-            <button class="front-page-btn">Menu</button>
+            <div class="front-page-btn button-border">
+                <a href="#">
+                    <div class="border1">
+                        <div class="border2">Menu</div>
+                    </div>
+                </a>   
+            </div>
+            <!-- <a class="front-page-btn button-border">Menu</a> -->
         </section>
 
         <section class="subscribe">
