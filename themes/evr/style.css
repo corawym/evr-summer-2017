@@ -248,7 +248,9 @@ h2 {
   font-weight: 700; }
   @media (min-width: 800px) {
     h2 {
-      font-size: 2.4rem; } }
+      font-size: 2.4rem;
+      margin-top: 0;
+      padding-top: 2rem; } }
 
 h3 {
   font-size: 1.2rem; }
@@ -323,9 +325,11 @@ a {
     display: inline-block;
     width: 170px;
     height: 55px;
-    border: 2px solid white; }
+    border: 2px solid white;
+    color: white; }
     .button-border .border1:hover, .button-border .border2:hover {
-      border-color: #e13404; }
+      border-color: #e13404;
+      color: #e13404; }
   .button-border .border1 {
     position: relative; }
   .button-border .border2 {
@@ -1235,10 +1239,10 @@ object {
           height: 960px; }
           .error404 .not-found .error-flex .error-content h1 {
             font-size: 144px; } }
-      .error404 .not-found .error-flex .error-content p {
+      .error404 .not-found .error-flex .error-content p:not(.home-btn) {
         font-size: 20px; }
         @media (min-width: 800px) {
-          .error404 .not-found .error-flex .error-content p {
+          .error404 .not-found .error-flex .error-content p:not(.home-btn) {
             font-size: 48px; } }
 
 .process-hero-banner {
@@ -1424,7 +1428,7 @@ object {
   background-size: cover; }
 
 .workshops-content {
-  background-color: #4a4a4a;
+  background-color: #333;
   color: white;
   max-width: 100%;
   padding: 2rem; }
@@ -1434,3 +1438,37 @@ object {
     color: white; }
   .workshops-content a:visited {
     color: white; }
+  .workshops-content h2 {
+    text-align: center;
+    margin-bottom: 0; }
+  .workshops-content .h2-line {
+    width: 90%;
+    border-bottom: 1px solid white;
+    margin: 0 auto; }
+
+.workshop-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.single-workshop {
+  width: 40%;
+  margin: 5%; }
+  .single-workshop a {
+    text-decoration: none; }
+  .single-workshop .workshop-image-wrapper {
+    max-height: 280px;
+    overflow: hidden;
+    margin-bottom: 0.5rem; }
+  .single-workshop img {
+    height: 100%; }
+  .single-workshop img:before {
+    padding-bottom: 100%; }
+  .single-workshop h3, .single-workshop p {
+    margin: 0.1rem; }
+
+.interested {
+  text-align: center; }
+  .interested p {
+    font-size: 1.2rem; }
