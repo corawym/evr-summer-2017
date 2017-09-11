@@ -1392,7 +1392,9 @@ object {
   background-size: cover; }
 
 .page-id-38 img {
-  width: 100%; }
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .page-section-padding-top-bottom {
   padding-top: 2.5rem;
@@ -1412,6 +1414,24 @@ object {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-hero.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.page-id-40 p {
+  margin-top: 2rem; }
+
+.page-id-40 img {
+  width: 126px;
+  display: block;
+  margin: 2rem auto; }
+
+.page-id-40 ol {
+  color: #4a4a4a; }
+
+.page-id-40 li {
+  list-style-type: decimal;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+  .page-id-40 li::before {
+    margin-right: 4rem; }
 
 .page-template-menu .menu-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu/menu-hero.jpg") center;
