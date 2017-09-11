@@ -59,7 +59,7 @@ get_header(); ?>
 					<h2>Our Beans</h2>
 					<ul>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-dr.svg" alt="Cacao pod with Peruvian flag">
+							<img class="bean-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-dr.svg" alt="Cacao pod with Peruvian flag">
 							<div class="bean-info">
 								<h3>Dominican Republic OKO Caribe</h3>
 								<h4>Region:</h4>
@@ -77,7 +77,7 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-guat.svg" alt="Cacao pod with Peruvian flag">
+							<img class="bean-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-guat.svg" alt="Cacao pod with Peruvian flag">
 							<div class="bean-info">
 								<h3>Lachua, Guatemala</h3>
 								<h4>Region:</h4>
@@ -96,7 +96,7 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-mad.svg" alt="Cacao pod with Peruvian flag">
+							<img class="bean-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-mad.svg" alt="Cacao pod with Peruvian flag">
 							<div class="bean-info">
 								<h3>Madagascar</h3>
 								<h4>Region:</h4>
@@ -115,7 +115,7 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-peru.svg" alt="Cacao pod with Peruvian flag">
+							<img class="bean-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-peru.svg" alt="Cacao pod with Peruvian flag">
 							<div class="bean-info">
 								<h3>Peru</h3>
 								<h4>Region:</h4>
