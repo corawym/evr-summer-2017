@@ -1,65 +1,113 @@
-
 .home {
     .main-hero {
         height: 250px;
-        background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page.jpg') center;
+        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page.jpg') center;
         background-repeat: no-repeat;
         background-size: cover;
+        @include desktop {
+            height: 1076px;
+        }
     }
     .content-one {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         height: 116px;
         background-color: #000000;
+        @include desktop {
+            height: 240px;
+        }
         .content-one-div {
             height: 45px;
             width: 325px;
             color: #FFFFFF;
-            font-size: 16.5px;	
+            font-size: 16.5px;
             line-height: 23px;
             text-align: center;
-            margin-bottom: 0;
+            p {
+                margin: 0;
+            }
+            @include desktop {
+                height: 88px;
+                width: 729px;
+                font-size: 32px;
+                line-height: 44px;
+                text-align: center;
+            }
         }
     }
     .store-hero {
         height: 337px;
-        background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-2.jpg') center;
+        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-2.jpg') center;
         background-repeat: no-repeat;
         background-size: cover;
+        @include desktop {
+            height: 723px;
+        }
     }
     .content-two {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         height: 161px;
         background-color: #000000;
+        @include desktop {
+            height: 362px;
+        }
         .content-two-div {
-            .open-quote {
-                background: url('../../assets/images/front-page/open-quote.svg') center;
-                background-size: 50px 25px; 
-            }
-            height: 92px;
+            height: auto;
             width: 325px;
-            color: #FFFFFF;	
-            font-size: 16.5px;	
-            line-height: 23px;	
+            color: #FFFFFF;
+            font-size: 16.5px;
+            line-height: 23px;
             text-align: center;
-            margin-top: 0;
-            .eat {
-                color: red;
+            p:not(.author) {
+                margin: 0;
+                position: relative;
+                &::before {
+                    content: '';
+                    height: 15px;
+                    width: 15px;
+                    background: url('../../assets/images/front-page/open-quote.svg') no-repeat;
+                    position: absolute;
+                    left: -15px;
+                    top: 3%;
+                }
+                &::after {
+                    content: '';
+                    height: 15px;
+                    width: 15px;
+                    background: url('../../assets/images/front-page/close-quote.svg') no-repeat;
+                    position: absolute;
+                    left: 70vw;
+                    top: 88%;
+                }
             }
             .author {
-                margin-top: 0;
+                margin: 0;
+            }
+            @include desktop {
+                width: 70vw;
+                height: 132px;
+                font-size: 36px;
+                font-style: italic;
+                line-height: 44px;
+                text-align: center;
+            }
+            .eat {
+                color: red;
             }
         }
     }
     .menu-hero {
         height: 338px;
-        background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-3.png') center;
+        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-3.png') center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        @include desktop {
+            height: 902px;
+        }
         .front-page-btn {
             position: absolute;
             top: 50%;
@@ -68,9 +116,16 @@
         }
     }
     .subscribe {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
         background-color: #fff;
         height: 202px;
         margin: 0 5%;
+        @include desktop {
+            height: 400px;
+        }
         .subscribe-content {
             text-align: center;
         }
@@ -78,9 +133,13 @@
             display: flex;
             max-width: 300px;
             margin: 0 auto;
+            @include desktop {
+                min-width: 300px;
+                max-width: 50vw;
+            }
             .email {
                 width: 296px;
-                background-color: rgba(155,155,155,0.4);
+                background-color: rgba(155, 155, 155, 0.4);
                 flex: 1 1 75%;
                 border: none;
                 border-radius: 0;
@@ -95,6 +154,10 @@
                 font-weight: 300;
                 border: none;
                 border-radius: 0;
+                @include desktop {
+                    height: 70px;
+                    width: 659px;
+                }
             }
         }
     }
