@@ -6,14 +6,15 @@
   }
 }
 
-.workshops-content {
+.workshops-main {
   background-color: $color_background_gray;
+}
+
+.workshops-content {
   color: white;
-  max-width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 2rem;
-  img {
-    width: 100%;
-  }
   a {
     color: white;
   }
@@ -25,7 +26,7 @@
     margin-bottom: 0;
   }
   .h2-line {
-    width: 90%;
+    width: 95%;
     border-bottom: 1px solid white;
     margin: 0 auto;
   }
@@ -43,15 +44,11 @@
     text-decoration: none;
   }
   .workshop-image-wrapper {
-    max-height: 280px;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
+    @include aspect-ratio(1, 1);
   }
   img {
+    width: 100%;
     height: 100%;
-  }
-  img:before {
-    padding-bottom: 100%;
   }
   h3, p {
     margin: 0.1rem;

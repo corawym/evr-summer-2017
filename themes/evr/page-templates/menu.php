@@ -19,7 +19,7 @@ get_header(); ?>
         </div>
       </section>
 
-			<section class="menu-content-container container-full" id="menu-content scroll-to">
+			<section class="menu-content-container container-full" id="menu-content">
 				<div class="menu-content container-full">
 
 					<section class="menu-coffee-container container-full">
@@ -61,7 +61,9 @@ get_header(); ?>
 
 							<?php foreach ( $chocolate_items as $post ) : setup_postdata( $post ); ?>
 							<article class="chocolate-items-wrapper">
-								<img class="chocolate-items-image" src="<?php echo CFS()->get( 'chocolate_image' ); ?>">
+								<div class="chocolate-image-wrapper">
+									<img class="chocolate-items-image content-image" src="<?php echo CFS()->get( 'chocolate_image' ); ?>">
+								</div>
 								<p class="chocolate-name"><?php echo CFS()->get('chocolate_name'); ?></p>
 								<p class="chocolate-price"><?php echo CFS()->get('chocolate_price'); ?></p>
 								</article>
