@@ -45,7 +45,7 @@ get_header(); ?>
                 </article><!-- #post-## -->
 
                 <section class="main-hero">
-                    <h1>East Van Logo</h1>
+                <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/EVR_logo.svg" alt="East Van Roasters Logo">
                 </section>
 
         <section class="content-one">
@@ -59,10 +59,10 @@ get_header(); ?>
 
         <section class="content-two">
             <div class="content-two-div">
-                <div class="open-quote"></div>
-                <p>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.</p>
+                <span class="open-quote"></span>
+                <p><span class="open-quote"></span>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.<span class="close-quote"></span></p>
                 <p class="author">John Crawford,<span class="eat"> Eat Magazine</span></p>
-                <div class="close-quote"></div>
+                
             </div>
         </section>
 
