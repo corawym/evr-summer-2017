@@ -6,4 +6,25 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  p{
+    margin-top: 2rem;
+  }
+  img{
+    width: 126px;
+    display: block;
+    margin: 2rem auto;
+  }
+  .donation-way-list{
+    color: $color_secondary_darkgray;
+    li{
+      list-style-type: decimal;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      &::before{
+        margin-right: 4rem;
+      }
+    }
+  }
+  
+  
 }

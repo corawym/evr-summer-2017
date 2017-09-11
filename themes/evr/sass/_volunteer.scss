@@ -1,11 +1,4 @@
-.page-section-padding-top-bottom{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-
-
-
+// Volunteer page style
 .page-id-42{
   // hero banner
   .volunteer-hero-banner{
@@ -18,6 +11,10 @@
     background-color: $color_secondary_darkgray;
     color: white;
     text-align: center;
+    h3{
+      font-weight: 500;
+    }
+    
   }
 }
 

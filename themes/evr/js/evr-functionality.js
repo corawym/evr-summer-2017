@@ -5,8 +5,8 @@
     windowWidth = $(window).width();
     if (windowWidth < 785) {
       $('#primary-menu').addClass('hide-menu');
-      if ( !$('body').hasClass('home') ) {
-      $('#mobile-header').removeClass('mobile-header-title-hidden');
+      if ( !$('body').is('.single, .home') ) {
+        $('#mobile-header').removeClass('mobile-header-title-hidden');
       }
     } else {
       $('#primary-menu').removeClass('hide-menu');
@@ -18,7 +18,7 @@
   if (windowWidth < 785) {
     $('#primary-menu').addClass('hide-menu');
     $('#menu-item-37 > .sub-menu').addClass('hide-sub-menu');
-    if ( !$('body').hasClass('home') ) {
+    if ( !$('body').is('.single, .home') ) {
       $('#mobile-header').removeClass('mobile-header-title-hidden');
     }
 
