@@ -1,23 +1,63 @@
 .post-type-archive-workshop {
   .workshops-hero-banner{
-    background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops1.jpg") center;
+    background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops-hero.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 
+.workshops-main {
+  background-color: $color_background_gray;
+}
+
 .workshops-content {
-  background-color: $color_secondary_darkgray;
   color: white;
-  max-width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 2rem;
-  img {
-    width: 100%;
-  }
   a {
     color: white;
   }
   a:visited {
     color: white;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .h2-line {
+    width: 95%;
+    border-bottom: 1px solid white;
+    margin: 0 auto;
+  }
+}
+
+.workshop-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-workshop {
+  width: 40%;
+  margin: 5%;
+  a {
+    text-decoration: none;
+  }
+  .workshop-image-wrapper {
+    @include aspect-ratio(1, 1);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  h3, p {
+    margin: 0.1rem;
+  }
+}
+
+.interested {
+  text-align: center;
+  p {
+    font-size: 1.2rem;
   }
 }

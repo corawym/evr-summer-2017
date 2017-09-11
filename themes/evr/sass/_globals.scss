@@ -32,6 +32,8 @@ h2{
   font-weight: 700;
   @include desktop{
     font-size: 2.4rem;
+    margin-top: 0;
+    padding-top: 2rem;
   }
 }
 
@@ -94,7 +96,7 @@ a{
       display: inline-block;
       position: absolute;
       bottom: 0;
-      margin-bottom: 5rem;
+      margin-bottom: 100px;
       width: 100%;
     }
     .hero-content-title{
@@ -126,8 +128,10 @@ a{
     width: 170px;
     height: 55px;
     border: 2px solid white;
+    color: white;
     &:hover{
       border-color: $color_primary_orange;
+      color: $color_primary_orange;
     }
   }
   .border1{

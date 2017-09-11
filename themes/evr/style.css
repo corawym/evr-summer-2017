@@ -248,7 +248,9 @@ h2 {
   font-weight: 700; }
   @media (min-width: 800px) {
     h2 {
-      font-size: 2.4rem; } }
+      font-size: 2.4rem;
+      margin-top: 0;
+      padding-top: 2rem; } }
 
 h3 {
   font-size: 1.2rem; }
@@ -301,7 +303,7 @@ a {
         display: inline-block;
         position: absolute;
         bottom: 0;
-        margin-bottom: 5rem;
+        margin-bottom: 100px;
         width: 100%; } }
     .hero-banner .hero-content-container .hero-content-title {
       font-size: 4rem;
@@ -323,9 +325,11 @@ a {
     display: inline-block;
     width: 170px;
     height: 55px;
-    border: 2px solid white; }
+    border: 2px solid white;
+    color: white; }
     .button-border .border1:hover, .button-border .border2:hover {
-      border-color: #e13404; }
+      border-color: #e13404;
+      color: #e13404; }
   .button-border .border1 {
     position: relative; }
   .button-border .border2 {
@@ -1257,7 +1261,7 @@ object {
             font-size: 48px; } }
 
 .process-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/process/progress-1.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/process/progress-hero.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1279,6 +1283,10 @@ object {
       margin-bottom: 0; }
     .process-text ul li p {
       margin-top: 0; }
+
+.bean-img {
+  width: 68px;
+  height: 62px; }
 
 .bean-info {
   text-align: left; }
@@ -1354,7 +1362,7 @@ object {
       margin-top: 5%; } }
 
 .page-id-23 .location-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/locations/locations.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/location-hero.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1365,7 +1373,7 @@ object {
   padding-bottom: 2rem; }
 
 .page-id-38 .pep-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-1.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1374,7 +1382,7 @@ object {
   padding-bottom: 2.5rem; }
 
 .page-id-42 .volunteer-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/volunteer/volunteer.png") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/volunteer/volunteer-hero.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1384,12 +1392,12 @@ object {
   text-align: center; }
 
 .page-id-40 .donate-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-1.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-hero.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .page-template-menu .menu-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu/menu.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu/menu-hero.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -1423,29 +1431,86 @@ object {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     padding: 1rem; }
-  .menu-chocolate-grid .chocolate-items-image {
-    border: 1px solid #4a4a4a;
-    width: 100%;
-    height: 250px; }
   .menu-chocolate-grid .chocolate-price {
     font-weight: 700;
     margin-top: 0; }
   .menu-chocolate-grid .chocolate-name {
     margin-bottom: 1rem; }
 
+.chocolate-image-wrapper {
+  position: relative; }
+  .chocolate-image-wrapper:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%; }
+  .chocolate-image-wrapper > .content-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .chocolate-image-wrapper img {
+    border: 1px solid #4a4a4a;
+    height: 100%;
+    width: 100%; }
+
 .post-type-archive-workshop .workshops-hero-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops1.jpg") center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops-hero.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
 
+.workshops-main {
+  background-color: #333; }
+
 .workshops-content {
-  background-color: #4a4a4a;
   color: white;
-  max-width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 2rem; }
-  .workshops-content img {
-    width: 100%; }
   .workshops-content a {
     color: white; }
   .workshops-content a:visited {
     color: white; }
+  .workshops-content h2 {
+    text-align: center;
+    margin-bottom: 0; }
+  .workshops-content .h2-line {
+    width: 95%;
+    border-bottom: 1px solid white;
+    margin: 0 auto; }
+
+.workshop-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.single-workshop {
+  width: 40%;
+  margin: 5%; }
+  .single-workshop a {
+    text-decoration: none; }
+  .single-workshop .workshop-image-wrapper {
+    position: relative; }
+    .single-workshop .workshop-image-wrapper:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 100%; }
+    .single-workshop .workshop-image-wrapper > .content-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+  .single-workshop img {
+    width: 100%;
+    height: 100%; }
+  .single-workshop h3, .single-workshop p {
+    margin: 0.1rem; }
+
+.interested {
+  text-align: center; }
+  .interested p {
+    font-size: 1.2rem; }
