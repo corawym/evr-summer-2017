@@ -1460,20 +1460,32 @@ object {
 .page-id-23 .location-evr-info .evr-info-wrapper .location-date-hrs {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .page-id-23 .location-evr-info .evr-info-wrapper .location-date-hrs .location-hours {
-    max-width: 200px;
-    margin-right: 20%; }
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  max-width: 500px; }
+  .page-id-23 .location-evr-info .evr-info-wrapper .location-date-hrs .location-date {
+    margin-right: 30%; }
+    @media (min-width: 800px) {
+      .page-id-23 .location-evr-info .evr-info-wrapper .location-date-hrs .location-date {
+        margin-right: 50%; } }
 
-.page-id-23 .location-evr-info .evr-info-wrapper .evr-info-wrapper p {
-  padding-bottom: 3rem; }
-
-.page-id-23 .location-evr-partners {
+.location-evr-partners {
   background-color: black;
   color: white;
   padding-top: 2rem;
   padding-bottom: 2rem; }
+  .location-evr-partners h2 {
+    text-align: center;
+    margin: 0; }
+  .location-evr-partners .location-evr-partners-chocolate-coffee div,
+  .location-evr-partners .location-evr-partners-chocolate div,
+  .location-evr-partners .location-evr-partners-coffee div {
+    margin: 2rem;
+    margin-left: 0; }
+  .location-evr-partners .location-evr-partners-chocolate-coffee p,
+  .location-evr-partners .location-evr-partners-chocolate p,
+  .location-evr-partners .location-evr-partners-coffee p {
+    margin: 0; }
 
 .page-id-38 .pep-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;

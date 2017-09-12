@@ -55,7 +55,7 @@ get_header(); ?>
             </div>
           </div>
         </div>
-        <div class="evr-info-wrapper">
+        <div class="evr-email-wrapper">
           <h3>Email</h3>
           <p>info@eastvanroasters.com</p>
         </div>
