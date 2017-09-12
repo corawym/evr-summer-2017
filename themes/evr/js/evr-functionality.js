@@ -27,9 +27,7 @@
     $('#menu-item-37').click(function() {
       var subMenu = $(this).children('.sub-menu');
       $(subMenu).toggleClass('hide-sub-menu');
-      $(subMenu).animate({
-        scrollTop: subMenu.offset().top
-      }, 300);
+      $(subMenu)[0].scrollIntoView(false);
     });
   } else {
     $('#primary-menu').removeClass('hide-menu');
