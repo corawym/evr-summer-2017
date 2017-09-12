@@ -24,7 +24,9 @@ get_header(); ?>
                 <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roaster's logo">
                 <div class="front-page-scroll">
                     <p>Scroll</p>
-                    <p><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
+                    <div class="bounce">
+                        <p><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
+                    </div>
                 </div>
             </div>
         </section>

@@ -1024,30 +1024,45 @@ object {
 .home .front-page-hero-content-container {
   color: white;
   position: absolute;
-  bottom: 0;
+  top: 0;
   text-align: center;
-  margin-bottom: 7rem;
+  margin-top: 200px;
   width: 100%; }
   @media (min-width: 800px) {
     .home .front-page-hero-content-container {
-      margin-bottom: 40px; } }
+      margin-top: 200px; } }
 
 .home .evr-logo {
   width: 300px; }
   @media (min-width: 800px) {
     .home .evr-logo {
       width: 400px;
-      margin-bottom: 50px; } }
+      margin-bottom: 100px; } }
 
 .home .front-page-scroll {
   display: none;
   bottom: 0; }
   @media (min-width: 800px) {
     .home .front-page-scroll {
-      display: block; } }
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      margin-left: -20px; } }
   .home .front-page-scroll p {
     font-size: 1.4rem;
-    line-height: 1rem; }
+    line-height: 2.8rem; }
+
+.home .bounce {
+  animation: bounce 3s infinite; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
 
 .home .content-one {
   display: -ms-flexbox;

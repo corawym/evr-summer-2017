@@ -15,19 +15,20 @@
     .front-page-hero-content-container{
         color: white;
         position: absolute;
-        bottom: 0;
+        top: 0;
         text-align: center;
-        margin-bottom: 7rem;
+        margin-top: 200px;
         width: 100%;
         @include desktop {
-            margin-bottom: 40px;
+            margin-top: 200px;
         }
     }
+    
     .evr-logo {
         width: 300px;
         @include desktop {
             width: 400px;
-            margin-bottom: 50px;
+            margin-bottom: 100px;
         }
     }
     .front-page-scroll{
@@ -35,12 +36,70 @@
         bottom: 0;
         @include desktop {
             display: block;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            margin-left:-20px;
         }
         p{
             font-size: 1.4rem;
-            line-height: 1rem;
+            line-height: 2.8rem;
         }
     }
+    .bounce {
+        -moz-animation: bounce 3s infinite;
+        -webkit-animation: bounce 3s infinite;
+        animation: bounce 3s infinite;
+    }
+    @-moz-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+        }
+        40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+        }
+        60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+        }
+    }
+    @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -moz-transform: translateY(-15px);
+            -ms-transform: translateY(-15px);
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+
     
     .content-one {
         display: flex;

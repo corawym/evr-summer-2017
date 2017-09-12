@@ -31,7 +31,20 @@ get_header(); ?>
 							
 							<!-- Below is coffee bar menu -->
 							<div class="menu-evr-menu-container">
-								<h3 class="menu-section-title"><?php echo CFS()->get('chocolate'); ?></h2>
+								<?php
+									$args = array( 
+										'post_type' => 'menu', 
+										'posts_per_page' => 4, 
+										'orderby' => 'date',
+										'order' => 'ASC'
+										);
+									$menu_items = get_posts( $args ); // returns an array of posts
+								?>
+								
+								<?php foreach ( $menu_items as $post ) : setup_postdata( $post ); ?>
+									<h3 class="menu-section-title"><?php echo CFS()->get('coffees'); ?></h3>
+									<p><?php echo CFS()->get('coffee_name'); ?></p>
+								<?php endforeach; wp_reset_postdata(); ?>
 							</div>
 
 						</div>
