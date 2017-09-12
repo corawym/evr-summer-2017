@@ -1009,6 +1009,7 @@ object {
   display: block; }
 
 .home .main-hero {
+  z-index: -10;
   width: 100%;
   height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("../../assets/images/front-page/home-page.jpg") center;
@@ -1018,7 +1019,6 @@ object {
   @media (min-width: 800px) {
     .home .main-hero {
       height: 100vh;
-      background-size: 110%;
       background-position: top right; } }
 
 .home .front-page-hero-content-container {
@@ -1037,7 +1037,7 @@ object {
   @media (min-width: 800px) {
     .home .evr-logo {
       width: 400px;
-      margin-bottom: 60px; } }
+      margin-bottom: 50px; } }
 
 .home .front-page-scroll {
   display: none;

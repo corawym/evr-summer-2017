@@ -19,17 +19,6 @@ get_header(); ?>
             <?php endif; ?>
 
            
-
-                <!--<section class="main-hero">
-                <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roasters Logo">
-                </section>-->
-            <!--<section class="hero-banner front-page-hero-banner container-full">
-                
-                    <div class="text-center container-max1080 container-padding">
-                        
-                    </div>
-                </div>
-            </section>-->
         <section class="main-hero container-full">
             <div class="front-page-hero-content-container">
                 <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roaster's logo">
