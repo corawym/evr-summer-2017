@@ -1,24 +1,66 @@
 .home {
-    .main-hero {
-        height: 250px;
-        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page.jpg') center;
+    .main-hero{
+        width: 100%;
+        height: 500px;
+        background: linear-gradient( rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.7)), url("../../assets/images/front-page/home-page.jpg") center;
         background-repeat: no-repeat;
         background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .evr-logo {
-            height: 80px;
-            width: 138px;
-            @include desktop {
-                height: 260px;
-                width: 450px;
-            }
-        }
-        @include desktop {
-            height: 1076px;
+        position: relative;
+        @include desktop {          
+            height: 100vh;
+            background-size: 110%;
+            background-position: top right;
         }
     }
+    .front-page-hero-content-container{
+        color: white;
+        // display: flex;
+        // flex-direction: column;
+        // align-content: center;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        margin-bottom: 7rem;
+        width: 100%;
+        @include desktop {
+            margin-bottom: 40px;
+        }
+    }
+
+    .evr-logo {
+        // height: 80px;
+        // width: 138px;
+        // width:138px;
+        width: 300px;
+        @include desktop {
+            // height: 260px;
+            width: 400px;
+            margin-bottom: 60px;
+        }
+    }
+    .front-page-scroll{
+        display: none;
+        bottom: 0;
+        @include desktop {
+            display: block;
+        }
+        p{
+            font-size: 1.4rem;
+            line-height: 1rem;
+        }
+
+
+    }
+    // .main-hero {
+        
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+        
+    //     @include desktop {
+    //         height: 1076px;
+    //     }
+    // }
     .content-one {
         display: flex;
         justify-content: center;

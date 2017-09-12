@@ -18,35 +18,27 @@ get_header(); ?>
                 </header>
             <?php endif; ?>
 
-            <?php /* Start the Loop */ ?>
-            <?php while (have_posts()) :
-                the_post(); ?>
+           
 
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <header class="entry-header">
-                        <?php if ( has_post_thumbnail() ) : ?>
-                            <?php the_post_thumbnail( 'large' ); ?>
-                        <?php endif; ?>
-
-                        <?php 
-                        // the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); 
-                        ?>
-
-                        <?php if ( 'post' === get_post_type() ) : ?>
-                        <div class="entry-meta">
-                            <?php evr_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php evr_posted_by(); ?>
-                        </div><!-- .entry-meta -->
-                        <?php endif; ?>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <?php the_excerpt(); ?>
-                    </div><!-- .entry-content -->
-                </article><!-- #post-## -->
-
-                <section class="main-hero">
+                <!--<section class="main-hero">
                 <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roasters Logo">
-                </section>
+                </section>-->
+            <!--<section class="hero-banner front-page-hero-banner container-full">
+                
+                    <div class="text-center container-max1080 container-padding">
+                        
+                    </div>
+                </div>
+            </section>-->
+        <section class="main-hero container-full">
+            <div class="front-page-hero-content-container">
+                <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roaster's logo">
+                <div class="front-page-scroll">
+                    <p>Scroll</p>
+                    <p><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
+                </div>
+            </div>
+        </section>
 
         <section class="content-one">
             <div class="content-one-div">
@@ -91,9 +83,7 @@ get_header(); ?>
         <section class="instagram">
         </section>
 
-            <?php endwhile; ?>
-
-            <?php the_posts_navigation(); ?>
+           
 
         <?php else : ?>
 

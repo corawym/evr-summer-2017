@@ -1009,26 +1009,45 @@ object {
   display: block; }
 
 .home .main-hero {
-  height: 250px;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/front-page/home-page.jpg") center;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("../../assets/images/front-page/home-page.jpg") center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-  .home .main-hero .evr-logo {
-    height: 80px;
-    width: 138px; }
-    @media (min-width: 800px) {
-      .home .main-hero .evr-logo {
-        height: 260px;
-        width: 450px; } }
+  position: relative; }
   @media (min-width: 800px) {
     .home .main-hero {
-      height: 1076px; } }
+      height: 100vh;
+      background-size: 110%;
+      background-position: top right; } }
+
+.home .front-page-hero-content-container {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 7rem;
+  width: 100%; }
+  @media (min-width: 800px) {
+    .home .front-page-hero-content-container {
+      margin-bottom: 40px; } }
+
+.home .evr-logo {
+  width: 300px; }
+  @media (min-width: 800px) {
+    .home .evr-logo {
+      width: 400px;
+      margin-bottom: 60px; } }
+
+.home .front-page-scroll {
+  display: none;
+  bottom: 0; }
+  @media (min-width: 800px) {
+    .home .front-page-scroll {
+      display: block; } }
+  .home .front-page-scroll p {
+    font-size: 1.4rem;
+    line-height: 1rem; }
 
 .home .content-one {
   display: -ms-flexbox;
