@@ -6,6 +6,12 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .main-nav-bg-color {
+    background-color: $color_secondary_brownyellow;
+    @include desktop {
+      background-color: rgba(0,0,0,.6);
+    }
+  }
 }
 
 .workshops-main {
@@ -67,6 +73,9 @@
 // workshop single --------------------============================-------------------------
 
 .single-workshop-header {
+  @include desktop {
+    position: relative;
+  }
   .single-workshop-hero-banner {
     height: 424px;
     overflow-y: hidden;
@@ -79,16 +88,30 @@
     }
   }
   h1 {
-    margin: 0;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 2rem;
+    @include desktop {
+      position: absolute;
+      color: white;
+      display: inline-block;
+      bottom: 0;
+      margin-bottom: 100px;
+      width: 100%;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-align: left;
+      padding-left: 2rem;
+      text-shadow: 1px 1px 1px black;
+    }
   }
 }
 
 .single-workshop-content {
-  text-align: center;
-  padding: 2rem;
+  text-align: left;
+  padding: 2rem 10%;
   .workshop-details {
-    padding: 0 10%;
-    text-align: left;
     * {
     font-weight: normal;
     }
@@ -96,5 +119,8 @@
       display: inline;
       padding-left: 1rem;
     }
+  }
+  .button-border-orange {
+    text-align: center;
   }
 }

@@ -13,13 +13,12 @@
 			<img class="workshop-image content-image" src="<?php echo CFS()->get( 'workshop_image' ) ?>">
 		</div>
 
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		
 	</header><!-- .entry-header -->
 	
 	<section class="single-workshop-content">
 		
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
 		<p class="workshop-description"><?php echo CFS()->get( esc_html('workshop_description') ) ?></p>
 		
 		<div class="workshop-details">
