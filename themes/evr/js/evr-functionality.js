@@ -26,7 +26,7 @@
     }
     $('#menu-item-37').click(function() {
       var subMenu = $(this).children('.sub-menu');
-      $(subMenu).toggleClass('hide-sub-menu');
+      $(subMenu).toggleClass('hide-sub-menu show-sub-menu');
       $(subMenu)[0].scrollIntoView(false);
     });
   } else {
@@ -34,7 +34,7 @@
   }
 
   $('#hamburger').click(function() {
-    $('#primary-menu').toggleClass('hide-menu')
+    $('#primary-menu').toggleClass('hide-menu show-menu');
   })
 
 
