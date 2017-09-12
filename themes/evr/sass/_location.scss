@@ -25,15 +25,15 @@
       }
       .location-date-hrs {
         display: flex;
-        justify-content: space-between;
-        .location-hours {
-          max-width: 200px;
-          margin-right: 20%;
+        justify-content: flex-start;
+        max-width: 500px;
+        .location-date {
+          margin-right: 30%;
+          @include desktop {
+            margin-right: 50%;
+          }
         }
-      }
-      .evr-info-wrapper {
-        p {
-          padding-bottom: 3rem;
+        
         }
       }
     }
@@ -43,5 +43,22 @@
     color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    h2 {
+      text-align: center;
+      margin: 0;
+    }
+
+    .location-evr-partners-chocolate-coffee,
+    .location-evr-partners-chocolate,
+    .location-evr-partners-coffee {
+      div  {
+        margin: 2rem;
+        margin-left: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
   }
-} // end of .page-id-23
+ // end of .page-id-23
