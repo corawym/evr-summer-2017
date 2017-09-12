@@ -7,14 +7,7 @@
     background-size: cover;
   }
   // location content style - globals
-  .menu-coffee-container, .menu-chocolate-container{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
   .menu-coffee-content, .menu-chocolate-container, .menu-location{
-    max-width: 800px;
-    text-align: center; 
-    margin: 0 auto;
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -22,40 +15,92 @@
     border-bottom: 1px solid;
     margin-bottom: 2rem;
   }
-} // end of .page-template-menu
+  .display-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-// Coffee Bar style
-.menu-coffee-container{
-  background-color: $color_secondary_darkgray;
-  color: white;
+
+  // Coffee Bar style
+  .menu-coffee-container{
+    background-color: $color_secondary_darkgray;
+    color: white; 
+    .menu-line{
+      border-color: white;
+    }
+  }
   
-  .menu-line{
-    border-color: white;
+  .menu-evr-menu-container{
+    margin-top: 2.5rem;
+    .evr-menu-section{
+      flex-basis: 100%;
+      margin-bottom: 2.5rem;
+      @include desktop{
+        flex-basis: 50%;
+      }
+      .menu-section-title{
+      font-weight: 500;
+      flex-basis: 100%;
+      margin-bottom: 0;
+      }
+      .menu-items-name, .menu-items-price{
+        text-align: left; 
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+      }
+    }
   }
-}
+  // menu section with different price for each items
+  .evr-menu-coffee, .evr-menu-iced-drink{    
+    .menu-items-name{
+      flex-basis: 75%;
+      padding-left: 4.5rem;
+    }
+    .menu-items-price{
+      flex-basis: 25%;
+    }
+  }
+  // menu section with a price for several items
+  .evr-menu-full-leaf-tea, .evr-menu-drinking-chocolate{
+    .menu-items-name-container{
+      flex-basis: 75%;
+      .menu-items-name{
+      padding-left: 4.5rem;
+      }
+    }
+    .menu-items-price{
+      flex-basis: 25%;
+      align-self: center;
+    }
+  }
 
-// Chocolate Lab style
-.menu-chocolate-grid{
-  display: flex;
-  flex-wrap: wrap;
-  .chocolate-items-wrapper{
-    flex-basis: 50%;
-    padding: 1rem;
-  }
-  .chocolate-price{
-    font-weight: 700;
-    margin-top: 0;
-  }
-  .chocolate-name{
-    margin-bottom: 1rem;
-  }
-}
 
-.chocolate-image-wrapper {
-  @include aspect-ratio(1, 1);
-  img {
-    border: 1px solid $color_secondary_darkgray;
-    height: 100%;
-    width: 100%;
+  // Chocolate Lab style
+  .menu-chocolate-grid{
+    .chocolate-items-wrapper{
+      flex-basis: 50%;
+      padding: 1rem;
+    }
+    .chocolate-price{
+      font-weight: 700;
+      margin-top: 0;
+    }
+    .chocolate-name{
+      margin-bottom: 1rem;
+    }
   }
-}
+
+  .chocolate-image-wrapper {
+    @include aspect-ratio(1, 1);
+    img {
+      border: 1px solid $color_secondary_darkgray;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .menu-location{
+    padding-bottom: 2.5rem;
+  }
+
+} // end of .page-template-menu
