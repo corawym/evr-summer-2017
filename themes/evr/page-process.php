@@ -67,7 +67,7 @@ get_header(); ?>
 								<h4>Tasting Notes:</h4>
 								<p>leathery winey with a bit of nuttiness</p>
 								<a id="more-details-1" class="more-details">More details</a>
-								<div id="hidden-bean-info-1" class="hidden-bean-info">
+								<div id="hidden-bean-info" class="hidden-bean-info">
 									<p>
 										OKO Caribe has perfected the art of working with smallholder farmers in the San Francisco
 										de Macoris region of the Dominican Republic. Business owners Gualberto and Adriano consistently
@@ -84,8 +84,8 @@ get_header(); ?>
 								<p>Alta Verapaz</p>
 								<h4>Tasting Notes:</h4>
 								<p>bright fruit flavour with light acidity and a brown fruit finish</p>
-								<a id="more-details-2" class="more-details">More details</a>
-								<div id="hidden-bean-info-2" class="hidden-bean-info">
+								<a id="more-details" class="more-details">More details</a>
+								<div id="hidden-bean-info" class="hidden-bean-info">
 									<p>
 										Many farmers still live entirely off the grid, in areas without electrcity or phone signal. 
 										Clonal varieties include a mix of trinitarios, upper Amazon forasteros and amelonados with some
@@ -103,8 +103,8 @@ get_header(); ?>
 								<p>Ambanja, Diana Region</p>
 								<h4>Tasting notes:</h4>
 								<p>red berries, lemon and nuts with a bright acidity</p>
-								<a id="more-details-3" class="more-details">More details</a>
-								<div id="hidden-bean-info-3" class="hidden-bean-info">
+								<a id="more-details" class="more-details">More details</a>
+								<div id="hidden-bean-info" class="hidden-bean-info">
 									<h4>Climate:</h4>
 									<p>hot and dry</p>
 									<p>
@@ -122,8 +122,8 @@ get_header(); ?>
 								<p>Río Ene</p>
 								<h4>Tasting notes:</h4>
 								<p>delicate aroma of banana, black olives, red wine and aged balsamic</p>
-								<a id="more-details-4" class="more-details">More details</a>
-								<div id="hidden-bean-info-4" class="hidden-bean-info">
+								<a id="more-details" class="more-details">More details</a>
+								<div id="hidden-bean-info" class="hidden-bean-info">
 									<p>
 										We have been sourcing this criollo cacao directly from the Pangoa coop in central Peru
 										since we first opened our doors in 2012.
