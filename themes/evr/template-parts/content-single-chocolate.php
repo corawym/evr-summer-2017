@@ -22,22 +22,20 @@
 		<p class="chocolate-description"><?php echo CFS()->get( esc_html('chocolate_description') ) ?></p>
 		
 		<div class="chocolate-details">
-			<p class="chocolate-price">$<?php echo CFS()->get( esc_html('chocolate_price') ) ?></p>
-			<p class="bean-origin"><?php echo CFS()->get( esc_html('bean_origin') ) ?>
-				<span class="availability"><?php echo CFS()->get( esc_html('availability') ) ?></span>
-			</p>
+			<p class="chocolate-price"><?php echo CFS()->get( esc_html('chocolate_price') ) ?></p>
+			<div class="chocolate-info bean-origin">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/green-bean.svg" alt="">
+				<p class="chocolate-inline">Bean / <?php echo CFS()->get( esc_html('bean_origin') ) ?></p>
+			</div>
+			<div class="chocolate-info availability">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/spring-icon.svg" alt="">
+				<p class="chocolate-inline"><?php echo CFS()->get( esc_html('availability') ) ?></p>
+			</div>
 
-			<p class="chocolate-type"><?php echo CFS()->get( esc_html('chocolate_type') ) ?></p>
+			<div class="chocolate-info chocolate-type">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/mbri-info.svg" alt="">
+				<p class="chocolate-inline"><?php echo CFS()->get( esc_html('chocolate_type') ) ?></p>
 		</div>
-
-		<div class="button-border-orange">
-			<a href="#">
-				<div class="border1">
-					<div class="border2">Register</div>
-				</div>
-			</a>   
-		</div>
-
 		
 	</section>
 

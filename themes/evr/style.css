@@ -1837,6 +1837,60 @@ object {
   .single-workshop-content .button-border-orange {
     text-align: center; }
 
+@media (min-width: 800px) {
+  .single-chocolate-header {
+    position: relative; } }
+
+.single-chocolate-header .single-chocolate-hero-banner {
+  height: 424px;
+  overflow-y: hidden;
+  width: 100%; }
+  @media (min-width: 800px) {
+    .single-chocolate-header .single-chocolate-hero-banner {
+      height: 100vh; } }
+  .single-chocolate-header .single-chocolate-hero-banner img {
+    width: 100%; }
+
+.single-chocolate-header h1 {
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 2rem; }
+  @media (min-width: 800px) {
+    .single-chocolate-header h1 {
+      position: absolute;
+      color: white;
+      display: inline-block;
+      bottom: 0;
+      margin-bottom: 100px;
+      width: 100%;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-align: left;
+      padding-left: 2rem;
+      text-shadow: 1px 1px 1px black; } }
+
+.single-chocolate-content {
+  text-align: left;
+  padding: 2rem 10%; }
+  .single-chocolate-content .chocolate-details * {
+    font-weight: normal; }
+  .single-chocolate-content .chocolate-details span {
+    display: inline;
+    padding-left: 1rem; }
+  .single-chocolate-content .chocolate-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    .single-chocolate-content .chocolate-info p {
+      margin: 0;
+      padding: 1rem; }
+  .single-chocolate-content .chocolate-inline {
+    display: inline-block; }
+  .single-chocolate-content .chocolate-type {
+    padding-left: 0.8rem; }
+
 /*
  *  Owl Carousel - Core
  */
