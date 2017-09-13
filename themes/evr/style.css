@@ -1295,10 +1295,8 @@ object {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background-color: #fff;
-  margin: 0 5%; }
-  @media (min-width: 800px) {
-    .home .subscribe {
-      padding-bottom: 3rem; } }
+  margin: 0 5%;
+  padding-bottom: 3rem; }
   .home .subscribe .subscribe-content {
     text-align: center; }
   .home .subscribe .subscribe-form {
@@ -1309,7 +1307,7 @@ object {
     @media (min-width: 800px) {
       .home .subscribe .subscribe-form {
         min-width: 300px;
-        max-width: 50vw; } }
+        max-width: 100vw; } }
     .home .subscribe .subscribe-form .email {
       width: 296px;
       background-color: rgba(155, 155, 155, 0.4);

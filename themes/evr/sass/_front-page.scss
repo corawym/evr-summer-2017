@@ -221,9 +221,7 @@
         flex-wrap: nowrap;
         background-color: #fff;
         margin: 0 5%;
-        @include desktop {
-            padding-bottom: 3rem;
-        }
+        padding-bottom: 3rem;
         .subscribe-content {
             text-align: center;
         }
@@ -233,7 +231,7 @@
             margin: 0 auto;
             @include desktop {
                 min-width: 300px;
-                max-width: 50vw;
+                max-width: 100vw;
             }
             .email {
                 width: 296px;

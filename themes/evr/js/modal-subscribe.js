@@ -17,12 +17,24 @@
     //     '</div>' +
     // '</div>';
 
-    setTimeout(function(){ 
-        $('#email-popup').css('display', 'block');
-    }, 2000);
+    // setTimeout(function(){ 
+    //     $('#email-popup').css('display', 'block');
+    // }, 2000);
 
-    $('#close-popup').click(function() {
-        console.log('heyheyhey');
-        $('#email-popup').fadeOut(300);
+    // $('#close-popup').click(function() {
+    //     console.log('heyheyhey');
+    //     $('#email-popup').fadeOut(300);
+    // });
+
+    $(document).ready(function() {
+        if(localStorage.getItem('popState') !== 'shown'){
+            $("#email-popup").delay(2000).fadeIn();
+            localStorage.setItem('popState','shown')
+        }
+    
+        $('#close-popup, #email-popup').click(function() // You are clicking the close button
+        {
+            $('#email-popup').fadeOut(); // Now the pop up is hiden.
+        });
     });
 })(jQuery);
