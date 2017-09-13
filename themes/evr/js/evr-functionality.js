@@ -61,6 +61,7 @@ var spectragramComplete = function() {
       nav:true,
       dots:false,
       autoplay:true,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
       responsive:{
         0:{
             items:2
@@ -84,8 +85,8 @@ var Spectra = {
     };
     
     $('.owl-carousel').spectragram('getUserFeed',{
-      max: 16,
-      size: 'medium',
+      max: 12,
+      size: 'big',
       query: 'eastvanroasters',
       wrapEachWith: '<div class="igram-wrapper content-image">',
       complete: spectragramComplete(),
