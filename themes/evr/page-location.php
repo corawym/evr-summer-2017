@@ -63,41 +63,51 @@ get_header(); ?>
 
       <section class="location-evr-info-desktop container-padding" id="location-content">
         <div class="locations-header">
-          <h2>Location</h2>
+          <h2>East Van Roasters</h2>
         </div>
         <div class="evr-info-wrapper">
-          <p>319 Caraall Street, Vancouver, BC V6B 2J4</p>
+          <div class="info-img"></div>
+          <div class="evr-info-location">
+            <p>Location | 319 Caraall Street, Vancouver, BC V6B 2J4</p>
+          </div>
         </div>
         <div class="evr-info-wrapper">
-          <h3>Phone</h3>
-          <p>(604) 629 7562</p>
+          <div class="info-img"></div>
+          <div class="evr-info-num">
+            <p>Phone | (604) 629 7562</p>
+          </div>
         </div>
         <div class="evr-info-wrapper">
-          <h3>Hours</h3>
           <div class="location-date-hrs">
+            <div class="info-img"></div>
+            <div class="location-head">
+              <p>Hours |</p>
+            </div>
             <div class="location-date">
+              <p>Monday</p> 
               <p>Tuesday</p>             
               <p>Wednesday</p>        
               <p>Thursday</p>            
               <p>Friday</p>                 
               <p>Saturday</p>         
-              <p>Sunday</p>               
-              <p>Monday</p>    
+              <p>Sunday</p>                  
             </div>
             <div class="location-hours">
+              <p>Closed</p>
               <p>9 AM - 5 PM</p> 
               <p>9 AM - 5 PM</p>
               <p>9 AM - 5 PM</p>
               <p>9 AM - 5 PM</p>
               <p>10 AM - 5 PM</p>
               <p>Closed</p>
-              <p>Closed</p>
             </div>
           </div>
         </div>
         <div class="evr-email-wrapper">
-          <h3>Email</h3>
-          <p>info@eastvanroasters.com</p>
+          <div class="info-img"></div>
+          <div class="evr-email-content">
+            <p>Email | info@eastvanroasters.com</p>
+          </div>
         </div>
       </section>
 

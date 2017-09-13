@@ -54,6 +54,9 @@
     display: none;
     @include desktop {
       display: block;
+      .info-img {
+        
+      }
     }
   }
   

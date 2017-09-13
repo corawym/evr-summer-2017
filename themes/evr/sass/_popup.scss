@@ -1,13 +1,13 @@
 .email-popup {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     height: 225px;
     max-width: 350px;
-    z-index: 9999;
+    z-index: 999;
     @include desktop {
         min-height: 50vh;
         min-width: 60vw;

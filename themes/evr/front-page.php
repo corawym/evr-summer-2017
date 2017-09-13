@@ -30,7 +30,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div class="email-popup">
+            <!-- <div class="email-popup">
                 <div class="popup-header">
                     <h1>Newsletter</h1>
                     <div class="close-popup">
@@ -44,7 +44,7 @@ get_header(); ?>
                         <button class="sign-up" type="submit">Sign Up</button>
                     </form>
                 </div>
-            </div>;
+            </div>; -->
         </section>
 
         <section class="content-one">
