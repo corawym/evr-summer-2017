@@ -31,7 +31,7 @@
 		</div>
 
 		<div class="button-border-orange">
-			<a href="#">
+			<a href="https://www.eventbrite.ca/o/east-van-roasters-6189065301">
 				<div class="border1">
 					<div class="border2">Register</div>
 				</div>
