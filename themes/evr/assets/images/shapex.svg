@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NAVIGATION" transform="translate(-354.000000, -60.000000)" fill-rule="nonzero" fill="#fff">
+            <g id="Navigation-Menu" transform="translate(0.000000, 52.000000)">
+                <polygon id="Shape" transform="translate(363.677670, 17.677670) rotate(45.000000) translate(-363.677670, -17.677670) " points="376.17767 18.4589195 364.45892 18.4589195 364.45892 30.1776695 362.89642 30.1776695 362.89642 18.4589195 351.17767 18.4589195 351.17767 16.8964195 362.89642 16.8964195 362.89642 5.17766953 364.45892 5.17766953 364.45892 16.8964195 376.17767 16.8964195"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

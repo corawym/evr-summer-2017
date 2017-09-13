@@ -4,9 +4,9 @@
   .location-hero-banner {
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/location-hero.png") center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
-  .location-evr-info {
+  .location-evr-info-mobile {
     h3 {
       margin-bottom: .2rem;
     }
@@ -17,6 +17,9 @@
         text-align: center;
         border-bottom: 2px solid black;
         width: 60%;
+        @include desktop {
+          border-bottom: 2px solid #fff;
+        }
       }
     }
     .evr-info-wrapper {
@@ -33,9 +36,12 @@
             margin-right: 50%;
           }
         }
-        
-        }
       }
+    }
+    @include desktop {
+      color: #fff;
+      background-color: $color_background_gray;
+      border-bottom: #fff;
     }
   } // location content style
   .location-evr-partners {
@@ -43,16 +49,14 @@
     color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
     h2 {
       text-align: center;
       margin: 0;
     }
-
     .location-evr-partners-chocolate-coffee,
     .location-evr-partners-chocolate,
     .location-evr-partners-coffee {
-      div  {
+      div {
         margin: 2rem;
         margin-left: 0;
       }
@@ -61,4 +65,4 @@
       }
     }
   }
- // end of .page-id-23
+} // end of .apage-id-23
