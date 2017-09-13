@@ -5,8 +5,7 @@
     var windowWidth = $(window).width();
     if (width === windowWidth ) {
       return;
-    }
-    if (windowWidth < 785) {
+    } else if  (windowWidth < 785) {
       $('#primary-menu').addClass('hide-menu');
       if ( !$('body').is('.single, .home') ) {
         $('#mobile-header').removeClass('mobile-header-title-hidden');
@@ -36,7 +35,6 @@
   $('#hamburger').click(function() {
     $('#primary-menu').toggleClass('hide-menu show-menu');
   })
-
 
   // Bean details show hide
   $('.more-details').click(function() {
