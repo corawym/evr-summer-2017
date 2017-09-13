@@ -31,7 +31,7 @@ get_header(); ?>
                         <button class="sign-up" type="submit">Sign Up</button>
                     </form>
                 </div>
-            </div>;
+            </div>
            
         <section class="main-hero container-full">
             <div class="front-page-hero-content-container">
@@ -46,7 +46,7 @@ get_header(); ?>
 
         </section>
 
-        <section class="content-one">
+        <section class="content-one" id="front-page-content">
             <div class="content-one-div">
                 <p>Non-profit initiative benefitting the women residents of Rainier Hotel</p>
             </div>
