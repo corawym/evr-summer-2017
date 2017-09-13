@@ -558,13 +558,13 @@ textarea {
 
 .email-popup {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   max-width: 350px;
-  z-index: 9999; }
+  z-index: 999; }
   @media (min-width: 800px) {
     .email-popup {
       min-width: 60vw; } }
@@ -1140,6 +1140,7 @@ object {
   position: relative; }
   @media (min-width: 800px) {
     .home .main-hero {
+      z-index: 0;
       height: 100vh;
       background-position: top right; } }
 
@@ -1159,7 +1160,7 @@ object {
   @media (min-width: 800px) {
     .home .evr-logo {
       width: 400px;
-      margin-bottom: 100px; } }
+      margin-bottom: 80px; } }
 
 .home .front-page-scroll {
   display: none;
@@ -1171,9 +1172,14 @@ object {
       bottom: 0;
       left: 50%;
       margin-left: -20px; } }
-  .home .front-page-scroll p {
+  .home .front-page-scroll .menu-hero-button, .home .front-page-scroll p {
     font-size: 1.4rem;
-    line-height: 2.8rem; }
+    line-height: 2.8rem;
+    color: white; }
+  .home .front-page-scroll .menu-hero-button {
+    text-decoration: none; }
+    .home .front-page-scroll .menu-hero-button:hover {
+      color: #e13404; }
 
 .home .bounce {
   animation: bounce 3s infinite; }
@@ -1304,10 +1310,8 @@ object {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background-color: #fff;
-  margin: 0 5%; }
-  @media (min-width: 800px) {
-    .home .subscribe {
-      padding-bottom: 3rem; } }
+  margin: 0 5%;
+  padding-bottom: 3rem; }
   .home .subscribe .subscribe-content {
     text-align: center; }
   .home .subscribe .subscribe-form {
@@ -1318,7 +1322,7 @@ object {
     @media (min-width: 800px) {
       .home .subscribe .subscribe-form {
         min-width: 300px;
-        max-width: 50vw; } }
+        max-width: 100vw; } }
     .home .subscribe .subscribe-form .email {
       width: 296px;
       background-color: rgba(155, 155, 155, 0.4);
@@ -1594,6 +1598,16 @@ object {
     color: #fff;
     background-color: #333;
     border-bottom: #fff; } }
+
+@media (min-width: 800px) {
+  .page-id-23 .location-evr-info-mobile {
+    display: none; } }
+
+.page-id-23 .location-evr-info-desktop {
+  display: none; }
+  @media (min-width: 800px) {
+    .page-id-23 .location-evr-info-desktop {
+      display: block; } }
 
 .page-id-23 .location-evr-partners {
   background-color: black;
