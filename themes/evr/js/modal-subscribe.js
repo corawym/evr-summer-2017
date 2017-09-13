@@ -24,13 +24,16 @@
         var $popupOverlay = $('#popup-overlay');
         // if (localStorage.getItem('popState') !== 'shown') {
             $popupOverlay.delay(2000).fadeIn().focus();
+            $('html').css('overflow', 'hidden');
             // localStorage.setItem('popState', 'shown');
         // }
         $('#close-popup').click(function () {
             $popupOverlay.fadeOut(100); 
+            $('html').css('overflow', '');
         });
         $popupOverlay.click(function() {
             $(this).fadeOut(100); 
+            $('html').css('overflow', '');
         });
     });
 })(jQuery);
