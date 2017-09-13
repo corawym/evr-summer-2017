@@ -150,45 +150,44 @@
         align-items: center;
         height: 161px;
         background-color: #000000;
+        padding: 2rem;
         @include desktop {
             height: 362px;
         }
         .content-two-div {
             height: auto;
-            width: 325px;
             color: #FFFFFF;
             font-size: 16.5px;
             line-height: 23px;
             text-align: center;
-            p:not(.author) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            p {
                 margin: 0;
-                position: relative;
-                .open-quote {
+                .open-quote, .close-quote {
                     display: inline-block;
                     margin-right: 8px;
                     margin-bottom: 7px;
                     height: 15px;
                     width: 15px;
+                }
+                .open-quote {
                     background: url('../../assets/images/front-page/open-quote.svg') no-repeat;
                 }
                 .close-quote {
-                    display: inline-block;
-                    margin-left: 8px;
-                    margin-bottom: 7px;
-                    height: 15px;
-                    width: 15px;
                     background: url('../../assets/images/front-page/close-quote.svg') no-repeat;
                 }
             }
             .author {
                 margin: 0;
+                width: 100%;
+                padding-top: 0.5rem;
             }
             @include desktop {
-                width: 70vw;
-                height: 132px;
-                font-size: 36px;
+                font-size: 2.2rem;
                 font-style: italic;
-                line-height: 44px;
+                line-height: 2.8rem;
                 text-align: center;
             }
             .eat {

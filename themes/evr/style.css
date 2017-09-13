@@ -1251,43 +1251,44 @@ object {
   -ms-flex-align: center;
       align-items: center;
   height: 161px;
-  background-color: #000000; }
+  background-color: #000000;
+  padding: 2rem; }
   @media (min-width: 800px) {
     .home .content-two {
       height: 362px; } }
   .home .content-two .content-two-div {
     height: auto;
-    width: 325px;
     color: #FFFFFF;
     font-size: 16.5px;
     line-height: 23px;
-    text-align: center; }
-    .home .content-two .content-two-div p:not(.author) {
-      margin: 0;
-      position: relative; }
-      .home .content-two .content-two-div p:not(.author) .open-quote {
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .home .content-two .content-two-div p {
+      margin: 0; }
+      .home .content-two .content-two-div p .open-quote, .home .content-two .content-two-div p .close-quote {
         display: inline-block;
         margin-right: 8px;
         margin-bottom: 7px;
         height: 15px;
-        width: 15px;
+        width: 15px; }
+      .home .content-two .content-two-div p .open-quote {
         background: url("../../assets/images/front-page/open-quote.svg") no-repeat; }
-      .home .content-two .content-two-div p:not(.author) .close-quote {
-        display: inline-block;
-        margin-left: 8px;
-        margin-bottom: 7px;
-        height: 15px;
-        width: 15px;
+      .home .content-two .content-two-div p .close-quote {
         background: url("../../assets/images/front-page/close-quote.svg") no-repeat; }
     .home .content-two .content-two-div .author {
-      margin: 0; }
+      margin: 0;
+      width: 100%;
+      padding-top: 0.5rem; }
     @media (min-width: 800px) {
       .home .content-two .content-two-div {
-        width: 70vw;
-        height: 132px;
-        font-size: 36px;
+        font-size: 2.2rem;
         font-style: italic;
-        line-height: 44px;
+        line-height: 2.8rem;
         text-align: center; } }
     .home .content-two .content-two-div .eat {
       color: red; }
