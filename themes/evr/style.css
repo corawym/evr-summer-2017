@@ -1577,7 +1577,9 @@ object {
     border-color: white; }
 
 .page-template-menu .menu-evr-menu-container {
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+  -ms-flex-align: start;
+      align-items: flex-start; }
   .page-template-menu .menu-evr-menu-container .evr-menu-section {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1591,15 +1593,20 @@ object {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
       margin-bottom: 0; }
+    .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-container {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin-top: 1rem; }
     .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-name, .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-price {
       text-align: left;
       margin-bottom: 0;
       margin-top: 0.5rem; }
+    .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-name {
+      padding-left: 2rem; }
 
 .page-template-menu .evr-menu-coffee .menu-items-name, .page-template-menu .evr-menu-iced-drink .menu-items-name {
   -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
-  padding-left: 4.5rem; }
+      flex-basis: 75%; }
 
 .page-template-menu .evr-menu-coffee .menu-items-price, .page-template-menu .evr-menu-iced-drink .menu-items-price {
   -ms-flex-preferred-size: 25%;
@@ -1608,8 +1615,6 @@ object {
 .page-template-menu .evr-menu-full-leaf-tea .menu-items-name-container, .page-template-menu .evr-menu-drinking-chocolate .menu-items-name-container {
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%; }
-  .page-template-menu .evr-menu-full-leaf-tea .menu-items-name-container .menu-items-name, .page-template-menu .evr-menu-drinking-chocolate .menu-items-name-container .menu-items-name {
-    padding-left: 4.5rem; }
 
 .page-template-menu .evr-menu-full-leaf-tea .menu-items-price, .page-template-menu .evr-menu-drinking-chocolate .menu-items-price {
   -ms-flex-preferred-size: 25%;

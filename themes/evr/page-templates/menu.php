@@ -35,46 +35,54 @@ get_header(); ?>
 								<!--Below is menu coffees section-->
 								<div class="evr-menu-section evr-menu-coffee display-flex-wrap">
 									<h3 class="menu-section-title">Coffees</h3>
-									<?php	$coffees = CFS()->get( 'coffees' );
-										foreach ( $coffees as $coffee_items ) { ?>
-											<p class="menu-items-name"><?php echo $coffee_items['coffee_name']; ?></p>
-											<p class="menu-items-price"><?php echo $coffee_items['coffee_price']; ?></p>
-									<?php } ?>
+									<div class="menu-items-container display-flex-wrap">
+										<?php	$coffees = CFS()->get( 'coffees' );
+											foreach ( $coffees as $coffee_items ) { ?>
+												<p class="menu-items-name"><?php echo $coffee_items['coffee_name']; ?></p>
+												<p class="menu-items-price"><?php echo $coffee_items['coffee_price']; ?></p>
+										<?php } ?>
+									</div>
 								</div>
 
 								<!--Below is menu iced drinks section-->
 								<div class="evr-menu-section evr-menu-iced-drink display-flex-wrap">
 									<h3 class="menu-section-title">Iced Drinks</h3>
-									<?php	$iced_drinks = CFS()->get( 'iced_drinks' );
-										foreach ( $iced_drinks as $iced_drink_items ) { ?>
-											<p class="menu-items-name"><?php echo $iced_drink_items['iced_drink_name']; ?></p>
-											<p class="menu-items-price"><?php echo $iced_drink_items['iced_drink_price']; ?></p>
-									<?php } ?>
+									<div class="menu-items-container display-flex-wrap">
+										<?php	$iced_drinks = CFS()->get( 'iced_drinks' );
+											foreach ( $iced_drinks as $iced_drink_items ) { ?>
+												<p class="menu-items-name"><?php echo $iced_drink_items['iced_drink_name']; ?></p>
+												<p class="menu-items-price"><?php echo $iced_drink_items['iced_drink_price']; ?></p>
+										<?php } ?>
+									</div>
 								</div>
 
 								<!--Below is menu full leaf tea section-->
 								<div class="evr-menu-section evr-menu-full-leaf-tea display-flex-wrap">
 									<h3 class="menu-section-title">Full Leaf Teas</h3>
-									<div class="menu-items-name-container">
-										<?php	$full_leaf_teas = CFS()->get( 'full_leaf_teas' );
-											foreach ( $full_leaf_teas as $full_leaf_tea_items ) { ?>
-												<p class="menu-items-name"><?php echo $full_leaf_tea_items['full_leaf_tea_name']; ?></p>
-										<?php } ?>
+									<div class="menu-items-container display-flex-wrap">
+										<div class="menu-items-name-container">
+											<?php	$full_leaf_teas = CFS()->get( 'full_leaf_teas' );
+												foreach ( $full_leaf_teas as $full_leaf_tea_items ) { ?>
+													<p class="menu-items-name"><?php echo $full_leaf_tea_items['full_leaf_tea_name']; ?></p>
+											<?php } ?>
+										</div>
+										<p class="menu-items-price"><?php echo CFS()->get('full_leaf_tea_price'); ?></p>
 									</div>
-									<p class="menu-items-price"><?php echo CFS()->get('full_leaf_tea_price'); ?></p>
 								</div>
 
 								<!--Below is menu drinking chocolates section-->
 								<div class="evr-menu-section evr-menu-drinking-chocolate display-flex-wrap">
 									<h3 class="menu-section-title">Drinking Chocolates</h3>
-									<div class="menu-items-name-container">
-									<?php $drinking_chocolates = CFS()->get( 'drinking_chocolates' );
-										foreach ( $drinking_chocolates as $drinking_chocolate_items ) { ?>
-											<p class="menu-items-name"><?php echo $drinking_chocolate_items['drinking_chocolate_name']; ?></p>
-									<?php } ?>
-									</div>
-									<p class="menu-items-price"><?php echo CFS()->get('drinking_chocolate_price'); ?></p>
-								</div>	
+									<div class="menu-items-container display-flex-wrap">
+										<div class="menu-items-name-container">
+										<?php $drinking_chocolates = CFS()->get( 'drinking_chocolates' );
+											foreach ( $drinking_chocolates as $drinking_chocolate_items ) { ?>
+												<p class="menu-items-name"><?php echo $drinking_chocolate_items['drinking_chocolate_name']; ?></p>
+										<?php } ?>
+										</div>
+										<p class="menu-items-price"><?php echo CFS()->get('drinking_chocolate_price'); ?></p>
+									</div>	
+								</div>
 							</div>
 
 						</div>

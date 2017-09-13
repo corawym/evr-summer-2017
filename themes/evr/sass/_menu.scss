@@ -20,7 +20,6 @@
     flex-wrap: wrap;
   }
 
-
   // Coffee Bar style
   .menu-coffee-container{
     background-color: $color_secondary_darkgray;
@@ -32,21 +31,33 @@
   
   .menu-evr-menu-container{
     margin-top: 2.5rem;
+    align-items: flex-start;
     .evr-menu-section{
       flex-basis: 100%;
       margin-bottom: 2.5rem;
+     
       @include desktop{
         flex-basis: 50%;
       }
       .menu-section-title{
-      font-weight: 500;
-      flex-basis: 100%;
-      margin-bottom: 0;
+        font-weight: 500;
+        flex-basis: 100%;
+        margin-bottom: 0;
+      }
+      .menu-items-container{
+        flex-basis: 100%;
+        margin-top: 1rem;
       }
       .menu-items-name, .menu-items-price{
         text-align: left; 
         margin-bottom: 0;
         margin-top: 0.5rem;
+      }
+      .menu-items-name{
+        padding-left: 2rem;
+        // @include desktop{
+        //   padding-left: 1.5rem;
+        // }
       }
     }
   }
@@ -54,7 +65,6 @@
   .evr-menu-coffee, .evr-menu-iced-drink{    
     .menu-items-name{
       flex-basis: 75%;
-      padding-left: 4.5rem;
     }
     .menu-items-price{
       flex-basis: 25%;
@@ -63,10 +73,7 @@
   // menu section with a price for several items
   .evr-menu-full-leaf-tea, .evr-menu-drinking-chocolate{
     .menu-items-name-container{
-      flex-basis: 75%;
-      .menu-items-name{
-      padding-left: 4.5rem;
-      }
+      flex-basis: 75%;    
     }
     .menu-items-price{
       flex-basis: 25%;
