@@ -54,10 +54,15 @@
     display: none;
     @include desktop {
       display: block;
-      .info-img {
-        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/info.svg") center;
-        background-repeat: no-repeat;
-        background-size: 30px 30px;
+      .evr-info-wrapper {
+        display: flex;
+        .info-img {
+          background: url("../../assets/images/location/info.svg") center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 25px;
+          width: 25px;
+        }
       }
     }
   }
