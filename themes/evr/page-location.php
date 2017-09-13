@@ -26,7 +26,7 @@ get_header(); ?>
           <h2>Location</h2>
         </div>
         <div class="evr-info-wrapper">
-          <p>319 Caraall Street, Vancouver, BC V6B 2J4</p>
+          <p>319 Carrall Street, Vancouver, BC V6B 2J4</p>
         </div>
         <div class="evr-info-wrapper">
           <h3>Phone</h3>
@@ -68,13 +68,13 @@ get_header(); ?>
         <div class="evr-info-wrapper">
           <div class="info-img"></div>
           <div class="evr-info-location">
-            <p>Location | 319 Caraall Street, Vancouver, BC V6B 2J4</p>
+            <p>Location |  319 Carrall Street, Vancouver, BC V6B 2J4</p>
           </div>
         </div>
         <div class="evr-info-wrapper">
           <div class="info-img"></div>
           <div class="evr-info-num">
-            <p>Phone | (604) 629 7562</p>
+            <p>Phone |  (604) 629 7562</p>
           </div>
         </div>
         <div class="evr-info-wrapper">

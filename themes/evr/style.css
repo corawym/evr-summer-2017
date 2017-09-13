@@ -1620,11 +1620,47 @@ object {
   display: none; }
   @media (min-width: 800px) {
     .page-id-23 .location-evr-info-desktop {
+      background-color: #000000;
+      opacity: 0.8;
+      color: #fff;
       display: block; }
       .page-id-23 .location-evr-info-desktop .info-img {
-        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/info.svg") center;
+        background: url("../../assets/images/location/info.svg") center;
         background-repeat: no-repeat;
-        background-size: 30px 30px; } }
+        background-size: contain;
+        height: 25px;
+        width: 25px;
+        margin-right: 10px; }
+      .page-id-23 .location-evr-info-desktop .evr-info-wrapper {
+        display: -ms-flexbox;
+        display: flex; }
+        .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs {
+          display: -ms-flexbox;
+          display: flex; }
+          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .evr-info-location p,
+          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .evr-info-num p {
+            margin: 0; }
+          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date,
+          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours {
+            width: 100px; }
+            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date p,
+            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours p {
+              margin: 0; }
+          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-head {
+            width: 60px; }
+            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-head p {
+              margin: 0; }
+          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date,
+          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours {
+            width: 100px; }
+            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date p,
+            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours p {
+              margin: 0; } }
+  .page-id-23 .location-evr-info-desktop .evr-email-wrapper {
+    display: -ms-flexbox;
+    display: flex; }
+    .page-id-23 .location-evr-info-desktop .evr-email-wrapper .evr-email-content p {
+      margin: 0; }
 
 .page-id-23 .location-evr-partners {
   background-color: black;
