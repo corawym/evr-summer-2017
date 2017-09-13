@@ -223,8 +223,17 @@ a {
 
 	.hide-menu {
 		visibility: hidden;
+		transform: translateY(-2em);
+		z-index: -1;
+		opacity: 0;
 	}
-
+	.show-menu {
+		visibility: visible;
+		opacity: 1;
+		z-index: 1;
+		transform: translateY(0%);
+	}
+	
 	
 	.menu-main-menu-container{
 		flex-basis: 100%;
@@ -239,6 +248,8 @@ a {
 			justify-content: center;
 			width: 100%;
 			margin: 0;
+			transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+			transition-delay: 0s, 0s, 0.3s;
 		}
 		ul.menu {
 		@include desktop {
@@ -301,6 +312,8 @@ a {
 	.sub-menu {
 		width: 100%;
 		margin-top: 1rem;
+		transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+		transition-delay: 0s, 0s, 0.3s;
 		@include desktop {
 			padding-top: 3rem;
 		}
@@ -340,6 +353,15 @@ a {
 	}
 		.hide-sub-menu {
 			visibility: hidden;
+			transform: translateY(-2em);
+			z-index: -1;
+			opacity: 0;
+		}
+		.show-sub-menu {
+			visibility: visible;
+			opacity: 1;
+			z-index: 1;
+			transform: translateY(0%);
 		}
 	}
 	}

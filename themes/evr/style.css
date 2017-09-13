@@ -781,7 +781,15 @@ a {
   .main-navigation .mobile-header-title-hidden {
     display: none; }
   .main-navigation .hide-menu {
-    visibility: hidden; }
+    visibility: hidden;
+    transform: translateY(-2em);
+    z-index: -1;
+    opacity: 0; }
+  .main-navigation .show-menu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%); }
   .main-navigation .menu-main-menu-container {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -799,7 +807,9 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
       width: 100%;
-      margin: 0; }
+      margin: 0;
+      transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+      transition-delay: 0s, 0s, 0.3s; }
     @media (min-width: 800px) {
       .main-navigation .menu-main-menu-container ul.menu {
         -ms-flex-direction: row;
@@ -851,7 +861,9 @@ a {
         left: -2rem; } }
     .main-navigation .menu-main-menu-container ul.menu .sub-menu {
       width: 100%;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+      transition-delay: 0s, 0s, 0.3s; }
       @media (min-width: 800px) {
         .main-navigation .menu-main-menu-container ul.menu .sub-menu {
           padding-top: 3rem; } }
@@ -884,7 +896,15 @@ a {
           .main-navigation .menu-main-menu-container ul.menu .sub-menu li:last-child a {
             border-top: 1px solid #979797; } }
     .main-navigation .menu-main-menu-container ul.menu .hide-sub-menu {
-      visibility: hidden; }
+      visibility: hidden;
+      transform: translateY(-2em);
+      z-index: -1;
+      opacity: 0; }
+    .main-navigation .menu-main-menu-container ul.menu .show-sub-menu {
+      visibility: visible;
+      opacity: 1;
+      z-index: 1;
+      transform: translateY(0%); }
   .main-navigation .menu {
     display: -ms-flexbox;
     display: flex;
@@ -1249,11 +1269,10 @@ object {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background-color: #fff;
-  height: 202px;
   margin: 0 5%; }
   @media (min-width: 800px) {
     .home .subscribe {
-      height: 400px; } }
+      padding-bottom: 3rem; } }
   .home .subscribe .subscribe-content {
     text-align: center; }
   .home .subscribe .subscribe-form {
@@ -1273,20 +1292,16 @@ object {
       border: none;
       border-radius: 0; }
     .home .subscribe .subscribe-form .sign-up {
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
-      height: 32px;
-      width: 77px;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+      text-shadow: none;
+      font-weight: normal;
       background-color: #E13404;
       box-shadow: none;
       color: #fff;
-      font-weight: 300;
       border: none;
+      padding: 1rem;
       border-radius: 0; }
-      @media (min-width: 800px) {
-        .home .subscribe .subscribe-form .sign-up {
-          height: 70px;
-          width: 659px; } }
 
 .footer-site-info {
   opacity: 0.7;
@@ -1612,14 +1627,7 @@ object {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.page-template-menu .menu-coffee-container, .page-template-menu .menu-chocolate-container {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem; }
-
 .page-template-menu .menu-coffee-content, .page-template-menu .menu-chocolate-container, .page-template-menu .menu-location {
-  max-width: 800px;
-  text-align: center;
-  margin: 0 auto;
   padding-left: 5rem;
   padding-right: 5rem; }
 
@@ -1627,44 +1635,97 @@ object {
   border-bottom: 1px solid;
   margin-bottom: 2rem; }
 
-.menu-coffee-container {
-  background-color: #4a4a4a;
-  color: white; }
-  .menu-coffee-container .menu-line {
-    border-color: white; }
-
-.menu-chocolate-grid {
+.page-template-menu .display-flex-wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .menu-chocolate-grid .chocolate-items-wrapper {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    padding: 1rem; }
-  .menu-chocolate-grid .chocolate-price {
-    font-weight: 700;
-    margin-top: 0; }
-  .menu-chocolate-grid .chocolate-name {
-    margin-bottom: 1rem; }
 
-.chocolate-image-wrapper {
+.page-template-menu .menu-coffee-container {
+  background-color: #4a4a4a;
+  color: white; }
+  .page-template-menu .menu-coffee-container .menu-line {
+    border-color: white; }
+
+.page-template-menu .menu-evr-menu-container {
+  margin-top: 2.5rem;
+  -ms-flex-align: start;
+      align-items: flex-start; }
+  .page-template-menu .menu-evr-menu-container .evr-menu-section {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 2.5rem; }
+    @media (min-width: 800px) {
+      .page-template-menu .menu-evr-menu-container .evr-menu-section {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; } }
+    .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-section-title {
+      font-weight: 500;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin-bottom: 0; }
+    .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-container {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin-top: 1rem; }
+    .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-name, .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-price {
+      text-align: left;
+      margin-bottom: 0;
+      margin-top: 0.5rem; }
+    .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-name {
+      padding-left: 2rem; }
+
+.page-template-menu .evr-menu-coffee .menu-items-name, .page-template-menu .evr-menu-iced-drink .menu-items-name {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%; }
+
+.page-template-menu .evr-menu-coffee .menu-items-price, .page-template-menu .evr-menu-iced-drink .menu-items-price {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%; }
+
+.page-template-menu .evr-menu-full-leaf-tea .menu-items-name-container, .page-template-menu .evr-menu-drinking-chocolate .menu-items-name-container {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%; }
+
+.page-template-menu .evr-menu-full-leaf-tea .menu-items-price, .page-template-menu .evr-menu-drinking-chocolate .menu-items-price {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+
+.page-template-menu .menu-chocolate-grid .chocolate-items-wrapper {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 1rem; }
+
+.page-template-menu .menu-chocolate-grid .chocolate-price {
+  font-weight: 700;
+  margin-top: 0; }
+
+.page-template-menu .menu-chocolate-grid .chocolate-name {
+  margin-bottom: 1rem; }
+
+.page-template-menu .chocolate-image-wrapper {
   position: relative; }
-  .chocolate-image-wrapper:before {
+  .page-template-menu .chocolate-image-wrapper:before {
     display: block;
     content: "";
     width: 100%;
     padding-top: 100%; }
-  .chocolate-image-wrapper > .content-image {
+  .page-template-menu .chocolate-image-wrapper > .content-image {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0; }
-  .chocolate-image-wrapper img {
+  .page-template-menu .chocolate-image-wrapper img {
     border: 1px solid #4a4a4a;
     height: 100%;
     width: 100%; }
+
+.page-template-menu .menu-location {
+  padding-bottom: 2.5rem; }
 
 .post-type-archive-workshop .workshops-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops-hero.jpg") center;
@@ -1775,3 +1836,177 @@ object {
     padding-left: 1rem; }
   .single-workshop-content .button-border-orange {
     text-align: center; }
+
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+  padding-bottom: 3rem; }
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-wrapper,
+  .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); }
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .owl-carousel .igram-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; }
+  .owl-carousel .owl-item img {
+    display: block;
+    max-width: 100%;
+    height: 230px; }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d; }
+
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; }
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; }
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default; }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #869791; }
