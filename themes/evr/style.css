@@ -580,7 +580,7 @@ textarea {
   z-index: 999; }
   @media (min-width: 800px) {
     .email-popup {
-      min-width: 60vw; } }
+      min-width: 600px; } }
   .email-popup .popup-header {
     height: 50px;
     width: 350px;
@@ -600,7 +600,7 @@ textarea {
           font-size: 20px; } }
     @media (min-width: 800px) {
       .email-popup .popup-header {
-        min-width: 60vw;
+        min-width: 600px;
         height: 80px; } }
     .email-popup .popup-header .close-popup {
       position: absolute;
@@ -1325,7 +1325,8 @@ object {
       flex-wrap: nowrap;
   background-color: #fff;
   margin: 0 5%;
-  padding-bottom: 3rem; }
+  padding-bottom: 5rem;
+  padding-top: 2rem; }
   .home .subscribe .subscribe-content {
     text-align: center; }
   .home .subscribe .subscribe-form {
@@ -1974,8 +1975,7 @@ object {
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1;
-  padding-bottom: 3rem;
-  padding-top: 3rem; }
+  padding-bottom: 3rem; }
   .owl-carousel .owl-stage {
     position: relative;
     -ms-touch-action: pan-Y;

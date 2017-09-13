@@ -20,7 +20,7 @@
     max-width: 350px;
     z-index: 999;
     @include desktop {
-        min-width: 60vw;
+        min-width: 600px;
     }
     .popup-header {
         height: 50px;
@@ -38,7 +38,7 @@
             }
         }
         @include desktop {
-            min-width: 60vw;
+            min-width: 600px;
             height: 80px;
         }
         .close-popup {
