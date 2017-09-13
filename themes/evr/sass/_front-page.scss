@@ -263,3 +263,18 @@
         }
     }
 }
+
+.instagram-follow {
+    display: none;
+    margin-left: 5%;
+    background-color: $color_background_gray;
+    color: white;
+    text-decoration: none;
+    padding: 0.1rem 0.3rem;
+    opacity: 0.8;
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+    position: absolute;
+    z-index: 9999;
+    margin-top: 2%;
+}

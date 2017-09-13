@@ -71,6 +71,7 @@ var spectragramComplete = function() {
         }
       }
     });
+    $('.instagram-follow').show();
   });
 }
 

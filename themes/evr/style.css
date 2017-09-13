@@ -675,16 +675,14 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: #e13404; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+a:hover, a:focus, a:active {
+  color: #e13404; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -1357,6 +1355,20 @@ object {
       padding: 1rem;
       border-radius: 0; }
 
+.instagram-follow {
+  display: none;
+  margin-left: 5%;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 0.1rem 0.3rem;
+  opacity: 0.8;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+  position: absolute;
+  z-index: 9999;
+  margin-top: 2%; }
+
 .footer-site-info {
   opacity: 0.7;
   background-color: #000000;
@@ -1622,11 +1634,17 @@ object {
   display: none; }
   @media (min-width: 800px) {
     .page-id-23 .location-evr-info-desktop {
+      background-color: #000000;
       display: block; }
-      .page-id-23 .location-evr-info-desktop .info-img {
-        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/info.svg") center;
-        background-repeat: no-repeat;
-        background-size: 30px 30px; } }
+      .page-id-23 .location-evr-info-desktop .evr-info-wrapper {
+        display: -ms-flexbox;
+        display: flex; }
+        .page-id-23 .location-evr-info-desktop .evr-info-wrapper .info-img {
+          background: url("../../assets/images/location/info.svg") center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 25px;
+          width: 25px; } }
 
 .page-id-23 .location-evr-partners {
   background-color: black;

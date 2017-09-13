@@ -77,6 +77,7 @@ get_header(); ?>
         </section>
 
         <section id="instagram-feed">
+            <a class="instagram-follow" href="">Follow @eastvanroasters</a>
             <div class="owl-carousel owl-theme">
 
             </div>
