@@ -67,11 +67,8 @@ var spectragramComplete = function() {
         0:{
             items:2
         },
-        600:{
+        800:{
             items:4
-        },
-        1000:{
-            items:5
         }
       }
     });
@@ -90,8 +87,9 @@ var Spectra = {
     
     $('.owl-carousel').spectragram('getUserFeed',{
       max: 16,
+      size: 'medium',
       query: 'eastvanroasters',
-      wrapEachWith: '<div class="igram-wrapper">',
+      wrapEachWith: '<div class="igram-wrapper content-image">',
       complete: spectragramComplete(),
     });
   }
