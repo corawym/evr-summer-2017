@@ -71,7 +71,10 @@ get_header(); ?>
         </form>
         </section>
 
-        <section class="instagram">
+        <section id="instagram-feed">
+            <div class="owl-carousel owl-theme">
+
+            </div>
         </section>
 
            

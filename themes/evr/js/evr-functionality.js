@@ -56,5 +56,48 @@
     }
 });
 
+var spectragramComplete = function() {
+  $(window).on('load', function() {
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      nav:true,
+      dots:false,
+      autoplay:true,
+      responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:5
+        }
+      }
+    });
+  });
+}
+
+var Spectra = {
+  instaToken: '25918619.602e4eb.ea174df8724d42448ddb073cbe04bba5',
+  instaID: ' 602e4eb7188e4898a3cf5a7afc6b1570',
+  
+  init: function () {
+    $.fn.spectragram.accessData = {
+      accessToken: this.instaToken,
+      clientID: this.instaID
+    };
+    
+    $('.owl-carousel').spectragram('getUserFeed',{
+      max: 16,
+      query: 'eastvanroasters',
+      wrapEachWith: '<div class="igram-wrapper">',
+      complete: spectragramComplete(),
+    });
+  }
+}
+Spectra.init();
+
+
 
 })(jQuery);
