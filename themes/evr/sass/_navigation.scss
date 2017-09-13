@@ -312,10 +312,15 @@ a {
 	.sub-menu {
 		width: 100%;
 		margin-top: 1rem;
-		transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-		transition-delay: 0s, 0s, 0.3s;
+		transition: opacity 0.3s ease-in-out 0s, transform 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 		@include desktop {
 			padding-top: 3rem;
+		}
+		&:hover {
+			visibility: visible;
+			transform: translateY(0%);
+			z-index: 1;
+			opacity: 1;
 		}
 		
 		li {
@@ -359,9 +364,9 @@ a {
 		}
 		.show-sub-menu {
 			visibility: visible;
-			opacity: 1;
-			z-index: 1;
 			transform: translateY(0%);
+			z-index: 1;
+			opacity: 1;
 		}
 	}
 	}

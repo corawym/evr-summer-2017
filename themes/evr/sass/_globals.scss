@@ -162,6 +162,8 @@ a{
   a{
     line-height: 45px;
     color: white;
+    font-weight: normal;
+    font-size: 1.2rem;
     &:hover{
       color: $color_primary_orange;
     }
