@@ -557,6 +557,7 @@ textarea {
   width: 100%; }
 
 .email-popup {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -564,7 +565,7 @@ textarea {
   background-color: #fff;
   height: 225px;
   max-width: 350px;
-  z-index: 999; }
+  z-index: 9999; }
   @media (min-width: 800px) {
     .email-popup {
       min-height: 50vh;
