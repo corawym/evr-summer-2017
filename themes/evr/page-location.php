@@ -7,8 +7,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
 
       <section class="hero-banner location-hero-banner container-full">
         <div class="hero-content-container">
@@ -21,7 +21,47 @@ get_header(); ?>
         </div>
       </section>
 
-      <section class="location-evr-info container-padding" id="location-content">
+      <section class="location-evr-info-mobile container-padding" id="location-content">
+        <div class="locations-header">
+          <h2>Location</h2>
+        </div>
+        <div class="evr-info-wrapper">
+          <p>319 Caraall Street, Vancouver, BC V6B 2J4</p>
+        </div>
+        <div class="evr-info-wrapper">
+          <h3>Phone</h3>
+          <p>(604) 629 7562</p>
+        </div>
+        <div class="evr-info-wrapper">
+          <h3>Hours</h3>
+          <div class="location-date-hrs">
+            <div class="location-date">
+              <p>Tuesday</p>             
+              <p>Wednesday</p>        
+              <p>Thursday</p>            
+              <p>Friday</p>                 
+              <p>Saturday</p>         
+              <p>Sunday</p>               
+              <p>Monday</p>    
+            </div>
+            <div class="location-hours">
+              <p>9 AM - 5 PM</p> 
+              <p>9 AM - 5 PM</p>
+              <p>9 AM - 5 PM</p>
+              <p>9 AM - 5 PM</p>
+              <p>10 AM - 5 PM</p>
+              <p>Closed</p>
+              <p>Closed</p>
+            </div>
+          </div>
+        </div>
+        <div class="evr-email-wrapper">
+          <h3>Email</h3>
+          <p>info@eastvanroasters.com</p>
+        </div>
+      </section>
+
+      <section class="location-evr-info-desktop container-padding" id="location-content">
         <div class="locations-header">
           <h2>Location</h2>
         </div>
@@ -134,8 +174,8 @@ get_header(); ?>
 
       
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        </main><!-- #main -->
+    </div><!-- #primary -->
 
 
 <?php get_footer(); ?>
