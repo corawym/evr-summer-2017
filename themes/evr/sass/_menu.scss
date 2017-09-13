@@ -22,7 +22,7 @@
 
   // Coffee Bar style
   .menu-coffee-container{
-    background-color: $color_secondary_darkgray;
+    background-color: $color_background_gray;
     color: white; 
     .menu-line{
       border-color: white;
@@ -55,9 +55,6 @@
       }
       .menu-items-name{
         padding-left: 2rem;
-        // @include desktop{
-        //   padding-left: 1.5rem;
-        // }
       }
     }
   }
@@ -81,6 +78,12 @@
     }
   }
 
+  .menu-caption{
+    font-size: 0.8rem;
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
+    color: $color_secondary_lightbrown;
+  }
 
   // Chocolate Lab style
   .menu-chocolate-grid{

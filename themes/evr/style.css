@@ -1668,7 +1668,7 @@ object {
       flex-wrap: wrap; }
 
 .page-template-menu .menu-coffee-container {
-  background-color: #4a4a4a;
+  background-color: #333;
   color: white; }
   .page-template-menu .menu-coffee-container .menu-line {
     border-color: white; }
@@ -1719,6 +1719,12 @@ object {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center; }
+
+.page-template-menu .menu-caption {
+  font-size: 0.8rem;
+  margin-left: 2.5rem;
+  margin-top: 1.5rem;
+  color: #bda38a; }
 
 .page-template-menu .menu-chocolate-grid .chocolate-items-wrapper {
   -ms-flex-preferred-size: 50%;

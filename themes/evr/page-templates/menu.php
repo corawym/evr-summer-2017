@@ -82,6 +82,7 @@ get_header(); ?>
 										</div>
 										<p class="menu-items-price"><?php echo CFS()->get('drinking_chocolate_price'); ?></p>
 									</div>	
+									<p class="menu-caption">* (8 oz ‘pay what you can’ origin blend) $2.00 min </p>
 								</div>
 							</div>
 
