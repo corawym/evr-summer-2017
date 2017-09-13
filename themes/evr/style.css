@@ -903,11 +903,6 @@ a {
       @media (min-width: 800px) {
         .main-navigation .menu-main-menu-container ul.menu .sub-menu {
           padding-top: 3rem; } }
-      .main-navigation .menu-main-menu-container ul.menu .sub-menu:hover {
-        visibility: visible;
-        transform: translateY(0%);
-        z-index: 1;
-        opacity: 1; }
       .main-navigation .menu-main-menu-container ul.menu .sub-menu li {
         list-style: none;
         background: #917968; }

@@ -316,12 +316,6 @@ a {
 		@include desktop {
 			padding-top: 3rem;
 		}
-		&:hover {
-			visibility: visible;
-			transform: translateY(0%);
-			z-index: 1;
-			opacity: 1;
-		}
 		
 		li {
 			list-style: none;
