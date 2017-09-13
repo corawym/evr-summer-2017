@@ -1131,6 +1131,7 @@ object {
   position: relative; }
   @media (min-width: 800px) {
     .home .main-hero {
+      z-index: 0;
       height: 100vh;
       background-position: top right; } }
 
@@ -1150,7 +1151,7 @@ object {
   @media (min-width: 800px) {
     .home .evr-logo {
       width: 400px;
-      margin-bottom: 100px; } }
+      margin-bottom: 80px; } }
 
 .home .front-page-scroll {
   display: none;
@@ -1162,9 +1163,14 @@ object {
       bottom: 0;
       left: 50%;
       margin-left: -20px; } }
-  .home .front-page-scroll p {
+  .home .front-page-scroll .menu-hero-button, .home .front-page-scroll p {
     font-size: 1.4rem;
-    line-height: 2.8rem; }
+    line-height: 2.8rem;
+    color: white; }
+  .home .front-page-scroll .menu-hero-button {
+    text-decoration: none; }
+    .home .front-page-scroll .menu-hero-button:hover {
+      color: #e13404; }
 
 .home .bounce {
   animation: bounce 3s infinite; }

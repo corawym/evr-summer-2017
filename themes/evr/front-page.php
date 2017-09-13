@@ -23,7 +23,7 @@ get_header(); ?>
             <div class="front-page-hero-content-container">
                 <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roaster's logo">
                 <div class="front-page-scroll">
-                    <p>Scroll</p>
+                    <a class="hero-button menu-hero-button" href="#front-page-content">Scroll</a>
                     <div class="bounce">
                         <p><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
                     </div>
@@ -47,7 +47,7 @@ get_header(); ?>
             </div>;
         </section>
 
-        <section class="content-one">
+        <section class="content-one" id="front-page-content">
             <div class="content-one-div">
                 <p>Non-profit initiative benefitting the women residents of Rainier Hotel</p>
             </div>
