@@ -18,20 +18,7 @@ get_header(); ?>
                 </header>
             <?php endif; ?>
 
-            <div id="email-popup" class="email-popup">
-                <div class="popup-header">
-                    <h1>Newsletter</h1>
-                    <a id="close-popup" class="close-popup"></a>
-                </div>
-                <div class="popup-content">
-                    <h2>Get on the list today!</h2>
-                    <p>Sign up with your email address for exclusive events and products</p>
-                    <form class="subscribe-form" action="subscribe">
-                        <input class="email" type="email" name="usremail" placeholder="Enter Email">
-                        <button class="sign-up" type="submit">Sign Up</button>
-                    </form>
-                </div>
-            </div>
+            
            
         <section class="main-hero container-full">
             <div class="front-page-hero-content-container">
@@ -80,10 +67,12 @@ get_header(); ?>
                 <h2>Subscribe</h2>
                 <p>Sign up with your email address for exclusive events and products!</p>
             </div>
-        <form class="subscribe-form" action="subscribe">
-            <input class="email" type="email" name="usremail" placeholder="Enter Email">
-            <button class="sign-up" type="submit">Sign Up</button>
-        </form>
+            <form class="subscribe-form" action="https://eastvanroasters.us16.list-manage.com/subscribe/post" method="POST">
+                <input type="hidden" name="u" value="97bc113ec28f7d8d5d890eaaa">
+                <input type="hidden" name="id" value="7156395ad4">
+                <input class="email" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter Email">
+                <button class="sign-up" type="submit">Sign Up</button>
+            </form>
         </section>
 
         <section id="instagram-feed">
@@ -91,8 +80,6 @@ get_header(); ?>
 
             </div>
         </section>
-
-           
 
         <?php else : ?>
 

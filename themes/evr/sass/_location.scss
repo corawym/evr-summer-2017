@@ -6,6 +6,8 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  // evr location info on mobile view
   .location-evr-info-mobile {
     h3 {
       margin-bottom: .2rem;
@@ -43,7 +45,22 @@
       background-color: $color_background_gray;
       border-bottom: #fff;
     }
-  } // location content style
+    @include desktop {
+      display: none;
+    }
+  } 
+  // evr location info on desktop view
+  .location-evr-info-desktop {
+    display: none;
+    @include desktop {
+      display: block;
+      .info-img {
+        
+      }
+    }
+  }
+  
+  // location content style
   .location-evr-partners {
     background-color: black;
     color: white;

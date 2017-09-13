@@ -5,8 +5,7 @@
     var windowWidth = $(window).width();
     if (width === windowWidth ) {
       return;
-    }
-    if (windowWidth < 785) {
+    } else if  (windowWidth < 785) {
       $('#primary-menu').addClass('hide-menu');
       if ( !$('body').is('.single, .home') ) {
         $('#mobile-header').removeClass('mobile-header-title-hidden');
@@ -37,7 +36,6 @@
     $('#primary-menu').toggleClass('hide-menu show-menu');
   })
 
-
   // Bean details show hide
   $('.more-details').click(function() {
     $(this).next().toggleClass('show-bean-info');
@@ -63,6 +61,7 @@ var spectragramComplete = function() {
       nav:true,
       dots:false,
       autoplay:true,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
       responsive:{
         0:{
             items:2
@@ -86,8 +85,8 @@ var Spectra = {
     };
     
     $('.owl-carousel').spectragram('getUserFeed',{
-      max: 16,
-      size: 'medium',
+      max: 12,
+      size: 'big',
       query: 'eastvanroasters',
       wrapEachWith: '<div class="igram-wrapper content-image">',
       complete: spectragramComplete(),
