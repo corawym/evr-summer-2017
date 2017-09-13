@@ -31,7 +31,7 @@ get_header(); ?>
                         <button class="sign-up" type="submit">Sign Up</button>
                     </form>
                 </div>
-            </div>;
+            </div>
            
         <section class="main-hero container-full">
             <div class="front-page-hero-content-container">
