@@ -18,7 +18,7 @@
     '</div>';
 
     setTimeout(function(){ 
-        $('html body.home').append(formHtml);
+        $('.home').append(formHtml);
     }, 2000);
 
     $(formHtml).click(function() {

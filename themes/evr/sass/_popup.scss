@@ -7,17 +7,28 @@
     height: 225px;
     max-width: 350px;
     z-index: 999;
+    @include desktop {
+        min-height: 50vh;
+        min-width: 60vw;
+    }
     .popup-header {
         height: 50px;
         width: 350px;	
         background-color: #E13404;
         display: flex;
         justify-content: center;
+        align-items: center;
         color: #fff;
         h1 {
             font-size: 18px;
             text-transform: uppercase;
-            
+            @include desktop {
+                font-size: 20px;
+            }
+        }
+        @include desktop {
+            min-width: 60vw;
+            height: 80px;
         }
         .close-popup {
             position: absolute;
@@ -28,6 +39,10 @@
             background: url("../../assets/images/shapex.svg") no-repeat;
             background-size: contain; 
             cursor: pointer;
+            @include desktop {
+                height: 22px;
+                width: 22px;
+            }
         }
     }
     .popup-content {
@@ -36,6 +51,9 @@
         p {
             font-size: 14px;
             margin: 1rem;
+            @include desktop {
+                margin: 2rem
+            }
         }
         .subscribe-form {
             display: flex;
@@ -43,7 +61,7 @@
             margin: 0 auto;
             @include desktop {
                 min-width: 300px;
-                max-width: 50vw;
+                max-width: 40vw;
             }
             .email {
                 width: 225px;
@@ -51,6 +69,9 @@
                 flex: 1 1 70%;
                 border: none;
                 border-radius: 0;
+                @include desktop {
+                    flex: 1 1 75%;
+                }
             }
             .sign-up {
                 flex: 1 1 30%;
@@ -63,8 +84,8 @@
                 border: none;
                 border-radius: 0;
                 @include desktop {
-                    height: 70px;
-                    width: 659px;
+                    height: 60px;
+                    flex: 1 1 25%;
                 }
             }
         }
