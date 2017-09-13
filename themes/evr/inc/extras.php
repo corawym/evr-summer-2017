@@ -20,3 +20,10 @@ function evr_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'evr_body_classes' );
+
+// Add extra options on WP Admin menu
+function evr_linked_url() {
+		add_menu_page( 'Edit Menu', 'Menu', 'manage_options', 'post.php?post=17&action=edit', '', 'dashicons-book', 7 );
+}
+add_action( 'admin_menu', 'evr_linked_url' );
+
