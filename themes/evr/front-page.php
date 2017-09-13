@@ -26,8 +26,10 @@ get_header(); ?>
                 <div class="popup-content">
                     <h2>Get on the list today!</h2>
                     <p>Sign up with your email address for exclusive events and products</p>
-                    <form class="subscribe-form" action="subscribe">
-                        <input class="email" type="email" name="usremail" placeholder="Enter Email">
+                    <form class="subscribe-form" action="https://eastvanroasters.us16.list-manage.com/subscribe/post" method="POST">
+                        <input type="hidden" name="u" value="97bc113ec28f7d8d5d890eaaa">
+                        <input type="hidden" name="id" value="7156395ad4">
+                        <input class="email" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter Email">
                         <button class="sign-up" type="submit">Sign Up</button>
                     </form>
                 </div>
@@ -80,10 +82,12 @@ get_header(); ?>
                 <h2>Subscribe</h2>
                 <p>Sign up with your email address for exclusive events and products!</p>
             </div>
-        <form class="subscribe-form" action="subscribe">
-            <input class="email" type="email" name="usremail" placeholder="Enter Email">
-            <button class="sign-up" type="submit">Sign Up</button>
-        </form>
+            <form class="subscribe-form" action="https://eastvanroasters.us16.list-manage.com/subscribe/post" method="POST">
+                <input type="hidden" name="u" value="97bc113ec28f7d8d5d890eaaa">
+                <input type="hidden" name="id" value="7156395ad4">
+                <input class="email" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter Email">
+                <button class="sign-up" type="submit">Sign Up</button>
+            </form>
         </section>
 
         <section id="instagram-feed">
