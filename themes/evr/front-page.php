@@ -18,23 +18,10 @@ get_header(); ?>
                 </header>
             <?php endif; ?>
 
-           
-        <section class="main-hero container-full">
-            <div class="front-page-hero-content-container">
-                <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roaster's logo">
-                <div class="front-page-scroll">
-                    <a class="hero-button menu-hero-button" href="#front-page-content">Scroll</a>
-                    <div class="bounce">
-                        <p><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="email-popup">
+            <div id="email-popup" class="email-popup">
                 <div class="popup-header">
                     <h1>Newsletter</h1>
-                    <div class="close-popup">
-                    </div>
+                    <a id="close-popup" class="close-popup"></a>
                 </div>
                 <div class="popup-content">
                     <h2>Get on the list today!</h2>
@@ -44,7 +31,19 @@ get_header(); ?>
                         <button class="sign-up" type="submit">Sign Up</button>
                     </form>
                 </div>
-            </div>;
+            </div>
+           
+        <section class="main-hero container-full">
+            <div class="front-page-hero-content-container">
+                <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roaster's logo">
+                <div class="front-page-scroll">
+                    <p>Scroll</p>
+                    <div class="bounce">
+                        <p><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section class="content-one" id="front-page-content">

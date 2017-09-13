@@ -18,11 +18,11 @@
     // '</div>';
 
     setTimeout(function(){ 
-        $('.home').append('.email-popup');
+        $('#email-popup').css('display', 'block');
     }, 2000);
 
-    $('.close-popup').click(function() {
-        $('.email-popup').hide();
-        console.log('hey')
+    $('#close-popup').click(function() {
+        console.log('heyheyhey');
+        $('#email-popup').fadeOut(300);
     });
 })(jQuery);
