@@ -53,6 +53,7 @@
   .location-evr-info-desktop {
     display: none;
     @include desktop {
+      background-color: #000000;
       display: block;
       .evr-info-wrapper {
         display: flex;
