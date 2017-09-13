@@ -12,7 +12,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="not-found-main" role="main">
 
-			<section class="error-404 not-found">
+			<section class="hero-banner error-404 not-found">
 				<div class="error-flex">
 					<div class="error-content">
 						<h1>404</h1>
