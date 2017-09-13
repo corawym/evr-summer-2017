@@ -84,8 +84,8 @@ var Spectra = {
     };
     
     $('.owl-carousel').spectragram('getUserFeed',{
-      max: 16,
-      size: 'medium',
+      max: 12,
+      size: 'big',
       query: 'eastvanroasters',
       wrapEachWith: '<div class="igram-wrapper content-image">',
       complete: spectragramComplete(),
