@@ -55,7 +55,9 @@
     @include desktop {
       display: block;
       .info-img {
-        
+        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/info.svg") center;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
       }
     }
   }
