@@ -1153,27 +1153,25 @@ object {
       height: 100vh; } }
 
 .home .front-page-hero-wrapper {
+  height: 80%;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
-  @media (min-width: 800px) {
-    .home .front-page-hero-wrapper {
-      height: 100vh; } }
 
 .home .front-page-hero-content-container {
-  height: 80%;
+  height: 100%;
   color: white; }
 
 .home .evr-logo {
   width: 300px; }
   @media (min-width: 800px) {
     .home .evr-logo {
-      width: 400px; } }
+      width: 400px;
+      padding-top: 5%; } }
 
 .home .front-page-scroll {
   display: none;
@@ -1181,9 +1179,7 @@ object {
   width: 100%; }
   @media (min-width: 800px) {
     .home .front-page-scroll {
-      display: block;
-      position: absolute;
-      bottom: 50px; } }
+      display: block; } }
   .home .front-page-scroll a {
     text-decoration: none;
     font-size: 1.4rem;
