@@ -5,7 +5,7 @@
     var windowWidth = $(window).width();
     if (width === windowWidth ) {
       return;
-    } else if  (windowWidth < 785) {
+    } else if  (windowWidth < 800) {
       $('#primary-menu').addClass('hide-menu');
       if ( !$('body').is('.single, .home') ) {
         $('#mobile-header').removeClass('mobile-header-title-hidden');

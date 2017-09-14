@@ -35,8 +35,8 @@
 						</div>
 					</div>
 					<div class="copyright">
-							<p>copyright &copy; 2017 East Van Roasters all rights reserved</p>
-						</div>
+						<p>copyright &copy; <?php echo date("Y"); ?> East Van Roasters all rights reserved</p>
+					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

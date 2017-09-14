@@ -41,7 +41,7 @@ get_header('archive'); ?>
 					<a href="<?php esc_url(  the_permalink() )?>">
 						<div class="workshop-container">
 							<div class="workshop-image-wrapper">
-								<img class="workshop-image content-image" src="<?php echo CFS()->get( 'workshop_image' ) ?>">
+								<img class="workshop-image content-image" src="<?php echo esc_url( CFS()->get( 'workshop_image' ) ) ?>">
 							</div>
 							<h3 class="workshop-title"><?php esc_html( the_title() ) ?></h3>
 							<p class="workshop-date"><?php echo CFS()->get( esc_html('workshop_date') ) ?></p>
