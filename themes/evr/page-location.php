@@ -74,7 +74,7 @@ get_header(); ?>
         <div class="evr-info-wrapper">
           <div class="info-img"></div>
           <div class="evr-info-num">
-            <p>Phone |  (604) 629 7562</p>
+            <p>Phone |  (604)-629-7562</p>
           </div>
         </div>
         <div class="evr-info-wrapper">
@@ -106,7 +106,7 @@ get_header(); ?>
         <div class="evr-email-wrapper">
           <div class="info-img"></div>
           <div class="evr-email-content">
-            <p>Email | info@eastvanroasters.com</p>
+            <p>Email | <a href="#">info@eastvanroasters.com</a></p>
           </div>
         </div>
       </section>
