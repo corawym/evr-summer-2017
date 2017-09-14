@@ -10,17 +10,14 @@
         }
     }
     .front-page-hero-wrapper {
+        height: 80%;
         width: 100%;
         display: flex;
-        height: 100%;
         justify-content: center;
         align-items: center;
-        @include desktop {
-            height: 100vh;
-        }
     }
     .front-page-hero-content-container{
-        height: 80%;
+        height: 100%;
         color: white;
     }
     
@@ -28,6 +25,7 @@
         width: 300px;
         @include desktop {
             width: 400px;
+            padding-top: 5%;
         }
     }
     .front-page-scroll{
@@ -36,8 +34,6 @@
         width: 100%;
         @include desktop {
             display: block;
-            position: absolute;
-            bottom: 50px;
         }
         a {
             text-decoration: none;
@@ -167,7 +163,8 @@
             align-items: center;
             flex-wrap: wrap;
             p {
-                margin: 0;
+                margin: 0 auto;
+                max-width: 1080px;
                 .open-quote, .close-quote {
                     display: inline-block;
                     margin-right: 8px;
@@ -183,9 +180,8 @@
                 }
             }
             .author {
-                margin: 0;
                 width: 100%;
-                padding-top: 0.5rem;
+                padding: 0.5rem;
             }
             @include desktop {
                 font-size: 2.2rem;
@@ -233,6 +229,12 @@
         padding-top: 2rem;
         .subscribe-content {
             text-align: center;
+        }
+        h2 {
+            margin: 0;
+        }
+        p {
+            margin-top: 0;
         }
         .subscribe-form {
             display: flex;
