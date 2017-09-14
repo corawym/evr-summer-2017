@@ -5,15 +5,15 @@
     height: 500px;
     @include desktop{
         height: 100vh;
+        min-height: 650px;
     }
     .error-content{
-        display: flex;
+        // display: flex;
     }
     .error-hero-content-container{
-        align-content: center;
         padding-top: 5px;
         color: white;
-        margin: 0 auto;
+        margin: auto;
         @include desktop{
             padding-top: 160px;
         }
