@@ -112,16 +112,15 @@ get_header(); ?>
       </section>
 
       <section class="location-evr-partners container-full">
+        <h2>Our chocolate and coffee beans can also be found at a select few locations in Vancouver</h2>
         <div class="location-evr-partners-content container-padding">
-          <h2>Our chocolate and coffee beans can also be found at a select few locations in Vancouver</h2>
-          
           <div class="location-evr-partners-chocolate-coffee">
             <h3>Chocolate Bars & Coffee Beans</h3>
             <div>
               <p>Edible Canada</p>
               <p>1596 Johnston Street</p>
               <p>Vancouver, BC</p>
-              <p>T 604  683 6681</p>
+              <p>T : (604)-683-6681</p>
               <p>https://ediblecanada.com/</p>
             </div>
             <div>
@@ -140,22 +139,22 @@ get_header(); ?>
             <div>
               <p>Harvest Community Foods</p>
               <p>243 Union Street</p>
-              <p>Vancouver  BC</p>
-              <p>T 604  682 8851</p>
+              <p>Vancouver, BC</p>
+              <p>T : (604)-682-8851</p>
               <p>http://harvestunion.ca</p>
             </div>
             <div>
               <p>Le Marche St. George</p>
               <p>4393 St. George at E.28th Ave</p>
-              <p>Vancouver  BC</p>
-              <p>T 604  565 5107</p>
+              <p>Vancouver, BC</p>
+              <p>T : (604)-565-5107</p>
               <p>http://www.marchestgeorge.com</p>
             </div>
             <div>
               <p>Nineteen Ten Home Boutique</p>
               <p>4366 Main Street</p>
               <p>Vancouver, BC</p>
-              <p>T 604 558 0210</p>
+              <p>T : (604)-558-0210</p>
               <p>http://www.nineteenten.ca</p>
             </div>
           </div>
@@ -166,7 +165,7 @@ get_header(); ?>
               <p>Lupii cafe</p>
               <p>7743 Champlain Cres</p>
               <p>Vancouver, BC</p>
-              <p>T 778 379  7959</p>
+              <p>T : (778)-379-7959</p>
               <p>www.lupiicafe.com</p>
             </div>
             <div>
@@ -174,7 +173,7 @@ get_header(); ?>
               <p>Nourish Café & Cooking School</p>
               <p>3742 W. 10th Ave</p>
               <p>Vancouver, BC</p>
-              <p>T. 604-222-8350</p>
+              <p>T : (604)-222-8350</p>
               <p>https://www.nourishvancouver.ca/pages/cooking-school-cooking-classes-vancouver</p>
             </div>
           </div>
