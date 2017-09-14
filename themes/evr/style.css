@@ -791,7 +791,9 @@ a:hover, a:active {
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    position: relative;
+    z-index: 99; }
     @media (min-width: 800px) {
       .main-navigation .main-nav-container {
         height: 100%;
@@ -834,7 +836,7 @@ a:hover, a:active {
   .main-navigation .show-menu {
     visibility: visible;
     opacity: 1;
-    z-index: 1;
+    z-index: 999;
     transform: translateY(0%); }
   .main-navigation .menu-main-menu-container {
     -ms-flex-preferred-size: 100%;
@@ -1852,7 +1854,8 @@ object {
   margin-bottom: 1rem; }
 
 .page-template-menu .chocolate-image-wrapper {
-  position: relative; }
+  position: relative;
+  z-index: 0; }
   .page-template-menu .chocolate-image-wrapper:before {
     display: block;
     content: "";
@@ -1860,6 +1863,7 @@ object {
     padding-top: 100%; }
   .page-template-menu .chocolate-image-wrapper > .content-image {
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
     right: 0;
@@ -1915,7 +1919,8 @@ object {
   .single-workshop-on-page a {
     text-decoration: none; }
   .single-workshop-on-page .workshop-image-wrapper {
-    position: relative; }
+    position: relative;
+    z-index: 0; }
     .single-workshop-on-page .workshop-image-wrapper:before {
       display: block;
       content: "";
@@ -1923,6 +1928,7 @@ object {
       padding-top: 100%; }
     .single-workshop-on-page .workshop-image-wrapper > .content-image {
       position: absolute;
+      z-index: 0;
       top: 0;
       left: 0;
       right: 0;
@@ -2079,7 +2085,8 @@ object {
     -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
-    position: relative; }
+    position: relative;
+    z-index: 0; }
     .owl-carousel .owl-item:before {
       display: block;
       content: "";
@@ -2087,6 +2094,7 @@ object {
       padding-top: 100%; }
     .owl-carousel .owl-item > .content-image {
       position: absolute;
+      z-index: 0;
       top: 0;
       left: 0;
       right: 0;
