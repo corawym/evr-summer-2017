@@ -17,7 +17,7 @@
   });
 
   // if set to 800 it doesn't work between 800-815. not sure why this is.
-  if (width < 785) {
+  if (width < 800) {
     $('#primary-menu').addClass('hide-menu');
     $('#menu-item-37 > .sub-menu').addClass('hide-sub-menu');
     if ( !$('body').is('.single, .home') ) {
