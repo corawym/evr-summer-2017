@@ -1334,6 +1334,10 @@ object {
   padding-top: 2rem; }
   .home .subscribe .subscribe-content {
     text-align: center; }
+  .home .subscribe h2 {
+    margin: 0; }
+  .home .subscribe p {
+    margin-top: 0; }
   .home .subscribe .subscribe-form {
     display: -ms-flexbox;
     display: flex;
