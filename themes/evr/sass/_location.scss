@@ -82,11 +82,11 @@
     .location-evr-partners-chocolate,
     .location-evr-partners-coffee {
       div {
-        margin: 2rem;
         margin-left: 0;
       }
       p {
         margin: 0;
+        overflow-wrap: break-word;
       }
     }
   }

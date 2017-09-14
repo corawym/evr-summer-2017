@@ -1657,12 +1657,12 @@ object {
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate-coffee div,
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate div,
   .page-id-23 .location-evr-partners .location-evr-partners-coffee div {
-    margin: 2rem;
     margin-left: 0; }
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate-coffee p,
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate p,
   .page-id-23 .location-evr-partners .location-evr-partners-coffee p {
-    margin: 0; }
+    margin: 0;
+    overflow-wrap: break-word; }
 
 .page-id-38 .pep-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
