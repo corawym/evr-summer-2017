@@ -22,9 +22,11 @@ get_header(); ?>
            
         <section class="main-hero container-full">
             <div class="front-page-hero-content-container">
-                <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roaster's logo">
-                <div class="front-page-scroll">
-                    <p>Scroll</p>
+                <div class="front-page-hero-wrapper">
+                    <img class="evr-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg" alt="East Van Roaster's logo">
+                </div>
+                <div class="front-page-scroll menu-hero-button">
+                    <a class="hero-button" href="#front-page-content">Scroll</a>
                     <div class="bounce">
                         <p><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
                     </div>
@@ -44,7 +46,6 @@ get_header(); ?>
 
         <section class="content-two">
             <div class="content-two-div">
-                <span class="open-quote"></span>
                 <p><span class="open-quote"></span>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.<span class="close-quote"></span></p>
                 <p class="author">John Crawford,<span class="eat"> Eat Magazine</span></p>
                 
@@ -76,6 +77,7 @@ get_header(); ?>
         </section>
 
         <section id="instagram-feed">
+            <a class="instagram-follow" href="">Follow @eastvanroasters</a>
             <div class="owl-carousel owl-theme">
 
             </div>

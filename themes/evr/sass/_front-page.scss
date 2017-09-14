@@ -1,48 +1,46 @@
 .home {
     .main-hero{
-        z-index: -10;
         width: 100%;
         height: 500px;
         background: linear-gradient( rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.7)), url("../../assets/images/front-page/home-page.jpg") center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
         @include desktop {   
-            z-index: 0;       
             height: 100vh;
-            background-position: top right;
+        }
+    }
+    .front-page-hero-wrapper {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        @include desktop {
+            height: 100vh;
         }
     }
     .front-page-hero-content-container{
+        height: 80%;
         color: white;
-        position: absolute;
-        top: 0;
-        text-align: center;
-        margin-top: 200px;
-        width: 100%;
-        @include desktop {
-            margin-top: 200px;
-        }
     }
     
     .evr-logo {
         width: 300px;
         @include desktop {
             width: 400px;
-            margin-bottom: 80px;
         }
     }
     .front-page-scroll{
         display: none;
-        bottom: 0;
+        text-align: center;
+        width: 100%;
         @include desktop {
             display: block;
-            position: fixed;
+            position: absolute;
             bottom: 0;
-            left: 50%;
-            margin-left:-20px;
         }
-        .menu-hero-button, p{
+        a {
+            text-decoration: none;
             font-size: 1.4rem;
             line-height: 2.8rem;
             color: white;   
@@ -152,45 +150,44 @@
         align-items: center;
         height: 161px;
         background-color: #000000;
+        padding: 2rem;
         @include desktop {
             height: 362px;
         }
         .content-two-div {
             height: auto;
-            width: 325px;
             color: #FFFFFF;
             font-size: 16.5px;
             line-height: 23px;
             text-align: center;
-            p:not(.author) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            p {
                 margin: 0;
-                position: relative;
-                .open-quote {
+                .open-quote, .close-quote {
                     display: inline-block;
                     margin-right: 8px;
                     margin-bottom: 7px;
                     height: 15px;
                     width: 15px;
+                }
+                .open-quote {
                     background: url('../../assets/images/front-page/open-quote.svg') no-repeat;
                 }
                 .close-quote {
-                    display: inline-block;
-                    margin-left: 8px;
-                    margin-bottom: 7px;
-                    height: 15px;
-                    width: 15px;
                     background: url('../../assets/images/front-page/close-quote.svg') no-repeat;
                 }
             }
             .author {
                 margin: 0;
+                width: 100%;
+                padding-top: 0.5rem;
             }
             @include desktop {
-                width: 70vw;
-                height: 132px;
-                font-size: 36px;
+                font-size: 2.2rem;
                 font-style: italic;
-                line-height: 44px;
+                line-height: 2.8rem;
                 text-align: center;
             }
             .eat {
@@ -229,7 +226,8 @@
         flex-wrap: nowrap;
         background-color: #fff;
         margin: 0 5%;
-        padding-bottom: 3rem;
+        padding-bottom: 5rem;
+        padding-top: 2rem;
         .subscribe-content {
             text-align: center;
         }
@@ -264,4 +262,19 @@
             }
         }
     }
+}
+
+.instagram-follow {
+    display: none;
+    margin-left: 5%;
+    background-color: $color_background_gray;
+    color: white;
+    text-decoration: none;
+    padding: 0.1rem 0.3rem;
+    opacity: 0.8;
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+    position: absolute;
+    z-index: 9999;
+    margin-top: 2%;
 }
