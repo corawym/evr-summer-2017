@@ -32,9 +32,7 @@
 							if ( !is_active_sidebar( 'footer-1' ) )
 								return;
 							else ( is_active_sidebar( 'footer-1' ) ) ?>
-								<div class="business-hours">
-									<?php dynamic_sidebar( 'footer-1' ); ?>
-								</div>
+								<?php dynamic_sidebar( 'footer-1' ); ?>
 						</div>
 					</div>
 					<div class="copyright">
