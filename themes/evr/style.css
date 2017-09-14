@@ -1437,36 +1437,35 @@ object {
       margin: auto;
       font-size: 12px; }
 
-.error404 {
-  height: 100vh; }
-  .error404 .not-found {
-    background: url("../../assets/images/404/404-hero.jpg");
-    background-position: center;
-    background-size: cover; }
+.error-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../../assets/images/404/404-hero.jpg") top;
+  background-position: center;
+  background-size: cover;
+  height: 500px; }
+  @media (min-width: 800px) {
+    .error-hero-banner {
+      height: 100vh; } }
+  .error-hero-banner .error-content {
+    display: -ms-flexbox;
+    display: flex; }
+  .error-hero-banner .error-hero-content-container {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 100px;
+    color: white;
+    margin: 0 auto; }
     @media (min-width: 800px) {
-      .error404 .not-found .error-flex {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center; } }
-    .error404 .not-found .error-flex .error-content {
-      padding: 2rem;
-      height: 450px;
-      color: #FFFFFF;
-      font-size: 28px;
-      text-align: center; }
-      @media (min-width: 800px) {
-        .error404 .not-found .error-flex .error-content {
-          height: 960px; }
-          .error404 .not-found .error-flex .error-content h1 {
-            font-size: 144px; } }
-      .error404 .not-found .error-flex .error-content p:not(.home-btn) {
-        font-size: 20px; }
-        @media (min-width: 800px) {
-          .error404 .not-found .error-flex .error-content p:not(.home-btn) {
-            font-size: 48px; } }
+      .error-hero-banner .error-hero-content-container {
+        padding-top: 160px; } }
+    .error-hero-banner .error-hero-content-container h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      margin-bottom: 1rem; }
+    .error-hero-banner .error-hero-content-container p {
+      font-size: 1.4rem;
+      margin: 1rem; }
+    .error-hero-banner .error-hero-content-container .home-btn {
+      margin-top: 5rem; }
 
 .process-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/process/progress-hero.png") center;
