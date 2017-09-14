@@ -38,7 +38,22 @@ function evr_setup() {
 
 }
 endif; // evr_setup
+
+/**
+ * Custom template tags for this theme.
+ */
+ require get_template_directory() . '/inc/template-tags.php';
+ 
+ /**
+  * Custom functions that act independently of the theme templates.
+  */
+ require get_template_directory() . '/inc/extras.php';
+
 add_action( 'after_setup_theme', 'evr_setup' );
+add_action( 'widgets_init', 'evr_widgets_init' );
+add_action( 'wp_enqueue_scripts', 'evr_scripts' );
+add_action( 'after_setup_theme', 'evr_content_width', 0 );
+add_filter( 'stylesheet_uri', 'evr_minified_css', 10, 2 );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -48,7 +63,7 @@ add_action( 'after_setup_theme', 'evr_setup' );
 function evr_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'evr_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'evr_content_width', 0 );
+
 
 /**
  * Register widget area.
@@ -66,7 +81,6 @@ function evr_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'evr_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
@@ -78,7 +92,6 @@ function evr_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 
 	return $stylesheet_uri;
 }
-add_filter( 'stylesheet_uri', 'evr_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
@@ -99,14 +112,4 @@ function evr_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'evr_scripts' );
 
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Custom functions that act independently of the theme templates.
- */
-require get_template_directory() . '/inc/extras.php';
