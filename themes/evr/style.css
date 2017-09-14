@@ -1274,7 +1274,8 @@ object {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .home .content-two .content-two-div p {
-      margin: 0; }
+      margin: 0 auto;
+      max-width: 1080px; }
       .home .content-two .content-two-div p .open-quote, .home .content-two .content-two-div p .close-quote {
         display: inline-block;
         margin-right: 8px;
@@ -1286,9 +1287,8 @@ object {
       .home .content-two .content-two-div p .close-quote {
         background: url("../../assets/images/front-page/close-quote.svg") no-repeat; }
     .home .content-two .content-two-div .author {
-      margin: 0;
       width: 100%;
-      padding-top: 0.5rem; }
+      padding: 0.5rem; }
     @media (min-width: 800px) {
       .home .content-two .content-two-div {
         font-size: 2.2rem;
