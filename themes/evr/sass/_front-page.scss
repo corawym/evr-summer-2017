@@ -37,7 +37,7 @@
         @include desktop {
             display: block;
             position: absolute;
-            bottom: 0;
+            bottom: 50px;
         }
         a {
             text-decoration: none;
@@ -45,7 +45,10 @@
             line-height: 2.8rem;
             color: white;   
         }
-        .menu-hero-button{
+        .menu-arrow{
+            font-size: 1.4rem;
+        }
+        .hero-button{
             text-decoration: none;
             &:hover{
                 color: $color_primary_orange;

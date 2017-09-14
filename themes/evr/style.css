@@ -1181,15 +1181,17 @@ object {
     .home .front-page-scroll {
       display: block;
       position: absolute;
-      bottom: 0; } }
+      bottom: 50px; } }
   .home .front-page-scroll a {
     text-decoration: none;
     font-size: 1.4rem;
     line-height: 2.8rem;
     color: white; }
-  .home .front-page-scroll .menu-hero-button {
+  .home .front-page-scroll .menu-arrow {
+    font-size: 1.4rem; }
+  .home .front-page-scroll .hero-button {
     text-decoration: none; }
-    .home .front-page-scroll .menu-hero-button:hover {
+    .home .front-page-scroll .hero-button:hover {
       color: #e13404; }
 
 .home .bounce {

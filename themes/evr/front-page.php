@@ -19,7 +19,6 @@ get_header(); ?>
             <?php endif; ?>
 
             
-           
         <section class="main-hero container-full">
             <div class="front-page-hero-content-container">
                 <div class="front-page-hero-wrapper">
@@ -28,11 +27,10 @@ get_header(); ?>
                 <div class="front-page-scroll menu-hero-button">
                     <a class="hero-button" href="#front-page-content">Scroll</a>
                     <div class="bounce">
-                        <p><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
+                        <p class="menu-arrow"><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section class="content-one" id="front-page-content">
