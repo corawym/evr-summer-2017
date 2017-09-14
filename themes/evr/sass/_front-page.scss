@@ -139,12 +139,12 @@
         }
     }
     .store-hero {
-        height: 337px;
+        height: 350px;
         background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-2.jpg') center;
         background-repeat: no-repeat;
         background-size: cover;
         @include desktop {
-            height: 723px;
+            height: 80vh;
         }
     }
     .content-two {
@@ -199,7 +199,7 @@
         }
     }
     .menu-hero {
-        height: 338px;
+        height: 350px;
         background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-3.png') center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -212,7 +212,7 @@
             }
         }
         @include desktop {
-            height: 902px;
+            height: 80vh;
         }
         .front-page-btn {
             position: absolute;

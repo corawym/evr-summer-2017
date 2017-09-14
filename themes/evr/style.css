@@ -1235,13 +1235,13 @@ object {
         text-align: center; } }
 
 .home .store-hero {
-  height: 337px;
+  height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/front-page/home-page-2.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
   @media (min-width: 800px) {
     .home .store-hero {
-      height: 723px; } }
+      height: 80vh; } }
 
 .home .content-two {
   display: -ms-flexbox;
@@ -1294,7 +1294,7 @@ object {
       color: red; }
 
 .home .menu-hero {
-  height: 338px;
+  height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/front-page/home-page-3.png") center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1306,7 +1306,7 @@ object {
       color: #e13404; }
   @media (min-width: 800px) {
     .home .menu-hero {
-      height: 902px; } }
+      height: 80vh; } }
   .home .menu-hero .front-page-btn {
     position: absolute;
     top: 50%;
