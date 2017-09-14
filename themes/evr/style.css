@@ -304,7 +304,7 @@ a {
 
 .hero-banner {
   width: 100%;
-  height: 500px; }
+  height: 400px; }
   @media (min-width: 800px) {
     .hero-banner {
       position: relative;
@@ -580,7 +580,7 @@ textarea {
   z-index: 999; }
   @media (min-width: 800px) {
     .email-popup {
-      min-width: 60vw; } }
+      min-width: 600px; } }
   .email-popup .popup-header {
     height: 50px;
     width: 350px;
@@ -600,7 +600,7 @@ textarea {
           font-size: 20px; } }
     @media (min-width: 800px) {
       .email-popup .popup-header {
-        min-width: 60vw;
+        min-width: 600px;
         height: 80px; } }
     .email-popup .popup-header .close-popup {
       position: absolute;
@@ -675,16 +675,14 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: #e13404; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+a:hover, a:focus, a:active {
+  color: #e13404; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -1183,15 +1181,17 @@ object {
     .home .front-page-scroll {
       display: block;
       position: absolute;
-      bottom: 0; } }
+      bottom: 50px; } }
   .home .front-page-scroll a {
     text-decoration: none;
     font-size: 1.4rem;
     line-height: 2.8rem;
     color: white; }
-  .home .front-page-scroll .menu-hero-button {
+  .home .front-page-scroll .menu-arrow {
+    font-size: 1.4rem; }
+  .home .front-page-scroll .hero-button {
     text-decoration: none; }
-    .home .front-page-scroll .menu-hero-button:hover {
+    .home .front-page-scroll .hero-button:hover {
       color: #e13404; }
 
 .home .bounce {
@@ -1235,13 +1235,13 @@ object {
         text-align: center; } }
 
 .home .store-hero {
-  height: 337px;
+  height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/front-page/home-page-2.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
   @media (min-width: 800px) {
     .home .store-hero {
-      height: 723px; } }
+      height: 80vh; } }
 
 .home .content-two {
   display: -ms-flexbox;
@@ -1251,49 +1251,50 @@ object {
   -ms-flex-align: center;
       align-items: center;
   height: 161px;
-  background-color: #000000; }
+  background-color: #000000;
+  padding: 2rem; }
   @media (min-width: 800px) {
     .home .content-two {
       height: 362px; } }
   .home .content-two .content-two-div {
     height: auto;
-    width: 325px;
     color: #FFFFFF;
     font-size: 16.5px;
     line-height: 23px;
-    text-align: center; }
-    .home .content-two .content-two-div p:not(.author) {
-      margin: 0;
-      position: relative; }
-      .home .content-two .content-two-div p:not(.author) .open-quote {
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .home .content-two .content-two-div p {
+      margin: 0; }
+      .home .content-two .content-two-div p .open-quote, .home .content-two .content-two-div p .close-quote {
         display: inline-block;
         margin-right: 8px;
         margin-bottom: 7px;
         height: 15px;
-        width: 15px;
+        width: 15px; }
+      .home .content-two .content-two-div p .open-quote {
         background: url("../../assets/images/front-page/open-quote.svg") no-repeat; }
-      .home .content-two .content-two-div p:not(.author) .close-quote {
-        display: inline-block;
-        margin-left: 8px;
-        margin-bottom: 7px;
-        height: 15px;
-        width: 15px;
+      .home .content-two .content-two-div p .close-quote {
         background: url("../../assets/images/front-page/close-quote.svg") no-repeat; }
     .home .content-two .content-two-div .author {
-      margin: 0; }
+      margin: 0;
+      width: 100%;
+      padding-top: 0.5rem; }
     @media (min-width: 800px) {
       .home .content-two .content-two-div {
-        width: 70vw;
-        height: 132px;
-        font-size: 36px;
+        font-size: 2.2rem;
         font-style: italic;
-        line-height: 44px;
+        line-height: 2.8rem;
         text-align: center; } }
     .home .content-two .content-two-div .eat {
       color: red; }
 
 .home .menu-hero {
-  height: 338px;
+  height: 350px;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/front-page/home-page-3.png") center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1305,7 +1306,7 @@ object {
       color: #e13404; }
   @media (min-width: 800px) {
     .home .menu-hero {
-      height: 902px; } }
+      height: 80vh; } }
   .home .menu-hero .front-page-btn {
     position: absolute;
     top: 50%;
@@ -1324,7 +1325,8 @@ object {
       flex-wrap: nowrap;
   background-color: #fff;
   margin: 0 5%;
-  padding-bottom: 3rem; }
+  padding-bottom: 5rem;
+  padding-top: 2rem; }
   .home .subscribe .subscribe-content {
     text-align: center; }
   .home .subscribe .subscribe-form {
@@ -1354,6 +1356,20 @@ object {
       border: none;
       padding: 1rem;
       border-radius: 0; }
+
+.instagram-follow {
+  display: none;
+  margin-left: 5%;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  padding: 0.1rem 0.3rem;
+  opacity: 0.8;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+  position: absolute;
+  z-index: 9999;
+  margin-top: 2%; }
 
 .footer-site-info {
   opacity: 0.7;
@@ -1438,36 +1454,38 @@ object {
       margin: auto;
       font-size: 12px; }
 
-.error404 {
-  height: 100vh; }
-  .error404 .not-found {
-    background: url("../../assets/images/404/404-hero.jpg");
-    background-position: center;
-    background-size: cover; }
+.error-hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../../assets/images/404/404-hero.jpg") top;
+  background-position: center;
+  background-size: cover;
+  height: 500px; }
+  @media (min-width: 800px) {
+    .error-hero-banner {
+      height: 100vh; } }
+  .error-hero-banner .error-content {
+    display: -ms-flexbox;
+    display: flex; }
+  .error-hero-banner .error-hero-content-container {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 5px;
+    color: white;
+    margin: 0 auto; }
     @media (min-width: 800px) {
-      .error404 .not-found .error-flex {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center; } }
-    .error404 .not-found .error-flex .error-content {
-      padding: 2rem;
-      height: 450px;
-      color: #FFFFFF;
-      font-size: 28px;
-      text-align: center; }
+      .error-hero-banner .error-hero-content-container {
+        padding-top: 160px; } }
+    .error-hero-banner .error-hero-content-container h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      margin-bottom: 1rem; }
+    .error-hero-banner .error-hero-content-container p {
+      font-size: 1.4rem;
+      margin: 1rem; }
+    .error-hero-banner .error-hero-content-container .home-btn {
+      margin-top: 3rem; }
       @media (min-width: 800px) {
-        .error404 .not-found .error-flex .error-content {
-          height: 960px; }
-          .error404 .not-found .error-flex .error-content h1 {
-            font-size: 144px; } }
-      .error404 .not-found .error-flex .error-content p:not(.home-btn) {
-        font-size: 20px; }
-        @media (min-width: 800px) {
-          .error404 .not-found .error-flex .error-content p:not(.home-btn) {
-            font-size: 48px; } }
+        .error-hero-banner .error-hero-content-container .home-btn {
+          margin-top: 5rem; } }
 
 .process-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/process/progress-hero.png") center;
@@ -1621,46 +1639,16 @@ object {
   @media (min-width: 800px) {
     .page-id-23 .location-evr-info-desktop {
       background-color: #000000;
-      opacity: 0.8;
-      color: #fff;
       display: block; }
-      .page-id-23 .location-evr-info-desktop .info-img {
-        background: url("../../assets/images/location/info.svg") center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 25px;
-        width: 25px;
-        margin-right: 10px; }
       .page-id-23 .location-evr-info-desktop .evr-info-wrapper {
         display: -ms-flexbox;
         display: flex; }
-        .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs {
-          display: -ms-flexbox;
-          display: flex; }
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .evr-info-location p,
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .evr-info-num p {
-            margin: 0; }
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date,
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours {
-            width: 100px; }
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date p,
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours p {
-              margin: 0; }
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-head {
-            width: 60px; }
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-head p {
-              margin: 0; }
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date,
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours {
-            width: 100px; }
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date p,
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours p {
-              margin: 0; } }
-  .page-id-23 .location-evr-info-desktop .evr-email-wrapper {
-    display: -ms-flexbox;
-    display: flex; }
-    .page-id-23 .location-evr-info-desktop .evr-email-wrapper .evr-email-content p {
-      margin: 0; }
+        .page-id-23 .location-evr-info-desktop .evr-info-wrapper .info-img {
+          background: url("../../assets/images/location/info.svg") center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 25px;
+          width: 25px; } }
 
 .page-id-23 .location-evr-partners {
   background-color: black;
@@ -1673,12 +1661,12 @@ object {
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate-coffee div,
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate div,
   .page-id-23 .location-evr-partners .location-evr-partners-coffee div {
-    margin: 2rem;
     margin-left: 0; }
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate-coffee p,
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate p,
   .page-id-23 .location-evr-partners .location-evr-partners-coffee p {
-    margin: 0; }
+    margin: 0;
+    overflow-wrap: break-word; }
 
 .page-id-38 .pep-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
@@ -2009,8 +1997,7 @@ object {
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1;
-  padding-bottom: 3rem;
-  padding-top: 3rem; }
+  padding-bottom: 3rem; }
   .owl-carousel .owl-stage {
     position: relative;
     -ms-touch-action: pan-Y;

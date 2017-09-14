@@ -37,7 +37,7 @@
         @include desktop {
             display: block;
             position: absolute;
-            bottom: 0;
+            bottom: 50px;
         }
         a {
             text-decoration: none;
@@ -45,7 +45,10 @@
             line-height: 2.8rem;
             color: white;   
         }
-        .menu-hero-button{
+        .menu-arrow{
+            font-size: 1.4rem;
+        }
+        .hero-button{
             text-decoration: none;
             &:hover{
                 color: $color_primary_orange;
@@ -136,12 +139,12 @@
         }
     }
     .store-hero {
-        height: 337px;
+        height: 350px;
         background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-2.jpg') center;
         background-repeat: no-repeat;
         background-size: cover;
         @include desktop {
-            height: 723px;
+            height: 80vh;
         }
     }
     .content-two {
@@ -150,45 +153,44 @@
         align-items: center;
         height: 161px;
         background-color: #000000;
+        padding: 2rem;
         @include desktop {
             height: 362px;
         }
         .content-two-div {
             height: auto;
-            width: 325px;
             color: #FFFFFF;
             font-size: 16.5px;
             line-height: 23px;
             text-align: center;
-            p:not(.author) {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            p {
                 margin: 0;
-                position: relative;
-                .open-quote {
+                .open-quote, .close-quote {
                     display: inline-block;
                     margin-right: 8px;
                     margin-bottom: 7px;
                     height: 15px;
                     width: 15px;
+                }
+                .open-quote {
                     background: url('../../assets/images/front-page/open-quote.svg') no-repeat;
                 }
                 .close-quote {
-                    display: inline-block;
-                    margin-left: 8px;
-                    margin-bottom: 7px;
-                    height: 15px;
-                    width: 15px;
                     background: url('../../assets/images/front-page/close-quote.svg') no-repeat;
                 }
             }
             .author {
                 margin: 0;
+                width: 100%;
+                padding-top: 0.5rem;
             }
             @include desktop {
-                width: 70vw;
-                height: 132px;
-                font-size: 36px;
+                font-size: 2.2rem;
                 font-style: italic;
-                line-height: 44px;
+                line-height: 2.8rem;
                 text-align: center;
             }
             .eat {
@@ -197,7 +199,7 @@
         }
     }
     .menu-hero {
-        height: 338px;
+        height: 350px;
         background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('../../assets/images/front-page/home-page-3.png') center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -210,7 +212,7 @@
             }
         }
         @include desktop {
-            height: 902px;
+            height: 80vh;
         }
         .front-page-btn {
             position: absolute;
@@ -227,7 +229,8 @@
         flex-wrap: nowrap;
         background-color: #fff;
         margin: 0 5%;
-        padding-bottom: 3rem;
+        padding-bottom: 5rem;
+        padding-top: 2rem;
         .subscribe-content {
             text-align: center;
         }
@@ -262,4 +265,19 @@
             }
         }
     }
+}
+
+.instagram-follow {
+    display: none;
+    margin-left: 5%;
+    background-color: $color_background_gray;
+    color: white;
+    text-decoration: none;
+    padding: 0.1rem 0.3rem;
+    opacity: 0.8;
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+    position: absolute;
+    z-index: 9999;
+    margin-top: 2%;
 }

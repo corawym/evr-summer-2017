@@ -19,7 +19,6 @@ get_header(); ?>
             <?php endif; ?>
 
             
-           
         <section class="main-hero container-full">
             <div class="front-page-hero-content-container">
                 <div class="front-page-hero-wrapper">
@@ -28,11 +27,10 @@ get_header(); ?>
                 <div class="front-page-scroll menu-hero-button">
                     <a class="hero-button" href="#front-page-content">Scroll</a>
                     <div class="bounce">
-                        <p><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
+                        <p class="menu-arrow"><i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></p>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section class="content-one" id="front-page-content">
@@ -46,7 +44,6 @@ get_header(); ?>
 
         <section class="content-two">
             <div class="content-two-div">
-                <span class="open-quote"></span>
                 <p><span class="open-quote"></span>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.<span class="close-quote"></span></p>
                 <p class="author">John Crawford,<span class="eat"> Eat Magazine</span></p>
                 
@@ -55,13 +52,12 @@ get_header(); ?>
 
         <section class="menu-hero">
             <div class="front-page-btn button-border">
-                <a href="#">
+                <a href="<?php echo home_url() ?>/menu">
                     <div class="border1">
                         <div class="border2">Menu</div>
                     </div>
                 </a>   
             </div>
-            <!-- <a class="front-page-btn button-border">Menu</a> -->
         </section>
 
         <section class="subscribe">
@@ -78,6 +74,7 @@ get_header(); ?>
         </section>
 
         <section id="instagram-feed">
+            <a class="instagram-follow" href="">Follow @eastvanroasters</a>
             <div class="owl-carousel owl-theme">
 
             </div>
