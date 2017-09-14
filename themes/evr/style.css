@@ -826,6 +826,8 @@ a:hover, a:active {
     margin: 0;
     color: white;
     font-size: 2rem; }
+    .main-navigation .mobile-header-title p {
+      margin: 0; }
   .main-navigation .mobile-header-title-hidden {
     display: none; }
   .main-navigation .hide-menu {
@@ -1644,16 +1646,19 @@ object {
       opacity: 0.8;
       color: #fff;
       display: block; }
+      .page-id-23 .location-evr-info-desktop .locations-header {
+        margin-left: 250px; }
       .page-id-23 .location-evr-info-desktop .info-img {
         background: url("../../assets/images/location/info.svg") center;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
         margin-right: 10px; }
       .page-id-23 .location-evr-info-desktop .evr-info-wrapper {
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        margin-left: 250px; }
         .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs {
           display: -ms-flexbox;
           display: flex; }
@@ -1678,9 +1683,11 @@ object {
               margin: 0; } }
   .page-id-23 .location-evr-info-desktop .evr-email-wrapper {
     display: -ms-flexbox;
-    display: flex; }
-    .page-id-23 .location-evr-info-desktop .evr-email-wrapper .evr-email-content p {
-      margin: 0; }
+    display: flex;
+    margin-left: 250px; }
+    .page-id-23 .location-evr-info-desktop .evr-email-wrapper .evr-email-content p a {
+      text-decoration: none;
+      color: #fff; }
 
 .page-id-23 .location-evr-partners {
   background-color: rgba(0, 0, 0, 0.8);
@@ -1689,12 +1696,13 @@ object {
   padding-bottom: 2rem; }
   .page-id-23 .location-evr-partners h2 {
     text-align: center;
-    margin: 0; }
+    margin: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
   @media (min-width: 800px) {
     .page-id-23 .location-evr-partners {
       background: white;
-      color: #4A4A4A;
-      height: 100vh; }
+      color: #4A4A4A; }
       .page-id-23 .location-evr-partners h2 {
         font-size: 24px; }
       .page-id-23 .location-evr-partners .location-evr-partners-content {

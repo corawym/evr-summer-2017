@@ -13,6 +13,7 @@
       margin-bottom: .2rem;
     }
     .locations-header {
+      
       display: flex;
       justify-content: center;
       h2 {
@@ -57,16 +58,20 @@
       opacity: 0.8;
       color: #fff;
       display: block;
+      .locations-header {
+        margin-left: 250px;
+      }
       .info-img {
         background: url("../../assets/images/location/info.svg") center;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
         margin-right: 10px;
       }
       .evr-info-wrapper {
         display: flex;
+        margin-left: 250px;
         .location-date-hrs {
           display: flex;
           .evr-info-location,
@@ -101,9 +106,13 @@
     }
     .evr-email-wrapper {
       display: flex;
+      margin-left: 250px;
       .evr-email-content {
         p {
-          margin: 0;
+          a {
+            text-decoration: none;
+            color: #fff
+          }
         }
       }
     }
@@ -118,11 +127,12 @@
     h2 {
       text-align: center;
       margin: 0;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
     @include desktop {
       background: white;
       color: 	#4A4A4A;
-      height: 100vh;
       h2 {
         font-size: 24px;
       }
@@ -145,6 +155,8 @@
       @include desktop {
         width: 275px;
         margin-right: 50px;
+
+
       }
     }
   }
