@@ -1,5 +1,4 @@
 (function ($) {
-    $(document).ready(function () {
         if($('.home').length){
             var $subscribeForm = '' +
             '<div class="popup-overlay" id="popup-overlay"><div id="email-popup" class="email-popup">' +
@@ -25,14 +24,14 @@
         if (localStorage.getItem('popState') !== 'shown') {
             $popupOverlay.delay(2000).fadeIn().focus();
             $('html > .home').css('overflow', 'hidden');
+            localStorage.setItem('popState', 'shown');
            }
         $('#close-popup').click(function () {
             $popupOverlay.fadeOut(100); 
             $('html > .home').css('overflow', '');
         });
-        $popupOverlay.click(function() {
-            $(this).fadeOut(100); 
-            $('html > .home').css('overflow', '');
-        });
-    });
+        // $popupOverlay.click(function() {
+        //     $(this).fadeOut(100); 
+        //     $('html > .home').css('overflow', '');
+        // });
 })(jQuery);
