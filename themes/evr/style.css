@@ -723,8 +723,7 @@ a:hover, a:active {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block;
-  margin-right: 2rem; }
+  display: block; }
 
 @media screen and (min-width: 800px) {
   .menu-toggle {
@@ -798,30 +797,36 @@ a:hover, a:active {
       .main-navigation .main-nav-container {
         height: 100%;
         margin: 0 auto; } }
-  .main-navigation .header-logo {
+  .main-navigation .logo-title-hamburger {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     padding-left: 2rem;
-    height: 60px;
-    width: 60px;
-    -ms-flex-preferred-size: 15%;
-        flex-basis: 15%; }
-    .main-navigation .header-logo .header-logo-image {
-      width: 50px;
-      height: 50px;
-      margin-top: .2rem; }
-      @media (min-width: 800px) {
-        .main-navigation .header-logo .header-logo-image {
-          margin-top: 0;
-          width: 60px;
-          height: 60px; } }
+    padding-right: 2rem;
+    -ms-flex-align: center;
+        align-items: center; }
+  .main-navigation .header-logo .header-logo-image {
+    width: 50px;
+    height: 50px;
+    margin-top: .2rem; }
+    @media (min-width: 800px) {
+      .main-navigation .header-logo .header-logo-image {
+        margin-top: 0;
+        width: 60px;
+        height: 60px; } }
   .main-navigation .hamburger {
-    height: 30px;
+    height: 38px;
+    width: 38px;
     background: url(../../assets/images/hamburger.svg) no-repeat;
     background-size: contain;
     outline: none;
     border: none;
-    box-shadow: none;
-    padding-right: 2rem;
-    margin-bottom: 0.2rem; }
+    padding-top: 0.5rem;
+    box-shadow: none; }
   .main-navigation .mobile-header-title {
     margin: 0;
     color: white;
@@ -840,8 +845,7 @@ a:hover, a:active {
     transform: translateY(0%); }
   .main-navigation .menu-main-menu-container {
     -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin-top: 0.4rem; }
+        flex-basis: 100%; }
     @media (min-width: 800px) {
       .main-navigation .menu-main-menu-container {
         -ms-flex-preferred-size: 85%;
