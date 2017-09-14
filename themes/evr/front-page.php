@@ -52,13 +52,12 @@ get_header(); ?>
 
         <section class="menu-hero">
             <div class="front-page-btn button-border">
-                <a href="#">
+                <a href="<?php echo home_url() ?>/menu">
                     <div class="border1">
                         <div class="border2">Menu</div>
                     </div>
                 </a>   
             </div>
-            <!-- <a class="front-page-btn button-border">Menu</a> -->
         </section>
 
         <section class="subscribe">
