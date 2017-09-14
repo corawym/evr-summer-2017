@@ -1466,7 +1466,7 @@ object {
   .error-hero-banner .error-hero-content-container {
     -ms-flex-line-pack: center;
         align-content: center;
-    padding-top: 100px;
+    padding-top: 5px;
     color: white;
     margin: 0 auto; }
     @media (min-width: 800px) {
@@ -1480,7 +1480,10 @@ object {
       font-size: 1.4rem;
       margin: 1rem; }
     .error-hero-banner .error-hero-content-container .home-btn {
-      margin-top: 5rem; }
+      margin-top: 3rem; }
+      @media (min-width: 800px) {
+        .error-hero-banner .error-hero-content-container .home-btn {
+          margin-top: 5rem; } }
 
 .process-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/process/progress-hero.png") center;
