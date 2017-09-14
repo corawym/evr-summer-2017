@@ -1463,16 +1463,12 @@ object {
   height: 500px; }
   @media (min-width: 800px) {
     .error-hero-banner {
-      height: 100vh; } }
-  .error-hero-banner .error-content {
-    display: -ms-flexbox;
-    display: flex; }
+      height: 100vh;
+      min-height: 650px; } }
   .error-hero-banner .error-hero-content-container {
-    -ms-flex-line-pack: center;
-        align-content: center;
     padding-top: 5px;
     color: white;
-    margin: 0 auto; }
+    margin: auto; }
     @media (min-width: 800px) {
       .error-hero-banner .error-hero-content-container {
         padding-top: 160px; } }
