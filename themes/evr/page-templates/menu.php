@@ -116,7 +116,7 @@ get_header(); ?>
 									<img class="chocolate-items-image content-image" src="<?php echo CFS()->get( 'chocolate_image' ); ?>">
 								</div>
 								</a>
-								<p class="chocolate-name"><?php echo CFS()->get('chocolate_name'); ?></p>
+								<?php the_title( '<p class="chocolate-name">', '</p>' ); ?>
 								<p class="chocolate-price"><?php echo CFS()->get('chocolate_price'); ?></p>
 								</article>
 							<?php endforeach; wp_reset_postdata(); ?>
