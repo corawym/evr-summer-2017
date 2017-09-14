@@ -810,6 +810,9 @@ a:hover, a:active {
     padding-right: 2rem;
     -ms-flex-align: center;
         align-items: center; }
+    @media (min-width: 800px) {
+      .main-navigation .logo-title-hamburger {
+        width: 50px; } }
   .main-navigation .header-logo .header-logo-image {
     width: 50px;
     height: 50px;

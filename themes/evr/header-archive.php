@@ -36,8 +36,8 @@
 							</div>
 							<h1 id="mobile-header" class="mobile-header-title mobile-header-title-hidden"><?php post_type_archive_title(); ?></h1>
 							<button id="hamburger" class="menu-toggle hamburger" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'menu hide-menu' ) ); ?>
 						</div>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'menu hide-menu' ) ); ?>
 					</div>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->

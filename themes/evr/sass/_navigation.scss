@@ -187,6 +187,9 @@ a {
 		padding-left: 2rem;
 		padding-right: 2rem;
 		align-items: center;
+		@include desktop {
+			width: 50px;
+		}
 	} 
 	.header-logo{
 		.header-logo-image{
