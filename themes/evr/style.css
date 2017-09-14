@@ -1691,14 +1691,16 @@ object {
   @media (min-width: 800px) {
     .page-id-23 .location-evr-partners {
       background: white;
-      color: #4A4A4A; }
+      color: #4A4A4A;
+      height: 100vh; }
       .page-id-23 .location-evr-partners h2 {
         font-size: 24px; }
       .page-id-23 .location-evr-partners .location-evr-partners-content {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center;
+        margin-top: 3rem; } }
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate-coffee div,
   .page-id-23 .location-evr-partners .location-evr-partners-chocolate div,
   .page-id-23 .location-evr-partners .location-evr-partners-coffee div {
@@ -1712,9 +1714,8 @@ object {
     .page-id-23 .location-evr-partners .location-evr-partners-chocolate-coffee,
     .page-id-23 .location-evr-partners .location-evr-partners-chocolate,
     .page-id-23 .location-evr-partners .location-evr-partners-coffee {
-      min-width: 350px;
-      margin-right: 50px;
-      overflow-wrap: break-word; } }
+      width: 275px;
+      margin-right: 50px; } }
 
 .page-id-38 .pep-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
