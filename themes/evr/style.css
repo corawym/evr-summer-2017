@@ -272,7 +272,8 @@ a {
   font-weight: 300; }
 
 .p-link-black {
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  text-decoration: underline; }
 
 .text-center {
   text-align: center; }

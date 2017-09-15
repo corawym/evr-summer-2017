@@ -26,8 +26,8 @@ get_header(); ?>
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pep/peer-employment-program.png" alt="A picture of several women attend peer employment program">
           <p>Since East Van Roasters opened in 2013, roughly 25 women have come through the program. 
             A lot of the women have expressed that having the opportunity to work here has boosted their confidence. They feel comfortable doing other things in their lives they maybe wouldn’t have. Hearing stories of people moving onto full-time employment elsewhere, and going back to school, and moving on and living forward feels like the peer emplyment program is really fulfilling the purpose that it was meant to.</p>
-          <p>We are a fully registered charity and would love to have your support!
-            Learn how you can donate.</p>
+          <p>We are a fully registered charity and would love to have your support!</P>
+          <a class="p-link-black">Learn how you can donate.</a>
         </div>
       </section>
 
