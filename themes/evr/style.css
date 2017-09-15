@@ -1866,6 +1866,12 @@ object {
   margin-top: 1.5rem;
   color: #bda38a; }
 
+.page-template-menu .menu-section-description {
+  font-weight: 300; }
+  .page-template-menu .menu-section-description a {
+    color: #4a4a4a;
+    text-decoration: underline; }
+
 .page-template-menu .menu-chocolate-grid .chocolate-items-wrapper {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
