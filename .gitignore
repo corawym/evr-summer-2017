@@ -31,6 +31,7 @@ access_log
 plugins/*
 !plugins/evr-functionality/
 !plugins/business-hours-widget/
+!plugins/address-widget/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
