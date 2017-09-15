@@ -21,17 +21,17 @@
             $('html').append($subscribeForm);
         }
         var $popupOverlay = $('#popup-overlay');
-        if (localStorage.getItem('popState') !== 'shown') {
+        // if (localStorage.getItem('popState') !== 'shown') {
             $popupOverlay.delay(2000).fadeIn().focus();
             $('html > .home').css('overflow', 'hidden');
-            localStorage.setItem('popState', 'shown');
-           }
+        //     localStorage.setItem('popState', 'shown');
+        //    }
         $('#close-popup').click(function () {
             $popupOverlay.fadeOut(100); 
             $('html > .home').css('overflow', '');
         });
-        // $popupOverlay.click(function() {
-        //     $(this).fadeOut(100); 
-        //     $('html > .home').css('overflow', '');
-        // });
+        $('html > .home').click(function() {
+            $popupOverlay.fadeOut(100); 
+            // $('html > .home').css('overflow', '');
+        });
 })(jQuery);

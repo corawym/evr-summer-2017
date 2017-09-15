@@ -1420,15 +1420,18 @@ object {
       .footer-site-info .social-icons .fa-pinterest-p:hover {
         color: #C92228; } }
   .footer-site-info .footer-info {
-    display: -ms-flexbox;
-    display: flex; }
+    width: 100%; }
     .footer-site-info .footer-info .location-info {
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: center;
-          justify-content: center; }
+      width: 40%;
+      margin: 0 auto;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      padding-top: 1rem; }
+      @media (min-width: 800px) {
+        .footer-site-info .footer-info .location-info {
+          width: 45%; } }
       .footer-site-info .footer-info .location-info .contact-desktop-only {
         display: none; }
         @media (min-width: 800px) {
@@ -1440,23 +1443,16 @@ object {
               font-weight: 300;
               margin: 0;
               color: #fff;
-              text-decoration: none; } }
-      .footer-site-info .footer-info .location-info .address,
-      .footer-site-info .footer-info .location-info .biz-hours,
-      .footer-site-info .footer-info .location-info .contact-desktop-only {
-        width: 120px; }
-        .footer-site-info .footer-info .location-info .address p,
-        .footer-site-info .footer-info .location-info .biz-hours p,
-        .footer-site-info .footer-info .location-info .contact-desktop-only p {
-          font-size: 14px;
-          font-style: italic;
-          font-weight: 300;
-          margin: 0;
-          font-size: 16px; }
-      .footer-site-info .footer-info .location-info .address {
-        margin-right: 55px; }
-      .footer-site-info .footer-info .location-info .days-of-week {
-        text-transform: uppercase; }
+              text-decoration: none;
+              font-size: 1rem; } }
+      .footer-site-info .footer-info .location-info .address p,
+      .footer-site-info .footer-info .location-info .biz-hours p,
+      .footer-site-info .footer-info .location-info .contact-desktop-only p {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 300;
+        margin: 0;
+        font-size: 1rem; }
   .footer-site-info .copyright {
     margin-bottom: 2%;
     margin-top: 3rem; }
@@ -1471,6 +1467,14 @@ object {
 
 .evr-business-hours-class h3, .evr-business-hours-class p {
   margin: 0; }
+
+.evr-business-hours-class h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  display: inline; }
+
+.evr-business-hours-class .days-of-week {
+  display: inline; }
 
 .error-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../../assets/images/404/404-hero.jpg") top;
@@ -1535,7 +1539,8 @@ object {
 .process-chocolate {
   width: 100%;
   height: 132px;
-  padding: 1rem 0; }
+  padding: 0;
+  margin-top: 2rem; }
 
 .process-cacao {
   height: 150px;
@@ -1544,16 +1549,19 @@ object {
 .cacao-pods-image {
   background: url(../../assets/images/process/progress-2.jpeg);
   background-size: cover;
-  height: 300px; }
+  height: 300px;
+  margin-top: 3rem; }
 
 .hidden-bean-info {
   visibility: hidden;
   max-height: 0px;
-  transition: max-height 0.3s ease-in-out; }
+  opacity: 0; }
 
 .show-bean-info {
   max-height: 200px;
-  visibility: visible; }
+  visibility: visible;
+  transition: opacity 0.4s ease-in-out 0.2s, max-height 0.6s ease-in-out;
+  opacity: 1; }
 
 .more-details {
   color: white;
@@ -1657,7 +1665,9 @@ object {
       color: #fff;
       display: block; }
       .page-id-23 .location-evr-info-desktop .locations-header {
-        margin-left: 250px; }
+        margin-left: 250px;
+        border-bottom: 1px solid #979797;
+        width: 60%; }
       .page-id-23 .location-evr-info-desktop .info-img {
         background: url("../../assets/images/location/info.svg") center;
         background-repeat: no-repeat;
