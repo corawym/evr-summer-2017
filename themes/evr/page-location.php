@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for display location page.
+ * The template for displaying location page.
  *
  * @package EVR_Theme
  */
@@ -8,7 +8,7 @@
 get_header(); ?>
 
     <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
+      <main id="main" class="site-main" role="main">
 
       <section class="hero-banner location-hero-banner container-full">
         <div class="hero-content-container">

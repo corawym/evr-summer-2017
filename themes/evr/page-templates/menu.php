@@ -109,7 +109,7 @@ get_header(); ?>
 							<div class="menu-line"></div>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Chocolate Bar icon">
 							<div class="menu-section-description">
-								<p><?php echo CFS()->get( 'chocolate_lab_description' ); ?></p>
+								<p><?php echo CFS()->get( esc_html('chocolate_lab_description') ); ?></p>
 							</div>
 						</div>
 
