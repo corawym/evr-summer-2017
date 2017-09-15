@@ -5,7 +5,11 @@
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>">
    </p>
 
-   <p><label for="<?php echo $this->get_field_id('monday_friday'); ?>">Monday-Friday:</label>
+   <p><label for="<?php echo $this->get_field_id('days'); ?>">Weekday days (eg. Tues - Fri):</label>
+		<input class="widefat" id="<?php echo $this->get_field_id('days'); ?>" name="<?php echo $this->get_field_name('days'); ?>" type="text" value="<?php echo $days; ?>">
+   </p>
+
+   <p><label for="<?php echo $this->get_field_id('monday_friday'); ?>">Weekday hours (eg. 9am - 5pm):</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('monday_friday'); ?>" name="<?php echo $this->get_field_name('monday_friday'); ?>" type="text" value="<?php echo $monday_friday; ?>">
    </p>
 

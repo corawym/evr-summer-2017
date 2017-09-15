@@ -92,6 +92,7 @@ class EVR_Business_Hours extends WP_Widget {
 
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
+		$days = empty( $instance['days'] ) ? '' : apply_filters( 'widget_title', $instance['days'] );
 		$monday_friday = empty( $instance['monday_friday'] ) ? '' : apply_filters( 'widget_title', $instance['monday_friday'] );
 		$saturday = empty( $instance['saturday'] ) ? '' : apply_filters( 'widget_title', $instance['saturday'] );
 		$sunday = empty( $instance['sunday'] ) ? '' : apply_filters( 'widget_title', $instance['sunday'] );
@@ -124,6 +125,7 @@ class EVR_Business_Hours extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
+		$instance['days'] = strip_tags( $new_instance['days'] );
 		$instance['monday_friday'] = strip_tags( $new_instance['monday_friday'] );
 		$instance['saturday'] = strip_tags( $new_instance['saturday'] );
 		$instance['sunday'] = strip_tags( $new_instance['sunday'] );
@@ -143,6 +145,7 @@ class EVR_Business_Hours extends WP_Widget {
 			(array) $instance,
 			array(
 				'title'         => 'Business Hours',
+				'days'          => '', 
 				'monday_friday' => '',
 				'saturday'      => '',
 				'sunday'        => ''
@@ -150,6 +153,7 @@ class EVR_Business_Hours extends WP_Widget {
 		);
 
 		$title = strip_tags( $instance['title'] );
+		$days = strip_tags( $instance['days'] );
 		$monday_friday = strip_tags( $instance['monday_friday'] );
 		$saturday = strip_tags( $instance['saturday'] );
 		$sunday = strip_tags( $instance['sunday'] );
