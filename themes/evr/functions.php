@@ -94,6 +94,16 @@ function evr_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 
 /**
+ * Remove posts from admin bar
+ */
+function remove_menu () 
+{
+   remove_menu_page('edit.php');
+} 
+
+add_action('admin_menu', 'remove_menu');
+
+/**
  * Enqueue scripts and styles.
  */
 function evr_scripts() {

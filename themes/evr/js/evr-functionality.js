@@ -54,47 +54,49 @@
     }
 });
 
-var spectragramComplete = function() {
-  $(window).on('load', function() {
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      nav:true,
-      dots:false,
-      autoplay:true,
-      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-      responsive:{
-        0:{
-            items:2
-        },
-        800:{
-            items:4
+if( $('.home').length ) {
+  var spectragramComplete = function() {
+    $(window).on('load', function() {
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        nav:true,
+        dots:false,
+        autoplay:true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive:{
+          0:{
+              items:2
+          },
+          800:{
+              items:4
+          }
         }
-      }
-    });
-    $('.instagram-follow').show();
-  });
-}
-
-var Spectra = {
-  instaToken: '25918619.602e4eb.ea174df8724d42448ddb073cbe04bba5',
-  instaID: ' 602e4eb7188e4898a3cf5a7afc6b1570',
-  
-  init: function () {
-    $.fn.spectragram.accessData = {
-      accessToken: this.instaToken,
-      clientID: this.instaID
-    };
-    
-    $('.owl-carousel').spectragram('getUserFeed',{
-      max: 12,
-      size: 'big',
-      query: 'eastvanroasters',
-      wrapEachWith: '<div class="igram-wrapper content-image">',
-      complete: spectragramComplete(),
+      });
+      $('.instagram-follow').show();
     });
   }
+
+  var Spectra = {
+    instaToken: '25918619.602e4eb.ea174df8724d42448ddb073cbe04bba5',
+    instaID: ' 602e4eb7188e4898a3cf5a7afc6b1570',
+    
+    init: function () {
+      $.fn.spectragram.accessData = {
+        accessToken: this.instaToken,
+        clientID: this.instaID
+      };
+      
+      $('.owl-carousel').spectragram('getUserFeed',{
+        max: 12,
+        size: 'big',
+        query: 'eastvanroasters',
+        wrapEachWith: '<div class="igram-wrapper content-image">',
+        complete: spectragramComplete(),
+      });
+    }
+  }
+  Spectra.init();
 }
-Spectra.init();
 
 
 
