@@ -31,9 +31,21 @@ get_header(); ?>
 						<p class="location-evr-title">Phone</p>
 						<p class="location-evr-detail"><?php echo CFS()->get( 'evr_phone' ); ?></p>
 						<p class="location-evr-title">Hours</p>
-						<div class="location-evr-detail location-evr-business">
-							<p>Monday</p>
-							<p><?php echo CFS()->get( 'monday' ); ?></p>
+						<div class="location-evr-detail location-evr-business display-flex-wrap">
+							<p class="location-hours-title">Monday</p>
+							<p class="location-hours-detail"><?php echo CFS()->get( 'monday' ); ?></p>
+							<p class="location-hours-title">Tuesday</p>
+							<p class="location-hours-detail"><?php echo CFS()->get( 'tuesday' ); ?></p>
+							<p class="location-hours-title">Wednesday</p>
+							<p class="location-hours-detail"><?php echo CFS()->get( 'wednesday' ); ?></p>
+							<p class="location-hours-title">Thursday</p>
+							<p class="location-hours-detail"><?php echo CFS()->get( 'thursday' ); ?></p>
+							<p class="location-hours-title">Friday</p>
+							<p class="location-hours-detail"><?php echo CFS()->get( 'friday' ); ?></p>
+							<p class="location-hours-title">Saturday</p>
+							<p class="location-hours-detail"><?php echo CFS()->get( 'saturday' ); ?></p>
+							<p class="location-hours-title">Sunday</p>
+							<p class="location-hours-detail"><?php echo CFS()->get( 'sunday' ); ?></p>
 						</div>
 						<p class="location-evr-title">Email</p>
 						<p class="location-evr-detail"><?php echo CFS()->get( 'evr_email' ); ?></p>
@@ -43,21 +55,24 @@ get_header(); ?>
 
 			<!-- Below is other locations for the chocolates and coffee-->
 			<section class="location-others-container container-full">
-
-				<div class="location-section container-max800 display-flex-wrap container-separator-top-bottom">
-					<h3 class="location-section-title">
-						<?php $section_chocolate_bars_coffee_beans = CFS()->get_field_info( 'chocolate_bars_coffee_beans' );
-							echo $section_chocolate_bars_coffee_beans['label']; ?>
-					</h3>
-					<div class="location-items-container display-flex-wrap">
-						<?php	$chocolate_bars_coffee_beans = CFS()->get( 'chocolate_bars_coffee_beans' );
-							foreach ( $chocolate_bars_coffee_beans as $chocolate_bars_coffee_beans_items ) { ?>
-							<p><?php echo $chocolate_bars_coffee_beans_items['store_name']; ?></p>
-							<p><?php echo $chocolate_bars_coffee_beans_items['address']; ?></p>
-							<p><?php echo $chocolate_bars_coffee_beans_items['phone']; ?></p>
-							<p><?php echo $chocolate_bars_coffee_beans_items['website']; ?></p>
-						<?php } ?>
+				<div class="container-max800">
+					<!-- Chocolate bars coffee beans section-->
+					<div class="location-section display-flex-wrap container-separator-top-bottom">
+						<h3 class="location-section-title">
+							<?php $section_chocolate_bars_coffee_beans = CFS()->get_field_info( 'chocolate_bars_coffee_beans' );
+								echo $section_chocolate_bars_coffee_beans['label']; ?>
+						</h3>
+						<div class="location-items-container display-flex-wrap">
+							<?php	$chocolate_bars_coffee_beans = CFS()->get( 'chocolate_bars_coffee_beans' );
+								foreach ( $chocolate_bars_coffee_beans as $chocolate_bars_coffee_beans_items ) { ?>
+								<p><?php echo $chocolate_bars_coffee_beans_items['store_name']; ?></p>
+								<p><?php echo $chocolate_bars_coffee_beans_items['address']; ?></p>
+								<p><?php echo $chocolate_bars_coffee_beans_items['phone']; ?></p>
+								<p><?php echo $chocolate_bars_coffee_beans_items['website']; ?></p>
+							<?php } ?>
+						</div>
 					</div>
+
 				</div>
 
 
