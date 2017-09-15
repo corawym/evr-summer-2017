@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: 
+ * Template Name: Process
  *
  * @package EVR_Theme
  */
