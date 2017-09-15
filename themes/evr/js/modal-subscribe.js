@@ -24,6 +24,7 @@
         }
         var $emailPopup = $('#email-popup');
         var $popupOverlay = $('#popup-overlay');
+
         if (localStorage.getItem('popState') !== 'shown') {
             $emailPopup.delay(2000).fadeIn().focus();
             $('html > .home').css('overflow', 'hidden');
