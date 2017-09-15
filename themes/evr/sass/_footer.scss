@@ -44,12 +44,12 @@
         width: 100%;
         .location-info {
             display: flex;
-            width: 280px;
+            width: 300px;
             margin: 0 auto;
             justify-content: space-between;
             padding-top: 1rem;
             @include desktop {
-                width: 400px;
+                width: 420px;
             }
             .contact-desktop-only {
                 display: none;
@@ -93,9 +93,11 @@
     h3 {
         font-size: 1rem;
         font-weight: 300;
-        display: inline;
     }
     .days-of-week {
+        display: inline;
+    }
+    .monday-friday {
         display: inline;
     }
 }

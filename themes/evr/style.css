@@ -1421,14 +1421,14 @@ object {
     .footer-site-info .footer-info .location-info {
       display: -ms-flexbox;
       display: flex;
-      width: 280px;
+      width: 300px;
       margin: 0 auto;
       -ms-flex-pack: justify;
           justify-content: space-between;
       padding-top: 1rem; }
       @media (min-width: 800px) {
         .footer-site-info .footer-info .location-info {
-          width: 400px; } }
+          width: 420px; } }
       .footer-site-info .footer-info .location-info .contact-desktop-only {
         display: none; }
         @media (min-width: 800px) {
@@ -1468,9 +1468,10 @@ object {
     margin: 0; }
   .evr-business-hours-class h3 {
     font-size: 1rem;
-    font-weight: 300;
-    display: inline; }
+    font-weight: 300; }
   .evr-business-hours-class .days-of-week {
+    display: inline; }
+  .evr-business-hours-class .monday-friday {
     display: inline; }
 
 .evr-address-class {
@@ -1616,6 +1617,10 @@ object {
     .process-text ul li:nth-child(4) {
       margin-left: 5%;
       margin-top: 5%; } }
+
+.process-information {
+  padding: 2rem 2rem 1rem;
+  text-align: center; }
 
 .page-id-23 .header-underline {
   padding-bottom: 1rem;
