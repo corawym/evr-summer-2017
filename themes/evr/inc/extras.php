@@ -24,6 +24,8 @@ add_filter( 'body_class', 'evr_body_classes' );
 // Add extra options on WP Admin menu
 function evr_linked_url() {
 		add_menu_page( 'Edit Menu', 'Menu', 'manage_options', 'post.php?post=17&action=edit', '', 'dashicons-book', 7 );
+		add_menu_page( 'Edit Process', 'Process', 'manage_options', 'post.php?post=21&action=edit', '', 'dashicons-layout', 8 );
+		add_menu_page( 'Edit Location', 'Location', 'manage_options', 'post.php?post=23&action=edit', '', 'dashicons-location', 9 );
 }
 add_action( 'admin_menu', 'evr_linked_url' );
 
