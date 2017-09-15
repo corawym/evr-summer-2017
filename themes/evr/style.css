@@ -1401,8 +1401,7 @@ object {
         justify-content: center;
     -ms-flex-item-align: center;
         align-self: center;
-    margin-top: 2.18%;
-    margin-bottom: 2.13%; }
+    width: 100%; }
     .footer-site-info .social-icons a {
       cursor: pointer;
       color: #fff;
@@ -1465,6 +1464,9 @@ object {
       margin: 0;
       margin: auto;
       font-size: 12px; }
+
+.evr-business-hours-class h3, .evr-business-hours-class p {
+  margin: 0; }
 
 .error-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../../assets/images/404/404-hero.jpg") top;
@@ -1912,9 +1914,10 @@ object {
   .workshops-content a:visited {
     color: white; }
   .workshops-content h2 {
-    text-align: center;
-    margin-bottom: 0;
-    border-bottom: 1px solid white; }
+    text-align: center; }
+  .workshops-content .h2-line {
+    border-bottom: 1px solid white;
+    margin-bottom: 2rem; }
 
 .workshop-list {
   display: -ms-flexbox;
@@ -1946,7 +1949,7 @@ object {
     width: 100%;
     height: 100%; }
   .single-workshop-on-page h3, .single-workshop-on-page p {
-    margin: 0.1rem; }
+    margin-bottom: 1rem; }
 
 .interested {
   text-align: center; }

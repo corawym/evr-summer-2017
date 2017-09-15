@@ -28,10 +28,11 @@
 								<p class="info">Vancouver, BC</p>
 								<p class="info">(604) 629 7562</p>
 							</div>
-							<div class="biz-hours">
-								<p class="info">Hours | <span class="days-of-week">tue - fri</span></p>
-								<p class="info">9am - 5pm</p>
-							</div>
+							<?php
+							if ( !is_active_sidebar( 'footer-1' ) )
+								return;
+							else ( is_active_sidebar( 'footer-1' ) ) ?>
+								<?php dynamic_sidebar( 'footer-1' ); ?>
 						</div>
 					</div>
 					<div class="copyright">
