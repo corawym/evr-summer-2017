@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Location
+ * Template Name: Process
  *
  * @package EVR_Theme
  */
@@ -11,7 +11,7 @@ get_header(); ?>
 
 			
 
-
+      
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
