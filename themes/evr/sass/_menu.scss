@@ -85,6 +85,14 @@
   }
 
   // Chocolate Lab style
+  .menu-section-description{
+    font-weight: 300;
+    a{
+      color: $color_secondary_darkgray;
+      text-decoration: underline;
+    }
+  }
+
   .menu-chocolate-grid{
     .chocolate-items-wrapper{
       flex-basis: 50%;

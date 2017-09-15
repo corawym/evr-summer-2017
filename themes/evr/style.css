@@ -1669,7 +1669,9 @@ object {
       color: #fff;
       display: block; }
       .page-id-23 .location-evr-info-desktop .locations-header {
-        margin-left: 250px; }
+        margin-left: 250px;
+        border-bottom: 1px solid #979797;
+        width: 60%; }
       .page-id-23 .location-evr-info-desktop .info-img {
         background: url("../../assets/images/location/info.svg") center;
         background-repeat: no-repeat;
@@ -1877,6 +1879,12 @@ object {
   margin-left: 2.5rem;
   margin-top: 1.5rem;
   color: #bda38a; }
+
+.page-template-menu .menu-section-description {
+  font-weight: 300; }
+  .page-template-menu .menu-section-description a {
+    color: #4a4a4a;
+    text-decoration: underline; }
 
 .page-template-menu .menu-chocolate-grid .chocolate-items-wrapper {
   -ms-flex-preferred-size: 50%;
