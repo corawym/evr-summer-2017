@@ -11,9 +11,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="hero-banner menu-hero-banner container-full">
-        <div class="hero-content-container ">
+        <div class="hero-content-container">
           <div class="hero-content container-max1080 container-padding">
-            <h1 class="hero-content-title">menu</h1>
+						<?php the_title( '<h1 class="hero-content-title">', '</h1>'); ?>
             <a class="hero-button" href="#menu-content">Learn More <i class="fa fa-fw fa-arrow-circle-down" aria-hidden="true"></i></a>
           </div>
         </div>
@@ -27,6 +27,7 @@ get_header(); ?>
 							<h2>From the Coffee Bar</h2>
 							<div class="menu-line"></div>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Coffer Bar icon">
+							<p><?php echo CFS()->get( 'coffee_bar_description' ); ?></p>
 							<p>Our single-origin drinking chocolates and espresso drinks are made in house with our freshly roasted beans. All espresso bar drinks are made with organic dairy, almond or soy milk.</p>
 							
 							<!-- Below is coffee bar menu -->
@@ -34,7 +35,10 @@ get_header(); ?>
 
 								<!--Below is menu coffees section-->
 								<div class="evr-menu-section evr-menu-coffee display-flex-wrap">
-									<h3 class="menu-section-title">Coffees</h3>
+									<h3 class="menu-section-title">
+										<?php $section_coffee = CFS()->get_field_info( 'coffees' );
+											echo $section_coffee['label']; ?>
+									</h3>
 									<div class="menu-items-container display-flex-wrap">
 										<?php	$coffees = CFS()->get( 'coffees' );
 											foreach ( $coffees as $coffee_items ) { ?>
@@ -46,7 +50,10 @@ get_header(); ?>
 
 								<!--Below is menu iced drinks section-->
 								<div class="evr-menu-section evr-menu-iced-drink display-flex-wrap">
-									<h3 class="menu-section-title">Iced Drinks</h3>
+									<h3 class="menu-section-title">
+										<?php $section_iced_drinks = CFS()->get_field_info( 'iced_drinks' );
+											echo $section_iced_drinks['label']; ?>
+									</h3>
 									<div class="menu-items-container display-flex-wrap">
 										<?php	$iced_drinks = CFS()->get( 'iced_drinks' );
 											foreach ( $iced_drinks as $iced_drink_items ) { ?>
@@ -58,7 +65,10 @@ get_header(); ?>
 
 								<!--Below is menu full leaf tea section-->
 								<div class="evr-menu-section evr-menu-full-leaf-tea display-flex-wrap">
-									<h3 class="menu-section-title">Full Leaf Teas</h3>
+									<h3 class="menu-section-title">
+										<?php $section_full_leaf_teas = CFS()->get_field_info( 'full_leaf_teas' );
+											echo $section_full_leaf_teas['label']; ?>
+									</h3>
 									<div class="menu-items-container display-flex-wrap">
 										<div class="menu-items-name-container">
 											<?php	$full_leaf_teas = CFS()->get( 'full_leaf_teas' );
@@ -72,7 +82,10 @@ get_header(); ?>
 
 								<!--Below is menu drinking chocolates section-->
 								<div class="evr-menu-section evr-menu-drinking-chocolate display-flex-wrap">
-									<h3 class="menu-section-title">Drinking Chocolates</h3>
+									<h3 class="menu-section-title">
+										<?php $section_drinking_chocolates = CFS()->get_field_info( 'drinking_chocolates' );
+											echo $section_drinking_chocolates['label']; ?>
+									</h3>
 									<div class="menu-items-container display-flex-wrap">
 										<div class="menu-items-name-container">
 										<?php $drinking_chocolates = CFS()->get( 'drinking_chocolates' );
@@ -93,8 +106,9 @@ get_header(); ?>
 						<div class="menu-chocolate-content text-center">
 							<h2>From the Chocolate Lab</h2><div class="menu-line"></div>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Chocolate Bar icon">
+							<p><?php echo CFS()->get( 'chocolate_lab_description' ); ?></p>
 							<p>We source and use organic fair-trade and direct-trade cacao beans , processing and handcrafting them in-house to produce finished bars that boast regional flavours from the Dominican Republic, Madagascar and Peru. 
-								Learn more about our bean to <span><a href="#">bar chocolate making process.</a></span></p>
+								Learn more about our bean to <span><a class="p-link-black" href="#">bar chocolate making process.</a></span></p>
 						</div>
 
 						<!-- Below is the chocolate lab items -->
@@ -128,7 +142,7 @@ get_header(); ?>
 			</section><!-- end of .menu-content-container -->
 
 			<section class="menu-location container-max800 text-center">
-				<p>Our chocolate and coffee beans can also be found at a select few <span><a href="#">locations</a></span> in Vancouver.</p>
+				<p>Our chocolate and coffee beans can also be found at a select few <span><a class="p-link-black" href="#">locations</a></span> in Vancouver.</p>
 			</section>
 			
 		</main><!-- #main -->
