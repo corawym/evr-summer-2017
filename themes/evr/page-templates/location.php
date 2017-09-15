@@ -23,14 +23,21 @@ get_header(); ?>
 			<!-- Below is east van roaster basic information -->
 			<section class="location-evr-info-container container-full"  id="location-content">
 
-				<div class="container-max800 container-white-bg-content container-separator-top-bottom">
-					<?php the_title( '<h2 class="header-underline text-center">', '</h2>'); ?>
-					<p>Address</p>
-					<p><?php echo CFS()->get( 'evr_address' ); ?></p>
-					<p>Phone</p>
-					<p><?php echo CFS()->get( 'evr_phone' ); ?></p>
-					<p>Email</p>
-					<p><?php echo CFS()->get( 'evr_email' ); ?></p>
+				<div class="container-white-bg-content container-separator-top-bottom">
+					<?php the_title( '<h2 class="header-underline-black text-center">', '</h2>'); ?>
+					<div class="location-evr-info-content display-flex-wrap">
+						<p class="location-evr-title">Address</p>
+						<p class="location-evr-detail"><?php echo CFS()->get( 'evr_address' ); ?></p>
+						<p class="location-evr-title">Phone</p>
+						<p class="location-evr-detail"><?php echo CFS()->get( 'evr_phone' ); ?></p>
+						<p class="location-evr-title">Hours</p>
+						<div class="location-evr-detail location-evr-business">
+							<p>Monday</p>
+							<p><?php echo CFS()->get( 'monday' ); ?></p>
+						</div>
+						<p class="location-evr-title">Email</p>
+						<p class="location-evr-detail"><?php echo CFS()->get( 'evr_email' ); ?></p>
+					</div>
 				</div>
 			</section>
 
@@ -60,5 +67,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
