@@ -1596,7 +1596,8 @@ object {
         font-size: 1.3rem; }
       .process-text ul li .hidden-bean-info {
         visibility: visible;
-        max-height: none; }
+        max-height: none;
+        opacity: 1; }
       .process-text ul li .more-details {
         display: none; }
     .process-text ul li:first-child {
