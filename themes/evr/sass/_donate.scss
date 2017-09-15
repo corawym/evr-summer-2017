@@ -26,6 +26,15 @@
       }
     }
   }
-  
+  .button-border{
+    .border1, .border2{
+      border-color: $color_secondary_darkgray;
+      color: $color_secondary_darkgray;
+      &:hover{
+        border-color: $color_primary_orange;
+        color: $color_primary_orange;
+      }
+    }
+  }
   
 }

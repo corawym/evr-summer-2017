@@ -28,7 +28,7 @@ get_header(); ?>
           <div class="container-separator-top-bottom">
             <h3 class="text-center">You can choose the proceeds to go to:</h3>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/donate/donation-icon-1.svg" alt="A icon of donation box">
-            <p class="text-center">Suport the  women in the program. The proceeds will be given as honorarium to our peers.</p>
+            <p class="text-center">Suport the women in the program. The proceeds will be given as honorarium to our peers.</p>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/donate/donation-icon-2.svg" alt="A icon of cooking tools">
             <p class="text-center">Help us raise funds to hire more staff and purchase equiments needed to increase our production capacity.</p>
           </div>
@@ -42,6 +42,15 @@ get_header(); ?>
               <li>Stop by the shop and donate by cash, debit or credit card.</li>
               <li>Purchase our products.</li>
             </ol>
+            <div class="text-center">
+              <div class="button-border">
+                <a href="#">
+                  <div class="border1">
+                    <div class="border2 text-center">Donate Now</div>
+                  </div>
+                </a>   
+              </div>
+            </div>
           </div>
 
         </div>
