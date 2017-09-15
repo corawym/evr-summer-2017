@@ -2028,6 +2028,10 @@ object {
   .single-workshop-header .single-workshop-hero-banner img {
     width: 100%; }
 
+.single-workshop-header .banner-title {
+  max-width: 1080px;
+  margin: 0 auto; }
+
 .single-workshop-header h1 {
   text-align: center;
   margin-bottom: 0;
@@ -2036,10 +2040,8 @@ object {
     .single-workshop-header h1 {
       position: absolute;
       color: white;
-      display: inline-block;
       bottom: 0;
       margin-bottom: 100px;
-      width: 100%;
       font-size: 3rem;
       font-weight: 300;
       text-transform: uppercase;
@@ -2072,6 +2074,10 @@ object {
   .single-chocolate-header .single-chocolate-hero-banner img {
     width: 100%; }
 
+.single-chocolate-header .banner-title {
+  max-width: 1080px;
+  margin: 0 auto; }
+
 .single-chocolate-header h1 {
   text-align: center;
   margin-bottom: 0;
@@ -2080,10 +2086,8 @@ object {
     .single-chocolate-header h1 {
       position: absolute;
       color: white;
-      display: inline-block;
       bottom: 0;
-      margin-bottom: 100px;
-      width: 100%;
+      margin-bottom: 6rem;
       font-size: 3rem;
       font-weight: 300;
       text-transform: uppercase;

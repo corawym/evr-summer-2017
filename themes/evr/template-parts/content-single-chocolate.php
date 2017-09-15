@@ -12,8 +12,9 @@
 		<div class="single-chocolate-hero-banner">
 			<img class="chocolate-image content-image" src="<?php echo CFS()->get( 'chocolate_image' ) ?>">
 		</div>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<div class="banner-title">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</div>
 		
 	</header><!-- .entry-header -->
 	

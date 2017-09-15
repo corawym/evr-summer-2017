@@ -85,6 +85,10 @@
       width: 100%;
     }
   }
+  .banner-title {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
   h1 {
     text-align: center;
     margin-bottom: 0;
@@ -92,10 +96,8 @@
     @include desktop {
       position: absolute;
       color: white;
-      display: inline-block;
       bottom: 0;
       margin-bottom: 100px;
-      width: 100%;
       font-size: 3rem;
       font-weight: 300;
       text-transform: uppercase;
