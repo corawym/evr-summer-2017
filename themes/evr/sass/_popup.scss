@@ -1,3 +1,8 @@
+.email-popup {
+    width: 100vw;
+    height: 100vh;
+}
+
 .popup-overlay {
     display: none;
     position: fixed;
@@ -8,9 +13,9 @@
     bottom: 0;
     left: 0;
     background: rgba(black, 0.6);
-    z-index: 999;
+    z-index: 500;
 }
-.email-popup {
+.popup-content {
     // display: none;
     position: absolute;
     top: 50%;
