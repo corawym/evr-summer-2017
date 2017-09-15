@@ -278,6 +278,14 @@ a {
 .text-center {
   text-align: center; }
 
+.header-underline-black {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #4a4a4a; }
+
+.header-underline-white {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white; }
+
 .container-full {
   width: 100%; }
 
@@ -1613,14 +1621,21 @@ object {
       margin-left: 5%;
       margin-top: 5%; } }
 
-.page-id-23 .header-underline {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #4a4a4a; }
-
 .page-id-23 .location-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/location-hero.png") center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.page-id-23 .location-evr-info-container {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+  .page-id-23 .location-evr-info-container .location-evr-title {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    font-weight: 600; }
+  .page-id-23 .location-evr-info-container .location-evr-detail {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
 
 .page-id-23 .location-evr-info-mobile h3 {
   margin-bottom: .2rem; }
