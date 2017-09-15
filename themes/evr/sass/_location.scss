@@ -1,11 +1,26 @@
 // location page style
 .page-id-23 {
+  
   // hero banner
   .location-hero-banner {
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/location-hero.png") center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  // evr info style
+  .location-evr-info-container{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    .location-evr-title{
+      flex-basis: 50%;
+      font-weight: 600;
+    }
+    .location-evr-detail{
+      flex-basis: 50%;
+    }
+  }
+ 
 
   // evr location info on mobile view
   .location-evr-info-mobile {

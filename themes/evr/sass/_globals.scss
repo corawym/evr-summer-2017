@@ -70,6 +70,16 @@ a{
   text-align: center; 
 }
 
+.header-underline-black{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $color_secondary_darkgray;
+}
+
+.header-underline-white{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+
 
 // Globals - page structure
 .container-full{
