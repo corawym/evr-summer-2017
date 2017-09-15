@@ -25,7 +25,7 @@ get_header(); ?>
 					<section class="menu-coffee-container container-full container-separator-top-bottom">
 						<div class="menu-coffee-content container-max800 text-center">
 							<h2 class="header-underline-white">From the Coffee Bar</h2>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Coffer Bar icon">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/coffee-cup.svg" alt="A Coffer Bar icon">
 							<div class="menu-section-description">
 								<p><?php echo CFS()->get( 'coffee_bar_description' ); ?></p>
 							</div>
