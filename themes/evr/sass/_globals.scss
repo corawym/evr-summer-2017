@@ -61,9 +61,15 @@ a{
   font-weight: 300;
 }
 
+.p-link-black{
+  color: $color_secondary_darkgray;
+
+}
+
 .text-center{
   text-align: center; 
 }
+
 
 // Globals - page structure
 .container-full{

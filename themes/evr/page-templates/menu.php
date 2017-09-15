@@ -106,8 +106,9 @@ get_header(); ?>
 						<div class="menu-chocolate-content text-center">
 							<h2>From the Chocolate Lab</h2><div class="menu-line"></div>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Chocolate Bar icon">
+							<p><?php echo CFS()->get( 'chocolate_lab_description' ); ?></p>
 							<p>We source and use organic fair-trade and direct-trade cacao beans , processing and handcrafting them in-house to produce finished bars that boast regional flavours from the Dominican Republic, Madagascar and Peru. 
-								Learn more about our bean to <span><a href="#">bar chocolate making process.</a></span></p>
+								Learn more about our bean to <span><a class="p-link-black" href="#">bar chocolate making process.</a></span></p>
 						</div>
 
 						<!-- Below is the chocolate lab items -->
@@ -141,7 +142,7 @@ get_header(); ?>
 			</section><!-- end of .menu-content-container -->
 
 			<section class="menu-location container-max800 text-center">
-				<p>Our chocolate and coffee beans can also be found at a select few <span><a href="#">locations</a></span> in Vancouver.</p>
+				<p>Our chocolate and coffee beans can also be found at a select few <span><a class="p-link-black" href="#">locations</a></span> in Vancouver.</p>
 			</section>
 			
 		</main><!-- #main -->

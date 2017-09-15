@@ -271,6 +271,9 @@ li {
 a {
   font-weight: 300; }
 
+.p-link-black {
+  color: #4a4a4a; }
+
 .text-center {
   text-align: center; }
 
@@ -1914,9 +1917,10 @@ object {
   .workshops-content a:visited {
     color: white; }
   .workshops-content h2 {
-    text-align: center;
-    margin-bottom: 0;
-    border-bottom: 1px solid white; }
+    text-align: center; }
+  .workshops-content .h2-line {
+    border-bottom: 1px solid white;
+    margin-bottom: 2rem; }
 
 .workshop-list {
   display: -ms-flexbox;
