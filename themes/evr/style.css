@@ -303,6 +303,12 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
+.display-flex-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
 .container-white-bg-content {
   width: 85%;
   margin: 0 auto; }
@@ -1635,16 +1641,35 @@ object {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.page-id-23 .location-evr-info-container {
-  padding-left: 5rem;
-  padding-right: 5rem; }
-  .page-id-23 .location-evr-info-container .location-evr-title {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    font-weight: 600; }
-  .page-id-23 .location-evr-info-container .location-evr-detail {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; }
+.page-id-23 .location-evr-info-container .location-evr-title {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  font-weight: 600; }
+  @media (min-width: 800px) {
+    .page-id-23 .location-evr-info-container .location-evr-title {
+      padding-left: 7rem; } }
+
+.page-id-23 .location-evr-info-container .location-evr-detail {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%; }
+
+.page-id-23 .location-evr-info-container .location-evr-business {
+  margin-bottom: 1.5rem; }
+
+.page-id-23 .location-evr-info-container .location-hours-title, .page-id-23 .location-evr-info-container .location-hours-detail {
+  margin-bottom: 0; }
+
+.page-id-23 .location-evr-info-container .location-hours-title {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%; }
+
+.page-id-23 .location-evr-info-container .location-hours-detail {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%; }
+
+.page-id-23 .location-others-container {
+  background-color: #333;
+  color: white; }
 
 .page-id-23 .location-evr-info-mobile h3 {
   margin-bottom: .2rem; }
@@ -1837,16 +1862,6 @@ object {
 .page-template-menu .menu-coffee-content, .page-template-menu .menu-chocolate-container, .page-template-menu .menu-location {
   padding-left: 5rem;
   padding-right: 5rem; }
-
-.page-template-menu .menu-line {
-  border-bottom: 1px solid;
-  margin-bottom: 2rem; }
-
-.page-template-menu .display-flex-wrap {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
 
 .page-template-menu .menu-coffee-container {
   background-color: #333;

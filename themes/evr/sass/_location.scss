@@ -10,15 +10,36 @@
 
   // evr info style
   .location-evr-info-container{
-    padding-left: 5rem;
-    padding-right: 5rem;
+    // padding-left: 5rem;
+    // padding-right: 5rem;
     .location-evr-title{
-      flex-basis: 50%;
+      flex-basis: 35%;
       font-weight: 600;
+      @include desktop{
+        padding-left: 7rem;
+      }
     }
     .location-evr-detail{
-      flex-basis: 50%;
+      flex-basis: 65%;
     }
+    // evr business hours
+    .location-evr-business{
+      margin-bottom: 1.5rem;
+    }
+    .location-hours-title, .location-hours-detail{
+      margin-bottom: 0;
+    }
+    .location-hours-title{
+      flex-basis: 30%;
+    }
+    .location-hours-detail{
+      flex-basis: 70%;
+    }
+  }
+
+  .location-others-container{
+    background-color: $color_background_gray;
+    color: white;
   }
  
 
