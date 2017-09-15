@@ -1,19 +1,19 @@
 .email-popup {
-    width: 100vw;
-    height: 100vh;
-}
-
-.popup-overlay {
-    display: none;
-    position: fixed;
     width: 100%;
     height: 100%;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(black, 0.6);
+    display: none;
     z-index: 500;
+}
+
+.popup-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(black, 0.6);
 }
 .popup-content {
     // display: none;
@@ -24,97 +24,93 @@
     background-color: #fff;
     max-width: 350px;
     z-index: 999;
+    padding-bottom: 2rem;
+    text-align: center;
     @include desktop {
+        padding-bottom: 3rem;
         min-width: 600px;
     }
-    .popup-header {
-        height: 50px;
-        width: 350px;
-        background-color: #E13404;
+    h2 {
+        margin-bottom: 0;
+        @include desktop {
+            padding-top: 1rem;
+        }
+    }
+    p {
+        font-size: 0.9rem;
+        padding: 1rem 2rem 1.5rem;
+        margin: 0;
+        @include desktop {
+            font-size: 1rem;
+        }
+    }
+    .subscribe-form {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        h1 {
-            font-size: 18px;
-            text-transform: uppercase;
+        max-width: 80%;
+        margin: 0 auto;
+        @include desktop {
+            max-width: 70%;
+        }
+        .email {
+            padding: 0.3rem;
+            padding-left: 0.5rem;
+            background-color: rgba(155, 155, 155, 0.4);
+            flex-basis: 70%;
+            border: none;
+            border-radius: 0;
+            font-style: italic;
             @include desktop {
-                font-size: 20px;
+                flex-basis: 75%;
             }
         }
-        @include desktop {
-            min-width: 600px;
-            height: 80px;
-        }
-        .close-popup {
-            position: absolute;
-            right: 5%;
-            top: 7%;
-            height: 20px;
-            width: 20px;
-            background: url("../../assets/images/shapex.svg") no-repeat;
-            background-size: contain;
-            cursor: pointer;
+        .sign-up {
+            flex-basis: 30%;
+            background-color: #E13404;
+            box-shadow: none;
+            text-shadow: none;
+            color: #fff;
+            font-weight: normal;
+            border: none;
+            border-radius: 0;
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
             @include desktop {
-                height: 22px;
-                width: 22px;
+                flex-basis: 25%;
             }
         }
     }
-    .popup-content {
-        padding-bottom: 2rem;
-        text-align: center;
+}
+.popup-header {
+    height: 50px;
+    width: 350px;
+    background-color: #E13404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    h1 {
+        font-size: 18px;
+        text-transform: uppercase;
         @include desktop {
-            padding-bottom: 3rem;
+            font-size: 20px;
         }
-        h2 {
-            margin-bottom: 0;
-            @include desktop {
-                padding-top: 1rem;
-            }
-        }
-        p {
-            font-size: 0.9rem;
-            padding: 1rem 2rem 1.5rem;
-            margin: 0;
-            @include desktop {
-                font-size: 1rem;
-            }
-        }
-        .subscribe-form {
-            display: flex;
-            max-width: 80%;
-            margin: 0 auto;
-            @include desktop {
-                max-width: 70%;
-            }
-            .email {
-                padding: 0.3rem;
-                padding-left: 0.5rem;
-                background-color: rgba(155, 155, 155, 0.4);
-                flex-basis: 70%;
-                border: none;
-                border-radius: 0;
-                font-style: italic;
-                @include desktop {
-                    flex-basis: 75%;
-                }
-            }
-            .sign-up {
-                flex-basis: 30%;
-                background-color: #E13404;
-                box-shadow: none;
-                text-shadow: none;
-                color: #fff;
-                font-weight: normal;
-                border: none;
-                border-radius: 0;
-                padding: 0.5rem 1rem;
-                font-size: 0.8rem;
-                @include desktop {
-                    flex-basis: 25%;
-                }
-            }
+    }
+    @include desktop {
+        min-width: 600px;
+        height: 80px;
+    }
+    .close-popup {
+        position: absolute;
+        right: 5%;
+        top: 7%;
+        height: 20px;
+        width: 20px;
+        background: url("../../assets/images/shapex.svg") no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        @include desktop {
+            height: 22px;
+            width: 22px;
         }
     }
 }
