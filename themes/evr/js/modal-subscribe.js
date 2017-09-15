@@ -30,7 +30,7 @@
             $popupOverlay.fadeOut(100); 
             $('html > .home').css('overflow', '');
         });
-        $('.home').click(function() {
+        $('html > .home').click(function() {
             $popupOverlay.fadeOut(100); 
             // $('html > .home').css('overflow', '');
         });

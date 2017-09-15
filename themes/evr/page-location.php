@@ -21,7 +21,7 @@ get_header(); ?>
         </div>
       </section>
 
-      <section class="location-evr-info-mobile container-padding" id="location-content">
+      <section class="location-evr-info-mobile container-padding">
         <div class="locations-header">
           <h2>Location</h2>
         </div>

@@ -1657,7 +1657,9 @@ object {
       color: #fff;
       display: block; }
       .page-id-23 .location-evr-info-desktop .locations-header {
-        margin-left: 250px; }
+        margin-left: 250px;
+        border-bottom: 1px solid #979797;
+        width: 60%; }
       .page-id-23 .location-evr-info-desktop .info-img {
         background: url("../../assets/images/location/info.svg") center;
         background-repeat: no-repeat;
