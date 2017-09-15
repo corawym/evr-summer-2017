@@ -41,11 +41,16 @@
         }
     }
     .footer-info {
-        display: flex;
+        width: 100%;
         .location-info {
-            flex: 1 1 100%;
             display: flex;
-            justify-content: center;
+            width: 40%;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding-top: 1rem;
+            @include desktop {
+                width: 45%;
+            }
             .contact-desktop-only {
                 display: none;
                 @include desktop {
@@ -54,23 +59,17 @@
                         @include footer-text;
                         color: #fff;
                         text-decoration: none;
+                        font-size: 1rem;
                     }
                 }
             }
             .address,
             .biz-hours,
             .contact-desktop-only {
-                width: 120px;
                 p {
                     @include footer-text;
-                    font-size: 16px;
+                    font-size: 1rem;
                 }
-            }
-            .address {
-                margin-right: 55px;
-            }
-            .days-of-week {
-                text-transform: uppercase;
             }
         }
     }
@@ -89,5 +88,13 @@
 .evr-business-hours-class {
     h3, p {
         margin: 0;
+    }
+    h3 {
+        font-size: 1rem;
+        font-weight: 300;
+        display: inline;
+    }
+    .days-of-week {
+        display: inline;
     }
 }
