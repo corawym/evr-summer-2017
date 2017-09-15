@@ -1,17 +1,17 @@
 .footer-site-info {
     opacity: 0.7;
     background-color: #000000;
-    height: 250px;
+    margin: 0 auto;
     width: 100%;
     color: #fff;
     margin: 0 auto;
-    display: flex;
-    flex-flow: column;
     .social-icons {
-        display: flex;
-        justify-content: center;
-        align-self: center;
+        text-align: center;
+        padding-top: 2rem;
         width: 100%;
+        @include desktop {
+            padding-top: 1.5rem;
+        }
         a {
             cursor: pointer;
             color: #fff;
@@ -44,12 +44,12 @@
         width: 100%;
         .location-info {
             display: flex;
-            width: 40%;
+            width: 280px;
             margin: 0 auto;
             justify-content: space-between;
             padding-top: 1rem;
             @include desktop {
-                width: 45%;
+                width: 400px;
             }
             .contact-desktop-only {
                 display: none;
@@ -74,8 +74,8 @@
         }
     }
     .copyright {
-        margin-bottom: 2%;
-        margin-top: 3rem;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
         p {
             text-align: center;
             @include footer-text;
@@ -86,6 +86,7 @@
 }
 
 .evr-business-hours-class {
+    margin: 0;
     h3, p {
         margin: 0;
     }
@@ -95,6 +96,19 @@
         display: inline;
     }
     .days-of-week {
+        display: inline;
+    }
+}
+
+.evr-address-class {
+    margin: 0;
+    h3, p {
+        margin: 0;
+    }
+    .city {
+        display: inline;
+    }
+    .region {
         display: inline;
     }
 }

@@ -23,11 +23,6 @@
 								<p><a href="#">Contact Us</a></p>
 								<p><a href="#">Feedback</a></p>
 							</div>
-							<div class="address">
-								<p class="info">319 Carrall Street</p>
-								<p class="info">Vancouver, BC</p>
-								<p class="info">(604) 629 7562</p>
-							</div>
 							<?php
 							if ( !is_active_sidebar( 'footer-1' ) )
 								return;
