@@ -283,3 +283,12 @@
     z-index: 9999;
     margin-top: 2%;
 }
+
+.owl-nav {
+    align-self: center;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}

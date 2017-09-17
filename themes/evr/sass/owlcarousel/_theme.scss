@@ -7,11 +7,10 @@
 		-webkit-tap-highlight-color: transparent;
 
 		[class*='owl-'] {
-			color: $nav-color;
+			color: #333;
 			font-size: $nav-font-size;
 			margin: $nav-margin;
 			padding: $nav-padding;
-			background: $nav-background;
 			display: inline-block;
 			cursor: pointer;
 			border-radius: 3px;

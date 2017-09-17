@@ -1403,6 +1403,17 @@ object {
   z-index: 9999;
   margin-top: 2%; }
 
+.owl-nav {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-bottom: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: absolute;
+  width: 100%; }
+
 .footer-site-info {
   opacity: 0.7;
   background-color: #000000;
@@ -2206,7 +2217,8 @@ object {
     -ms-user-select: none;
     user-select: none; }
   .owl-carousel.owl-loaded {
-    display: block; }
+    display: -ms-flexbox;
+    display: flex; }
   .owl-carousel.owl-loading {
     opacity: 0;
     display: block; }
@@ -2278,11 +2290,10 @@ object {
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
   .owl-theme .owl-nav [class*='owl-'] {
-    color: #FFF;
+    color: #333;
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: #D6D6D6;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px; }
