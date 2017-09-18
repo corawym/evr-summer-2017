@@ -19,10 +19,6 @@
 					</div>
 					<div class="footer-info">
 						<div class="location-info">
-							<div class="contact-desktop-only">
-								<p><a href="#">Contact Us</a></p>
-								<p><a href="#">Feedback</a></p>
-							</div>
 							<?php
 							if ( !is_active_sidebar( 'footer-1' ) )
 								return;
