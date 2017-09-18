@@ -20,7 +20,7 @@ get_header(); ?>
         </div>
       </section>
 
-      <section id="pep-content">
+      <section id="pep-content" class="header-offset">
         <div class="container-white-bg-content container-separator-top-bottom">
           <h3>East Van Roasters is a non-profit initiative benefiting the women residents of the Rainier Hotel.</h3>
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/pep/peer-employment-program.png" alt="A picture of several women attend peer employment program">

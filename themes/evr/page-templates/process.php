@@ -20,7 +20,7 @@ get_header(); ?>
         </div>
       </section>
 			
-			<section id="process-content">
+			<section class="header-offset" id="process-content">
 				<div class="process-information container-max1080">
 					<h2 class="who-we-are-title"><?php echo CFS()->get( esc_html('who_we_are_title') ) ?></h2>
 					<p class="who-we-are"><?php echo CFS()->get( esc_html('who_we_are') ) ?></p>
