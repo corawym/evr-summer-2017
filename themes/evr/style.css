@@ -1459,9 +1459,6 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between;
       padding-top: 1rem; }
-      @media (min-width: 800px) {
-        .footer-site-info .footer-info .location-info {
-          width: 420px; } }
       .footer-site-info .footer-info .location-info .contact-desktop-only {
         display: none; }
         @media (min-width: 800px) {
