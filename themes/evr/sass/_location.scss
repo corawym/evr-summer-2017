@@ -41,18 +41,27 @@
     background-color: $color_background_gray;
     color: white;
   }
+  .partner-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   
-  .location-section{
+  .partner-section-chocolate, .partner-section-seasonal, .partner-section-coffee{
     flex-basis: 100%;
     @include desktop{
-      flex-basis: 33%;
+      flex-basis: 30%;
+      .partner-section-chocolate, .partner-section-seasonal{
+        padding-right: 3rem;
+        border-right: 10px solid white;
+      }
     }
 
     h3{
       font-size: 1.5rem;
     }
     
-    .location-items-container{
+    .partner-items-container{
       div{
         margin-bottom: 1.8rem;
       }
@@ -62,167 +71,15 @@
         margin-bottom: 0.7rem;
       }
       .partner-name{
-      font-weight: 500;
+        font-weight: 500;
+      }
     }
+
+    .container-white-bg-content{
+      @include desktop{
+        max-width: $desktop-width;
+      }
     }
   }
 
-
- 
-
-  // evr location info on mobile view
-  // .location-evr-info-mobile {
-  //   h3 {
-  //     margin-bottom: .2rem;
-  //   }
-  //   .locations-header {
-      
-  //     display: flex;
-  //     justify-content: center;
-  //     h2 {
-  //       text-align: center;
-  //       border-bottom: 2px solid black;
-  //       width: 60%;
-  //       @include desktop {
-  //         border-bottom: 2px solid #fff;
-  //       }
-  //     }
-  //   }
-  //   .evr-info-wrapper {
-  //     p {
-  //       margin: 0;
-  //     }
-  //     .location-date-hrs {
-  //       display: flex;
-  //       justify-content: flex-start;
-  //       max-width: 500px;
-  //       .location-date {
-  //         margin-right: 30%;
-  //         @include desktop {
-  //           margin-right: 50%;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   @include desktop {
-  //     color: #fff;
-  //     background-color: $color_background_gray;
-  //     border-bottom: #fff;
-  //   }
-  //   @include desktop {
-  //     display: none;
-  //   }
-  // } 
-  // // evr location info on desktop view
-  // .location-evr-info-desktop {
-  //   display: none;
-  //   @include desktop {
-  //     background-color: #000000;
-  //     opacity: 0.8;
-  //     color: #fff;
-  //     display: block;
-  //     .locations-header {
-  //       margin-left: 250px;
-  //       border-bottom: 1px solid #979797;
-  //       width: 60%;
-  //     }
-  //     .info-img {
-  //       background: url("../../assets/images/location/info.svg") center;
-  //       background-repeat: no-repeat;
-  //       background-size: contain;
-  //       height: 20px;
-  //       width: 20px;
-  //       margin-right: 10px;
-  //     }
-  //     .evr-info-wrapper {
-  //       display: flex;
-  //       margin-left: 250px;
-  //       .location-date-hrs {
-  //         display: flex;
-  //         .evr-info-location,
-  //         .evr-info-num {
-  //           p {
-  //             margin: 0;
-  //           }
-  //         }
-
-  //         .location-date, 
-  //         .location-hours {
-  //           width: 100px;
-  //           p {
-  //             margin: 0;
-  //           }
-  //         }
-  //         .location-head {
-  //           width: 60px;
-  //           p {
-  //             margin: 0;
-  //           }
-  //         }
-  //         .location-date, 
-  //         .location-hours {
-  //           width: 100px;
-  //           p {
-  //             margin: 0;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  //   .evr-email-wrapper {
-  //     display: flex;
-  //     margin-left: 250px;
-  //     .evr-email-content {
-  //       p {
-  //         a {
-  //           text-decoration: none;
-  //           color: #fff
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  
-  // // location content style
-  // .location-evr-partners {
-  //   background-color: rgba(0, 0, 0, 0.8);
-  //   color: white;
-  //   padding-top: 2rem;
-  //   padding-bottom: 2rem;
-  //   h2 {
-  //     text-align: center;
-  //     margin: 0;
-  //     padding-left: 1.5rem;
-  //     padding-right: 1.5rem;
-  //   }
-  //   @include desktop {
-  //     background: white;
-  //     color: 	#4A4A4A;
-  //     h2 {
-  //       font-size: 24px;
-  //     }
-  //     .location-evr-partners-content {
-  //       display: flex;
-  //       justify-content: center;
-  //       margin-top: 3rem;
-  //     }
-  //   }
-  //   .location-evr-partners-chocolate-coffee,
-  //   .location-evr-partners-chocolate,
-  //   .location-evr-partners-coffee {
-  //     div {
-  //       margin-left: 0;
-  //     }
-  //     p {
-  //       margin: 0;
-  //       overflow-wrap: break-word;
-  //     }
-  //     @include desktop {
-  //       width: 275px;
-  //       margin-right: 50px;
-
-
-  //     }
-  //   }
-  // }
 } // end of .apage-id-23

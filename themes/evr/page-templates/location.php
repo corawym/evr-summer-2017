@@ -55,64 +55,65 @@ get_header(); ?>
 
 			<!-- Below is other locations for the chocolates and coffee-->
 			<section class="location-partner-container container-full">
-				<div class="container-white-bg-content display-flex-wrap  container-separator-top-bottom">
+				<div class="container-white-bg-content container-separator-top-bottom">
 					<h3 class="text-center">Our chocolate and coffee beans can also be found at a select few locations in Vancouver.</h3>
-					<!-- Chocolate bars coffee beans section-->
-					<div class="location-section">
-						<h3 class="location-section-title">
-							<?php $section_chocolate_bars_coffee_beans = CFS()->get_field_info( 'chocolate_bars_coffee_beans' );
-								echo $section_chocolate_bars_coffee_beans['label']; ?>
-						</h3>
-						<div class="location-items-container">
-							<?php	$chocolate_bars_coffee_beans = CFS()->get( 'chocolate_bars_coffee_beans' );
-								foreach ( $chocolate_bars_coffee_beans as $chocolate_bars_coffee_beans_items ) { ?>
-								<div>
-									<p class="partner-name"><?php echo $chocolate_bars_coffee_beans_items['store_name']; ?></p>
-									<p><?php echo $chocolate_bars_coffee_beans_items['address']; ?></p>
-									<p><?php echo $chocolate_bars_coffee_beans_items['phone']; ?></p>
-									<p><?php echo $chocolate_bars_coffee_beans_items['website']; ?></p>
-								</div>
-							<?php } ?>
+					<div class="partner-wrapper">
+						<!-- Chocolate bars coffee beans section-->
+						<div class="partner-section-chocolate">
+							<h3 class="partner-section-title">
+								<?php $section_chocolate_bars_coffee_beans = CFS()->get_field_info( 'chocolate_bars_coffee_beans' );
+									echo $section_chocolate_bars_coffee_beans['label']; ?>
+							</h3>
+							<div class="partner-items-container">
+								<?php	$chocolate_bars_coffee_beans = CFS()->get( 'chocolate_bars_coffee_beans' );
+									foreach ( $chocolate_bars_coffee_beans as $chocolate_bars_coffee_beans_items ) { ?>
+									<div>
+										<p class="partner-name"><?php echo $chocolate_bars_coffee_beans_items['store_name']; ?></p>
+										<p><?php echo $chocolate_bars_coffee_beans_items['address']; ?></p>
+										<p><?php echo $chocolate_bars_coffee_beans_items['phone']; ?></p>
+										<p><?php echo $chocolate_bars_coffee_beans_items['website']; ?></p>
+									</div>
+								<?php } ?>
+							</div>
 						</div>
-					</div>
-					<!-- Seasonal Chocolates section-->
-					<div class="location-section">
-						<h3 class="location-section-title">
-							<?php $section_seasonal_chocolates = CFS()->get_field_info( 'seasonal_chocolates' );
-								echo $section_seasonal_chocolates['label']; ?>
-						</h3>
-						<div class="location-items-container display-flex-wrap">
-							<?php	$seasonal_chocolates = CFS()->get( 'seasonal_chocolates' );
-								foreach ( $seasonal_chocolates as $seasonal_chocolates_items ) { ?>
-								<div>
-									<p class="partner-name"><?php echo $seasonal_chocolates_items['store_name']; ?></p>
-									<p><?php echo $seasonal_chocolates_items['address']; ?></p>
-									<p><?php echo $seasonal_chocolates_items['phone']; ?></p>
-									<p><?php echo $seasonal_chocolates_items['website']; ?></p>
-								</div>
-							<?php } ?>
+						<!-- Seasonal Chocolates section-->
+						<div class="partner-section-seasonal">
+							<h3 class="partner-section-title">
+								<?php $section_seasonal_chocolates = CFS()->get_field_info( 'seasonal_chocolates' );
+									echo $section_seasonal_chocolates['label']; ?>
+							</h3>
+							<div class="partner-items-container">
+								<?php	$seasonal_chocolates = CFS()->get( 'seasonal_chocolates' );
+									foreach ( $seasonal_chocolates as $seasonal_chocolates_items ) { ?>
+									<div>
+										<p class="partner-name"><?php echo $seasonal_chocolates_items['store_name']; ?></p>
+										<p><?php echo $seasonal_chocolates_items['address']; ?></p>
+										<p><?php echo $seasonal_chocolates_items['phone']; ?></p>
+										<p><?php echo $seasonal_chocolates_items['website']; ?></p>
+									</div>
+								<?php } ?>
+							</div>
 						</div>
-					</div>
-					<!-- Coffee on the bar section -->
-					<div class="location-section">
-						<h3 class="location-section-title">
-							<?php $section_coffee_on_the_bar = CFS()->get_field_info( 'coffee_on_the_bar' );
-								echo $section_coffee_on_the_bar['label']; ?>
-						</h3>
-						<div class="location-items-container display-flex-wrap">
-							<?php	$coffee_on_the_bar = CFS()->get( 'coffee_on_the_bar' );
-								foreach ( $coffee_on_the_bar as $coffee_on_the_bar_items ) { ?>
-								<div>
-									<p class="partner-name"><?php echo $coffee_on_the_bar_items['store_name']; ?></p>
-									<p><?php echo $coffee_on_the_bar_items['address']; ?></p>
-									<p><?php echo $coffee_on_the_bar_items['phone']; ?></p>
-									<p><?php echo $coffee_on_the_bar_items['website']; ?></p>
-								</div>
-							<?php } ?>
+						<!-- Coffee on the bar section -->
+						<div class="partner-section-coffee">
+							<h3 class="partner-section-title">
+								<?php $section_coffee_on_the_bar = CFS()->get_field_info( 'coffee_on_the_bar' );
+									echo $section_coffee_on_the_bar['label']; ?>
+							</h3>
+							<div class="partner-items-container">
+								<?php	$coffee_on_the_bar = CFS()->get( 'coffee_on_the_bar' );
+									foreach ( $coffee_on_the_bar as $coffee_on_the_bar_items ) { ?>
+									<div>
+										<p class="partner-name"><?php echo $coffee_on_the_bar_items['store_name']; ?></p>
+										<p><?php echo $coffee_on_the_bar_items['address']; ?></p>
+										<p><?php echo $coffee_on_the_bar_items['phone']; ?></p>
+										<p><?php echo $coffee_on_the_bar_items['website']; ?></p>
+									</div>
+								<?php } ?>
+							</div>
 						</div>
-					</div>
 
-
+					</div>
 				</div>
 
 			</section>

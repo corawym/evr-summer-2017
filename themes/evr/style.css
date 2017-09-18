@@ -1682,23 +1682,37 @@ object {
   background-color: #333;
   color: white; }
 
-.page-id-23 .location-section {
+.page-id-23 .partner-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.page-id-23 .partner-section-chocolate, .page-id-23 .partner-section-seasonal, .page-id-23 .partner-section-coffee {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media (min-width: 800px) {
-    .page-id-23 .location-section {
-      -ms-flex-preferred-size: 33%;
-          flex-basis: 33%; } }
-  .page-id-23 .location-section h3 {
+    .page-id-23 .partner-section-chocolate, .page-id-23 .partner-section-seasonal, .page-id-23 .partner-section-coffee {
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%; }
+      .page-id-23 .partner-section-chocolate .partner-section-chocolate, .page-id-23 .partner-section-chocolate .partner-section-seasonal, .page-id-23 .partner-section-seasonal .partner-section-chocolate, .page-id-23 .partner-section-seasonal .partner-section-seasonal, .page-id-23 .partner-section-coffee .partner-section-chocolate, .page-id-23 .partner-section-coffee .partner-section-seasonal {
+        padding-right: 3rem;
+        border-right: 10px solid white; } }
+  .page-id-23 .partner-section-chocolate h3, .page-id-23 .partner-section-seasonal h3, .page-id-23 .partner-section-coffee h3 {
     font-size: 1.5rem; }
-  .page-id-23 .location-section .location-items-container div {
+  .page-id-23 .partner-section-chocolate .partner-items-container div, .page-id-23 .partner-section-seasonal .partner-items-container div, .page-id-23 .partner-section-coffee .partner-items-container div {
     margin-bottom: 1.8rem; }
-  .page-id-23 .location-section .location-items-container p {
+  .page-id-23 .partner-section-chocolate .partner-items-container p, .page-id-23 .partner-section-seasonal .partner-items-container p, .page-id-23 .partner-section-coffee .partner-items-container p {
     display: block;
     margin: 0;
     margin-bottom: 0.7rem; }
-  .page-id-23 .location-section .location-items-container .partner-name {
+  .page-id-23 .partner-section-chocolate .partner-items-container .partner-name, .page-id-23 .partner-section-seasonal .partner-items-container .partner-name, .page-id-23 .partner-section-coffee .partner-items-container .partner-name {
     font-weight: 500; }
+  @media (min-width: 800px) {
+    .page-id-23 .partner-section-chocolate .container-white-bg-content, .page-id-23 .partner-section-seasonal .container-white-bg-content, .page-id-23 .partner-section-coffee .container-white-bg-content {
+      max-width: 1080px; } }
 
 .page-id-38 .pep-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
