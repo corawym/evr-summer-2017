@@ -19,7 +19,9 @@ get_header('archive'); ?>
 			</div>
 		</section>
 
-		<section id="workshops-content" class="workshops-content">
+		<div class="header-offset" id="workshops-content"></div>
+
+		<section class="workshops-content">
 
 			<h2>Upcoming Events</h2>
 			<div class="h2-line"></div>

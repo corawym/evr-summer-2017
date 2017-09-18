@@ -19,7 +19,9 @@ get_header(); ?>
         </div>
       </section>
 
-      <section id="volunteer-content" class="volunteer-container container-full container-separator-top-bottom">
+      <div class="header-offset" id="volunteer-content"></div>
+
+      <section class="volunteer-container container-full container-separator-top-bottom">
         <div class="container-white-bg-content">
           <div>
             <h3 class="text-center">How to be a volunteer?</h3>
