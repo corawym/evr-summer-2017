@@ -1678,9 +1678,22 @@ object {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%; }
 
-.page-id-23 .location-others-container {
+.page-id-23 .location-partner-container {
   background-color: #333;
   color: white; }
+  .page-id-23 .location-partner-container p {
+    display: block;
+    margin-bottom: 0; }
+
+.page-id-23 .location-section {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+  @media (min-width: 800px) {
+    .page-id-23 .location-section {
+      -ms-flex-preferred-size: 33.33%;
+          flex-basis: 33.33%; } }
+  .page-id-23 .location-section .partner-name {
+    font-weight: 600; }
 
 .page-id-23 .location-evr-info-mobile h3 {
   margin-bottom: .2rem; }

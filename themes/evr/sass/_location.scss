@@ -37,10 +37,25 @@
     }
   }
 
-  .location-others-container{
+  .location-partner-container{
     background-color: $color_background_gray;
     color: white;
+    p{
+      display: inline-block;
+      margin-bottom: 0;
+    }
   }
+  .location-section{
+    flex-basis: 100%;
+    @include desktop{
+      flex-basis: 33.33%;
+    }
+    .partner-name{
+      font-weight: 600;
+    }
+  }
+
+
  
 
   // evr location info on mobile view
