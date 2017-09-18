@@ -37,7 +37,7 @@ get_header(); ?>
 
             <!--button orange border-->
             <div class="button-border">
-              <a href="#">
+              <a href="<?php echo get_page_link(23); ?>#location-content">
                 <div class="border1">
                   <div class="border2">Contact Us</div>
                 </div>

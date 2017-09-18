@@ -44,7 +44,7 @@ get_header(); ?>
             </ol>
             <div class="text-center">
               <div class="button-border">
-                <a href="#">
+                <a href="https://www.phs.ca/index.php/product/social-enterprises/">
                   <div class="border1">
                     <div class="border2 text-center">Donate Now</div>
                   </div>
