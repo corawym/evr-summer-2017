@@ -21,7 +21,7 @@ get_header(); ?>
       </section>
 
 			<!-- Below is east van roaster basic information -->
-			<section class="location-evr-info-container container-full"  id="location-content">
+			<section class="location-evr-info-container container-full header-offset"  id="location-content">
 
 				<div class="container-white-bg-content container-separator-top-bottom">
 					<?php the_title( '<h2 class="header-underline-black text-center">', '</h2>'); ?>
