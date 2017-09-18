@@ -33,7 +33,7 @@ get_header(); ?>
 						<p class="location-evr-title">Hours</p>
 						<div class="location-evr-detail location-evr-business display-flex-wrap">
 							<p class="location-hours-title">Monday</p>
-							<p class="location-hours-detail"><?php echo CFS()->get(esc_html()'monday') ); ?></p>
+							<p class="location-hours-detail"><?php echo CFS()->get(esc_html('monday') ); ?></p>
 							<p class="location-hours-title">Tuesday</p>
 							<p class="location-hours-detail"><?php echo CFS()->get(esc_html('tuesday') ); ?></p>
 							<p class="location-hours-title">Wednesday</p>
