@@ -19,7 +19,7 @@ get_header(); ?>
         </div>
       </section>
 
-			<section class="menu-content-container container-full" id="menu-content">
+			<section class="menu-content-container container-full header-offset" id="menu-content">
 				<div class="menu-content container-full">
 
 					<section class="menu-coffee-container container-full container-separator-top-bottom">

@@ -33,7 +33,9 @@ get_header(); ?>
             </div>
         </section>
 
-        <section class="content-one" id="front-page-content">
+        <div class="header-offset" id="front-page-content"></div>
+
+        <section class="content-one">
             <div class="content-one-div">
                 <p>Non-profit initiative benefitting the women residents of Rainier Hotel</p>
             </div>
