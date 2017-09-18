@@ -1681,151 +1681,24 @@ object {
 .page-id-23 .location-partner-container {
   background-color: #333;
   color: white; }
-  .page-id-23 .location-partner-container p {
-    display: inline-block;
-    margin-bottom: 0; }
 
 .page-id-23 .location-section {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media (min-width: 800px) {
     .page-id-23 .location-section {
-      -ms-flex-preferred-size: 33.33%;
-          flex-basis: 33.33%; } }
-  .page-id-23 .location-section .partner-name {
-    font-weight: 600; }
-
-.page-id-23 .location-evr-info-mobile h3 {
-  margin-bottom: .2rem; }
-
-.page-id-23 .location-evr-info-mobile .locations-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .page-id-23 .location-evr-info-mobile .locations-header h2 {
-    text-align: center;
-    border-bottom: 2px solid black;
-    width: 60%; }
-    @media (min-width: 800px) {
-      .page-id-23 .location-evr-info-mobile .locations-header h2 {
-        border-bottom: 2px solid #fff; } }
-
-.page-id-23 .location-evr-info-mobile .evr-info-wrapper p {
-  margin: 0; }
-
-.page-id-23 .location-evr-info-mobile .evr-info-wrapper .location-date-hrs {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  max-width: 500px; }
-  .page-id-23 .location-evr-info-mobile .evr-info-wrapper .location-date-hrs .location-date {
-    margin-right: 30%; }
-    @media (min-width: 800px) {
-      .page-id-23 .location-evr-info-mobile .evr-info-wrapper .location-date-hrs .location-date {
-        margin-right: 50%; } }
-
-@media (min-width: 800px) {
-  .page-id-23 .location-evr-info-mobile {
-    color: #fff;
-    background-color: #333;
-    border-bottom: #fff; } }
-
-@media (min-width: 800px) {
-  .page-id-23 .location-evr-info-mobile {
-    display: none; } }
-
-.page-id-23 .location-evr-info-desktop {
-  display: none; }
-  @media (min-width: 800px) {
-    .page-id-23 .location-evr-info-desktop {
-      background-color: #000000;
-      opacity: 0.8;
-      color: #fff;
-      display: block; }
-      .page-id-23 .location-evr-info-desktop .locations-header {
-        margin-left: 250px;
-        border-bottom: 1px solid #979797;
-        width: 60%; }
-      .page-id-23 .location-evr-info-desktop .info-img {
-        background: url("../../assets/images/location/info.svg") center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 20px;
-        width: 20px;
-        margin-right: 10px; }
-      .page-id-23 .location-evr-info-desktop .evr-info-wrapper {
-        display: -ms-flexbox;
-        display: flex;
-        margin-left: 250px; }
-        .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs {
-          display: -ms-flexbox;
-          display: flex; }
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .evr-info-location p,
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .evr-info-num p {
-            margin: 0; }
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date,
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours {
-            width: 100px; }
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date p,
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours p {
-              margin: 0; }
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-head {
-            width: 60px; }
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-head p {
-              margin: 0; }
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date,
-          .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours {
-            width: 100px; }
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-date p,
-            .page-id-23 .location-evr-info-desktop .evr-info-wrapper .location-date-hrs .location-hours p {
-              margin: 0; } }
-  .page-id-23 .location-evr-info-desktop .evr-email-wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 250px; }
-    .page-id-23 .location-evr-info-desktop .evr-email-wrapper .evr-email-content p a {
-      text-decoration: none;
-      color: #fff; }
-
-.page-id-23 .location-evr-partners {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-  .page-id-23 .location-evr-partners h2 {
-    text-align: center;
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%; } }
+  .page-id-23 .location-section h3 {
+    font-size: 1.5rem; }
+  .page-id-23 .location-section .location-items-container div {
+    margin-bottom: 1.8rem; }
+  .page-id-23 .location-section .location-items-container p {
+    display: block;
     margin: 0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; }
-  @media (min-width: 800px) {
-    .page-id-23 .location-evr-partners {
-      background: white;
-      color: #4A4A4A; }
-      .page-id-23 .location-evr-partners h2 {
-        font-size: 24px; }
-      .page-id-23 .location-evr-partners .location-evr-partners-content {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        margin-top: 3rem; } }
-  .page-id-23 .location-evr-partners .location-evr-partners-chocolate-coffee div,
-  .page-id-23 .location-evr-partners .location-evr-partners-chocolate div,
-  .page-id-23 .location-evr-partners .location-evr-partners-coffee div {
-    margin-left: 0; }
-  .page-id-23 .location-evr-partners .location-evr-partners-chocolate-coffee p,
-  .page-id-23 .location-evr-partners .location-evr-partners-chocolate p,
-  .page-id-23 .location-evr-partners .location-evr-partners-coffee p {
-    margin: 0;
-    overflow-wrap: break-word; }
-  @media (min-width: 800px) {
-    .page-id-23 .location-evr-partners .location-evr-partners-chocolate-coffee,
-    .page-id-23 .location-evr-partners .location-evr-partners-chocolate,
-    .page-id-23 .location-evr-partners .location-evr-partners-coffee {
-      width: 275px;
-      margin-right: 50px; } }
+    margin-bottom: 0.7rem; }
+  .page-id-23 .location-section .location-items-container .partner-name {
+    font-weight: 500; }
 
 .page-id-38 .pep-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
