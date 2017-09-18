@@ -20,7 +20,7 @@ get_header(); ?>
         </div>
       </section>
 
-      <section id="donate-content">
+      <section class="header-offset" id="donate-content">
         <div class="container-white-bg-content container-separator-top-bottom">
           <h3>East Van Roasters is a non-profit initiative benefiting the women residents of the Rainier Hotel.</h3>
           <p>We are a fully registered charity and would love to have your support!</p>
