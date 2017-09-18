@@ -40,6 +40,12 @@
   .location-partner-container{
     background-color: $color_background_gray;
     color: white;
+
+    @include desktop{
+      .container-white-bg-content{
+        max-width: 1080px;
+      }
+    }
   }
   .partner-wrapper{
     display: flex;
@@ -50,9 +56,8 @@
   .partner-section-chocolate, .partner-section-seasonal, .partner-section-coffee{
     flex-basis: 100%;
     @include desktop{
-      flex-basis: 30%;
+      flex-basis: 31%;
       .partner-section-chocolate, .partner-section-seasonal{
-        padding-right: 3rem;
         border-right: 10px solid white;
       }
     }
@@ -73,13 +78,13 @@
       .partner-name{
         font-weight: 500;
       }
-    }
+      a{
+        color: white;
 
-    .container-white-bg-content{
-      @include desktop{
-        max-width: $desktop-width;
       }
     }
+
+    
   }
 
 } // end of .apage-id-23
