@@ -1682,7 +1682,7 @@ object {
   background-color: #333;
   color: white; }
   .page-id-23 .location-partner-container p {
-    display: block;
+    display: inline-block;
     margin-bottom: 0; }
 
 .page-id-23 .location-section {
@@ -1895,7 +1895,7 @@ object {
 
 .page-template-menu .coffee-cup-icon {
   padding-left: 2rem;
-  height: 80px; }
+  height: 60px; }
 
 .page-template-menu .menu-evr-menu-container {
   margin-top: 2.5rem;
