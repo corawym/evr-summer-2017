@@ -1880,6 +1880,10 @@ object {
   .page-template-menu .menu-coffee-container .menu-line {
     border-color: white; }
 
+.page-template-menu .coffee-cup-icon {
+  padding-left: 2rem;
+  height: 80px; }
+
 .page-template-menu .menu-evr-menu-container {
   margin-top: 2.5rem;
   -ms-flex-align: start;

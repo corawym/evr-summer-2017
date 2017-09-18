@@ -11,7 +11,7 @@
     padding-left: 5rem;
     padding-right: 5rem;
   }
-
+  
   // Coffee Bar style
   .menu-coffee-container{
     background-color: $color_background_gray;
@@ -21,6 +21,11 @@
     }
   }
   
+  .coffee-cup-icon {
+    padding-left: 2rem;
+    height: 80px;
+  }
+
   .menu-evr-menu-container{
     margin-top: 2.5rem;
     align-items: flex-start;

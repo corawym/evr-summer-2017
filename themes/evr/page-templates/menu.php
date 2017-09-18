@@ -25,7 +25,7 @@ get_header(); ?>
 					<section class="menu-coffee-container container-full container-separator-top-bottom">
 						<div class="menu-coffee-content container-max800 text-center">
 							<h2 class="header-underline-white">From the Coffee Bar</h2>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/coffee-cup.svg" alt="A Coffer Bar icon">
+							<img class="coffee-cup-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/coffee-cup.svg" alt="A Coffee Bar icon">
 							<div class="menu-section-description">
 								<p><?php echo CFS()->get( 'coffee_bar_description' ); ?></p>
 							</div>
@@ -142,7 +142,7 @@ get_header(); ?>
 			</section><!-- end of .menu-content-container -->
 
 			<section class="menu-location container-max800 text-center">
-				<p>Our chocolate and coffee beans can also be found at a select few <span><a class="p-link-black" href="#">locations</a></span> in Vancouver.</p>
+				<p>Our chocolate and coffee beans can also be found at a select few <span><a class="p-link-black" href="<?php echo get_page_link(23); ?>#location-content">locations</a></span> in Vancouver.</p>
 			</section>
 			
 		</main><!-- #main -->
