@@ -102,7 +102,7 @@ get_header(); ?>
 						</div>
 					</section><!-- end of .menu-coffee-container -->
 
-					<section class="menu-chocolate-container container-max800 container-full container-separator-top-bottom">
+					<section class="menu-chocolate-container container-max800 container-full container-separator-top-bottom" id="menu-content">
 						<div class="menu-chocolate-content text-center">
 							<h2 class="header-underline-black">From the Chocolate Lab</h2>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Chocolate Bar icon">

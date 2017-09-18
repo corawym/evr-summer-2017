@@ -52,7 +52,7 @@ get_header(); ?>
 
         <section class="menu-hero">
             <div class="front-page-btn button-border">
-                <a href="<?php echo home_url() ?>/menu">
+                <a href="<?php echo get_page_link(17); ?>#menu-content">
                     <div class="border1">
                         <div class="border2">Menu</div>
                     </div>
