@@ -60,7 +60,7 @@ get_header('archive'); ?>
 				<p>Interested in doing a team building event at East Van Roasters?</p>
 				<p>Interested in helping us facilitate a workshop? </p>
 				<div class="button-border">
-					<a href="#">
+					<a href="<?php echo get_page_link(23); ?>#location-content">
 						<div class="border1">
 							<div class="border2">Contact Us</div>
 						</div>
