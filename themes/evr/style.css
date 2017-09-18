@@ -1750,14 +1750,16 @@ object {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-hero.jpg") center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.page-id-40 p {
-  margin-top: 2rem; }
+  .page-id-40 .donate-hero-banner p {
+    margin-top: 2rem; }
 
 .page-id-40 .site-content img {
   width: 126px;
   display: block;
   margin: 2rem auto; }
+
+.page-id-40 .site-content p {
+  margin-top: 2rem; }
 
 .page-id-40 .donation-way-list {
   color: #4a4a4a; }
