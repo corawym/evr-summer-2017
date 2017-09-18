@@ -1721,6 +1721,8 @@ object {
     font-weight: 500; }
   .page-id-23 .partner-section-chocolate .partner-items-container a, .page-id-23 .partner-section-seasonal .partner-items-container a, .page-id-23 .partner-section-coffee .partner-items-container a {
     color: white; }
+    .page-id-23 .partner-section-chocolate .partner-items-container a:hover, .page-id-23 .partner-section-seasonal .partner-items-container a:hover, .page-id-23 .partner-section-coffee .partner-items-container a:hover {
+      color: #e13404; }
 
 .page-id-38 .pep-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;

@@ -80,7 +80,9 @@
       }
       a{
         color: white;
-
+        &:hover{
+          color: $color_primary_orange;
+        }
       }
     }
 

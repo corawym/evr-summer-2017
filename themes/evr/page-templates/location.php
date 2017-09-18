@@ -107,7 +107,7 @@ get_header(); ?>
 									foreach ( $coffee_on_the_bar as $coffee_on_the_bar_items ) { ?>
 									<div>
 										<a href="<?php echo $seasonal_chocolates_items['website']; ?>" target="_blank">
-											<p class="partner-name"><?php echo $coffee_on_the_bar_items['store_name']; ?>
+											<p class="partner-name"><?php echo $coffee_on_the_bar_items['store_name']; ?></p>
 										</a>
 										<p><?php echo $coffee_on_the_bar_items['address']; ?></p>
 										<p><?php echo $coffee_on_the_bar_items['phone']; ?></p>
