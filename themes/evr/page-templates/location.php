@@ -27,28 +27,28 @@ get_header(); ?>
 					<?php the_title( '<h2 class="header-underline-black text-center">', '</h2>'); ?>
 					<div class="location-evr-info-content display-flex-wrap">
 						<p class="location-evr-title">Address</p>
-						<p class="location-evr-detail"><?php echo CFS()->get( 'evr_address' ); ?></p>
+						<p class="location-evr-detail"><?php echo CFS()->get( esc_html('evr_address') ); ?></p>
 						<p class="location-evr-title">Phone</p>
-						<p class="location-evr-detail"><?php echo CFS()->get( 'evr_phone' ); ?></p>
+						<p class="location-evr-detail"><?php echo CFS()->get( esc_html('evr_phone') ); ?></p>
 						<p class="location-evr-title">Hours</p>
 						<div class="location-evr-detail location-evr-business display-flex-wrap">
 							<p class="location-hours-title">Monday</p>
-							<p class="location-hours-detail"><?php echo CFS()->get( 'monday' ); ?></p>
+							<p class="location-hours-detail"><?php echo CFS()->get(esc_html()'monday') ); ?></p>
 							<p class="location-hours-title">Tuesday</p>
-							<p class="location-hours-detail"><?php echo CFS()->get( 'tuesday' ); ?></p>
+							<p class="location-hours-detail"><?php echo CFS()->get(esc_html('tuesday') ); ?></p>
 							<p class="location-hours-title">Wednesday</p>
-							<p class="location-hours-detail"><?php echo CFS()->get( 'wednesday' ); ?></p>
+							<p class="location-hours-detail"><?php echo CFS()->get(esc_html('wednesday') ); ?></p>
 							<p class="location-hours-title">Thursday</p>
-							<p class="location-hours-detail"><?php echo CFS()->get( 'thursday' ); ?></p>
+							<p class="location-hours-detail"><?php echo CFS()->get(esc_html('thursday') ); ?></p>
 							<p class="location-hours-title">Friday</p>
-							<p class="location-hours-detail"><?php echo CFS()->get( 'friday' ); ?></p>
+							<p class="location-hours-detail"><?php echo CFS()->get(esc_html('friday') ); ?></p>
 							<p class="location-hours-title">Saturday</p>
-							<p class="location-hours-detail"><?php echo CFS()->get( 'saturday' ); ?></p>
+							<p class="location-hours-detail"><?php echo CFS()->get(esc_html('saturday') ); ?></p>
 							<p class="location-hours-title">Sunday</p>
-							<p class="location-hours-detail"><?php echo CFS()->get( 'sunday' ); ?></p>
+							<p class="location-hours-detail"><?php echo CFS()->get(esc_html('sunday') ); ?></p>
 						</div>
 						<p class="location-evr-title">Email</p>
-						<p class="location-evr-detail"><?php echo CFS()->get( 'evr_email' ); ?></p>
+						<p class="location-evr-detail"><?php echo CFS()->get(esc_html('evr_email') ); ?></p>
 					</div>
 				</div>
 			</section>
@@ -61,11 +61,11 @@ get_header(); ?>
 						<!-- Chocolate bars coffee beans section-->
 						<div class="partner-section-chocolate">
 							<h3 class="partner-section-title">
-								<?php $section_chocolate_bars_coffee_beans = CFS()->get_field_info( 'chocolate_bars_coffee_beans' );
+								<?php $section_chocolate_bars_coffee_beans = CFS()->get_field_info(esc_html('chocolate_bars_coffee_beans') );
 									echo $section_chocolate_bars_coffee_beans['label']; ?>
 							</h3>
 							<div class="partner-items-container">
-								<?php	$chocolate_bars_coffee_beans = CFS()->get( 'chocolate_bars_coffee_beans' );
+								<?php	$chocolate_bars_coffee_beans = CFS()->get(esc_html('chocolate_bars_coffee_beans') );
 									foreach ( $chocolate_bars_coffee_beans as $chocolate_bars_coffee_beans_items ) { ?>
 									<div>
 										<p class="partner-name"><?php echo $chocolate_bars_coffee_beans_items['store_name']; ?></p>
@@ -79,11 +79,11 @@ get_header(); ?>
 						<!-- Seasonal Chocolates section-->
 						<div class="partner-section-seasonal">
 							<h3 class="partner-section-title">
-								<?php $section_seasonal_chocolates = CFS()->get_field_info( 'seasonal_chocolates' );
+								<?php $section_seasonal_chocolates = CFS()->get_field_info(esc_html('seasonal_chocolates') );
 									echo $section_seasonal_chocolates['label']; ?>
 							</h3>
 							<div class="partner-items-container">
-								<?php	$seasonal_chocolates = CFS()->get( 'seasonal_chocolates' );
+								<?php	$seasonal_chocolates = CFS()->get(esc_html('seasonal_chocolates') );
 									foreach ( $seasonal_chocolates as $seasonal_chocolates_items ) { ?>
 									<div>
 										<p class="partner-name"><?php echo $seasonal_chocolates_items['store_name']; ?></p>
@@ -97,11 +97,11 @@ get_header(); ?>
 						<!-- Coffee on the bar section -->
 						<div class="partner-section-coffee">
 							<h3 class="partner-section-title">
-								<?php $section_coffee_on_the_bar = CFS()->get_field_info( 'coffee_on_the_bar' );
+								<?php $section_coffee_on_the_bar = CFS()->get_field_info(esc_html('coffee_on_the_bar') );
 									echo $section_coffee_on_the_bar['label']; ?>
 							</h3>
 							<div class="partner-items-container">
-								<?php	$coffee_on_the_bar = CFS()->get( 'coffee_on_the_bar' );
+								<?php	$coffee_on_the_bar = CFS()->get(esc_html('coffee_on_the_bar') );
 									foreach ( $coffee_on_the_bar as $coffee_on_the_bar_items ) { ?>
 									<div>
 										<p class="partner-name"><?php echo $coffee_on_the_bar_items['store_name']; ?></p>
