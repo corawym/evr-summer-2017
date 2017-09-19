@@ -1728,6 +1728,22 @@ object {
     .page-id-23 .partner-section-chocolate .partner-items-container a:hover, .page-id-23 .partner-section-seasonal .partner-items-container a:hover, .page-id-23 .partner-section-coffee .partner-items-container a:hover {
       color: #e13404; }
 
+@media screen and (max-width: 575px) {
+  .page-id-96 .logo-title-hamburger > h1 {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 475px) {
+  .page-id-96 .logo-title-hamburger > h1 {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 415px) {
+  .page-id-96 .logo-title-hamburger > h1 {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 375px) {
+  .page-id-96 .logo-title-hamburger > h1 {
+    font-size: .8rem; } }
+
 .page-id-96 .pep-hero-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
   background-repeat: no-repeat;
