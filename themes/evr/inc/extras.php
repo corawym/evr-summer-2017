@@ -29,3 +29,53 @@ function evr_linked_url() {
 }
 add_action( 'admin_menu', 'evr_linked_url' );
 
+// change login logo ------------------
+function evr_login_logo() { ?>
+	<style type="text/css">
+	.login {
+		background: black;
+	} 
+    
+	#login h1 a, .login h1 a {
+    background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/evr-logo.svg);
+		height:150px;
+		width:300px;
+		background-size: 300px 150px;
+		background-repeat: no-repeat;
+  }
+	#login .button.button-primary {
+			background-color: #ff3440;
+			border: none;
+	}
+	
+	.wp-core-ui .button-primary {
+		text-shadow: none;
+		box-shadow: 0 1px 0 black;
+	}
+
+	.login #login_error, .login .message {
+		border-left: 4px solid #ff3440;
+	}
+
+	.login #backtoblog a, .login #nav a, .login h1 a {
+		color: white;
+	}
+	.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
+		color: red;
+	}
+    </style>
+<?php }
+add_action('login_head', 'evr_login_logo');
+
+// hover on login logo title
+function evr_login_title() {
+	return 'East Van Roasters';
+}
+add_filter('login_headertitle', 'evr_login_title');
+
+
+// link login logo to homepage
+function evr_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'evr_login_logo_url' );
