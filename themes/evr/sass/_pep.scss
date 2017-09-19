@@ -2,6 +2,20 @@
 
 // PEP banner
 .page-id-96{
+  .logo-title-hamburger > h1 {
+    @media screen and (max-width: 575px) {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 475px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 415px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: .8rem;
+    }
+  }
   .pep-hero-banner{
     background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
     background-repeat: no-repeat;
