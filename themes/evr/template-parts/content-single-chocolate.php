@@ -8,6 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="single-page-header container-max800 container-padding">
 		<div class="single-page-hero-banner">
 			<img class="content-image" src="<?php echo CFS()->get( 'chocolate_image' ) ?>">
@@ -17,11 +18,9 @@
 		</div>		
 	</header><!-- .entry-header -->
 	
-	<section class="single-page-content container-max800 container-padding">
-		
+	<section class="single-page-content container-max800 container-padding">	
 		<p class="chocolate-description"><?php echo CFS()->get( esc_html('chocolate_description') ) ?></p>
 		<p class="single-item-price"><?php echo CFS()->get( esc_html('chocolate_price') ) ?></p>
-
 		<div class="chocolate-details container-separator-top-bottom dashed-line">
 			<div class="chocolate-info bean-origin">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/green-bean.svg" alt="Icon of bean origin">
@@ -34,8 +33,7 @@
 			<div class="chocolate-info chocolate-type">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/mbri-info.svg" alt="Icon of chocolate type">
 				<p class="chocolate-inline"><?php echo CFS()->get( esc_html('chocolate_type') ) ?></p>
-		</div>
-		
+		</div>		
 	</section>
 
 </article><!-- #post-## -->

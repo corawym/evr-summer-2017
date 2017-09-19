@@ -78,11 +78,22 @@
       display: inline;
       padding-left: 1rem;
     }
+    img{
+      width: 26px;
+    }
+    .workshop-info{
+      display: flex; 
+      align-items: center;
+    }
+    .workshop-details-info{
+      display: inline-block;
+      margin: 0;
+      padding: 1rem;
+    }
   }
   .button-border-orange {
     text-align: center;
-  }
-  
+  } 
 }
 
 
