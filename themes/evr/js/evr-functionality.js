@@ -7,7 +7,7 @@
       return;
     } else if  (windowWidth < 800) {
       $('#primary-menu').addClass('hide-menu');
-      if ( !$('body').is('.single, .home') ) {
+      if ( !$('body').is('.single') ) {
         $('#mobile-header').removeClass('mobile-header-title-hidden');
       }
     } else {
@@ -19,7 +19,7 @@
   if (width < 800) {
     $('#primary-menu').addClass('hide-menu');
     $('#menu-item-37 > .sub-menu').addClass('hide-sub-menu');
-    if ( !$('body').is('.single, .home') ) {
+    if ( !$('body').is('.single') ) {
       $('#mobile-header').removeClass('mobile-header-title-hidden');
     }
     $('#menu-item-37').click(function() {
