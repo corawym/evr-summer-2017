@@ -3,7 +3,7 @@
 
   window.addEventListener( 'resize' ,function() {
     var windowWidth = $(window).width();
-    if (width === windowWidth ) {
+    if ( this.width === windowWidth ) {
       return;
     } else if  (windowWidth < 800) {
       $('#primary-menu').addClass('hide-menu');
