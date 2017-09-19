@@ -8,7 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="single-chocolate-header">
+	<header class="single-chocolate-header ">
 		<div class="single-chocolate-hero-banner">
 			<img class="chocolate-image content-image" src="<?php echo CFS()->get( 'chocolate_image' ) ?>">
 		</div>
@@ -18,7 +18,7 @@
 		
 	</header><!-- .entry-header -->
 	
-	<section class="single-chocolate-content">
+	<section class="single-chocolate-content container-white-bg-content container-separator-top-bottom">
 		
 		<p class="chocolate-description"><?php echo CFS()->get( esc_html('chocolate_description') ) ?></p>
 		
@@ -32,7 +32,6 @@
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/spring-icon.svg" alt="">
 				<p class="chocolate-inline"><?php echo CFS()->get( esc_html('availability') ) ?></p>
 			</div>
-
 			<div class="chocolate-info chocolate-type">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/mbri-info.svg" alt="">
 				<p class="chocolate-inline"><?php echo CFS()->get( esc_html('chocolate_type') ) ?></p>

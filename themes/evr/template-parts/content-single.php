@@ -10,6 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="single-workshop-header">
 		<div class="single-workshop-hero-banner">
+			<div class="linear-rect"></div>
 			<img class="workshop-image content-image" src="<?php echo CFS()->get( 'workshop_image' ) ?>">
 		</div>
 		<div class="banner-title">
