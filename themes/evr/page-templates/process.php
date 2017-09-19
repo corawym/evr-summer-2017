@@ -36,79 +36,25 @@ get_header(); ?>
 				<div class="process-text">
 					<h2>Our Beans</h2>
 					<ul>
+						<?php $beans = CFS()->get( 'bean' ); 
+						foreach ( $beans as $bean ) : ?>
 						<li>
-							<img class="bean-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-dr.svg" alt="Cacao pod with Peruvian flag">
+							<img class="bean-img" src="<?php echo $bean['bean_image']?>" alt="<?php $bean['title'] ?>">
 							<div class="bean-info">
-								<h3>Dominican Republic OKO Caribe</h3>
+								<h3><?php echo $bean['title']?></h3>
 								<h4>Region:</h4>
-								<p>San Francisco de Macoris</p>
+								<p><?php echo $bean['region']?></p>
 								<h4>Tasting Notes:</h4>
-								<p>leathery winey with a bit of nuttiness</p>
+								<p><?php echo $bean['tasting_notes']?></p>
 								<a id="more-details-1" class="more-details show-more-details">details</a>
 								<div id="hidden-bean-info" class="hidden-bean-info">
 									<p>
-										OKO Caribe has perfected the art of working with smallholder farmers in the San Francisco
-										de Macoris region of the Dominican Republic. Business owners Gualberto and Adriano consistently
-										deliver this high quality cacao with deep chocolate and red fruit notes.
+										<?php echo $bean['description']?>
 									</p>
 								</div>
 							</div>
 						</li>
-						<li>
-							<img class="bean-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-guat.svg" alt="Cacao pod with Peruvian flag">
-							<div class="bean-info">
-								<h3>Lachua, Guatemala</h3>
-								<h4>Region:</h4>
-								<p>Alta Verapaz</p>
-								<h4>Tasting Notes:</h4>
-								<p>bright fruit flavour with light acidity and a brown fruit finish</p>
-								<a id="more-details" class="more-details show-more-details">details</a>
-								<div id="hidden-bean-info" class="hidden-bean-info">
-									<p>
-										Many farmers still live entirely off the grid, in areas without electrcity or phone signal. 
-										Clonal varieties include a mix of trinitarios, upper Amazon forasteros and amelonados with some
-										presence of Nacional. With technical and market support from Cacao Verapaz, the cacao from this 
-										region has quickly become renowned in the craft chocolate market.
-									</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<img class="bean-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-mad.svg" alt="Cacao pod with Peruvian flag">
-							<div class="bean-info">
-								<h3>Madagascar</h3>
-								<h4>Region:</h4>
-								<p>Ambanja, Diana Region</p>
-								<h4>Tasting notes:</h4>
-								<p>red berries, lemon and nuts with a bright acidity</p>
-								<a id="more-details" class="more-details show-more-details">details</a>
-								<div id="hidden-bean-info" class="hidden-bean-info">
-									<h4>Climate:</h4>
-									<p>hot and dry</p>
-									<p>
-										Grown and fermented on the farm this Madagascar cacao is organic and fairly traded and 
-										direct from the SOMIA farm, certified organic by ECOCERT,SA.
-									</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<img class="bean-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/process/bean-peru.svg" alt="Cacao pod with Peruvian flag">
-							<div class="bean-info">
-								<h3>Peru</h3>
-								<h4>Region:</h4>
-								<p>Río Ene</p>
-								<h4>Tasting notes:</h4>
-								<p>delicate aroma of banana, black olives, red wine and aged balsamic</p>
-								<a id="more-details" class="more-details show-more-details">details</a>
-								<div id="hidden-bean-info" class="hidden-bean-info">
-									<p>
-										We have been sourcing this criollo cacao directly from the Pangoa coop in central Peru
-										since we first opened our doors in 2012.
-									</p>
-								</div>
-							</div>
-						</li>
+						<?php endforeach; ?>
 					</ul>
 				</div>
 
