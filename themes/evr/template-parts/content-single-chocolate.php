@@ -8,7 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="single-chocolate-header ">
+	<header class="single-chocolate-header">
 		<div class="single-chocolate-hero-banner">
 			<img class="chocolate-image content-image" src="<?php echo CFS()->get( 'chocolate_image' ) ?>">
 		</div>
