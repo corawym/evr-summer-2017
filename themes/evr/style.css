@@ -1601,7 +1601,7 @@ object {
   opacity: 0; }
 
 .show-bean-info {
-  max-height: 200px;
+  max-height: 350px;
   visibility: visible;
   transition: opacity 0.4s ease-in-out 0.2s, max-height 0.6s ease-in-out;
   opacity: 1; }
