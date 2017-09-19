@@ -30,10 +30,6 @@ get_header(); ?>
           </div>
 
           <div class="subscribe">
-            <div class="subscribe-content">
-                <h2>Subscribe</h2>
-                <p>Sign up with your email address for exclusive events and products!</p>
-            </div>
             <form class="subscribe-form" action="https://eastvanroasters.us16.list-manage.com/subscribe/post" method="POST">
                 <input type="hidden" name="u" value="97bc113ec28f7d8d5d890eaaa">
                 <input type="hidden" name="id" value="7156395ad4">
