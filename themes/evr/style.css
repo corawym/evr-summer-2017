@@ -2027,6 +2027,17 @@ object {
   .workshop-template-default .workshop-details span {
     display: inline;
     padding-left: 1rem; }
+  .workshop-template-default .workshop-details img {
+    width: 26px; }
+  .workshop-template-default .workshop-details .workshop-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  .workshop-template-default .workshop-details .workshop-details-info {
+    display: inline-block;
+    margin: 0;
+    padding: 1rem; }
   .workshop-template-default .button-border-orange {
     text-align: center; }
 
