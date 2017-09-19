@@ -29,8 +29,14 @@
     });
   }
 
+  var primaryMenu = $('#primary-menu');
+
   $('#hamburger').click(function() {
-    $('#primary-menu').toggleClass('hide-menu show-menu');
+    if ( primaryMenu.hasClass('hide-menu') ) {
+      primaryMenu.removeClass('hide-menu').addClass('show-menu');
+    } else {
+      primaryMenu.removeClass('show-menu').addClass('hide-menu');
+    }
   })
 
   // Bean details show hide
