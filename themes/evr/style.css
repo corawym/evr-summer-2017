@@ -1912,10 +1912,10 @@ object {
   .workshops-content a:visited {
     color: white; }
   .workshops-content h2 {
-    text-align: center; }
-  .workshops-content .h2-line {
+    text-align: center;
     border-bottom: 1px solid white;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    padding-bottom: 1rem; }
 
 .workshop-list {
   display: -ms-flexbox;

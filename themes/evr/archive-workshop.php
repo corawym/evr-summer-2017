@@ -24,7 +24,6 @@ get_header('archive'); ?>
 		<section class="workshops-content">
 
 			<h2>Upcoming Events</h2>
-			<div class="h2-line"></div>
 
 			<?php
 				$args = array( 
