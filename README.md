@@ -6,6 +6,19 @@ A WordPress theme for East Van Roasters.
 
 ---
 
+## Screen-Shots
+
+### Desktop- Home Page
+
+<img src="themes/evr/assets/images/evr-desktop-front-page.png" width="1024px" alt="sgsc desktop screenshot">
+
+### Mobile Width - Home Page
+
+<img src="themes/evr/assets/images/evr-mobile-front-page.png" width="470px" alt="sgsc mobile screenshot">
+
+
+---
+
 ## Instructions
 
 ### 1. Download (don't clone!)
