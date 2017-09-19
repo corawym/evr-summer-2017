@@ -225,15 +225,6 @@ a{
 }
 
 .header-offset:before {
-<<<<<<< HEAD
-  display: block;
-  content: " ";
-  height: 100px; 
-  margin-top: -100px; 
-  visibility: hidden;
-}
-
-=======
   @include desktop {
     display: block;
     content: " ";
@@ -242,4 +233,3 @@ a{
     visibility: hidden;
   }
 }
->>>>>>> 88daa600091edf572acefccb5c62215219d2ced9
