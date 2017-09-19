@@ -27,7 +27,7 @@ get_header(); ?>
 							<h2 class="header-underline-white">From the Coffee Bar</h2>
 							<img class="coffee-cup-icon" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/coffee-cup.svg" alt="A Coffee Bar icon">
 							<div class="menu-section-description">
-								<p><?php echo CFS()->get( 'coffee_bar_description' ); ?></p>
+								<p><?php echo CFS()->get(esc_html('coffee_bar_description') ); ?></p>
 							</div>
 
 							<!-- Below is coffee bar menu -->
@@ -36,11 +36,11 @@ get_header(); ?>
 								<!--Below is menu coffees section-->
 								<div class="evr-menu-section evr-menu-coffee display-flex-wrap">
 									<h3 class="menu-section-title">
-										<?php $section_coffee = CFS()->get_field_info( 'coffees' );
+										<?php $section_coffee = CFS()->get_field_info(esc_html('coffees') );
 											echo $section_coffee['label']; ?>
 									</h3>
 									<div class="menu-items-container display-flex-wrap">
-										<?php	$coffees = CFS()->get( 'coffees' );
+										<?php	$coffees = CFS()->get(esc_html('coffees') );
 											foreach ( $coffees as $coffee_items ) { ?>
 												<p class="menu-items-name"><?php echo $coffee_items['coffee_name']; ?></p>
 												<p class="menu-items-price"><?php echo $coffee_items['coffee_price']; ?></p>
@@ -51,11 +51,11 @@ get_header(); ?>
 								<!--Below is menu iced drinks section-->
 								<div class="evr-menu-section evr-menu-iced-drink display-flex-wrap">
 									<h3 class="menu-section-title">
-										<?php $section_iced_drinks = CFS()->get_field_info( 'iced_drinks' );
+										<?php $section_iced_drinks = CFS()->get_field_info(esc_html('iced_drinks') );
 											echo $section_iced_drinks['label']; ?>
 									</h3>
 									<div class="menu-items-container display-flex-wrap">
-										<?php	$iced_drinks = CFS()->get( 'iced_drinks' );
+										<?php	$iced_drinks = CFS()->get(esc_html('iced_drinks') );
 											foreach ( $iced_drinks as $iced_drink_items ) { ?>
 												<p class="menu-items-name"><?php echo $iced_drink_items['iced_drink_name']; ?></p>
 												<p class="menu-items-price"><?php echo $iced_drink_items['iced_drink_price']; ?></p>
@@ -66,34 +66,34 @@ get_header(); ?>
 								<!--Below is menu full leaf tea section-->
 								<div class="evr-menu-section evr-menu-full-leaf-tea display-flex-wrap">
 									<h3 class="menu-section-title">
-										<?php $section_full_leaf_teas = CFS()->get_field_info( 'full_leaf_teas' );
+										<?php $section_full_leaf_teas = CFS()->get_field_info(esc_html('full_leaf_teas') );
 											echo $section_full_leaf_teas['label']; ?>
 									</h3>
 									<div class="menu-items-container display-flex-wrap">
 										<div class="menu-items-name-container">
-											<?php	$full_leaf_teas = CFS()->get( 'full_leaf_teas' );
+											<?php	$full_leaf_teas = CFS()->get(esc_html('full_leaf_teas') );
 												foreach ( $full_leaf_teas as $full_leaf_tea_items ) { ?>
 													<p class="menu-items-name"><?php echo $full_leaf_tea_items['full_leaf_tea_name']; ?></p>
 											<?php } ?>
 										</div>
-										<p class="menu-items-price"><?php echo CFS()->get('full_leaf_tea_price'); ?></p>
+										<p class="menu-items-price"><?php echo CFS()->get(esc_html('full_leaf_tea_price') ); ?></p>
 									</div>
 								</div>
 
 								<!--Below is menu drinking chocolates section-->
 								<div class="evr-menu-section evr-menu-drinking-chocolate display-flex-wrap">
 									<h3 class="menu-section-title">
-										<?php $section_drinking_chocolates = CFS()->get_field_info( 'drinking_chocolates' );
+										<?php $section_drinking_chocolates = CFS()->get_field_info(esc_html('drinking_chocolates') );
 											echo $section_drinking_chocolates['label']; ?>
 									</h3>
 									<div class="menu-items-container display-flex-wrap">
 										<div class="menu-items-name-container">
-										<?php $drinking_chocolates = CFS()->get( 'drinking_chocolates' );
+										<?php $drinking_chocolates = CFS()->get(esc_html('drinking_chocolates') );
 											foreach ( $drinking_chocolates as $drinking_chocolate_items ) { ?>
 												<p class="menu-items-name"><?php echo $drinking_chocolate_items['drinking_chocolate_name']; ?></p>
 										<?php } ?>
 										</div>
-										<p class="menu-items-price"><?php echo CFS()->get('drinking_chocolate_price'); ?></p>
+										<p class="menu-items-price"><?php echo CFS()->get(esc_html('drinking_chocolate_price') ); ?></p>
 									</div>	
 									<p class="menu-caption">* (8 oz ‘pay what you can’ origin blend) $2.00 min </p>
 								</div>
@@ -102,7 +102,7 @@ get_header(); ?>
 						</div>
 					</section><!-- end of .menu-coffee-container -->
 
-					<section class="menu-chocolate-container container-max800 container-full container-separator-top-bottom">
+					<section class="menu-chocolate-container container-max800 container-full container-separator-top-bottom" id="menu-content">
 						<div class="menu-chocolate-content text-center">
 							<h2 class="header-underline-black">From the Chocolate Lab</h2>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Chocolate Bar icon">
@@ -131,7 +131,7 @@ get_header(); ?>
 								</div>
 								</a>
 								<?php the_title( '<p class="chocolate-name">', '</p>' ); ?>
-								<p class="chocolate-price"><?php echo CFS()->get('chocolate_price'); ?></p>
+								<p class="chocolate-price"><?php echo CFS()->get(esc_html('chocolate_price') ); ?></p>
 								</article>
 							<?php endforeach; wp_reset_postdata(); ?>
 

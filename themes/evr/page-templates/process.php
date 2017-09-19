@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Process
  *
  * @package EVR_Theme
  */

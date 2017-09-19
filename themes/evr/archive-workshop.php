@@ -7,8 +7,8 @@
 
 get_header('archive'); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main workshops-main" role="main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main workshops-main" role="main">
 
 		<section class="hero-banner workshops-hero-banner container-full">
 			<div class="hero-content-container ">
@@ -24,7 +24,6 @@ get_header('archive'); ?>
 		<section class="workshops-content">
 
 			<h2>Upcoming Events</h2>
-			<div class="h2-line"></div>
 
 			<?php
 				$args = array( 
@@ -52,13 +51,13 @@ get_header('archive'); ?>
 					</a>
 				</li>
 				<?php endwhile; ?>
-          <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-          <h2>No workshops at this time!</h2>
-        <?php endif; ?>
+					<?php wp_reset_postdata(); ?>
+				<?php else : ?>
+					<h2>No workshops at this time!</h2>
+				<?php endif; ?>
 			</ul>
-
-			<section class="interested">
+			
+			<div class="interested">
 				<p>Interested in doing a team building event at East Van Roasters?</p>
 				<p>Interested in helping us facilitate a workshop? </p>
 				<div class="button-border">
@@ -68,10 +67,10 @@ get_header('archive'); ?>
 						</div>
 					</a>   
 				</div>
-			</section>
+			</div>
 
-			</section>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</section>
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
