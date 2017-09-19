@@ -2064,8 +2064,8 @@ object {
       display: inline;
       padding-left: 1rem; }
     .single-chocolate-content .chocolate-details img {
-      width: 35px;
-      height: 35px; }
+      width: 30px;
+      height: 30px; }
   .single-chocolate-content .chocolate-info {
     display: -ms-flexbox;
     display: flex;
@@ -2079,7 +2079,7 @@ object {
   .single-chocolate-content .chocolate-type {
     padding-left: 3px; }
     .single-chocolate-content .chocolate-type img {
-      width: 30px; }
+      width: 26px; }
 
 /*
  *  Owl Carousel - Core
