@@ -34,6 +34,8 @@
         subMenu.removeClass('show-sub-menu').addClass('hide-sub-menu');
       }
     });
+  } else {
+    $('#primary-menu').removeClass('hide-menu');
   }
   
   var primaryMenu = $('#primary-menu');
