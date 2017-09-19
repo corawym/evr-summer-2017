@@ -50,3 +50,14 @@ Run `npm install` inside your theme directory to install the node modules This w
 
 Authors are Cora, Jeff, and Shaahid.
 Click here for list of [contributors](https://github.com/redacademy/evr-summer-2017/graphs/contributors/) who participated in this project.
+
+--- 
+
+## Future Additions
+
+1. Add EVR's mailchimp info to the subscribe forms on the pop-up and the front-page.
+
+2. Linking workshops to Eventbrite so that users book workshops they wish to enroll it immediately.
+
+
+
