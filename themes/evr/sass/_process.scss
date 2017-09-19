@@ -25,7 +25,13 @@
   ul {
     margin-bottom: 0;
     padding-bottom: 3rem;
+    
     li {
+      border: .5px solid white;
+      border-radius: 5px;
+      width: 90%;
+      padding: 2rem;
+      margin: 4rem auto;
       h4 {
         margin-bottom: 0;
       }

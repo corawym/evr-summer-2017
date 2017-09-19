@@ -1561,10 +1561,16 @@ object {
   .process-text ul {
     margin-bottom: 0;
     padding-bottom: 3rem; }
-    .process-text ul li h4 {
-      margin-bottom: 0; }
-    .process-text ul li p {
-      margin-top: 0; }
+    .process-text ul li {
+      border: .5px solid white;
+      border-radius: 5px;
+      width: 90%;
+      padding: 2rem;
+      margin: 4rem auto; }
+      .process-text ul li h4 {
+        margin-bottom: 0; }
+      .process-text ul li p {
+        margin-top: 0; }
 
 .bean-img {
   width: 68px;
