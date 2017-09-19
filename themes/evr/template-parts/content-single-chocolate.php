@@ -8,17 +8,17 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="single-chocolate-header">
+	<header class="single-chocolate-header container-max800 container-padding">
 		<div class="single-chocolate-hero-banner">
-			<img class="chocolate-image content-image" src="<?php echo CFS()->get( 'chocolate_image' ) ?>">
+			<img class="content-image" src="<?php echo CFS()->get( 'chocolate_image' ) ?>">
 		</div>
 		<div class="banner-title">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<?php the_title( '<h1 class="entry-title text-center">', '</h1>' ); ?>
 		</div>
 		
 	</header><!-- .entry-header -->
 	
-	<section class="single-chocolate-content container-white-bg-content container-separator-top-bottom">
+	<section class="single-chocolate-content container-white-bg-content container-padding">
 		
 		<p class="chocolate-description"><?php echo CFS()->get( esc_html('chocolate_description') ) ?></p>
 		
