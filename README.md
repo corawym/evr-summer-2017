@@ -6,7 +6,7 @@ A WordPress theme for East Van Roasters.
 
 ---
 
-## Prerequisites
+## Instructions
 
 ### 1. Download (don't clone!)
 
@@ -36,5 +36,5 @@ Run `npm install` inside your theme directory to install the node modules This w
 
 ## Authors
 
-Authors are Cora, Jeff, and Shaahid
-See also the list of [contributors](https://github.com/redacademy/evr-summer-2017/graphs/contributors/) who participated in this project.
+Authors are Cora, Jeff, and Shaahid.
+Click here for list of [contributors](https://github.com/redacademy/evr-summer-2017/graphs/contributors/) who participated in this project.
