@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying single posts.
+ * Template part for displaying single workshop posts.
  *
  * @package EVR_Theme
  */
@@ -8,15 +8,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="single-workshop-header">
+	<header class="single-workshop-header container-max800 container-padding">
 		<div class="single-workshop-hero-banner">
-			<div class="linear-rect"></div>
-			<img class="workshop-image content-image" src="<?php echo CFS()->get( 'workshop_image' ) ?>">
+			<img class="content-image" src="<?php echo CFS()->get( 'workshop_image' ) ?>">
 		</div>
 		<div class="banner-title">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</div>
-		
 	</header><!-- .entry-header -->
 	
 	<section class="single-workshop-content">
@@ -39,8 +37,6 @@
 				</div>
 			</a>   
 		</div>
-
 		
 	</section>
-
 </article><!-- #post-## -->
