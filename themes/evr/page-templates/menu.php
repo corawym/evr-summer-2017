@@ -102,7 +102,7 @@ get_header(); ?>
 						</div>
 					</section><!-- end of .menu-coffee-container -->
 
-					<section class="menu-chocolate-container container-max800 container-full container-separator-top-bottom" id="menu-content">
+					<section class="menu-chocolate-container container-max800 container-full container-separator-top-bottom">
 						<div class="menu-chocolate-content text-center">
 							<h2 class="header-underline-black">From the Chocolate Lab</h2>
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/chocolate-bar.svg" alt="A Chocolate Bar icon">
@@ -129,7 +129,7 @@ get_header(); ?>
 								<div class="chocolate-image-wrapper">
 									<img class="chocolate-items-image content-image" src="<?php echo CFS()->get( 'chocolate_image' ); ?>">
 								</div>
-								</a>
+							</a>
 								<?php the_title( '<p class="chocolate-name">', '</p>' ); ?>
 								<p class="chocolate-price"><?php echo CFS()->get(esc_html('chocolate_price') ); ?></p>
 								</article>
@@ -147,6 +147,5 @@ get_header(); ?>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 
 <?php get_footer(); ?>
