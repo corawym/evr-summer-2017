@@ -44,7 +44,7 @@ get_header(); ?>
 								<p>San Francisco de Macoris</p>
 								<h4>Tasting Notes:</h4>
 								<p>leathery winey with a bit of nuttiness</p>
-								<a id="more-details-1" class="more-details">More details</a>
+								<a id="more-details-1" class="more-details show-more-details">details</a>
 								<div id="hidden-bean-info" class="hidden-bean-info">
 									<p>
 										OKO Caribe has perfected the art of working with smallholder farmers in the San Francisco
@@ -62,7 +62,7 @@ get_header(); ?>
 								<p>Alta Verapaz</p>
 								<h4>Tasting Notes:</h4>
 								<p>bright fruit flavour with light acidity and a brown fruit finish</p>
-								<a id="more-details" class="more-details">More details</a>
+								<a id="more-details" class="more-details show-more-details">details</a>
 								<div id="hidden-bean-info" class="hidden-bean-info">
 									<p>
 										Many farmers still live entirely off the grid, in areas without electrcity or phone signal. 
@@ -81,7 +81,7 @@ get_header(); ?>
 								<p>Ambanja, Diana Region</p>
 								<h4>Tasting notes:</h4>
 								<p>red berries, lemon and nuts with a bright acidity</p>
-								<a id="more-details" class="more-details">More details</a>
+								<a id="more-details" class="more-details show-more-details">details</a>
 								<div id="hidden-bean-info" class="hidden-bean-info">
 									<h4>Climate:</h4>
 									<p>hot and dry</p>
@@ -100,7 +100,7 @@ get_header(); ?>
 								<p>Río Ene</p>
 								<h4>Tasting notes:</h4>
 								<p>delicate aroma of banana, black olives, red wine and aged balsamic</p>
-								<a id="more-details" class="more-details">More details</a>
+								<a id="more-details" class="more-details show-more-details">details</a>
 								<div id="hidden-bean-info" class="hidden-bean-info">
 									<p>
 										We have been sourcing this criollo cacao directly from the Pangoa coop in central Peru
