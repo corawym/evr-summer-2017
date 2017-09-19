@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single chocolate posts.
  *
  * @package EVR_Theme
  */
