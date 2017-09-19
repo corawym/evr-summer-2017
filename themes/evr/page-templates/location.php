@@ -48,7 +48,7 @@ get_header(); ?>
 							<p class="location-hours-detail"><?php echo CFS()->get(esc_html('sunday') ); ?></p>
 						</div>
 						<p class="location-evr-title">Email</p>
-						<p class="location-evr-detail"><?php echo CFS()->get(esc_html('evr_email') ); ?></p>
+						<a class="location-evr-detail" href="mailto:<?php echo CFS()->get(esc_html('evr_email') ); ?>"><?php echo CFS()->get(esc_html('evr_email') ); ?></a>
 					</div>
 				</div>
 			</section>

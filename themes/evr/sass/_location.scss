@@ -19,6 +19,14 @@
         padding-left: 7rem;
       }
     }
+    a{
+      color: black;
+      margin-bottom: 1.5rem;
+      margin-top: 1rem;
+      &:hover{
+        color: $color_primary_orange;
+      }
+    }
     .location-evr-detail{
       flex-basis: 65%;
     }
