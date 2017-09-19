@@ -925,10 +925,10 @@ a:hover, a:active {
       @media (min-width: 800px) {
         .main-navigation .menu-main-menu-container ul.menu .menu-item-26 a {
           background-color: transparent; } }
-    .main-navigation .menu-main-menu-container ul.menu .menu-item-57 a {
+    .main-navigation .menu-main-menu-container ul.menu .menu-item-100 a {
       background: #c9a461; }
       @media (min-width: 800px) {
-        .main-navigation .menu-main-menu-container ul.menu .menu-item-57 a {
+        .main-navigation .menu-main-menu-container ul.menu .menu-item-100 a {
           background-color: transparent; } }
     .main-navigation .menu-main-menu-container ul.menu .menu-item-25 a {
       background: #bda38a; }
@@ -1663,6 +1663,13 @@ object {
   @media (min-width: 800px) {
     .page-id-23 .location-evr-info-container .location-evr-title {
       padding-left: 7rem; } }
+
+.page-id-23 .location-evr-info-container a {
+  color: black;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem; }
+  .page-id-23 .location-evr-info-container a:hover {
+    color: #e13404; }
 
 .page-id-23 .location-evr-info-container .location-evr-detail {
   -ms-flex-preferred-size: 65%;
