@@ -10,11 +10,11 @@ A WordPress theme for East Van Roasters.
 
 ### Desktop- Home Page
 
-<img src="themes/evr/assets/images/evr-desktop-front-page.png" width="1024px" alt="sgsc desktop screenshot">
+<img src="themes/evr/assets/images/evr-desktop-front-page.png" width="1024px" alt="evr desktop screenshot">
 
 ### Mobile Width - Home Page
 
-<img src="themes/evr/assets/images/evr-mobile-front-page.png" width="470px" alt="sgsc mobile screenshot">
+<img src="themes/evr/assets/images/evr-mobile-front-page.png" width="470px" alt="evr mobile screenshot">
 
 
 ---
