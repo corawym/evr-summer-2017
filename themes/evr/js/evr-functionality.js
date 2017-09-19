@@ -27,8 +27,6 @@
       $(subMenu).toggleClass('hide-sub-menu show-sub-menu');
       $(subMenu)[0].scrollIntoView(false);
     });
-  } else {
-    $('#primary-menu').removeClass('hide-menu');
   }
 
   $('#hamburger').click(function() {
