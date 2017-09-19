@@ -8,8 +8,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="single-workshop-header container-max800 container-padding">
-		<div class="single-workshop-hero-banner">
+	<header class="single-page-header container-max800 container-padding">
+		<div class="single-page-hero-banner">
 			<img class="content-image" src="<?php echo CFS()->get( 'workshop_image' ) ?>">
 		</div>
 		<div class="banner-title">
@@ -17,12 +17,12 @@
 		</div>
 	</header><!-- .entry-header -->
 	
-	<section class="single-workshop-content container-max800 container-padding">
+	<section class="single-page-content container-max800 container-padding">
 		
 		<p class="workshop-description"><?php echo CFS()->get( esc_html('workshop_description') ) ?></p>
-		<p class="workshop-price">$<?php echo CFS()->get( esc_html('workshop_price') ) ?></p>
+		<p class="single-item-price">$<?php echo CFS()->get( esc_html('workshop_price') ) ?></p>
 
-		<div class="workshop-details">
+		<div class="workshop-details container-separator-top-bottom dashed-line">
 			<p class="workshop-instructor">Capacity: <?php echo CFS()->get( esc_html('maximum_capacity') ) ?></p>
 			<p class="workshop-date">Date: <?php echo CFS()->get( esc_html('workshop_date') ) ?></p>
 			<p class="workshop-time">Time: <?php echo CFS()->get( esc_html('workshop_time') ) ?></p>

@@ -352,6 +352,38 @@ a {
       .hero-banner .hero-content-container .hero-button:hover {
         color: #e13404; }
 
+.single-page-header {
+  padding-top: 100px; }
+  @media (min-width: 800px) {
+    .single-page-header {
+      padding-top: 140px; } }
+  .single-page-header .single-page-hero-banner {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    position: relative; }
+  .single-page-header .content-image {
+    width: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.single-page-content {
+  background-color: white;
+  text-align: left;
+  margin-bottom: 4rem; }
+  .single-page-content .single-item-price {
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-bottom: 2rem; }
+
+.dashed-line {
+  border-top: 1px dashed #4a4a4a;
+  border-bottom: 1px dashed #4a4a4a; }
+
 .button-border {
   margin: 2.5rem; }
   .button-border .border1, .button-border .border2 {
@@ -1988,87 +2020,43 @@ object {
   .interested p {
     font-size: 1.2rem; }
 
-.single-workshop-header {
-  padding-top: 100px; }
-  @media (min-width: 800px) {
-    .single-workshop-header {
-      padding-top: 140px; } }
-  .single-workshop-header .single-workshop-hero-banner {
-    width: 100%;
-    height: 300px;
-    border: 1px solid #e3e3e3;
-    margin-bottom: 2.5rem;
-    overflow: hidden;
-    position: relative; }
-  .single-workshop-header .content-image {
-    width: 100%;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%); }
-
-.single-workshop-content {
+.workshop-template-default {
   text-align: left; }
-  .single-workshop-content .workshop-details * {
+  .workshop-template-default .workshop-details * {
     font-weight: normal; }
-  .single-workshop-content .workshop-details span {
+  .workshop-template-default .workshop-details span {
     display: inline;
     padding-left: 1rem; }
-  .single-workshop-content .button-border-orange {
+  .workshop-template-default .button-border-orange {
     text-align: center; }
 
-.single-chocolate-header {
-  padding-top: 100px; }
-  @media (min-width: 800px) {
-    .single-chocolate-header {
-      padding-top: 140px; } }
-  .single-chocolate-header .single-chocolate-hero-banner {
-    width: 100%;
-    height: 300px;
-    border: 1px solid #e3e3e3;
-    margin-bottom: 2.5rem;
-    overflow: hidden;
-    position: relative; }
-  .single-chocolate-header .content-image {
-    width: 100%;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%); }
-
-.single-chocolate-content {
-  background-color: white;
-  text-align: left;
+.chocolate-template-default .chocolate-details {
   margin-bottom: 4rem; }
-  .single-chocolate-content .chocolate-price {
-    font-weight: 600;
-    font-size: 1.4rem;
-    padding-bottom: 2.5rem; }
-  .single-chocolate-content .chocolate-details {
-    border-top: 1px dashed #4a4a4a;
-    border-bottom: 1px dashed #4a4a4a; }
-    .single-chocolate-content .chocolate-details * {
-      font-weight: normal; }
-    .single-chocolate-content .chocolate-details span {
-      display: inline;
-      padding-left: 1rem; }
-    .single-chocolate-content .chocolate-details img {
-      width: 30px;
-      height: 30px; }
-  .single-chocolate-content .chocolate-info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
-    .single-chocolate-content .chocolate-info p {
-      margin: 0;
-      padding: 1rem; }
-  .single-chocolate-content .chocolate-inline {
-    display: inline-block; }
-  .single-chocolate-content .chocolate-type {
-    padding-left: 3px; }
-    .single-chocolate-content .chocolate-type img {
-      width: 26px; }
+  .chocolate-template-default .chocolate-details * {
+    font-weight: normal; }
+  .chocolate-template-default .chocolate-details span {
+    display: inline;
+    padding-left: 1rem; }
+  .chocolate-template-default .chocolate-details img {
+    width: 30px;
+    height: 30px; }
+
+.chocolate-template-default .chocolate-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .chocolate-template-default .chocolate-info p {
+    margin: 0;
+    padding: 1rem; }
+
+.chocolate-template-default .chocolate-inline {
+  display: inline-block; }
+
+.chocolate-template-default .chocolate-type {
+  padding-left: 3px; }
+  .chocolate-template-default .chocolate-type img {
+    width: 26px; }
 
 /*
  *  Owl Carousel - Core
