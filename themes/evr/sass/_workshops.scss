@@ -1,15 +1,14 @@
 // workshop archive -------------------------------==================-------------------------
-
 .post-type-archive-workshop {
-  .workshops-hero-banner{
-    background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops-hero.jpg") center;
+  .workshops-hero-banner {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/workshop/workshops-hero.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .main-nav-bg-color {
     background-color: $color_secondary_brownyellow;
     @include desktop {
-      background-color: rgba(0,0,0,.6);
+      background-color: rgba(0, 0, 0, .6);
     }
   }
 }
@@ -49,13 +48,15 @@
     text-decoration: none;
   }
   .workshop-image-wrapper {
-    @include aspect-ratio(1, 1);
+    @include aspect-ratio(1,
+    1);
   }
   img {
     width: 100%;
     height: 100%;
   }
-  h3, p {
+  h3,
+  p {
     margin-bottom: 1rem;
   }
 }
@@ -68,24 +69,24 @@
 }
 
 // workshop single --------------------============================-------------------------
-.workshop-template-default{
+.workshop-template-default {
   text-align: left;
   .workshop-details {
     * {
-    font-weight: normal;
+      font-weight: normal;
     }
     span {
       display: inline;
       padding-left: 1rem;
     }
-    img{
+    img {
       width: 26px;
     }
-    .workshop-info{
-      display: flex; 
+    .workshop-info {
+      display: flex;
       align-items: center;
     }
-    .workshop-details-info{
+    .workshop-details-info {
       display: inline-block;
       margin: 0;
       padding: 1rem;
@@ -93,8 +94,5 @@
   }
   .button-border-orange {
     text-align: center;
-  } 
+  }
 }
-
-
-

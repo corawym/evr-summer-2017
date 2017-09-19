@@ -1,120 +1,112 @@
 // Menu page style 
-.page-template-menu{
+.page-template-menu {
   // hero banner
-  .menu-hero-banner{
-    background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/menu/menu-hero.jpg") center;
+  .menu-hero-banner {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/menu/menu-hero.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  // location content style - globals
-  .menu-coffee-content, .menu-chocolate-container, .menu-location{
+  } // location content style - globals
+  .menu-coffee-content,
+  .menu-chocolate-container,
+  .menu-location {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-  
-  // Coffee Bar style
-  .menu-coffee-container{
+  } // Coffee Bar style
+  .menu-coffee-container {
     background-color: $color_background_gray;
-    color: white; 
-    .menu-line{
+    color: white;
+    .menu-line {
       border-color: white;
     }
   }
-  
   .coffee-cup-icon {
     padding-left: 2rem;
     height: 60px;
   }
-
-  .menu-evr-menu-container{
+  .menu-evr-menu-container {
     margin-top: 2.5rem;
     align-items: flex-start;
-    .evr-menu-section{
+    .evr-menu-section {
       flex-basis: 100%;
       margin-bottom: 2.5rem;
-      @include desktop{
+      @include desktop {
         flex-basis: 50%;
       }
-      .menu-section-title{
+      .menu-section-title {
         font-weight: 500;
         flex-basis: 100%;
         margin-bottom: 0;
       }
-      .menu-items-container{
+      .menu-items-container {
         flex-basis: 100%;
         margin-top: 1rem;
       }
-      .menu-items-name, .menu-items-price{
-        text-align: left; 
+      .menu-items-name,
+      .menu-items-price {
+        text-align: left;
         margin-bottom: 0;
         margin-top: 0.5rem;
       }
-      .menu-items-name{
+      .menu-items-name {
         padding-left: 2rem;
       }
     }
-  }
-  // menu section with different price for each items
-  .evr-menu-coffee, .evr-menu-iced-drink{    
-    .menu-items-name{
+  } // menu section with different price for each items
+  .evr-menu-coffee,
+  .evr-menu-iced-drink {
+    .menu-items-name {
       flex-basis: 75%;
     }
-    .menu-items-price{
+    .menu-items-price {
       flex-basis: 25%;
     }
-  }
-  // menu section with a price for several items
-  .evr-menu-full-leaf-tea, .evr-menu-drinking-chocolate{
-    .menu-items-name-container{
-      flex-basis: 75%;    
+  } // menu section with a price for several items
+  .evr-menu-full-leaf-tea,
+  .evr-menu-drinking-chocolate {
+    .menu-items-name-container {
+      flex-basis: 75%;
     }
-    .menu-items-price{
+    .menu-items-price {
       flex-basis: 25%;
       align-self: center;
     }
   }
-
-  .menu-caption{
+  .menu-caption {
     font-size: 0.8rem;
     margin-left: 2.5rem;
     margin-top: 1.5rem;
     color: $color_secondary_lightbrown;
-  }
-
-  // Chocolate Lab style
-  .menu-section-description{
+  } // Chocolate Lab style
+  .menu-section-description {
     font-weight: 300;
-    a{
+    a {
       color: $color_secondary_darkgray;
       text-decoration: underline;
     }
   }
-
-  .menu-chocolate-grid{
-    .chocolate-items-wrapper{
+  .menu-chocolate-grid {
+    .chocolate-items-wrapper {
       flex-basis: 50%;
       padding: 1rem;
     }
-    .chocolate-price{
+    .chocolate-price {
       font-weight: 700;
       margin-top: 0;
     }
-    .chocolate-name{
+    .chocolate-name {
       margin-bottom: 1rem;
     }
   }
-
   .chocolate-image-wrapper {
-    @include aspect-ratio(1, 1);
+    @include aspect-ratio(1,
+    1);
     img {
       border: 1px solid lighten($color_secondary_darkgray, 60%);
       height: 100%;
       width: 100%;
     }
   }
-
-  .menu-location{
+  .menu-location {
     padding-bottom: 2.5rem;
   }
-
 } // end of .page-template-menu

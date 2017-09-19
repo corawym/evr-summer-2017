@@ -48,7 +48,6 @@ get_header(); ?>
         <div class="content-two-div">
             <p><span class="open-quote"></span>Trust me, if you stop by and have a cup of the intense Mayan Drinking Chocolate, you'll feel the clouds part and the angels sing.<span class="close-quote"></span></p>
             <p class="author">John Crawford,<span class="eat"> Eat Magazine</span></p>
-            
         </div>
     </section>
 

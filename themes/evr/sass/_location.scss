@@ -1,98 +1,90 @@
 // location page style
 .page-id-23 {
-  
   // hero banner
   .location-hero-banner {
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/location/location-hero.png") center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  // evr info style
-  .location-evr-info-container{
-    // padding-left: 5rem;
-    // padding-right: 5rem;
-    .location-evr-title{
+  } // evr info style
+  .location-evr-info-container {
+    .location-evr-title {
       flex-basis: 35%;
       font-weight: 600;
-      @include desktop{
+      @include desktop {
         padding-left: 7rem;
       }
     }
-    a{
+    a {
       color: black;
       margin-bottom: 1.5rem;
       margin-top: 1rem;
-      &:hover{
+      &:hover {
         color: $color_primary_orange;
       }
     }
-    .location-evr-detail{
+    .location-evr-detail {
       flex-basis: 65%;
-    }
-    // evr business hours
-    .location-evr-business{
+    } // evr business hours
+    .location-evr-business {
       margin-bottom: 1.5rem;
     }
-    .location-hours-title, .location-hours-detail{
+    .location-hours-title,
+    .location-hours-detail {
       margin-bottom: 0;
     }
-    .location-hours-title{
+    .location-hours-title {
       flex-basis: 30%;
     }
-    .location-hours-detail{
+    .location-hours-detail {
       flex-basis: 70%;
     }
   }
-
-  .location-partner-container{
+  .location-partner-container {
     background-color: $color_background_gray;
     color: white;
-
-    @include desktop{
-      .container-white-bg-content{
+    @include desktop {
+      .container-white-bg-content {
         max-width: 1080px;
       }
     }
   }
-  .partner-wrapper{
+  .partner-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
-  .partner-section-chocolate, .partner-section-seasonal, .partner-section-coffee{
+  .partner-section-chocolate,
+  .partner-section-seasonal,
+  .partner-section-coffee {
     flex-basis: 100%;
-    @include desktop{
+    @include desktop {
       flex-basis: 31%;
-      .partner-section-chocolate, .partner-section-seasonal{
+      .partner-section-chocolate,
+      .partner-section-seasonal {
         border-right: 10px solid white;
       }
     }
-
-    h3{
+    h3 {
       font-size: 1.5rem;
     }
-    
-    .partner-items-container{
-      div{
+    .partner-items-container {
+      div {
         margin-bottom: 1.8rem;
       }
-      p{
+      p {
         display: block;
         margin: 0;
         margin-bottom: 0.7rem;
       }
-      .partner-name{
+      .partner-name {
         font-weight: 500;
       }
-      a{
+      a {
         color: white;
-        &:hover{
+        &:hover {
           color: $color_primary_orange;
         }
       }
     }
-  
   }
 } // end of .apage-id-23

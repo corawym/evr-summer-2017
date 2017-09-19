@@ -1,37 +1,33 @@
-.error-hero-banner{  
-    background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url('../../assets/images/404/404-hero.jpg') top;
+.error-hero-banner {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../../assets/images/404/404-hero.jpg') top;
     background-position: center;
     background-size: cover;
     height: 500px;
-    @include desktop{
+    @include desktop {
         height: 100vh;
         min-height: 650px;
     }
-    .error-content{
-        // display: flex;
-    }
-    .error-hero-content-container{
+    .error-hero-content-container {
         padding-top: 5px;
         color: white;
         margin: auto;
-        @include desktop{
+        @include desktop {
             padding-top: 160px;
         }
-        h1{
+        h1 {
             font-size: 4rem;
             font-weight: 500;
             margin-bottom: 1rem;
         }
-        p{
+        p {
             font-size: 1.4rem;
             margin: 1rem;
         }
-        .home-btn{
+        .home-btn {
             margin-top: 3rem;
-            @include desktop{
+            @include desktop {
                 margin-top: 5rem;
             }
         }
     }
-    
 }

@@ -1,45 +1,44 @@
 // location page style
-.page-id-94{
+.page-id-94 {
   // hero banner
-  .donate-hero-banner{
-    background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-hero.jpg") center;
+  .donate-hero-banner {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/donate/donate-hero.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
-    p{
+    p {
       margin-top: 2rem;
     }
   }
-
   .site-content {
     img {
-    width: 126px;
-    display: block;
-    margin: 2rem auto;
+      width: 126px;
+      display: block;
+      margin: 2rem auto;
     }
     p {
       margin-top: 2rem;
     }
   }
-  .donation-way-list{
+  .donation-way-list {
     color: $color_secondary_darkgray;
-    li{
+    li {
       list-style-type: decimal;
       margin-bottom: 2rem;
       font-weight: 300;
-      &::before{
+      &::before {
         margin-right: 4rem;
       }
     }
   }
-  .button-border{
-    .border1, .border2{
+  .button-border {
+    .border1,
+    .border2 {
       border-color: $color_secondary_darkgray;
       color: $color_secondary_darkgray;
-      &:hover{
+      &:hover {
         border-color: $color_primary_orange;
         color: $color_primary_orange;
       }
     }
   }
-  
 }

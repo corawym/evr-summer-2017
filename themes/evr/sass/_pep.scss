@@ -1,8 +1,7 @@
 // Peer employment program page style
-
 // PEP banner
-.page-id-96{
-  .logo-title-hamburger > h1 {
+.page-id-96 {
+  .logo-title-hamburger>h1 {
     @media screen and (max-width: 575px) {
       font-size: 1.5rem;
     }
@@ -16,15 +15,14 @@
       font-size: .8rem;
     }
   }
-  .pep-hero-banner{
-    background: linear-gradient( rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
+  .pep-hero-banner {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../../assets/images/pep/peer-employment-hero.png") center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .site-content img{
+  .site-content img {
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 }
-  
