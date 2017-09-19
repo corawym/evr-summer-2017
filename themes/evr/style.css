@@ -1598,22 +1598,28 @@ object {
 .hidden-bean-info {
   visibility: hidden;
   max-height: 0px;
-  opacity: 0; }
+  opacity: 0;
+  padding-top: 0; }
 
 .show-bean-info {
   max-height: 350px;
   visibility: visible;
   transition: opacity 0.4s ease-in-out 0.2s, max-height 0.6s ease-in-out;
-  opacity: 1; }
+  opacity: 1;
+  padding-top: 1rem; }
 
 .more-details {
   color: white;
   text-decoration: none;
   cursor: pointer; }
-  .more-details:before {
-    content: "> "; }
   .more-details:visited {
     color: white; }
+
+.show-more-details:before {
+  content: "> More "; }
+
+.less-details:before {
+  content: "> Less "; }
 
 @media (min-width: 800px) {
   .process-text {

@@ -50,7 +50,8 @@
 
   // Bean details show hide
   $('.more-details').click(function() {
-    $(this).next().toggleClass('show-bean-info');
+    $(this).next().toggleClass('show-bean-info')
+    $(this).toggleClass('less-details show-more-details');
   })
 
   $('a.hero-button').click(function() {
