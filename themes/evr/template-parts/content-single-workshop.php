@@ -25,19 +25,19 @@
 
 		<div class="workshop-details container-separator-top-bottom dashed-line">
 			<div class="workshop-info">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/mbri-info.svg" alt="Icon of information">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/workshop/mbri-info.svg" alt="Icon of information">
 				<p class="workshop-details-info">Capacity: <?php echo CFS()->get( esc_html('maximum_capacity') ) ?></p>
 			</div>
 			<div class="workshop-info">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/mbri-info.svg" alt="Icon of information">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/workshop/mbri-info.svg" alt="Icon of information">
 				<p class="workshop-details-info">Date: <?php echo CFS()->get( esc_html('workshop_date') ) ?></p>
 			</div>
 			<div class="workshop-info">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/mbri-info.svg" alt="Icon of information">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/workshop/mbri-info.svg" alt="Icon of information">
 				<p class="workshop-details-info">Time: <?php echo CFS()->get( esc_html('workshop_time') ) ?></p>
 			</div>
 			<div class="workshop-info">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/menu/mbri-info.svg" alt="Icon of information">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/workshop/mbri-info.svg" alt="Icon of information">
 				<p class="workshop-details-info">Instructor: <?php echo CFS()->get( esc_html('instructor_name') ) ?></p>
 			</div>		
 		</div><!-- end of workshop-details -->
