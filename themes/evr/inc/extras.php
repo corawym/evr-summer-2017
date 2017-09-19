@@ -50,6 +50,11 @@ function evr_login_logo() { ?>
 	
 	.wp-core-ui .button-primary {
 		text-shadow: none;
+		box-shadow: 0 1px 0 black;
+	}
+
+	.login #login_error, .login .message {
+		border-left: 4px solid #ff3440;
 	}
 
 	.login #backtoblog a, .login #nav a, .login h1 a {
