@@ -219,9 +219,6 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
 html {
   font-family: "Lato", sans-serif;
   font-size: 16.5px;
@@ -343,7 +340,8 @@ a {
       font-weight: 300;
       text-transform: uppercase;
       margin-bottom: 0; }
-    .hero-banner .hero-content-container .hero-content-description, .hero-banner .hero-content-container .hero-button {
+    .hero-banner .hero-content-container .hero-content-description,
+    .hero-banner .hero-content-container .hero-button {
       font-size: 1.4rem; }
     .hero-banner .hero-content-container .hero-content-description {
       max-width: 800px; }
@@ -386,13 +384,15 @@ a {
 
 .button-border {
   margin: 2.5rem; }
-  .button-border .border1, .button-border .border2 {
+  .button-border .border1,
+  .button-border .border2 {
     display: inline-block;
     width: 170px;
     height: 55px;
     border: 2px solid white;
     color: white; }
-    .button-border .border1:hover, .button-border .border2:hover {
+    .button-border .border1:hover,
+    .button-border .border2:hover {
       border-color: #e13404;
       color: #e13404; }
   .button-border .border1 {
@@ -411,13 +411,15 @@ a {
 
 .button-border-orange {
   margin: 2.5rem; }
-  .button-border-orange .border1, .button-border-orange .border2 {
+  .button-border-orange .border1,
+  .button-border-orange .border2 {
     display: inline-block;
     width: 170px;
     height: 55px;
     border: 1px solid #e13404;
     color: #e13404; }
-    .button-border-orange .border1:hover, .button-border-orange .border2:hover {
+    .button-border-orange .border1:hover,
+    .button-border-orange .border2:hover {
       border-color: black;
       color: black; }
   .button-border-orange .border1 {
@@ -517,9 +519,12 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
-blockquote, q {
+blockquote,
+q {
   quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
+  blockquote:before, blockquote:after,
+  q:before,
+  q:after {
     content: ""; }
 
 hr {
@@ -1266,7 +1271,11 @@ object {
   animation: bounce 3s infinite; }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0); }
   40% {
     transform: translateY(-30px); }
@@ -1339,7 +1348,8 @@ object {
     .home .content-two .content-two-div p {
       margin: 0 auto;
       max-width: 1080px; }
-      .home .content-two .content-two-div p .open-quote, .home .content-two .content-two-div p .close-quote {
+      .home .content-two .content-two-div p .open-quote,
+      .home .content-two .content-two-div p .close-quote {
         display: inline-block;
         margin-right: 8px;
         margin-bottom: 7px;
@@ -1526,7 +1536,8 @@ object {
 
 .evr-business-hours-class {
   margin: 0; }
-  .evr-business-hours-class h3, .evr-business-hours-class p {
+  .evr-business-hours-class h3,
+  .evr-business-hours-class p {
     margin: 0; }
   .evr-business-hours-class h3 {
     font-size: 1rem;
@@ -1538,7 +1549,8 @@ object {
 
 .evr-address-class {
   margin: 0; }
-  .evr-address-class h3, .evr-address-class p {
+  .evr-address-class h3,
+  .evr-address-class p {
     margin: 0; }
   .evr-address-class .city {
     display: inline; }
@@ -1722,7 +1734,8 @@ object {
 .page-id-23 .location-evr-info-container .location-evr-business {
   margin-bottom: 1.5rem; }
 
-.page-id-23 .location-evr-info-container .location-hours-title, .page-id-23 .location-evr-info-container .location-hours-detail {
+.page-id-23 .location-evr-info-container .location-hours-title,
+.page-id-23 .location-evr-info-container .location-hours-detail {
   margin-bottom: 0; }
 
 .page-id-23 .location-evr-info-container .location-hours-title {
@@ -1748,28 +1761,49 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.page-id-23 .partner-section-chocolate, .page-id-23 .partner-section-seasonal, .page-id-23 .partner-section-coffee {
+.page-id-23 .partner-section-chocolate,
+.page-id-23 .partner-section-seasonal,
+.page-id-23 .partner-section-coffee {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media (min-width: 800px) {
-    .page-id-23 .partner-section-chocolate, .page-id-23 .partner-section-seasonal, .page-id-23 .partner-section-coffee {
+    .page-id-23 .partner-section-chocolate,
+    .page-id-23 .partner-section-seasonal,
+    .page-id-23 .partner-section-coffee {
       -ms-flex-preferred-size: 31%;
           flex-basis: 31%; }
-      .page-id-23 .partner-section-chocolate .partner-section-chocolate, .page-id-23 .partner-section-chocolate .partner-section-seasonal, .page-id-23 .partner-section-seasonal .partner-section-chocolate, .page-id-23 .partner-section-seasonal .partner-section-seasonal, .page-id-23 .partner-section-coffee .partner-section-chocolate, .page-id-23 .partner-section-coffee .partner-section-seasonal {
+      .page-id-23 .partner-section-chocolate .partner-section-chocolate,
+      .page-id-23 .partner-section-chocolate .partner-section-seasonal,
+      .page-id-23 .partner-section-seasonal .partner-section-chocolate,
+      .page-id-23 .partner-section-seasonal .partner-section-seasonal,
+      .page-id-23 .partner-section-coffee .partner-section-chocolate,
+      .page-id-23 .partner-section-coffee .partner-section-seasonal {
         border-right: 10px solid white; } }
-  .page-id-23 .partner-section-chocolate h3, .page-id-23 .partner-section-seasonal h3, .page-id-23 .partner-section-coffee h3 {
+  .page-id-23 .partner-section-chocolate h3,
+  .page-id-23 .partner-section-seasonal h3,
+  .page-id-23 .partner-section-coffee h3 {
     font-size: 1.5rem; }
-  .page-id-23 .partner-section-chocolate .partner-items-container div, .page-id-23 .partner-section-seasonal .partner-items-container div, .page-id-23 .partner-section-coffee .partner-items-container div {
+  .page-id-23 .partner-section-chocolate .partner-items-container div,
+  .page-id-23 .partner-section-seasonal .partner-items-container div,
+  .page-id-23 .partner-section-coffee .partner-items-container div {
     margin-bottom: 1.8rem; }
-  .page-id-23 .partner-section-chocolate .partner-items-container p, .page-id-23 .partner-section-seasonal .partner-items-container p, .page-id-23 .partner-section-coffee .partner-items-container p {
+  .page-id-23 .partner-section-chocolate .partner-items-container p,
+  .page-id-23 .partner-section-seasonal .partner-items-container p,
+  .page-id-23 .partner-section-coffee .partner-items-container p {
     display: block;
     margin: 0;
     margin-bottom: 0.7rem; }
-  .page-id-23 .partner-section-chocolate .partner-items-container .partner-name, .page-id-23 .partner-section-seasonal .partner-items-container .partner-name, .page-id-23 .partner-section-coffee .partner-items-container .partner-name {
+  .page-id-23 .partner-section-chocolate .partner-items-container .partner-name,
+  .page-id-23 .partner-section-seasonal .partner-items-container .partner-name,
+  .page-id-23 .partner-section-coffee .partner-items-container .partner-name {
     font-weight: 500; }
-  .page-id-23 .partner-section-chocolate .partner-items-container a, .page-id-23 .partner-section-seasonal .partner-items-container a, .page-id-23 .partner-section-coffee .partner-items-container a {
+  .page-id-23 .partner-section-chocolate .partner-items-container a,
+  .page-id-23 .partner-section-seasonal .partner-items-container a,
+  .page-id-23 .partner-section-coffee .partner-items-container a {
     color: white; }
-    .page-id-23 .partner-section-chocolate .partner-items-container a:hover, .page-id-23 .partner-section-seasonal .partner-items-container a:hover, .page-id-23 .partner-section-coffee .partner-items-container a:hover {
+    .page-id-23 .partner-section-chocolate .partner-items-container a:hover,
+    .page-id-23 .partner-section-seasonal .partner-items-container a:hover,
+    .page-id-23 .partner-section-coffee .partner-items-container a:hover {
       color: #e13404; }
 
 @media screen and (max-width: 575px) {
@@ -1861,10 +1895,12 @@ object {
     .page-id-94 .donation-way-list li::before {
       margin-right: 4rem; }
 
-.page-id-94 .button-border .border1, .page-id-94 .button-border .border2 {
+.page-id-94 .button-border .border1,
+.page-id-94 .button-border .border2 {
   border-color: #4a4a4a;
   color: #4a4a4a; }
-  .page-id-94 .button-border .border1:hover, .page-id-94 .button-border .border2:hover {
+  .page-id-94 .button-border .border1:hover,
+  .page-id-94 .button-border .border2:hover {
     border-color: #e13404;
     color: #e13404; }
 
@@ -1873,7 +1909,9 @@ object {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.page-template-menu .menu-coffee-content, .page-template-menu .menu-chocolate-container, .page-template-menu .menu-location {
+.page-template-menu .menu-coffee-content,
+.page-template-menu .menu-chocolate-container,
+.page-template-menu .menu-location {
   padding-left: 5rem;
   padding-right: 5rem; }
 
@@ -1908,26 +1946,31 @@ object {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
       margin-top: 1rem; }
-    .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-name, .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-price {
+    .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-name,
+    .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-price {
       text-align: left;
       margin-bottom: 0;
       margin-top: 0.5rem; }
     .page-template-menu .menu-evr-menu-container .evr-menu-section .menu-items-name {
       padding-left: 2rem; }
 
-.page-template-menu .evr-menu-coffee .menu-items-name, .page-template-menu .evr-menu-iced-drink .menu-items-name {
+.page-template-menu .evr-menu-coffee .menu-items-name,
+.page-template-menu .evr-menu-iced-drink .menu-items-name {
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%; }
 
-.page-template-menu .evr-menu-coffee .menu-items-price, .page-template-menu .evr-menu-iced-drink .menu-items-price {
+.page-template-menu .evr-menu-coffee .menu-items-price,
+.page-template-menu .evr-menu-iced-drink .menu-items-price {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%; }
 
-.page-template-menu .evr-menu-full-leaf-tea .menu-items-name-container, .page-template-menu .evr-menu-drinking-chocolate .menu-items-name-container {
+.page-template-menu .evr-menu-full-leaf-tea .menu-items-name-container,
+.page-template-menu .evr-menu-drinking-chocolate .menu-items-name-container {
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%; }
 
-.page-template-menu .evr-menu-full-leaf-tea .menu-items-price, .page-template-menu .evr-menu-drinking-chocolate .menu-items-price {
+.page-template-menu .evr-menu-full-leaf-tea .menu-items-price,
+.page-template-menu .evr-menu-drinking-chocolate .menu-items-price {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   -ms-flex-item-align: center;
@@ -2039,7 +2082,8 @@ object {
   .single-workshop-on-page img {
     width: 100%;
     height: 100%; }
-  .single-workshop-on-page h3, .single-workshop-on-page p {
+  .single-workshop-on-page h3,
+  .single-workshop-on-page p {
     margin-bottom: 1rem; }
 
 .interested {
