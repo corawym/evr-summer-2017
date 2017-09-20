@@ -68,9 +68,7 @@ get_header(); ?>
 								<?php	$chocolate_bars_coffee_beans = CFS()->get(esc_html('chocolate_bars_coffee_beans') );
 									foreach ( $chocolate_bars_coffee_beans as $chocolate_bars_coffee_beans_items ) { ?>
 									<div>
-										<a href="<?php echo $chocolate_bars_coffee_beans_items['website']; ?>" target="_blank">
-											<p class="partner-name"><?php echo $chocolate_bars_coffee_beans_items['store_name']; ?></p>
-										</a>
+										<?php echo $chocolate_bars_coffee_beans_items['store_name']; ?>
 										<p><?php echo $chocolate_bars_coffee_beans_items['address']; ?></p>
 										<p><?php echo $chocolate_bars_coffee_beans_items['phone']; ?></p>
 									</div>
@@ -87,9 +85,7 @@ get_header(); ?>
 								<?php	$seasonal_chocolates = CFS()->get(esc_html('seasonal_chocolates') );
 									foreach ( $seasonal_chocolates as $seasonal_chocolates_items ) { ?>
 									<div>
-										<a href="<?php echo $seasonal_chocolates_items['website']; ?>" target="_blank">
-											<p class="partner-name"><?php echo $seasonal_chocolates_items['store_name']; ?></p>
-										</a>
+										<?php echo $seasonal_chocolates_items['store_name']; ?>
 										<p><?php echo $seasonal_chocolates_items['address']; ?></p>
 										<p><?php echo $seasonal_chocolates_items['phone']; ?></p>
 									</div>
@@ -106,9 +102,7 @@ get_header(); ?>
 								<?php	$coffee_on_the_bar = CFS()->get(esc_html('coffee_on_the_bar') );
 									foreach ( $coffee_on_the_bar as $coffee_on_the_bar_items ) { ?>
 									<div>
-										<a href="<?php echo $seasonal_chocolates_items['website']; ?>" target="_blank">
-											<p class="partner-name"><?php echo $coffee_on_the_bar_items['store_name']; ?></p>
-										</a>
+										<?php echo $coffee_on_the_bar_items['store_name']; ?>
 										<p><?php echo $coffee_on_the_bar_items['address']; ?></p>
 										<p><?php echo $coffee_on_the_bar_items['phone']; ?></p>
 									</div>
