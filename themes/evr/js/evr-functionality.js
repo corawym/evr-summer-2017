@@ -34,19 +34,19 @@
         subMenu.removeClass('show-sub-menu').addClass('hide-sub-menu');
       }
     });
+    var primaryMenu = $('#primary-menu');
+  
   } else {
     $('#primary-menu').removeClass('hide-menu');
   }
   
-  var primaryMenu = $('#primary-menu');
-
   $('#hamburger').click(function() {
     if ( primaryMenu.hasClass('hide-menu') ) {
       primaryMenu.removeClass('hide-menu').addClass('show-menu');
     } else {
       primaryMenu.removeClass('show-menu').addClass('hide-menu');
     }
-  })
+  });
 
   // Bean details show hide
   $('.more-details').click(function() {

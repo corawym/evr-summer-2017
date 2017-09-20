@@ -45,7 +45,7 @@ get_header('archive'); ?>
 								<img class="workshop-image content-image" src="<?php echo esc_url( CFS()->get( 'workshop_image' ) ) ?>">
 							</div>
 							<h3 class="workshop-title"><?php esc_html( the_title() ) ?></h3>
-							<p class="workshop-date"><?php echo CFS()->get( esc_html('workshop_date') ) ?></p>
+							<p class="workshop-date"><?php echo date( 'F j, Y', strtotime( CFS()->get( esc_html('workshop_date') ) ) ) ?></p>
 							<p class="workshop-time"><?php echo CFS()->get( esc_html('workshop_time') ) ?></p>
 						</div>
 					</a>
