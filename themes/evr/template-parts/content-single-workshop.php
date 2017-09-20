@@ -30,7 +30,7 @@
 			</div>
 			<div class="workshop-info">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/workshop/mbri-info.svg" alt="Icon of information">
-				<p class="workshop-details-info">Date: <?php echo CFS()->get( esc_html('workshop_date') ) ?></p>
+				<p class="workshop-details-info">Date: <?php echo date( 'F j, Y', strtotime( CFS()->get( esc_html('workshop_date') ) ) )  ?></p>
 			</div>
 			<div class="workshop-info">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/workshop/mbri-info.svg" alt="Icon of information">
