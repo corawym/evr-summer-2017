@@ -48,12 +48,12 @@
     text-decoration: none;
   }
   .workshop-image-wrapper {
-    @include aspect-ratio(1,
-    1);
+    @include aspect-ratio(1, 1);
   }
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
   h3,
   p {

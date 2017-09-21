@@ -2087,7 +2087,8 @@ object {
       bottom: 0; }
   .single-workshop-on-page img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
   .single-workshop-on-page h3,
   .single-workshop-on-page p {
     margin-bottom: 1rem; }
